@@ -11,7 +11,7 @@ import com.zeyneptekin.myhealthassistant.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
    ActivityMainBinding binding;
-
+    //ahsen deneme :)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
