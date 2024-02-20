@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     //ahsen deneme :)
 
     //test commit
+    //test deneme 2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
