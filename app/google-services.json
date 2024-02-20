@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "137995359668",
+    "project_id": "myhealthassistant-1c771",
+    "storage_bucket": "myhealthassistant-1c771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137995359668:android:816e02834ae0358aec0ee1",
+        "android_client_info": {
+          "package_name": "com.zeyneptekin.myhealthassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0ygOptUuFeJNdjjxsQjS-sW8wJhDFGFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
