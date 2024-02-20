@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     //test deneme 2
     //güncelleme denemesi
     //hello
+    //bakalım eski haline gelecek mi
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
