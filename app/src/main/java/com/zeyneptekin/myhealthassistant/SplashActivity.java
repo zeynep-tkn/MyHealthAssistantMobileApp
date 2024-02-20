@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-//deneme 1 2
 public class SplashActivity extends AppCompatActivity {
     private static final int SPLASH_DISPLAY_LENGTH = 4000;
     @Override
