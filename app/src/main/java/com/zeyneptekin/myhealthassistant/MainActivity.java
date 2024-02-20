@@ -12,14 +12,6 @@ import com.zeyneptekin.myhealthassistant.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
    ActivityMainBinding binding;
 
-    //ahsen deneme :)
-
-    //test commit
-    //test deneme 2
-    //güncelleme denemesi
-    //hello
-    //bakalım eski haline gelecek mi
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
