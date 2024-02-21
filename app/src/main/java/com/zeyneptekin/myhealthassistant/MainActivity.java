@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
             if (itemId==R.id.home){
                 replaceFragment(new HomeFragment());
             }
-            else if(itemId==R.id.categories){
-                replaceFragment(new CategoriesFragment());
+            else if(itemId==R.id.chat){
+                replaceFragment(new ChatFragment());
             }
             else if(itemId==R.id.profile){
                 replaceFragment(new ProfileFragment());
