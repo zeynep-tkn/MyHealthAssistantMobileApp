@@ -17,17 +17,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new CategoriesFragment());
-
+        replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item ->{
             int itemId=item.getItemId();
 
-            if (itemId==R.id.categories){
-                replaceFragment(new CategoriesFragment());
-            }
-            else if(itemId==R.id.home){
+            if (itemId==R.id.home){
                 replaceFragment(new HomeFragment());
+            }
+            else if(itemId==R.id.categories){
+                replaceFragment(new CategoriesFragment());
             }
             else if(itemId==R.id.profile){
                 replaceFragment(new ProfileFragment());
