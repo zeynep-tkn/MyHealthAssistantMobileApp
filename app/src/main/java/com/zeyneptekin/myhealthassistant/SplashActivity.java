@@ -16,8 +16,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Ana ekrana geçiş yap
-                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(mainIntent);
+                Intent loginIntent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(loginIntent);
                 finish(); // Splash ekranını kapat
             }
         }, SPLASH_DISPLAY_LENGTH);

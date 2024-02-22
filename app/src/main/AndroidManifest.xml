@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SportsExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".MotivationActivity"
             android:exported="false" />
         <activity
