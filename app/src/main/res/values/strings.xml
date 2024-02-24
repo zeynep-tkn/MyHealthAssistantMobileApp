@@ -2,4 +2,22 @@
     <string name="app_name">MyHealthAssistant</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewpager_description">Slide View Pager</string>
+
+    <string name="screen1">Ekran 1 </string>
+    <string name="screen2">Ekran 2</string>
+    <string name="screen3">Ekran 3</string>
+    <string name="screen4">Ekran 4</string>
+
+    <string name="screen1desc">Ekran 1in açıklama yazısı. Burada 1.ekranda neler bulunduğu
+    hakkında bilgi veren tanıtım metni yazılmıştır </string>
+    <string name="screen2desc">Ekran 2in açıklama yazısı. Burada 2.ekranda neler bulunduğu
+    hakkında bilgi veren tanıtım metni yazılmıştır. </string>
+    <string name="screen3desc">Ekran 3in açıklama yazısı. Burada 3.ekranda neler bulunduğu
+    hakkında bilgi veren tanıtım metni yazılmıştır</string>
+    <string name="screen4desc">Ekran 4in açıklama yazısı. Burada 4.ekranda neler bulunduğu
+    hakkında bilgi veren tanıtım metni yazılmıştır</string>
+
+    <string name="startDesc"> Tanıtım ekranlarını gösterdik.Şimdi uygulamaya geçmeden önce kısa bir
+        uyg hakkında açıklama yapıyoruz ve başlıyoruz</string>
 </resources>
