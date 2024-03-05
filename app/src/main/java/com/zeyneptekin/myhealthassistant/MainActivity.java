@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
    ActivityMainBinding binding;
     // test comment 2
     @Override
+    // Helloooo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
