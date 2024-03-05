@@ -1,17 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#B1D4EF"
     tools:context=".ProfileFragment">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50dp"
-        android:text="Profile"
-        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/saglikProfilim"
+        android:layout_width="242dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="48dp"
+        android:text="Sağlık Profilim"
+        app:layout_constraintBottom_toTopOf="@+id/randevularim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/randevularim"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        android:text="Randevularım"
+        app:layout_constraintBottom_toTopOf="@+id/ayarlar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/ayarlar"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:text="Ayarlar"
+        app:layout_constraintBottom_toTopOf="@+id/sss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randevularim" />
+
+
+    <Button
+        android:id="@+id/sss"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:text="SSS"
+        app:layout_constraintBottom_toTopOf="@+id/hakkinda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayarlar" />
+
+    <Button
+        android:id="@+id/hakkinda"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:text="Hakkında"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sss" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="236dp"
+
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="136dp"
+        android:text="Profil "
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/randevularim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
