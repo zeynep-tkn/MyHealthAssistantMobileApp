@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class HomeFragment extends Fragment {
-
+    //DENEME YORUMU
     CardView MotivationCard;
     CardView SportsCard;
     CardView EducationCard;
