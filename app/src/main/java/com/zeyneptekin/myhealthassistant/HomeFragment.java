@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 public class HomeFragment extends Fragment {
     //DENEME YORUMU
+    //dneme yorumu 2
+
     CardView MotivationCard;
     CardView SportsCard;
     CardView EducationCard;
