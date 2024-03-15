@@ -142,6 +142,7 @@
              </LinearLayout>
 
               <Button
+                  android:id="@+id/startP1"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:layout_margin="10.0dp"
@@ -251,6 +252,7 @@
                </LinearLayout>
 
                <Button
+                   android:id="@+id/startP2"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10.0dp"
@@ -355,6 +357,7 @@
                </LinearLayout>
 
                <Button
+                   android:id="@+id/startP3"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10.0dp"
@@ -464,6 +467,7 @@
                </LinearLayout>
 
                <Button
+                   android:id="@+id/startP4"
                    android:layout_width="fill_parent"
                    android:layout_height="wrap_content"
                    android:layout_margin="10.0dp"
