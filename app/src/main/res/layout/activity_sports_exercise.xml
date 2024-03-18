@@ -116,10 +116,10 @@
                            android:layout_height="wrap_content"
                            android:layout_weight="2.0">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/exercise3"/>
+                            android:src="@drawable/womanspor"/>
 
                           </LinearLayout>
 
@@ -226,10 +226,10 @@
                        android:layout_height="wrap_content"
                        android:layout_weight="1.8">
 
-                       <pl.droidsonroids.gif.GifImageView
+                       <ImageView
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
-                           android:src="@drawable/exercise1"/>
+                           android:src="@drawable/agirlik"/>
 
                    </LinearLayout>
 
@@ -331,10 +331,10 @@
                        android:layout_height="wrap_content"
                        android:layout_weight="1.2">
 
-                       <pl.droidsonroids.gif.GifImageView
+                       <ImageView
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
-                           android:src="@drawable/exercise4" />
+                           android:src="@drawable/sporkiz" />
 
                    </LinearLayout>
 
@@ -441,10 +441,10 @@
                        android:layout_height="wrap_content"
                        android:layout_weight="2.0">
 
-                       <pl.droidsonroids.gif.GifImageView
+                       <ImageView
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
-                           android:src="@drawable/exercise2"/>
+                           android:src="@drawable/exercise"/>
 
                    </LinearLayout>
 
