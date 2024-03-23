@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D4EF"
+    tools:context=".saglikProfilim">
+
+
+    <TextView
+        android:id="@+id/randevularimBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SAĞLIK PROFİLİM"
+        android:textSize="23sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kullanıcıAdSoyadiGirisTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="18dp"
+        android:text="Beyzanur Bayır"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dogumTarihiTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Doğum Tarihi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dogumGunuGirisTxt"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="17.05.2002"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/cinsiyetGirisTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cinsiyetTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Cinsiyet"
+        app:layout_constraintStart_toEndOf="@+id/dogumTarihiTxt"
+        app:layout_constraintTop_toBottomOf="@+id/kullanıcıAdSoyadiGirisTxt"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/cinsiyetGirisTxt"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kız"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cinsiyetTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kanGrubuTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="68dp"
+        android:text="Kan Grubu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kanGrubuGirisTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="A RH+"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cinsiyetGirisTxt"
+        app:layout_constraintEnd_toEndOf="@+id/vucutKitleIndeksiTxt"
+        app:layout_constraintStart_toStartOf="@+id/vucutKitleIndeksiTxt"
+        app:layout_constraintTop_toTopOf="@+id/cinsiyetGirisTxt"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/boyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Boy"
+        app:layout_constraintBottom_toTopOf="@+id/boyGirisTxt"
+        app:layout_constraintEnd_toStartOf="@+id/kiloTxt"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/boyGirisTxt"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="1,68 m"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dogumTarihiTxt"
+        app:layout_constraintStart_toStartOf="@+id/dogumGunuGirisTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/kiloTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Kilo"
+        app:layout_constraintBottom_toTopOf="@+id/kiloGirisTxt"
+        app:layout_constraintEnd_toStartOf="@+id/vucutKitleIndeksiTxt"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kiloGirisTxt"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="109dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="55 kg"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boyGirisTxt"
+        app:layout_constraintEnd_toEndOf="@+id/kanGrubuTxt"
+        app:layout_constraintStart_toStartOf="@+id/saglikGecmisimBtn"
+        app:layout_constraintTop_toTopOf="@+id/vucutKitleİndeksiHesaplamaTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/vucutKitleIndeksiTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="Vücut Kitle İndeksi"
+        app:layout_constraintBottom_toTopOf="@+id/vucutKitleİndeksiHesaplamaTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/vucutKitleİndeksiHesaplamaTxt"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="19,49 kg/m2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/saglikGecmisimBtn"
+        app:layout_constraintStart_toStartOf="@+id/vucutKitleIndeksiTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kullanici_profil_sembol" />
+
+    <Button
+        android:id="@+id/saglikGecmisimBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="202dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="Sağlık Geçmişim"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogumTarihiTxt"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ilacBilgilerimBtn"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="İlaç Bilgilerim"
+        app:layout_constraintBottom_toTopOf="@+id/ilerlemeTakibiBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saglikGecmisimBtn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ilerlemeTakibiBtn"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="İlerleme Takibi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
