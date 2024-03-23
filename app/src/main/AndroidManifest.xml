@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".P1Movement1Activity"
+            android:exported="false" />
+        <activity
             android:name=".P4Activity"
             android:exported="false" />
         <activity
