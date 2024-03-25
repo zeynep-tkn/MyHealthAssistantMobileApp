@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D4EF"
+    tools:context=".Randevularim">
+
+    <TextView
+        android:id="@+id/RandevularimBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="76dp"
+        android:text="RANDEVULARIM"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Aciklama1txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RandevuEklebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aciklama3txt" />
+
+    <TextView
+        android:id="@+id/Aciklama1txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Bu alana veritabanından çekilecek bilgiler gelecek"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Aciklama2txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RandevularimBaslikTxt" />
+
+    <TextView
+        android:id="@+id/Aciklama2txt"
+        android:layout_width="379dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:text="Bir tablo oluşturulacak ve tablonun sütunları sırası ile şunlar olacak:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Aciklama3txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aciklama1txt" />
+
+    <TextView
+        android:id="@+id/Aciklama3txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:text="Bölüm, Tarih/saat, Doktor,hastahane"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/RandevuEklebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aciklama2txt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

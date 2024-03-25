@@ -20,6 +20,8 @@ public class ProfileFragment extends Fragment {
     private String mParam2;
 
     private Button SaglikProfilim;
+    private Button Randevularim;
+
 
     public ProfileFragment() {
         // Gerekli boş yapıcı metod
@@ -56,6 +58,17 @@ public class ProfileFragment extends Fragment {
             public void onClick(View view) {
                 // Sağlık Profilim sayfasına geçiş yap
                 Intent intent = new Intent(getActivity(), saglikProfilim.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Randevularim = view.findViewById(R.id.randevularim);
+        Randevularim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Randevularım sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), Randevularim.class);
                 startActivity(intent);
             }
         });
