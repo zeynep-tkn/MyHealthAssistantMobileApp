@@ -9,12 +9,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import androidx.fragment.app.Fragment;
+
+import java.text.DateFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ChatFragment extends Fragment {
 
-    private ArrayList<String> messages;
-    private ArrayAdapter<String> adapter;
+    private ArrayList<ChatMessageClass> messages;
+    private ArrayAdapter<ChatMessageClass> adapter;
 
     public ChatFragment() {
         // Boş yapıcı metot
@@ -42,8 +46,11 @@ public class ChatFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // EditText'ten alınan metni mesaj listesine ekleme
-                String message = messageEditText.getText().toString();
-                if (!message.isEmpty()) {
+                String messageText = messageEditText.getText().toString();
+                ChatMessageClass message = new ChatMessageClass(messageText);
+
+                if (!message.getContent().isEmpty()) {
+
                     messages.add(message);
                     adapter.notifyDataSetChanged();
                     // Mesaj gönderildikten sonra EditText'i temizleme
