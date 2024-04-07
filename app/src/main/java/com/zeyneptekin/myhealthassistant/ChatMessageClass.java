@@ -6,7 +6,7 @@ public class ChatMessageClass {
     private Date date;
     private Boolean isUserMessage;
     ChatMessageClass(){
-
+        //for firebase
     }
     ChatMessageClass(String content){
         this.content = content;
