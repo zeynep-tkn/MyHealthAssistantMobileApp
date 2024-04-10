@@ -21,8 +21,9 @@ public class ProfileFragment extends Fragment {
 
     private Button SaglikProfilim;
     private Button Randevularim;
-
     private Button Ayarlar;
+    private Button SSSSayfasi;
+    private Button Hakkinda;
 
 
     public ProfileFragment() {
@@ -80,8 +81,30 @@ public class ProfileFragment extends Fragment {
         Ayarlar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Randevularım sayfasına geçiş yap
+                // Ayarlar sayfasına geçiş yap
                 Intent intent = new Intent(getActivity(), ayarlar.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        SSSSayfasi = view.findViewById(R.id.sss);
+        SSSSayfasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sıkça Sorulan Sorular sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), SSS.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Hakkinda = view.findViewById(R.id.hakkinda);
+        Hakkinda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Hakkında sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), hakkinda.class);
                 startActivity(intent);
             }
         });

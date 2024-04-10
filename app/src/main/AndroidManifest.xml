@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".hakkinda"
+            android:exported="false" />
+        <activity
+            android:name=".SSS"
+            android:exported="false" />
+        <activity
             android:name=".ayarlar"
             android:exported="false" />
         <activity
