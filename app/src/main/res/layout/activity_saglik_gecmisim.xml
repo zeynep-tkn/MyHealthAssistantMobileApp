@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D4EF"
+    tools:context=".saglikGecmisim">
+
+    <Button
+        android:id="@+id/ameliyatEkleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8B9AA"
+        android:text="EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <Button
+        android:id="@+id/alerjiEkleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="EKLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saglikGecmisimBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAĞLIK GEÇMİŞİM"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/kronikHastalikEkleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8B9AA"
+        android:text="EKLE"
+        app:layout_constraintBottom_toTopOf="@+id/genetikHastalikEkleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <Button
+        android:id="@+id/genetikHastalikEkleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="EKLE"
+        app:layout_constraintBottom_toTopOf="@+id/alerjiEkleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/aciklama1"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginBottom="46dp"
+        android:text="Bu bölümde kişinin kronik hastalıkları bir tablo yardımı ile listelenir"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/aciklama2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aciklama2"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:text="Bu bölümde kişinin GENETİK HASTALIKLARI bir tablo yardımı ile listelenir"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/aciklama3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama1" />
+
+    <TextView
+        android:id="@+id/aciklama3"
+        android:layout_width="243dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:text="Bu bölümde kişinin ALERJİLERİ bir tablo yardımı ile listelenir"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/aciklama4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama2" />
+
+    <TextView
+        android:id="@+id/aciklama4"
+        android:layout_width="240dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="40dp"
+        android:text="Bu bölümde kişinin daha önce geçirmiş olduğu AMELİYATLAR bir tablo yardımı ile listelenir ( tabloda amleliyatın ismi ve tarihi de yer almalıdır)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
