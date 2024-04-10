@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D4EF"
+    tools:context=".ayarlar">
+
+    <ImageView
+        android:id="@+id/arkaPlan3"
+        android:layout_width="386dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arkaPlan1"
+        app:srcCompat="@drawable/backgroundcrop" />
+
+    <TextView
+        android:id="@+id/ayarlarBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="65dp"
+        android:text="AYARLAR"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hesapAyarlariBaslikTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/arkaPlan2"
+        android:layout_width="381dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/arkaPlan3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arkaPlan1"
+        app:srcCompat="@drawable/backgroundcrop" />
+
+    <ImageView
+        android:id="@+id/arkaPlan1"
+        android:layout_width="387dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="244dp"
+        app:layout_constraintBottom_toTopOf="@+id/arkaPlan3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundcrop" />
+
+    <TextView
+        android:id="@+id/hesapAyarlariBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="HESAP AYARLARI"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciAdiVeSifreDegistirmeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayarlarBaslikTxt" />
+
+    <Button
+        android:id="@+id/kullaniciAdiVeSifreDegistirmeBtn"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="Kullanıcı adı ve şifre değiştirme"
+        app:layout_constraintBottom_toTopOf="@+id/IletisimBilgileriniGuncellemeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesapAyarlariBaslikTxt" />
+
+    <Button
+        android:id="@+id/HesabiSilBtn"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="Hesabı sil"
+        app:layout_constraintBottom_toTopOf="@+id/bildirimAyarlariBaslikTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IletisimBilgileriniGuncellemeBtn" />
+
+    <Button
+        android:id="@+id/gizlilikVeGüvenlikBtn"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="Gizlilik ve Güvenlik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arkaPlan3" />
+
+    <Button
+        android:id="@+id/IletisimBilgileriniGuncellemeBtn"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#E8B9AA"
+        android:text="İletişim bilgilerini güncelleme"
+        app:layout_constraintBottom_toTopOf="@+id/HesabiSilBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdiVeSifreDegistirmeBtn" />
+
+    <TextView
+        android:id="@+id/bildirimAyarlariBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="BİLDİRİM AYARLARI"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/randevuBildirimleri.switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HesabiSilBtn" />
+
+    <Switch
+        android:id="@+id/randevuBildirimleri.switch"
+        android:layout_width="305dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:showText="true"
+        android:text="Randevu Bildirimleri"
+        android:textOff="Kapalı"
+        android:textOn="Açık"
+        app:layout_constraintBottom_toTopOf="@+id/uygulamaBildirimleri.switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bildirimAyarlariBaslikTxt" />
+
+    <Switch
+        android:id="@+id/uygulamaBildirimleri.switch"
+        android:layout_width="305dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
+        android:showText="true"
+        android:text="Uygulama Bildirimleri"
+        android:textOff="Kapalı"
+        android:textOn="Açık"
+        app:layout_constraintBottom_toTopOf="@+id/arkaPlan3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randevuBildirimleri.switch" />
+
+    <TextView
+        android:id="@+id/gizlilikVeGüvenlikAyarlariBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="GİZLİLİK VE GÜVENLİK"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arkaPlan3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

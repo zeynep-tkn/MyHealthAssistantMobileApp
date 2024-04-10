@@ -22,6 +22,8 @@ public class ProfileFragment extends Fragment {
     private Button SaglikProfilim;
     private Button Randevularim;
 
+    private Button Ayarlar;
+
 
     public ProfileFragment() {
         // Gerekli boş yapıcı metod
@@ -69,6 +71,17 @@ public class ProfileFragment extends Fragment {
             public void onClick(View view) {
                 // Randevularım sayfasına geçiş yap
                 Intent intent = new Intent(getActivity(), Randevularim.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Ayarlar = view.findViewById(R.id.ayarlar);
+        Ayarlar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Randevularım sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), ayarlar.class);
                 startActivity(intent);
             }
         });
