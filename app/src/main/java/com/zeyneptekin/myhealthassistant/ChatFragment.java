@@ -67,8 +67,8 @@ public class ChatFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String messageText = messageEditText.getText().toString();
-                ChatMessageClass userMessage = new ChatMessageClass(messageText, true); // Kullanıcı tarafından gönderilen mesaj
-                ChatMessageClass assistantMessage = new ChatMessageClass("Deneme", false); // Asistan tarafından gönderilen mesaj
+                ChatMessageClass userMessage = new ChatMessageClass("Siz\n" + messageText, true); // Kullanıcı tarafından gönderilen mesaj
+                ChatMessageClass assistantMessage = new ChatMessageClass("Assistan\n"+"Deneme", false); // Asistan tarafından gönderilen mesaj
 
                 if (!userMessage.getContent().isEmpty()) {
                     messages.add(userMessage);

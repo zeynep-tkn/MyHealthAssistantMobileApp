@@ -1,5 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#0000FF"/> <!-- Asistan mesajları için mavi arka plan -->
+    <solid android:color="#76D5F9"/> <!-- Asistan mesajları için mavi arka plan -->
     <corners android:radius="8dp"/>
 </shape>
