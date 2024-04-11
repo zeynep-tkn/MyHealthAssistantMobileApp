@@ -8,9 +8,10 @@ public class ChatMessageClass {
     ChatMessageClass(){
         //for firebase
     }
-    ChatMessageClass(String content){
+    ChatMessageClass(String content, Boolean isUserMessage){
         this.content = content;
         this.date = new Date(); // Anlık tarih ve saat değerini al
+        this.isUserMessage = isUserMessage;
     }
     public String getContent() {
         return content;
