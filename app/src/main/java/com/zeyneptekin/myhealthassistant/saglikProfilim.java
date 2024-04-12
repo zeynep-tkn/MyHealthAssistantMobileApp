@@ -10,6 +10,7 @@ import android.widget.Button;
 public class saglikProfilim extends AppCompatActivity {
 
     private Button SaglikGecmisim;
+    private Button IlacBilgilerim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +22,19 @@ public class saglikProfilim extends AppCompatActivity {
         SaglikGecmisim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Randevularım sayfasına geçiş yap
+                // Sağlık Geçmişim sayfasına geçiş yap
                 Intent intent = new Intent(saglikProfilim.this, saglikGecmisim.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        IlacBilgilerim = findViewById(R.id.ilacBilgilerimBtn);
+        IlacBilgilerim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // İlaç Bilgilerim sayfasına geçiş yap
+                Intent intent = new Intent(saglikProfilim.this, ilacBilgilerim.class);
                 startActivity(intent);
             }
         });
