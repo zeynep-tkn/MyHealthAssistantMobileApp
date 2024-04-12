@@ -11,6 +11,7 @@ public class saglikProfilim extends AppCompatActivity {
 
     private Button SaglikGecmisim;
     private Button IlacBilgilerim;
+    private Button IlerlemeTakibi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,18 @@ public class saglikProfilim extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Butonu bul ve tıklama olayını ayarla
+        IlerlemeTakibi = findViewById(R.id.ilerlemeTakibiBtn);
+        IlerlemeTakibi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // İlerleem takibi sayfasına geçiş yap
+                Intent intent = new Intent(saglikProfilim.this, ilerlemeTakibi.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
