@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/registerConfirmPasswordEditText"
         android:layout_marginTop="2dp"
+
         android:text="Kayıt Ol" />
 
 </RelativeLayout>
