@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".randevuEkleme"
+            android:exported="false" />
+        <activity
             android:name=".gizlilikVeGuvenlik"
             android:exported="false" />
         <activity
