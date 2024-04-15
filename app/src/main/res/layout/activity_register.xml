@@ -7,39 +7,31 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:id="@+id/registerUsernameEditText"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:layout_marginBottom="10dp"
-        android:hint="Kullanıcı Adı" />
+        android:hint="Email " />
 
 
     <EditText
-        android:id="@+id/registerPasswordEditText"
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerUsernameEditText"
+        android:layout_below="@id/emailEditText"
         android:layout_marginBottom="10dp"
         android:hint="Şifre"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/registerConfirmPasswordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/registerPasswordEditText"
-        android:layout_marginBottom="10dp"
-        android:hint="Şifreyi Onayla"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerConfirmPasswordEditText"
+        android:layout_below="@+id/passwordEditText"
         android:layout_marginTop="2dp"
 
+        android:onClick="kayitOl"
         android:text="Kayıt Ol" />
 
     <TextView
