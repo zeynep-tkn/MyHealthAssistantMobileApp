@@ -8,13 +8,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class P1Activity extends AppCompatActivity {
+public class P1SportActivity extends AppCompatActivity {
     int[] newArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_p1);
+        setContentView(R.layout.activity_p1_sport);
 
         Toolbar toolbar=findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
@@ -31,7 +31,7 @@ public class P1Activity extends AppCompatActivity {
        if(view.getId()==newArray[i]){
          int value=i+1;
            Log.i("First",String.valueOf(value));
-           Intent intent=new Intent(P1Activity.this,P1Movement1Activity.class);
+           Intent intent=new Intent(P1SportActivity.this,P1Movement1Activity.class);
            intent.putExtra("value",String.valueOf(value));
            startActivity(intent);
 
@@ -40,7 +40,5 @@ public class P1Activity extends AppCompatActivity {
 
     }
 
-
-
-
+    
 }

@@ -10,28 +10,28 @@
         android:id="@+id/registerUsernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Kullanıcı Adı"
         android:layout_marginTop="150dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:hint="Kullanıcı Adı" />
 
 
     <EditText
         android:id="@+id/registerPasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="Şifre"
         android:layout_below="@id/registerUsernameEditText"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:hint="Şifre"
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/registerConfirmPasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="Şifreyi Onayla"
         android:layout_below="@id/registerPasswordEditText"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:hint="Şifreyi Onayla"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/registerButton"
@@ -42,4 +42,13 @@
 
         android:text="Kayıt Ol" />
 
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:text="Zaten Hesabınız Var mı?"
+        android:textColor="@android:color/holo_blue_dark" />
 </RelativeLayout>

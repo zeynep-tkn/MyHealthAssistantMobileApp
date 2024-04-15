@@ -26,28 +26,28 @@ public class SportsExerciseActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SportsExerciseActivity.this, P1Activity.class);
+                Intent intent=new Intent(SportsExerciseActivity.this, P1SportActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SportsExerciseActivity.this, P2Activity.class);
+                Intent intent=new Intent(SportsExerciseActivity.this, P2SportActivity.class);
                 startActivity(intent);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SportsExerciseActivity.this, P3Activity.class);
+                Intent intent=new Intent(SportsExerciseActivity.this, P3SportActivity.class);
                 startActivity(intent);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SportsExerciseActivity.this, P4Activity.class);
+                Intent intent=new Intent(SportsExerciseActivity.this, P4SportActivity.class);
                 startActivity(intent);
             }
         });
@@ -55,23 +55,23 @@ public class SportsExerciseActivity extends AppCompatActivity {
 
 
     public void exerciseP1(View view) {
-     Intent intent =new Intent(SportsExerciseActivity.this, P1Activity.class);
+     Intent intent =new Intent(SportsExerciseActivity.this, P1SportActivity.class);
      startActivity(intent);
 
     }
 
     public void exerciseP2(View view) {
-        Intent intent =new Intent(SportsExerciseActivity.this, P2Activity.class);
+        Intent intent =new Intent(SportsExerciseActivity.this, P2SportActivity.class);
         startActivity(intent);
     }
 
     public void exerciseP3(View view) {
-        Intent intent =new Intent(SportsExerciseActivity.this, P3Activity.class);
+        Intent intent =new Intent(SportsExerciseActivity.this, P3SportActivity.class);
         startActivity(intent);
     }
 
     public void exerciseP4(View view) {
-        Intent intent =new Intent(SportsExerciseActivity.this, P4Activity.class);
+        Intent intent =new Intent(SportsExerciseActivity.this, P4SportActivity.class);
         startActivity(intent);
     }
 }
