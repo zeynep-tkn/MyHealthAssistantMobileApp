@@ -7,18 +7,18 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/usernameEditText"
+        android:id="@+id/emailEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:layout_marginBottom="16dp"
-        android:hint="Kullanıcı Adı" />
+        android:hint="Email" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/passwordEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/usernameEditText"
+        android:layout_below="@id/emailEdit"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="16dp"
         android:hint="Şifre"
@@ -28,9 +28,11 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/passwordEditText"
+        android:layout_below="@id/passwordEdit"
         android:layout_marginTop="5dp"
+        android:onClick="girisYap"
         android:text="Giriş Yap" />
+
 
     <TextView
         android:id="@+id/registerTextView"

@@ -7,7 +7,7 @@
     android:layout_height="fill_parent"
     android:background="#FFF"
     android:orientation="vertical"
-    tools:context="com.zeyneptekin.myhealthassistant.P1Activity">
+    tools:context="com.zeyneptekin.myhealthassistant.P1SportActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
