@@ -13,6 +13,14 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".motivation_ilhamveren"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity
             android:name=".gizlilikVeGuvenlik"
             android:exported="false" />
         <activity
