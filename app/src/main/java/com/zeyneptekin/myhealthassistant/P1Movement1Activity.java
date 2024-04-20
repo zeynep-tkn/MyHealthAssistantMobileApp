@@ -1,41 +1,54 @@
 package com.zeyneptekin.myhealthassistant;
 
-import static com.zeyneptekin.myhealthassistant.R.id.*;
+import static com.zeyneptekin.myhealthassistant.R.id.startbutton;
+import static com.zeyneptekin.myhealthassistant.R.id.time;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class P1Movement1Activity extends AppCompatActivity {
     String buttonvalue;
-    Button startButton;
+    Button startBtn;
     private CountDownTimer countDownTimer;
     TextView mtextview;
-    private boolean MTimeRunnig;
-    private long MTimeLeftinmills;
+    private boolean MTimeRunning;
+    private long MTimeLeftinmillis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("onCreate metodu çalışıyo");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_p1_movement1);
+        //setContentView(R.layout.activity_p1_movement1);
+        setContentView(R.layout.activity_sport_bir);
 
-        /*
-        startButton =findViewById(R.id.startbutton);
+        startBtn = findViewById(R.id.startButton);
+        mtextview = findViewById(R.id.timeButton);
 
-        mtextview = findViewById(R.id.time);
-        */
+        if (startBtn == null) {
+            Log.e("P1MovementActivity", "startButton boş!");
+        } else {
+            Log.i("P1MovementActivity", "startButton bulundu!");
+        }
+
+        if (mtextview == null) {
+            Log.e("P1MovementActivity", "mtextview boş!");
+        } else {
+            Log.i("P1MovementActivity", "mtextview bulundu!");
+        }
 
         Intent intent = getIntent();
         buttonvalue = intent.getStringExtra("value");
 
-        int intvalue = Integer.valueOf(buttonvalue);
+        int intValue = Integer.valueOf(buttonvalue);
 
-        switch (intvalue) {
+        switch (intValue) {
             case 1:
                 setContentView(R.layout.activity_sport_bir);
                 break;
@@ -67,88 +80,85 @@ public class P1Movement1Activity extends AppCompatActivity {
                 setContentView(R.layout.activity_sport_on);
                 break;
         }
-    }
-}
 
-        /*
-        startButton.setOnClickListener(new View.OnClickListener() {
+        startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              if(MTimeRunnig){
-                  stoptimer();
-
-              }
-              else{
-                  startTimer();
-
-              }
-
+                System.out.println("Butona tıklandı!"); // Log.d() kullanarak Logcat'e yazıyoruz
+                if (MTimeRunning) {
+                    stopTimer();
+                }
+                else {
+                    startTimer();
+                }
             }
         });
-
     }
 
-    private void stoptimer(){
-       countDownTimer.cancel();
-       MTimeRunnig=false;
-       startButton.setText("START");
-
+    private void stopTimer() {
+        System.out.println("stopTimer metodu çalışıyo");
+        countDownTimer.cancel();
+        MTimeRunning = false;
+        startBtn.setText("START");
     }
-    private void startTimer(){
-        final CharSequence value1=mtextview.getText();
-        String num1=value1.toString();
-        String num2=num1.substring(0,2);
-        String num3=num1.substring(3,5);
 
-        final int number =Integer.valueOf(num2) * 60 + Integer.valueOf(num3);
-        MTimeLeftinmills= number * 1000;
+    private void startTimer() {
+        System.out.println("startTimer metodu çalışıyo");
+        final CharSequence value1 = mtextview.getText();
+        String num1 = value1.toString();
+        String num2 = num1.substring(0, 2);
+        String num3 = num1.substring(3, 5);
 
-        countDownTimer=new CountDownTimer(MTimeLeftinmills,1000) {
+        final int number = Integer.valueOf(num2) * 60 + Integer.valueOf(num3);
+        MTimeLeftinmillis = number * 1000;
+
+        countDownTimer = new CountDownTimer(MTimeLeftinmillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                MTimeLeftinmills= millisUntilFinished;
+                MTimeLeftinmillis = millisUntilFinished;
                 updateTimer();
-
             }
 
             @Override
             public void onFinish() {
-                int newvalue= Integer.valueOf(buttonvalue)+1;
-                if(newvalue<=10){
-                    Intent intent=new Intent(P1Movement1Activity.this,P1Movement1Activity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    intent.putExtra("value",String.valueOf(newvalue));
-                    startActivity(intent);
-                    finish();
-                }
-                else{
-                    newvalue=1;
-                    Intent intent=new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    intent.putExtra("value",String.valueOf(newvalue));
-                    startActivity(intent);
-                    finish();
-                }
+                int newValue = Integer.valueOf(buttonvalue) + 1;
 
+                if (newValue <= 10) {
+                    Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    intent.putExtra("value", String.valueOf(newValue));
+                    startActivity(intent);
+                } else {
+                    newValue = 1;
+                    Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    intent.putExtra("value", String.valueOf(newValue));
+                    startActivity(intent);
+                }
             }
         }.start();
-        startButton.setText("Pause");
-        MTimeRunnig=true;
+
+        startBtn.setText("Pause");
+        MTimeRunning = true;
     }
 
-    private void updateTimer(){
-        int minutes=(int) MTimeLeftinmills/60000;
-        int seconds=(int) MTimeLeftinmills%60000/1000;
+    private void updateTimer() {
+        int minutes = (int) (MTimeLeftinmillis / 60000);
+        int seconds = (int) (MTimeLeftinmillis % 60000 / 1000);
 
-        String timeLeftText="";
-        if(minutes<10)
-            timeLeftText="0";
-        timeLeftText=timeLeftText+minutes+"";
+        String timeLeftText = "";
 
-        if(seconds<10)
-            timeLeftText+="0";
-        timeLeftText+=seconds;
+        if (minutes < 10) {
+            timeLeftText = "0";
+        }
+        timeLeftText += minutes + ":";
+
+        if (seconds < 10) {
+            timeLeftText += "0";
+        }
+        timeLeftText += seconds;
+
         mtextview.setText(timeLeftText);
-
     }
-*/
+
+}

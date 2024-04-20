@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFF"
@@ -20,29 +21,32 @@
               android:src="@drawable/mountainclimbing"/>
           
           <Button
-              android:id="@+id/time"
+              android:id="@+id/timeButton"
               android:layout_width="170dp"
               android:layout_height="170dp"
               android:layout_marginTop="30dp"
               android:layout_marginLeft="116dp"
               android:text="01:00"
-              android:textSize="28dp"
-              android:padding="15dp"
-              android:background="@drawable/button_bg_round"
-              />
+              android:textSize="35dp"
+              android:padding="15dp"/>
+          <!--  android:background="@drawable/button_bg_round"
+          -->
+
           
           <Button
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:id="@+id/startbutton"
+              android:id="@+id/startButton"
               android:gravity="center"
               android:layout_marginTop="20dp"
-              android:background="@drawable/button_bg"
               android:text="START"
               android:textColor="@android:color/white"
               android:textSize="28sp"
               android:layout_marginLeft="129dp"
               android:textStyle="bold"/>
+          <!--  android:background="@drawable/button_bg"
+          -->
+
 
           <TextView
               android:layout_width="305dp"

@@ -5,6 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".P1Movement1Activity">
+    tools:context="com.zeyneptekin.myhealthassistant.P1Movement1Activity">
+
+    <!-- activity_sport_bir.xml dosyasını include et
+  <include layout="@layout/activity_sport_bir" />
+    -->
 
 </LinearLayout>
