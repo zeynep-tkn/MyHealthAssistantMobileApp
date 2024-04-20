@@ -25,23 +25,7 @@ public class P1Movement1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         System.out.println("onCreate metodu çalışıyo");
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_p1_movement1);
-        setContentView(R.layout.activity_sport_bir);
 
-        startBtn = findViewById(R.id.startButton);
-        mtextview = findViewById(R.id.timeButton);
-
-        if (startBtn == null) {
-            Log.e("P1MovementActivity", "startButton boş!");
-        } else {
-            Log.i("P1MovementActivity", "startButton bulundu!");
-        }
-
-        if (mtextview == null) {
-            Log.e("P1MovementActivity", "mtextview boş!");
-        } else {
-            Log.i("P1MovementActivity", "mtextview bulundu!");
-        }
 
         Intent intent = getIntent();
         buttonvalue = intent.getStringExtra("value");
@@ -80,6 +64,12 @@ public class P1Movement1Activity extends AppCompatActivity {
                 setContentView(R.layout.activity_sport_on);
                 break;
         }
+
+        setContentView(R.layout.activity_sport_bir);
+        MTimeRunning = false;
+        startBtn = findViewById(R.id.startButton);
+        mtextview = findViewById(R.id.timeButton);
+
 
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
