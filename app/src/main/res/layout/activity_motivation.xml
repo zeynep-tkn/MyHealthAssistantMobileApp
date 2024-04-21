@@ -63,15 +63,20 @@
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="138dp"
-        android:layout_height="71dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="296dp"
         android:text="İlham Veren Hikayeler"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="292dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="147dp"
+        android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginEnd="50dp"
         android:text="Motivasyon Takvimi"
@@ -82,13 +87,17 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="18dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView230"

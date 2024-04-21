@@ -19,7 +19,7 @@
         android:id="@+id/button"
         android:layout_width="329dp"
         android:layout_height="64dp"
-        android:text="Ev Düzeni & Dekorasyon Fikirleri"
+        android:text="Ev Düzeni &amp; Dekorasyon Fikirleri"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="74dp" />
@@ -28,7 +28,7 @@
         android:id="@+id/button7"
         android:layout_width="329dp"
         android:layout_height="64dp"
-        android:text="Yemek Pişirme & Beslenme Fikirleri"
+        android:text="Yemek Pişirme &amp; Beslenme Fikirleri"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="145dp" />
@@ -37,7 +37,7 @@
         android:id="@+id/button8"
         android:layout_width="329dp"
         android:layout_height="64dp"
-        android:text="Kişisel Bakım & Sağlık Fikirleri"
+        android:text="Kişisel Bakım &amp; Sağlık Fikirleri"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="220dp" />
@@ -73,7 +73,7 @@
         android:id="@+id/button16"
         android:layout_width="329dp"
         android:layout_height="64dp"
-        android:text="Teknoloji & Dijital Hayat Fikirleri"
+        android:text="Teknoloji &amp; Dijital Hayat Fikirleri"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="524dp" />
@@ -82,7 +82,7 @@
         android:id="@+id/button17"
         android:layout_width="329dp"
         android:layout_height="64dp"
-        android:text="Seyahat & Tatil İpuçları"
+        android:text="Seyahat &amp; Tatil İpuçları"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="595dp" />

@@ -46,16 +46,12 @@ Hayatın değerli yolculuğunda, tutkuyla ilerleyin, kararlılıkla mücadele ed
 
     <TextView
         android:id="@+id/textView12"
-        Arkadaşlar
         android:layout_width="394dp"
         android:layout_height="93dp"
-        android:text="                            Küçük Balık ve Büyük Okyanus
-
-Bir zamanlar, küçük bir balık büyük bir okyanusta yaşarmış. Diğer balıklarla birlikte yüzüyor, okyanusun sonsuz derinliklerinde keşfe çıkıyorlardı. Ancak, küçük balık diğerlerinden farklıydı. O, her zaman daha büyük hayallere sahipti.
-
+        android:text="  Küçük Balık ve Büyük Okyanus Bir zamanlar, küçük bir balık büyük bir okyanusta yaşarmış. Diğer balıklarla birlikte yüzüyor, okyanusun sonsuz derinliklerinde keşfe çıkıyorlardı. Ancak, küçük balık diğerlerinden farklıydı. O, her zaman daha büyük hayallere sahipti.
 Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
         tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="206dp"
+        tools:layout_editor_absoluteY="206dp"/>
 
     <TextView
         android:id="@+id/textView13"

@@ -65,7 +65,7 @@ public class P1Movement1Activity extends AppCompatActivity {
                 break;
         }
 
-        setContentView(R.layout.activity_sport_bir);
+        setContentView(R.layout.activity_p1_movement1);
         MTimeRunning = false;
         startBtn = findViewById(R.id.startButton);
         mtextview = findViewById(R.id.timeButton);
