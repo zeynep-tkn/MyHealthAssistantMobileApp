@@ -29,24 +29,24 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="137dp"
+        android:layout_height="73dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="53dp"
         android:text="Etkinliikler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="135dp"
         android:layout_height="0dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
         android:text="Hayatı Kolaylaştırıcı İpuçları"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button13" />
 
@@ -63,63 +63,56 @@
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="33dp"
+        android:layout_width="138dp"
+        android:layout_height="71dp"
         android:text="İlham Veren Hikayeler"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintEnd_toStartOf="@+id/button14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="292dp" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
+        android:layout_width="147dp"
+        android:layout_height="71dp"
         android:layout_marginEnd="50dp"
         android:text="Motivasyon Takvimi"
         app:layout_constraintBaseline_toBaselineOf="@+id/button13"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button13" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="105dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/button13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="211dp" />
 
     <TextView
         android:id="@+id/textView230"
         android:layout_width="378dp"
         android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="435dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="396dp"
         android:text="Bugün yapmadığınız şey, yarın istediğiniz sonuca ulaşmanızın engelidir."
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbar"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="326dp"
         android:layout_height="0dp"
         android:layout_marginTop="39dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="51dp"
         android:text="HER GÜN BİR ADIM             DAHA  YAKINSINIZ!"
+        android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView230"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
