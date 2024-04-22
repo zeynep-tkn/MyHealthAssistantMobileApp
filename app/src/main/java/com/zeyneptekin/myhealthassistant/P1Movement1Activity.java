@@ -23,7 +23,6 @@ public class P1Movement1Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("onCreate metodu çalışıyo");
         super.onCreate(savedInstanceState);
 
 
@@ -65,7 +64,7 @@ public class P1Movement1Activity extends AppCompatActivity {
                 break;
         }
 
-        setContentView(R.layout.activity_p1_movement1);
+        //setContentView(R.layout.activity_p1_movement1);
         MTimeRunning = false;
         startBtn = findViewById(R.id.startButton);
         mtextview = findViewById(R.id.timeButton);
@@ -86,14 +85,12 @@ public class P1Movement1Activity extends AppCompatActivity {
     }
 
     private void stopTimer() {
-        System.out.println("stopTimer metodu çalışıyo");
         countDownTimer.cancel();
         MTimeRunning = false;
         startBtn.setText("START");
     }
 
     private void startTimer() {
-        System.out.println("startTimer metodu çalışıyo");
         final CharSequence value1 = mtextview.getText();
         String num1 = value1.toString();
         String num2 = num1.substring(0, 2);
@@ -150,5 +147,6 @@ public class P1Movement1Activity extends AppCompatActivity {
 
         mtextview.setText(timeLeftText);
     }
+
 
 }

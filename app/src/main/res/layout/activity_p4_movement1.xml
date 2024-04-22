@@ -5,5 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".P4Movement1Activity">
+    <!-- activity_sport_bir.xml dosyasını include et ya da
+           class a baglanan xml dosyası olarak activity_p1_sport.xml yap -->
 
+    <include layout="@layout/activity_sport_dort4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

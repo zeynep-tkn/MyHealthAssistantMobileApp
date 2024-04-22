@@ -34,7 +34,7 @@ public class P1SportActivity extends AppCompatActivity {
            Intent intent=new Intent(P1SportActivity.this,P1Movement1Activity.class);
            intent.putExtra("value",String.valueOf(value));
            startActivity(intent);
-
+          
        }
       }
 
