@@ -6,12 +6,174 @@
     android:layout_height="match_parent"
     tools:context=".glutensizTarifler">
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="319dp"
-        android:layout_height="92dp"
-        android:text="GLUTENSİZ TARİFLER"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="118dp" />
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="328dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="   Aramak istediğiniz tarifi giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="219dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/taco4" />
+
+        <Button
+            android:id="@+id/button34"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="balık tacos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="161dp"
+        android:layout_height="222dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <ImageButton
+            android:id="@+id/imageButton20"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/elmalikek" />
+
+        <Button
+            android:id="@+id/button37"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="glutensiz elmalı kek" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="167dp"
+        android:layout_height="235dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99">
+
+        <ImageButton
+            android:id="@+id/imageButton34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/kabakpure" />
+
+        <Button
+            android:id="@+id/button38"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kabak püresi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581">
+
+        <ImageButton
+            android:id="@+id/imageButton26"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            app:srcCompat="@drawable/karabugdaypilavi" />
+
+        <Button
+            android:id="@+id/button39"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="karabuğday pilavı" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="169dp"
+        android:layout_height="236dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991">
+
+        <ImageButton
+            android:id="@+id/imageButton27"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            app:srcCompat="@drawable/noodlebowl" />
+
+        <Button
+            android:id="@+id/button40"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glutensiz Noodle Bowl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="179dp"
+        android:layout_height="242dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584">
+
+        <ImageButton
+            android:id="@+id/imageButton30"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            app:srcCompat="@drawable/brownie2" />
+
+        <Button
+            android:id="@+id/button41"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="glutensiz brownie" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
