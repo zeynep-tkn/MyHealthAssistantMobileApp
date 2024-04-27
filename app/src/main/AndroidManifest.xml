@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".glutensizTarifler"
+            android:exported="false" />
+        <activity
+            android:name=".veganTarifler"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler"
+            android:exported="false" />
+        <activity
             android:name=".P4Movement1Activity"
             android:exported="false" />
         <activity
