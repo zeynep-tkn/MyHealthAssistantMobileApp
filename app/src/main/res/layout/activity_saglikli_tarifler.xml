@@ -9,15 +9,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout26"
-        android:layout_width="197dp"
-        android:layout_height="185dp"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" >
+        app:layout_constraintVertical_bias="0.115">
 
         <ImageButton
             android:id="@+id/imageButton12"
@@ -80,15 +80,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout27"
-        android:layout_width="197dp"
-        android:layout_height="185dp"
+        android:layout_width="171dp"
+        android:layout_height="201dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114" >
+        app:layout_constraintVertical_bias="0.115">
 
         <ImageButton
             android:id="@+id/imageButton23"
@@ -108,15 +108,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout28"
-        android:layout_width="197dp"
-        android:layout_height="183dp"
+        android:layout_width="161dp"
+        android:layout_height="168dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" >
+        app:layout_constraintVertical_bias="0.283">
 
         <ImageButton
             android:id="@+id/imageButton14"
@@ -136,15 +136,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout30"
-        android:layout_width="195dp"
-        android:layout_height="185dp"
+        android:layout_width="166dp"
+        android:layout_height="188dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" >
+        app:layout_constraintVertical_bias="0.445">
 
         <ImageButton
             android:id="@+id/imageButton22"
@@ -163,15 +163,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout31"
-        android:layout_width="195dp"
-        android:layout_height="185dp"
+        android:layout_width="154dp"
+        android:layout_height="182dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" >
+        app:layout_constraintVertical_bias="0.444">
 
         <ImageButton
             android:id="@+id/imageButton24"
@@ -187,31 +187,27 @@
             android:text="kuru incirli enerji barı"
             android:textSize="13sp" />
 
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout32"
-        android:layout_width="195dp"
-        android:layout_height="185dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"></LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout29"
-        android:layout_width="193dp"
-        android:layout_height="189dp"
+        android:layout_width="161dp"
+        android:layout_height="174dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234">
+        app:layout_constraintVertical_bias="0.285">
 
         <ImageButton
             android:id="@+id/imageButton16"
@@ -223,7 +219,7 @@
             android:id="@+id/button27"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
             android:text="qunioa salatası" />
 
     </LinearLayout>
