@@ -1,17 +1,13 @@
 package com.zeyneptekin.myhealthassistant;
 
-import static com.zeyneptekin.myhealthassistant.R.id.startbutton;
-import static com.zeyneptekin.myhealthassistant.R.id.time;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class P2Movement1Activity extends AppCompatActivity {
     String buttonvalue;
@@ -65,7 +61,7 @@ public class P2Movement1Activity extends AppCompatActivity {
                 break;
         }
 
-        setContentView(R.layout.activity_p2_movement1);
+        //setContentView(R.layout.activity_p2_movement1);
         MTimeRunning = false;
         startBtn = findViewById(R.id.startButton);
         mtextview = findViewById(R.id.timeButton);

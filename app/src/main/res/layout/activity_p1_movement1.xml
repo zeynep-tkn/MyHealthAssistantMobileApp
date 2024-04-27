@@ -9,15 +9,8 @@
 
 
     <!-- activity_sport_bir.xml dosyasını include et ya da
-    class a baglanan xml dosyası olarak activity_p1_sport.xml yap -->
-    <include layout="@layout/activity_sport_bir" />
+    class a baglanan xml dosyası olarak activity_sport_bir.xml yap -->
     <include layout="@layout/activity_sport_iki" />
-    <include layout="@layout/activity_sport_uc" />
-    <include layout="@layout/activity_sport_dort" />
-    <include layout="@layout/activity_sport_bes" />
-    <include layout="@layout/activity_sport_alti" />
-    <include layout="@layout/activity_sport_yedi" />
-    <include layout="@layout/activity_sport_sekiz" />
-    <include layout="@layout/activity_sport_dokuz" />
-    <include layout="@layout/activity_sport_on" />
+
+
 </LinearLayout>

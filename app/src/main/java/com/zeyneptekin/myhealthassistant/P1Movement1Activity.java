@@ -1,10 +1,5 @@
 package com.zeyneptekin.myhealthassistant;
 
-import static com.zeyneptekin.myhealthassistant.R.id.startbutton;
-import static com.zeyneptekin.myhealthassistant.R.id.time;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -12,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class P1Movement1Activity extends AppCompatActivity {
     String buttonvalue;
@@ -28,21 +25,26 @@ public class P1Movement1Activity extends AppCompatActivity {
 
         Intent intent = getIntent();
         buttonvalue = intent.getStringExtra("value");
+        Log.d("ButtonValue", "Button value: " + buttonvalue);
 
         int intValue = Integer.valueOf(buttonvalue);
 
         switch (intValue) {
             case 1:
                 setContentView(R.layout.activity_sport_bir);
+                System.out.println("Birinci sayfaya geçildi");
                 break;
             case 2:
                 setContentView(R.layout.activity_sport_iki);
+                System.out.println("İkinci sayfaya geçildi");
                 break;
             case 3:
                 setContentView(R.layout.activity_sport_uc);
+                System.out.println("Ucuncu sayfaya geçildi");
                 break;
             case 4:
                 setContentView(R.layout.activity_sport_dort);
+                System.out.println("Dorduncu sayfaya geçildi");
                 break;
             case 5:
                 setContentView(R.layout.activity_sport_bes);
@@ -73,7 +75,6 @@ public class P1Movement1Activity extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Butona tıklandı!"); // Log.d() kullanarak Logcat'e yazıyoruz
                 if (MTimeRunning) {
                     stopTimer();
                 }
@@ -115,7 +116,8 @@ public class P1Movement1Activity extends AppCompatActivity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newValue));
                     startActivity(intent);
-                } else {
+                }
+                else {
                     newValue = 1;
                     Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -125,7 +127,7 @@ public class P1Movement1Activity extends AppCompatActivity {
             }
         }.start();
 
-        startBtn.setText("Pause");
+        startBtn.setText("PAUSE");
         MTimeRunning = true;
     }
 
