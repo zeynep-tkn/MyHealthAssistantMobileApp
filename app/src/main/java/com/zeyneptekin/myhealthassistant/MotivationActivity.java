@@ -20,6 +20,9 @@ public class MotivationActivity extends AppCompatActivity {
             "Başarı, her gün bir adım atmaktır.",
             "Hiçbir şey seni durduramaz!",
             "Bugün için motivasyonunu artır!",
+
+
+
             "İnanıyorum, yapabilirsin!",
             "Hayal ettiğin her şeyin üzerine çık!",
             "Kendine güvenin, başarının anahtarıdır!",
