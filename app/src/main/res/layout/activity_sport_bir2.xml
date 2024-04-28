@@ -25,9 +25,9 @@
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="116dp"
+                android:layout_marginStart="116dp"
                 android:text="01:00"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:padding="15dp"/>
             <!--  android:background="@drawable/button_bg_round"
             -->
@@ -42,7 +42,7 @@
                 android:text="START"
                 android:textColor="@android:color/white"
                 android:textSize="28sp"
-                android:layout_marginLeft="129dp"
+                android:layout_marginStart="129dp"
                 android:textStyle="bold"/>
             <!--  android:background="@drawable/button_bg"
             -->
@@ -53,7 +53,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:textAlignment="center"
-                android:layout_marginLeft="90dp"
                 android:layout_marginTop="50dp"
                 android:text="How To Do This"
                 android:textColor="#686060"
@@ -74,7 +73,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="5dp"
                     android:background="#ECEDEB"
                     android:layout_marginTop="25dp"
                     android:orientation="horizontal">
@@ -85,7 +83,7 @@
                         android:background="#ECEDEB"
                         android:text="@string/pose1"
                         android:textColor="@android:color/black"
-                        android:textSize="18dp"/>
+                        android:textSize="18sp"/>
 
 
                 </LinearLayout>

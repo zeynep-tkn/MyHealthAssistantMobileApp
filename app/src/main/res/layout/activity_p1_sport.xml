@@ -55,6 +55,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -71,7 +72,7 @@
                             android:text="Mountain Climbers"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -141,6 +142,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -157,7 +159,7 @@
                             android:text="Bicycle Crunch"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -227,6 +229,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -243,7 +246,7 @@
                             android:text="Flutter Kicks"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -313,6 +316,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -329,7 +333,7 @@
                             android:text="Lateral Heel Touches"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -399,6 +403,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -415,7 +420,7 @@
                             android:text="Crunches"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -485,6 +490,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -501,7 +507,7 @@
                             android:text="Lateral Heel Touches"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -571,6 +577,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -587,7 +594,7 @@
                             android:text="Mountain Climber"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -657,6 +664,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -673,7 +681,7 @@
                             android:text="Flutter Kicks"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -743,6 +751,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -759,7 +768,7 @@
                             android:text="Bicycle Crunch"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -829,6 +838,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -845,7 +855,7 @@
                             android:text="Lateral Heel Touches"
                             android:textAllCaps="true"
                             android:textColor="#ff000000"
-                            android:textSize="15.0dp"
+                            android:textSize="15.0sp"
                             android:textStyle="bold"/>
                         <TextView
                             android:layout_width="wrap_content"
