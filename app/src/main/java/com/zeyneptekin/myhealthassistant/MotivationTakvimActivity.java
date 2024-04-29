@@ -1,16 +1,14 @@
-package com.zeyneptekin.myhealthassistant.ui;
+package com.zeyneptekin.myhealthassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.zeyneptekin.myhealthassistant.R;
-
-public class MainActivity extends AppCompatActivity {
+public class MotivationTakvimActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_motivation_takvim);
     }
 }
