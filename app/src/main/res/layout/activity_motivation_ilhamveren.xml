@@ -12,8 +12,12 @@
         android:layout_height="26dp"
         android:text="GÜNÜN MAKALESİ"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
 
     <TextView
         android:id="@+id/textView10"
@@ -32,8 +36,11 @@ Unutmayın ki, her sabah yeni bir başlangıçtır ve sizin elinizde olan güçl
 Hayatın değerli yolculuğunda, tutkuyla ilerleyin, kararlılıkla mücadele edin ve her anınızı anlamlı kılacak adımlar atın. Unutmayın ki, gerçek başarı, iç huzur ve memnuniyetle birlikte gelir. Hayatınızı yönlendiren motivasyonunuz olun ve her gününüzü bir armağan olarak kabul edin.
 
 "
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="31dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/textView11"
@@ -41,8 +48,11 @@ Hayatın değerli yolculuğunda, tutkuyla ilerleyin, kararlılıkla mücadele ed
         android:layout_height="30dp"
         android:text="GÜNÜN HİKAYESİ"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="176dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
 
     <TextView
         android:id="@+id/textView12"
@@ -50,8 +60,12 @@ Hayatın değerli yolculuğunda, tutkuyla ilerleyin, kararlılıkla mücadele ed
         android:layout_height="93dp"
         android:text="  Küçük Balık ve Büyük Okyanus Bir zamanlar, küçük bir balık büyük bir okyanusta yaşarmış. Diğer balıklarla birlikte yüzüyor, okyanusun sonsuz derinliklerinde keşfe çıkıyorlardı. Ancak, küçük balık diğerlerinden farklıydı. O, her zaman daha büyük hayallere sahipti.
 Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="206dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
     <TextView
         android:id="@+id/textView13"
@@ -59,15 +73,21 @@ Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
         android:layout_height="wrap_content"
         android:text="GÜNÜN VİDEOSU"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
 
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="335dp"
         android:layout_height="127dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
 
     <TextView
         android:id="@+id/textView15"
@@ -75,16 +95,24 @@ Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
         android:layout_height="wrap_content"
         android:text="GÜNÜN FOTOĞRAFI"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="260dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/education"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="512dp" />, benim bir hayalim var. Ben, bu okyanusun en uzak ve en derin yerlerine ulaşmak istiyorum. Orada neler olduğunu görmek ve sınırlarımı zorlamak istiyorum."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/education" />, benim bir hayalim var. Ben, bu okyanusun en uzak ve en derin yerlerine ulaşmak istiyorum. Orada neler olduğunu görmek ve sınırlarımı zorlamak istiyorum."
 
     Diğer balıklar küçük balığı dinlediler, gülümsediler ve "O kadar uzağa gitmek mümkün değil, sadece burada kalalım ve güzelimiz olan okyanusun tadını çıkaralım" dediler.
 
