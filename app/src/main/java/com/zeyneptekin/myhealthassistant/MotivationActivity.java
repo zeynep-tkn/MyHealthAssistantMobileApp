@@ -1,97 +1,93 @@
 package com.zeyneptekin.myhealthassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.material.button.MaterialButton;
-
-import java.util.Random;
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class MotivationActivity extends AppCompatActivity {
-
-
-    private final String[] motivationMessages = {
-            "Her gün biraz daha iyileşiyorsun!",
-            "Başarı, her gün bir adım atmaktır.",
-            "Hiçbir şey seni durduramaz!",
-            "Bugün için motivasyonunu artır!",
-            "İnanıyorum, yapabilirsin!",
-            "Hayal ettiğin her şeyin üzerine çık!",
-            "Kendine güvenin, başarının anahtarıdır!",
-            "Senin gücün sınırsızdır!"
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivation);
 
-        ConstraintLayout constraintLayout = findViewById(R.id.constraintLayout);
+        MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
+        TextView textView = findViewById(R.id.textView14);
+        TextView quoteTextView = findViewById(R.id.textView230);
+        Button motivationButton = findViewById(R.id.button6);
+        Button activitiesButton = findViewById(R.id.button4);
+        Button tipsButton = findViewById(R.id.button11);
+        Button entertainmentButton = findViewById(R.id.button12);
+        Button inspiringStoriesButton = findViewById(R.id.button13);
+        Button motivationCalendarButton = findViewById(R.id.button14);
 
-        MaterialButton button1 = createButton("Button 1");
-        MaterialButton button2 = createButton("Button 2");
-        MaterialButton button3 = createButton("Button 3");
-        MaterialButton button4 = createButton("Button 4");
-        MaterialButton button5 = createButton("Button 5");
-        MaterialButton button6 = createButton("Button 6");
-        TextView textView = createTextView("HER GÜN BİR ADIM DAHA YAKINSINIZ!");
-        TextView motivationTextView = createTextView(getRandomMotivationMessage());
+        // Motivasyon butonuna tıklama işlemi eklenebilir
+        motivationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Motivasyon butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, MotivationGazeteActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(
-                ConstraintLayout.LayoutParams.WRAP_CONTENT,
-                ConstraintLayout.LayoutParams.WRAP_CONTENT
-        );
+        // Etkinlikler butonuna tıklama işlemi eklenebilir
+        activitiesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Etkinlikler butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, MotivationEtkinlikActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        constraintLayout.addView(button1, layoutParams);
-        constraintLayout.addView(button2, layoutParams);
-        constraintLayout.addView(button3, layoutParams);
-        constraintLayout.addView(button4, layoutParams);
-        constraintLayout.addView(button5, layoutParams);
-        constraintLayout.addView(button6, layoutParams);
-        constraintLayout.addView(textView, layoutParams);
-        constraintLayout.addView(motivationTextView, layoutParams);
+        // Hayatı Kolaylaştırıcı İpuçları butonuna tıklama işlemi eklenebilir
+        tipsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Hayatı Kolaylaştırıcı İpuçları butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, motivation_ipuclari.class);
+                startActivity(intent);
+            }
+        });
 
-        ConstraintSet constraintSet = new ConstraintSet();
-        constraintSet.clone(constraintLayout);
+        // Eğlence butonuna tıklama işlemi eklenebilir
+        entertainmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Eğlence butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, MotivationEglenceActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        constraintSet.connect(button1.getId(), ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 0);
-        constraintSet.connect(button2.getId(), ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 0);
-        constraintSet.connect(button3.getId(), ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 0);
-        constraintSet.connect(button4.getId(), ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END, 0);
-        constraintSet.connect(button5.getId(), ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END, 0);
-        constraintSet.connect(button6.getId(), ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END, 0);
-        constraintSet.connect(textView.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 0);
-        constraintSet.connect(button1.getId(), ConstraintSet.BOTTOM, textView.getId(), ConstraintSet.BOTTOM, 16);
-        constraintSet.connect(motivationTextView.getId(), ConstraintSet.TOP, button6.getId(), ConstraintSet.BOTTOM, 16);
+        // İlham Veren Hikayeler butonuna tıklama işlemi eklenebilir
+        inspiringStoriesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // İlham Veren Hikayeler butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, motivation_ilhamveren.class);
+                startActivity(intent);
+            }
+        });
 
-        constraintSet.applyTo(constraintLayout);
+        // Motivasyon Takvimi butonuna tıklama işlemi eklenebilir
+        motivationCalendarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Motivasyon Takvimi butonuna tıklandığında yapılacak işlemler buraya yazılabilir
+                Intent intent=new Intent(MotivationActivity.this, MotivationTakvimActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Metin ve düğmelerin yerleşimini ve özelliklerini XML'den aldık, bu yüzden burada başka bir şey gerekmiyor.
+        // Gerekirse, her bir görünüm için belirli özellikler ayarlanabilir veya dinamik olarak değiştirilebilir.
     }
-
-    private MaterialButton createButton(String text) {
-        MaterialButton button = new MaterialButton(this);
-        button.setText(text);
-        button.setId(View.generateViewId());
-        return button;
-    }
-
-    private TextView createTextView(String text) {
-        TextView textView = new TextView(this);
-        textView.setText(text);
-        textView.setId(View.generateViewId());
-        return textView;
-    }
-
-    private String getRandomMotivationMessage() {
-        Random random = new Random();
-        int index = random.nextInt(motivationMessages.length);
-        return motivationMessages[index];
-    }
-
-
-
 }

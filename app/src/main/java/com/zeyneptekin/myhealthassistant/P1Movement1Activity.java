@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class P1Movement1Activity extends AppCompatActivity {
     String buttonvalue;
@@ -17,6 +19,9 @@ public class P1Movement1Activity extends AppCompatActivity {
     TextView mtextview;
     private boolean MTimeRunning;
     private long MTimeLeftinmillis;
+    AlertDialog.Builder builderDialog;
+    AlertDialog alertDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,11 +123,34 @@ public class P1Movement1Activity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else {
-                    newValue = 1;
+                    /*newValue = 1;
                     Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newValue));
                     startActivity(intent);
+                     */
+                    // Sport success dialog
+                    AlertDialog.Builder builder = new AlertDialog.Builder(P1Movement1Activity.this);
+                    View successDialogView = getLayoutInflater().inflate(R.layout.sport_successdialog, null);
+                    builder.setView(successDialogView);
+
+                    // Button to dismiss the dialog
+                    Button okButton = successDialogView.findViewById(R.id.buttonOk);
+                    okButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            // Dismiss the dialog
+                            alertDialog.dismiss();
+
+                            //ok butonuna basınca programlar sayfasına geçsin
+                            Intent intent = new Intent(P1Movement1Activity.this, SportsExerciseActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                        }
+                    });
+                    // Show the dialog
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
                 }
             }
         }.start();

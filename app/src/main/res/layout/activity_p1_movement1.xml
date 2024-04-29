@@ -11,6 +11,7 @@
     <!-- activity_sport_bir.xml dosyasını include et ya da
     class a baglanan xml dosyası olarak activity_sport_bir.xml yap -->
     <include layout="@layout/activity_sport_iki" />
+    <include layout="@layout/sport_successdialog" />
 
 
 </LinearLayout>

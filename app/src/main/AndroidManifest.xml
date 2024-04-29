@@ -13,13 +13,7 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
-            android:name=".glutensizTarifler"
-            android:exported="false" />
-        <activity
-            android:name=".veganTarifler"
-            android:exported="false" />
-        <activity
-            android:name=".saglikliTarifler"
+            android:name=".MotivationEtkinlikActivity"
             android:exported="false" />
         <activity
             android:name=".P4Movement1Activity"
@@ -31,7 +25,7 @@
             android:name=".P2Movement1Activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".motivation_ipuclari"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
