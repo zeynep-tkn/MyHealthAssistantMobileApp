@@ -123,12 +123,6 @@ public class P1Movement1Activity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else {
-                    /*newValue = 1;
-                    Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    intent.putExtra("value", String.valueOf(newValue));
-                    startActivity(intent);
-                     */
                     // Sport success dialog
                     AlertDialog.Builder builder = new AlertDialog.Builder(P1Movement1Activity.this);
                     View successDialogView = getLayoutInflater().inflate(R.layout.sport_successdialog, null);
