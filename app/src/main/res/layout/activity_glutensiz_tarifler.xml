@@ -17,6 +17,12 @@
             android:id="@+id/editTextText5"
             android:layout_width="328dp"
             android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="46dp"
             android:ems="10"
             android:hint="   Aramak istediğiniz tarifi giriniz"
             android:inputType="text"
@@ -30,8 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/gridLayout"
-            android:rowCount="4"
-            android:columnCount="5"
+            android:rowCount="8"
+            android:columnCount="9"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="70dp"
@@ -61,7 +67,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Taco"
+                        android:text="Balık Tacos"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="22dp"
@@ -91,7 +97,7 @@
                     <ImageView
                         android:layout_width="170dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/karides"/>
+                        android:src="@drawable/karides4"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -126,13 +132,18 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/mucver"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Education"
+                        android:text="Peynirli Kabak Mücver"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22dp"
+                        android:textSize="17dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -155,14 +166,15 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal">
+
                     <ImageView
-                        android:layout_width="120dp"
+                        android:layout_width="180dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/brownie2"/>
+                        android:src="@drawable/brownie2" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Food"
+                        android:text="Glutensiz Brownie"
                         android:textSize="22dp"
                         android:textColor="@color/black"
                         android:textAlignment="center"
@@ -189,10 +201,11 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal">
+
                     <ImageView
-                        android:layout_width="120dp"
+                        android:layout_width="173dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/kabakpure"/>
+                        android:src="@drawable/kabakpure" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -206,7 +219,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardTaco"
+                android:id="@+id/karabugdayCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
@@ -218,23 +231,25 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
+
                     <ImageView
-                        android:layout_width="120dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="120dp"
-                        android:src="@drawable/taco4"/>
+                        android:src="@drawable/karabugday2" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Balık Tacos"
-                        android:textSize="22dp"
-                        android:textColor="@color/black"
+                        android:text="Karabuğday Pilavı"
                         android:textAlignment="center"
-                        android:textStyle="bold"/>
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -243,38 +258,44 @@
                 android:id="@+id/Carddeneme"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
-                android:layout_column="0"
                 android:layout_row="3"
+                android:layout_column="0"
 
                 android:layout_margin="8dp"
 
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
+
                     <ImageView
-                        android:layout_width="120dp"
+                        android:layout_width="180dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/avokado"/>
+                        android:src="@drawable/karniyarik" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Food"
-                        android:textSize="22dp"
-                        android:textColor="@color/black"
+                        android:text="Karnıyarık"
                         android:textAlignment="center"
-                        android:textStyle="bold"/>
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardAvokado2"
+                android:id="@+id/incirCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
@@ -286,26 +307,98 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="209dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/incir" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sütlü İncir Tatlısı"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cheesecakeCard"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal">
+
                     <ImageView
-                        android:layout_width="120dp"
+                        android:layout_width="221dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/avokado"/>
+                        android:src="@drawable/cheesecake" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Food"
-                        android:textSize="22dp"
+                        android:text="Kestaneli Cheesecake"
                         android:textColor="@color/black"
                         android:textAlignment="center"
+                        android:textSize="17dp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/meksikaCard"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="221dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/meksika2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meksika  Salatası"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="19dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
 
         </GridLayout>
     </RelativeLayout>
