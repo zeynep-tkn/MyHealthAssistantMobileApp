@@ -9,15 +9,17 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
+
+import java.util.Calendar;
 
 public class HomeFragment extends Fragment {
-    //DENEME YORUMU
-    //dneme yorumu 2
 
-    CardView MotivationCard;
-    CardView SportsCard;
-    CardView EducationCard;
-    CardView FoodCard;
+    private CardView MotivationCard;
+    private CardView SportsCard;
+    private CardView EducationCard;
+    private CardView FoodCard;
+    private CalendarView calendarView;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -51,10 +53,35 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Takvim bileşenini bul
+        calendarView = view.findViewById(R.id.calendarView);
+
+        // Mevcut tarihi al
+        Calendar calendar = Calendar.getInstance();
+
+        // Mevcut tarihin gününü al
+        int currentDayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+
+        // Mevcut tarihi takvimin ilk gününe ayarla (Pazar)
+        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
+
+        // Mevcut tarihe 6 gün ekleyerek haftanın son gününü al
+        calendar.add(Calendar.DAY_OF_MONTH, 6);
+
+        // Haftanın son gününü al
+        long lastDayOfWeek = calendar.getTimeInMillis();
+
+        // Takvim bileşenine son günü ayarla
+        calendarView.setMaxDate(lastDayOfWeek);
+
+        // Diğer bileşenlerin tanımlamaları ve tıklama işlevselliği burada devam eder
+
         MotivationCard = view.findViewById(R.id.motivationCard);
         SportsCard = view.findViewById(R.id.sportsCard);
-        EducationCard =view.findViewById(R.id.educationCard);
-        FoodCard=view.findViewById(R.id.foodCard);
+        EducationCard = view.findViewById(R.id.educationCard);
+        FoodCard = view.findViewById(R.id.foodCard);
+
         MotivationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,6 +89,7 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         SportsCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +97,7 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         EducationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +105,7 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         FoodCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +114,11 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
         return view;
     }
+
+
+
+
+
 }
