@@ -101,7 +101,6 @@ Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.821" />
-
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="260dp"
@@ -111,16 +110,8 @@ Bir gün, küçük balık diğer balıklara dönüp dedi ki: "
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/education" />, benim bir hayalim var. Ben, bu okyanusun en uzak ve en derin yerlerine ulaşmak istiyorum. Orada neler olduğunu görmek ve sınırlarımı zorlamak istiyorum."
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/education"
+        android:contentDescription="Education ImageButton" />
 
-    Diğer balıklar küçük balığı dinlediler, gülümsediler ve "O kadar uzağa gitmek mümkün değil, sadece burada kalalım ve güzelimiz olan okyanusun tadını çıkaralım" dediler.
-
-    Ancak, küçük balık vazgeçmedi. Her gün daha fazla çalıştı, daha fazla keşif yaptı ve daha fazla deneyim kazandı. Sonunda, cesareti ve kararlılığı sayesinde, okyanusun en uzak ve en derin yerlerine ulaştı.
-
-    Küçük balık, orada harika manzaralar, egzotik yaratıklar ve mucizevi anlarla karşılaştı. Kendi sınırlarını aşmanın ne kadar güçlü bir his olduğunu keşfetti. Ve en önemlisi, diğer balıklara gösterdi ki, herkes kendi hayallerinin peşinden gidebilir, sadece inanmak ve cesaret etmek gerekir.
-
-    Bu hikaye bize, hayallerimizi takip etmek ve sınırlarımızı zorlamak için içimizdeki cesareti bulmamız gerektiğini hatırlatıyor. Küçük balık gibi, biz de hayatımızın okyanusunda büyük adımlar atabilir ve gerçek potansiyelimizi keşfedebiliriz."
-    tools:layout_editor_absoluteX="103dp"
-    tools:layout_editor_absoluteY="332dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

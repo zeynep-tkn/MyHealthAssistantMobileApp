@@ -6,4 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".MotivationEtkinlikActivity">
 
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar6"
+        android:layout_width="409dp"
+        android:layout_height="124dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar7"
+        android:layout_width="409dp"
+        android:layout_height="124dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar8"
+        android:layout_width="409dp"
+        android:layout_height="124dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="181dp"
+        android:layout_height="52dp"
+        android:text="ETKİNLİKLER"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="327dp"
+        android:layout_height="86dp"
+        android:text="7 Haziran'da Kişisel Gelişim Uzmanı Kübra Çelik Haliç Kültür Merkezi'nde!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar6"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar6"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar6"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar6" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="125dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar7"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar7"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/exercise2" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="191dp"
+        android:layout_height="73dp"
+        android:text="10 Temmuz'da Koşu Maratonu'na Davetlisiniz!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar7"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar7"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar7"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="330dp"
+        android:layout_height="86dp"
+        android:text="Her Cumartesi Kadıköy Tiyatrosu'nda Birbirinden Farklı Oyunlar Sizi Bekliyor!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar8"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar8"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar8"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar8"
+        app:layout_constraintVertical_bias="0.473" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
