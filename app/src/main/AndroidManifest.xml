@@ -37,6 +37,16 @@
             android:name=".motivation_ilhamveren"
             android:exported="false" />
         <activity
+            android:name=".MotivationEglenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationGazeteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationTakvimActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".gizlilikVeGuvenlik"
             android:exported="false" />
         <activity
