@@ -57,23 +57,7 @@ public class HomeFragment extends Fragment {
         // Takvim bileşenini bul
         calendarView = view.findViewById(R.id.calendarView);
 
-        // Mevcut tarihi al
-        Calendar calendar = Calendar.getInstance();
 
-        // Mevcut tarihin gününü al
-        int currentDayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-
-        // Mevcut tarihi takvimin ilk gününe ayarla (Pazar)
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
-
-        // Mevcut tarihe 6 gün ekleyerek haftanın son gününü al
-        calendar.add(Calendar.DAY_OF_MONTH, 6);
-
-        // Haftanın son gününü al
-        long lastDayOfWeek = calendar.getTimeInMillis();
-
-        // Takvim bileşenine son günü ayarla
-        calendarView.setMaxDate(lastDayOfWeek);
 
         // Diğer bileşenlerin tanımlamaları ve tıklama işlevselliği burada devam eder
 
