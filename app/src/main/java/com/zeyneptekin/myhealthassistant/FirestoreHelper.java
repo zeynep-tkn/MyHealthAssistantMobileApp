@@ -1,7 +1,7 @@
 package com.zeyneptekin.myhealthassistant;
 
 import android.content.Context;
-import android.util.Log;
+
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -48,4 +48,34 @@ public class FirestoreHelper {
                     }
                 });
     }
+
+    public void addIlacBilgisi(String ilacIsmi, String dozaj, String almaSikligi) {
+        // Firestore'a veri eklemek için bir Map oluştur
+        Map<String, Object> ilacBilgisi = new HashMap<>();
+        ilacBilgisi.put("ilacIsmi", ilacIsmi);
+        ilacBilgisi.put("dozaj", dozaj);
+        ilacBilgisi.put("almaSikligi", almaSikligi);
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("ilaç Bilgilerim").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(ilacBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "İlaç bilgileri başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "İlaç bilgileri eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+
 }
