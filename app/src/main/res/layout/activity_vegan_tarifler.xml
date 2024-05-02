@@ -378,22 +378,25 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="#E91E63"
+                    android:backgroundTint="#E91E63"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="221dp"
                         android:layout_height="120dp"
                         android:src="@drawable/crumble" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Elmalı Crumble"
-                        android:textColor="@color/black"
                         android:textAlignment="center"
+                        android:textColor="@color/black"
                         android:textSize="19dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
