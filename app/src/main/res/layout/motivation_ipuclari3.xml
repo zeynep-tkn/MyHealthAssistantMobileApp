@@ -14,8 +14,8 @@
 
         <TextView
             android:id="@+id/textView64"
-            android:layout_width="374dp"
-            android:layout_height="32dp"
+            android:layout_width="345dp"
+            android:layout_height="41dp"
             android:layout_marginTop="32dp"
             android:text="Kişisel Bakım ve Sağlık Fikirleri"
             android:textSize="25sp"
