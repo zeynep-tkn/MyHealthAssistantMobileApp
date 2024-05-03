@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class FoodActivity extends AppCompatActivity {
 
-    private Button SaglikliTarif;
-    private Button VeganTarif;
-    private Button GlutensizTarif;
+    private LinearLayout SaglikliTarif;
+    private LinearLayout VeganTarif;
+    private LinearLayout GlutensizTarif;
+
+    //private LinearLayout KisiselAsistan;
 
 
 
@@ -21,37 +24,44 @@ public class FoodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
 
-
-        // Butonu bul ve tıklama olayını ayarla
-        SaglikliTarif = findViewById(R.id.btnSaglik); // 'view' değişkeni kaldırıldı
+        // LinearLayout'leri bul ve tıklama olayını ayarla
+        SaglikliTarif = findViewById(R.id.SaglikliLayout);
         SaglikliTarif.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { // 'view' değişkeni 'v' olarak değiştirildi
-                // Randevu ekleme formu sayfasına geçiş yap
-                Intent intent = new Intent(FoodActivity.this, saglikliTarifler.class); // 'getActivity()' değiştirildi
-                startActivity(intent);
-            }
-        });
-        // Butonu bul ve tıklama olayını ayarla
-        VeganTarif = findViewById(R.id.btnVegan); // 'view' değişkeni kaldırıldı
-        VeganTarif.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { // 'view' değişkeni 'v' olarak değiştirildi
-                // Randevu ekleme formu sayfasına geçiş yap
-                Intent intent = new Intent(FoodActivity.this, veganTarifler.class); // 'getActivity()' değiştirildi
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, saglikliTarifler.class);
+                System.out.println("Sağlıklı tarifler sayfasına geçti");
                 startActivity(intent);
             }
         });
 
-        // Butonu bul ve tıklama olayını ayarla
-        GlutensizTarif = findViewById(R.id.btnGluten); // 'view' değişkeni kaldırıldı
-        GlutensizTarif.setOnClickListener(new View.OnClickListener() {
+        VeganTarif = findViewById(R.id.veganLayout);
+        VeganTarif.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { // 'view' değişkeni 'v' olarak değiştirildi
-                // Randevu ekleme formu sayfasına geçiş yap
-                Intent intent = new Intent(FoodActivity.this, glutensizTarifler.class); // 'getActivity()' değiştirildi
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, veganTarifler.class);
                 startActivity(intent);
             }
         });
+
+        GlutensizTarif = findViewById(R.id.glutensizLayout);
+        GlutensizTarif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, glutensizTarifler.class);
+                startActivity(intent);
+            }
+        });
+        /*
+        KisiselAsistan = findViewById(R.id.AsistanLayout);
+        KisiselAsistan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this,KisiselAistan.class);
+                startActivity(intent);
+            }
+        });
+        */
     }
+
 }
