@@ -98,14 +98,6 @@ public class P1Movement1Activity extends AppCompatActivity {
         MTimeRunning = false;
         startBtn.setText("START");
     }
-    //firestore kısmı
-    private void updateExerciseStatus(int exerciseNumber) {
-        // Egzersiz numarasını bir dizeye dönüştür
-        String exerciseNumberString = String.valueOf(exerciseNumber);
-
-        // FirestoreHelper üzerinden ilgili egzersizin durumunu güncelle
-        firestoreHelper.updateExerciseStatus(exerciseNumberString);
-    }
 
     private void startTimer() {
         final CharSequence value1 = mtextview.getText();
@@ -130,10 +122,9 @@ public class P1Movement1Activity extends AppCompatActivity {
 
                 // Egzersiz numarasını al
                 int exerciseNumber = Integer.valueOf(buttonvalue);
-                // Egzersiz numarasını bir dizeye dönüştür
-                String exerciseNumberString = Integer.toString(exerciseNumber);
+                String egzersizName = "egzersiz1";
                 // FirestoreHelper üzerinden ilgili egzersizin durumunu güncelle
-                firestoreHelper.updateExerciseStatus(exerciseNumberString);
+                firestoreHelper.updateExerciseStatus(egzersizName,exerciseNumber);
                 // Yeni bir Intent oluşturarak bir sonraki egzersize geç
                 int newValue = exerciseNumber + 1;
 
