@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".glutensizTarifler"
+    tools:context=".saglikliTarifler"
     android:fillViewport="true">
 
     <RelativeLayout
@@ -105,7 +105,7 @@
                         android:text="Meyveli Fındıklı Enerji Topları"
                         android:textColor="@color/black"
                         android:textAlignment="center"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
@@ -144,7 +144,7 @@
                         android:text="Bademli Fındıklı Granola"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 

@@ -3,12 +3,18 @@ package com.zeyneptekin.myhealthassistant;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.Timestamp;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
+import android.util.Log;
 import android.widget.Toast;
 
 public class FirestoreHelper {
@@ -76,6 +82,62 @@ public class FirestoreHelper {
                     }
                 });
     }
+    public void addRandevuBilgisi(String bolum, String tarih, String saat, String doktor, String hastahane) {
+        Map<String, Object> randevuBilgisi = new HashMap<>();
+        randevuBilgisi.put("bolum", bolum);
+        randevuBilgisi.put("tarih", tarih);
+        randevuBilgisi.put("saat", saat);
+        randevuBilgisi.put("doktor", doktor);
+        randevuBilgisi.put("hastahane", hastahane);
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("randevularım").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(randevuBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "Randevu bilgileri başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "Randevu bilgileri eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+
+    public void updateExerciseStatus(String egzersizAdi) {
+        DocumentReference docRef = db.collection("users").document("aXjqaM073S5UPEMiT2fu")
+                .collection("egzersiz").document("1SihdqPNvOZLfZfdRNaF");
+
+        // Belgeyi al ve güncelleme işlemlerini yap
+        docRef.update(egzersizAdi, 1)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Başarıyla güncellendiğinde yapılacak işlemler
+                        Log.d(TAG, "Egzersiz durumu başarıyla güncellendi");
+                        System.out.println("Güncelleme başarılı");
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Güncelleme sırasında hata oluştuğunda yapılacak işlemler
+                        Log.w(TAG, "Egzersiz durumu güncellenirken hata oluştu", e);
+                        System.out.println("Güncellenirken hata oldu");
+                    }
+                });
+    }
 
 
 }
+
+
+
