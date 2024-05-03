@@ -1,6 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari1"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="374dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Kişisel Bakım ve Sağlık Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Düzenli Egzersiz:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Her gün düzenli olarak egzersiz yapmak, fiziksel sağlığı korumanın ve genel iyi hissetmenin önemli bir yoludur. Yürüyüş yapmak, koşmak, bisiklete binmek, yüzme veya yoga gibi aktiviteleri tercih edebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sağlıklı Beslenme: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Dengeli ve çeşitli bir beslenme düzeni sağlamak önemlidir. Bol miktarda meyve, sebze, tam tahıllar, protein kaynakları ve sağlıklı yağlar tüketmeye özen gösterin. İşlenmiş gıdalardan ve aşırı şeker içeren yiyeceklerden kaçının."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Uyku Düzeni:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Yeterli ve kaliteli uyku almak vücut için önemlidir. Her gece düzenli bir uyku programı belirleyin ve uyku düzeninizi koruyun."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Stres Yönetimi:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stresi azaltmak için gevşeme teknikleri, derin nefes almak, meditasyon veya yoga gibi aktiviteleri deneyebilirsiniz. Zaman zaman dinlenmek ve kendinize zaman ayırmak da stresi azaltmaya yardımcı olabilir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Su Tüketimi:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Günde en az 8 bardak su içmek vücudunuzun nem dengesini sağlar ve genel sağlığınızı destekler. Su tüketimini artırmak için yanınızda bir su şişesi taşıyabilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Düzenli Kontroller:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Düzenli olarak doktor kontrolüne gitmek ve sağlık durumunuzu izlemek önemlidir. Rutin sağlık kontrolü, erken teşhis ve tedavi için önemlidir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hijyen: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Kişisel hijyeninize dikkat edin. Her gün duş alın, dişlerinizi düzenli olarak fırçalayın, el hijyenine özen gösterin ve düzenli olarak tırnaklarınızı kesin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Güneş Koruma:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Güneşin zararlı etkilerinden korunmak için güneş kremi kullanın, açık havada uzun süre kaldığınızda şapka ve güneş gözlüğü takın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/socialConnectionsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sosyal Bağlantılar: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+        <TextView
+            android:id="@+id/ninethTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Aile ve arkadaşlarla vakit geçirmek, sosyal bağlantıları güçlendirmek ve duygusal destek almak da sağlıklı bir yaşam için önemlidir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
