@@ -1,6 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari1"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="374dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Finansal Yönetim Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bütçe Oluşturma ve Takip Etme:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kişisel veya işletme düzeyinde bütçe oluşturmak, gelir ve giderleri belirlemenin ve yönetmenin önemli bir yoludur. Bütçenizi düzenli olarak gözden geçirerek, harcamalarınızı izleyin ve gerektiğinde ayarlamalar yapın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Borç Yönetimi:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Borçlarınızı etkili bir şekilde yönetmek, finansal sağlığınızı korumanın önemli bir parçasıdır. Yüksek faizli borçlardan kaçının ve mevcut borçları mümkün olan en kısa sürede ödemeye çalışın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Yatırım ve Tasarruf: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gelirinizin bir kısmını yatırım yapmak veya birikim yapmak için ayırın. Uzun vadeli yatırım stratejileri geliştirin ve düzenli olarak tasarruf yaparak acil durumlar için bir kenara para ayırın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Risk Yönetimi:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Finansal riskleri tanıyın ve bunlara karşı önlemler alın. Örneğin, sağlık sigortası ve hayat sigortası gibi güvence ürünlerini değerlendirin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Vergi Planlaması: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vergi yükünü azaltmak için vergi planlaması stratejileri kullanın. Yasal vergi avantajlarından yararlanarak gelirinizi optimize edin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Finansal Eğitim: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kendinizi ve işletmenizi finansal konularda sürekli olarak eğitin. Finansal okuryazarlık, daha iyi finansal kararlar almanıza ve daha iyi sonuçlar elde etmenize yardımcı olur."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Profesyonel Yardım Alın: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Karmaşık finansal konularda profesyonel bir danışmanlık alın. Finansal planlamacılar, muhasebeciler veya mali danışmanlar, finansal hedeflerinizi belirlemenize ve stratejiler oluşturmanıza yardımcı olabilir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sürekli Değerlendirme:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Finansal durumunuzu düzenli olarak değerlendirin ve hedeflerinize ne kadar yaklaştığınızı izleyin. Gerektiğinde stratejilerinizi ve planlarınızı ayarlayın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
