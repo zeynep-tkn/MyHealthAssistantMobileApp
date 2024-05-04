@@ -51,6 +51,17 @@ public class saglikProfilim extends AppCompatActivity {
             }
         });
 
+        // Butonu bul ve tıklama olayını ayarla
+        IlerlemeTakibi = findViewById(R.id.ilerlemeTakibiBtn);
+        IlerlemeTakibi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // İlerleem takibi sayfasına geçiş yap
+                Intent intent = new Intent(saglikProfilim.this, ilerlemeTakibi.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
