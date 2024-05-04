@@ -6,23 +6,22 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView99"
-        android:layout_width="227dp"
-        android:layout_height="35dp"
+        android:id="@+id/textView100"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
         android:text="SİZDEN GELENLER"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="409dp"
-        android:layout_height="560dp"
+        android:layout_height="576dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -35,79 +34,73 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gazetenizdeki son makale gerçekten ilham vericiydi. Yazarın derin analizi ve samimi yaklaşımı beni etkiledi. Teşekkür ederim!"
-                android:textSize="18sp"
+                android:text="Yazar: Selin Kaya"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meslek: Yazar"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yaş: 32"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlık: Bir Yolculuğun Hikayesi"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merhaba, adım Selin. Geçen ay yaptığımız sıra dışı bir yolculuğu sizinle paylaşmak istiyorum. Anadolu'nun keşfedilmemiş köylerini ziyaret ederek kendi kültürümüzü ve tarihimizi daha yakından tanıma fırsatı bulduk. Bu deneyim beni derinden etkiledi ve insanların samimiyeti ve misafirperverliği karşısında duygulandım. Yolculuğumuz boyunca yaşadığımız maceraları ve deneyimleri sizinle paylaşmak benim için büyük bir mutluluk."
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yazar: Ahmet Yılmaz"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meslek: Öğrenci"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yaş: 19"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlık: Geleceğe Yolculuk: Hayallerim ve Hedeflerim"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selam, ben Ahmet. Bugün sizinle geleceğe dair hayallerimi ve hedeflerimi paylaşmak istiyorum. Üniversite eğitimimin son yılında, kendi teknoloji şirketimi kurmak ve dünyada gerçek bir değişim yaratmak istiyorum. Yapay zeka ve çevre dostu teknolojiler üzerine çalışarak insanların hayatlarını kolaylaştırmak ve dünyamızı daha sürdürülebilir bir yer haline getirmek istiyorum. Bu yolculukta karşılaşacağım zorlukları biliyorum ama azimli ve kararlı bir şekilde ilerlemeye devam edeceğim.
+"
+                android:textSize="20sp"
                 android:padding="8dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mehmet Yılmaz, Mimar, 35"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Haberleriniz her zaman güvenilir ve tarafsız. Sizin gibi kaliteli bir yayın organını takip etmek benim için bir zevk"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ayşe Demir, Öğretmen, 42"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gazetenizdeki köşe yazıları gençlerin bakış açısını yansıtıyor. Daha fazla genç yazarı desteklemek harika olurdu!"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Can Aksoy, Öğrenci, 21"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Son haberdeki detaylı araştırma ve fotoğraflar gerçekten etkileyiciydi. Gazetenizdeki kaliteyi her zaman takdir ediyorum."
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fatma Kaya, Ev Hanımı, 38"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yorum köşeniz gerçekten ilginç ve çeşitli konuları ele alıyor. Okuyucuların farklı görüşlerini görmek çok değerli."
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ali Yıldırım, İş Adamı, 50"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gazetenizin çeşitli konuları kapsayan içeriği ve kaliteli haberleri beni her zaman memnun ediyor. Devamını bekliyorum!"
-                android:textSize="18sp"
-                android:padding="8dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Zeynep Tekin, Gazeteci, 29"
-                android:textSize="18sp"
-                android:padding="8dp"/>
 
-            <!-- Metin eklemeye devam edebilirsiniz -->
-
+            <TextView
+                android:id="@+id/newCommentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeni yorumunuz buraya gelecek"
+                android:textSize="18sp"
+                android:padding="8dp"/>
         </LinearLayout>
     </ScrollView>
 
