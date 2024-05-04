@@ -1,6 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari1"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="310dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="24dp"
+            android:text="Eğitim ve Öğrenme Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Okuma Alışkanlığı Geliştirme:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Her gün düzenli olarak okuma yapmak, bilgi birikiminizi artırmanın ve kendinizi geliştirmenin önemli bir yoludur. Farklı türlerde kitaplar, makaleler veya blog yazıları okuyarak genel kültürünüzü ve anlama yeteneğinizi geliştirebilirsiniz.
+"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Online Kurslar ve Eğitim Platformları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="İnternet üzerinden birçok ücretsiz veya ücretli eğitim platformu bulunmaktadır. Bu platformlardan yararlanarak ilgi alanlarınızda yeni beceriler öğrenebilir veya mevcut bilgilerinizi güncelleyebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Grup Çalışması ve Tartışmalar:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Eğitim sürecinde grup çalışmaları ve tartışmalar, farklı bakış açılarından öğrenmeyi sağlar ve sosyal etkileşimi artırır. Arkadaşlarınızla veya meslektaşlarınızla bir araya gelerek konuları tartışabilir, bilgi paylaşımında bulunabilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pratik Yapma:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Öğrendiğiniz konuları pratik yaparak pekiştirmek önemlidir. Bilgiyi uygulamaya geçirmek, öğrenme sürecini daha etkili hale getirir ve bilgilerin kalıcı olmasını sağlar."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mentorluk: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Bir mentörden veya deneyimli bir kişiden destek almak, öğrenme sürecinizi hızlandırabilir ve kariyerinizde ilerlemenize yardımcı olabilir. Mentorluk ilişkisi, deneyimlerini paylaşarak ve rehberlik ederek öğrenme fırsatları sunar."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Yenilikçi Öğrenme Yöntemleri: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Geleneksel ders kitapları ve sınıf derslerinin yanı sıra, yenilikçi öğrenme yöntemlerini deneyebilirsiniz. Örneğin, interaktif eğitim uygulamaları, video dersleri, podcast'ler veya oyun tabanlı öğrenme gibi yöntemlerle öğrenme deneyiminizi zenginleştirebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kendi Kendine Öğrenme: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kendi kendine öğrenme becerisi, günümüzde önemli bir yetenektir. İnternet ve diğer kaynaklar sayesinde, kendi kendinize bir konuyu öğrenme yeteneğinizi geliştirebilirsiniz. Araştırma yapma, problem çözme ve bilgiyi sentezleme becerileri kazanarak sürekli öğrenen biri olabilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Değişim ve Yenilik: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sürekli değişen dünyada, eski bilgilerin güncel kalması ve yeni bilgilerin öğrenilmesi önemlidir. Değişime ve yeniliğe açık olun, yeni fikirleri ve perspektifleri keşfedin ve öğrenme sürecinizi sürekli olarak güncelleyin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

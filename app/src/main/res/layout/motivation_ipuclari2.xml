@@ -1,6 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="32dp"
+                android:text="Yemek Pişirme ve Beslenme Fikirleri"
+                android:textSize="25sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/secondTextViewContent1" />
+
+                <TextView
+                    android:id="@+id/secondTextViewContent1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dengeli Beslenme:                                                                              Sağlıklı bir yaşam için dengeli beslenme önemlidir. Her öğünde karbonhidrat, protein, yağ, vitamin ve mineral içeren yiyecekler tüketmeye çalışın. Bol miktarda sebze ve meyve yiyerek vitamin ve lif alımınızı artırın."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewContent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewCleanTips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Taze ve Doğal Ürünler:"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/secondTextViewContent1" />
+
+                <TextView
+                    android:id="@+id/secondTextViewContent2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Mümkün olduğunca taze ve doğal ürünler kullanmaya özen gösterin. Organik sebzeler ve meyveler, sağlığınız için daha faydalı olabilir. Ayrıca, işlenmiş gıdalardan uzak durmaya çalışın."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewCleanTips" />
+
+                <TextView
+                    android:id="@+id/textViewMaintenanceTips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Az Yağlı Pişirme Yöntemleri: "
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/secondTextViewContent2" />
+
+                <TextView
+                    android:id="@+id/thirdTextViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Pişirme yöntemi seçimi önemlidir. Kızartma yerine haşlama, buğulama veya ızgara gibi daha az yağlı pişirme yöntemlerini tercih edin. Yağsız etleri ve derisi alınmış tavuk veya hindi gibi protein kaynaklarını tercih edebilirsiniz."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+                <TextView
+                    android:id="@+id/gardenTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Porsiyon Kontrolü:"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+                <TextView
+                    android:id="@+id/fourthTextViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Porsiyon kontrolü sağlıklı beslenmenin önemli bir parçasıdır. Yemeklerinizi küçük tabaklara servis ederek porsiyonlarınızı kontrol altında tutabilirsiniz. Aşırı yemek yeme alışkanlığınızı azaltmak için yavaş yemek yeme alışkanlığı geliştirmeye çalışın."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+                    app:layout_constraintVertical_bias="0.1"/>
+
+                <TextView
+                    android:id="@+id/savingTipsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Su Tüketimi: "
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+                <TextView
+                    android:id="@+id/fifthTextViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yeterli miktarda su içmek vücudunuzun sağlıklı bir şekilde çalışmasını sağlar. Günde en az 8 bardak su içmeye özen gösterin. Özellikle yemeklerden önce bir bardak su içmek, tokluk hissinizi artırabilir ve aşırı yeme riskini azaltabilir."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+                    app:layout_constraintVertical_bias="0.1"/>
+
+                <TextView
+                    android:id="@+id/cookingRecipesTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Yemek Planlama:"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+                <TextView
+                    android:id="@+id/sixthTextViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Haftalık yemek planları yaparak daha sağlıklı ve düzenli beslenebilirsiniz. Bu şekilde market alışverişinizi de daha etkili bir şekilde yapabilirsiniz. Ayrıca, yemek planlamak stresinizi azaltabilir ve zamanınızı daha verimli kullanmanıza yardımcı olabilir."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+                    app:layout_constraintVertical_bias="0.1"/>
+
+                <TextView
+                    android:id="@+id/entertainmentTipsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Keyifli Zaman Geçirme: "
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+                <TextView
+                    android:id="@+id/seventhTextViewContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yemek pişirmek aynı zamanda keyifli bir aktivitedir. Ailenizle veya arkadaşlarınızla birlikte yemek pişirmek ve yemek yemek sosyal bağlarınızı güçlendirebilir. Yaratıcı tarifler deneyerek yeni lezzetler keşfedebilirsiniz."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+                    app:layout_constraintVertical_bias="0.1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

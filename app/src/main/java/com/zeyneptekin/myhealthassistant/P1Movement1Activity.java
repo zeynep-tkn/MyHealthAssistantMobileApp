@@ -21,12 +21,17 @@ public class P1Movement1Activity extends AppCompatActivity {
     private long MTimeLeftinmillis;
     AlertDialog.Builder builderDialog;
     AlertDialog alertDialog;
+    private FirestoreHelper firestoreHelper;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // FirestoreHelper'ı başlat
+        firestoreHelper = new FirestoreHelper(this);
 
         Intent intent = getIntent();
         buttonvalue = intent.getStringExtra("value");
@@ -114,8 +119,19 @@ public class P1Movement1Activity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                int newValue = Integer.valueOf(buttonvalue) + 1;
 
+                //Firestrore kısmı
+
+                // Egzersiz numarasını al
+                int exerciseNumber = Integer.valueOf(buttonvalue);
+                String egzersizName = "egzersiz1";
+                // FirestoreHelper üzerinden ilgili egzersizin durumunu güncelle
+                firestoreHelper.updateExerciseStatus(egzersizName,exerciseNumber);
+                // Yeni bir Intent oluşturarak bir sonraki egzersize geç
+                int newValue = exerciseNumber + 1;
+
+
+                //int newValue = Integer.valueOf(buttonvalue) + 1
                 if (newValue <= 10) {
                     Intent intent = new Intent(P1Movement1Activity.this, P1Movement1Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
