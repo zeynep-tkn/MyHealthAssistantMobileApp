@@ -12,8 +12,11 @@
         android:layout_height="34dp"
         android:text="HAYAT KOLAYLAŞTIRICI İPUÇLARI"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
 
     <Button
         android:id="@+id/button"
@@ -21,8 +24,12 @@
         android:layout_height="64dp"
         android:text="Ev Düzeni &amp; Dekorasyon Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/button7"
@@ -30,8 +37,12 @@
         android:layout_height="64dp"
         android:text="Yemek Pişirme &amp; Beslenme Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
 
     <Button
         android:id="@+id/button8"
@@ -39,8 +50,12 @@
         android:layout_height="64dp"
         android:text="Kişisel Bakım &amp; Sağlık Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="220dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
 
     <Button
         android:id="@+id/button9"
@@ -48,8 +63,10 @@
         android:layout_height="64dp"
         android:text="Eğitim ve Öğrenme Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button10"
@@ -57,8 +74,11 @@
         android:layout_height="64dp"
         android:text="Finansal Yönetim Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />
 
     <Button
         android:id="@+id/button15"
@@ -66,8 +86,11 @@
         android:layout_height="64dp"
         android:text="İş ve Kariyer Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="448dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
 
     <Button
         android:id="@+id/button16"
@@ -75,8 +98,11 @@
         android:layout_height="64dp"
         android:text="Teknoloji &amp; Dijital Hayat Fikirleri"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="524dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
 
     <Button
         android:id="@+id/button17"
@@ -84,7 +110,10 @@
         android:layout_height="64dp"
         android:text="Seyahat &amp; Tatil İpuçları"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="595dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

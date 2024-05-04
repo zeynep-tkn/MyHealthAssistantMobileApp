@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari1"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="273dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="32dp"
+            android:text="Seyahat ve Tatil Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Erken Planlama ve Araştırma:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Seyahat tarihlerinizden önce planlama yapmaya başlayın. Uygun fiyatlar ve konaklama seçenekleri için erken rezervasyon yapın. Gitmek istediğiniz yer hakkında araştırma yapın ve gezilecek yerler, etkinlikler ve yerel kültür hakkında bilgi edinin."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bütçe Oluşturma: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Tatil için bir bütçe belirleyin ve harcamalarınızı bu bütçeye göre planlayın. Ulaşım, konaklama, yeme içme ve aktiviteler için ayrı ayrı bütçeler oluşturun ve gerektiğinde harcamalarınızı kontrol altında tutun."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hafif Seyahat:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gereksiz eşyaları paketlemekten kaçının ve sadece ihtiyacınız olanları alın. Hafif bagajla seyahat etmek, seyahat sırasında rahatlık ve kolaylık sağlar. Ayrıca, fazla bagaj ücretlerinden kaçınmanıza da yardımcı olur. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Yerel Lezzetleri Deneyin: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="  Gittiğiniz yerin yerel mutfağını deneyerek yeni lezzetler keşfedin. Yerel restoranlarda ve sokak satıcılarında yerel yemekleri tatmak, seyahat deneyiminizi daha unutulmaz hale getirebilir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Esneklik:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Seyahat planlarınızda esnek olun. Hava durumu, ulaşım sorunları veya beklenmedik durumlar nedeniyle planlarınızı değiştirebilirsiniz. Esnek olmak, stresi azaltır ve seyahatinizin keyfini çıkarmanıza yardımcı olur."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Yerel Kültür ve Adetlere Saygı:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Gittiğiniz yerin kültürüne ve adetlerine saygı gösterin. Yerel halkla etkileşim kurun, onların yaşam tarzını ve geleneklerini öğrenin ve yerel adetlere uygun davranın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Güvenlik Önlemleri: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Güvenlik önlemlerini alarak seyahatinizi daha güvenli hale getirin. Değerli eşyalarınızı güvende tutun, turistik yerlerde dikkatli olun ve acil durumlar için bir acil durum planı yapın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Anılar Biriktirme:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Seyahatinizden unutulmaz anılar biriktirin. Fotoğraf ve video çekin, günlük tutun veya yerel hediyelik eşyalar satın alarak seyahatinizi hatırlayacak anılar yaratın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

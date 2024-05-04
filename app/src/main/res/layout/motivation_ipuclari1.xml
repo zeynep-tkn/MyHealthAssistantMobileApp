@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari1"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="374dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Ev Düzeni ve Dekorasyon Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ev Dekorasyon İpuçları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Evinizi dekore ederken, odaklanmanız gereken anahtar noktalardan biri renk seçimidir. Duvarları boyarken veya mobilya seçerken, odanın büyüklüğüne ve ışık almasına dikkat edin. Aydınlatma da ev dekorasyonunun önemli bir parçasıdır; doğal ışık kullanarak odalarınızı daha ferah ve davetkar hale getirebilirsiniz. Ayrıca, dekorasyonunuza kişisel dokunuşlar eklemeyi unutmayın; fotoğraflar, sanat eserleri veya sevdiklerinizden aldığınız hatıralar evinize karakter katar."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Temizlik Tüyoları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ev temizliği yaparken, odalarda bir plana sadık kalmak önemlidir. Odaları üstten alta doğru temizleyerek toz birikimini en aza indirebilirsiniz. Doğal temizlik malzemeleri kullanarak, kimyasal madde kullanımını azaltabilir ve evinizde daha sağlıklı bir ortam yaratabilirsiniz. Ayrıca, temizlik yaparken müzik dinlemek veya bir arkadaşınızla yardımlaşmak motivasyonunuzu artırabilir."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ev Bakımı ve Onarım İpuçları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ev bakımı ve onarımları, evinizin değerini korumak ve uzun ömürlü olmasını sağlamak için önemlidir. Küçük sorunları hemen çözerek daha büyük problemlerin önüne geçebilirsiniz. Örneğin, sık sık muslukların sızdırmalarını kontrol edin ve zamanında tamir edin; bu, su hasarını önler ve faturalarınızı düşürür. Ayrıca, ev aletlerinizi düzenli olarak bakımını yaparak, onların ömrünü uzatabilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Bahçe ve Bitki Bakımı Önerileri:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bahçe ve bitki bakımı, doğayla iç içe olmanın ve stresi azaltmanın harika bir yoludur. Bitkilerinizi düzenli olarak sulayın ve gübreleyin, böylece sağlıklı ve canlı kalır. Zararlılarla mücadele etmek için doğal yöntemleri kullanmayı deneyin ve bitkilerinize zarar vermeden onları koruyun. Bahçenizi sebze ve meyve yetiştirmek için kullanarak, taze ve organik ürünler elde edebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tasarruf İpuçları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enerji ve su tasarrufu, çevreye duyarlılık ve maliyet tasarrufu sağlar. Evde enerji tasarrufu yapmak için, enerji verimli cihazlar kullanın ve elektrikli aletleri kullanmadığınız zamanlarda fişten çekin. Su tasarrufu için, muslukları kapatmayı unutmayın ve bahçenizi yağmurlama sistemleriyle sulayarak su kullanımını azaltın. Ayrıca, alışveriş yaparken indirimleri takip edin ve gereksiz harcamalardan kaçının."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ev Yemeği Tarifleri:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Evde yemek pişirmek, sağlıklı ve bütçe dostu bir seçenektir. Basit tariflerle, lezzetli yemekler hazırlayabilir ve ailenizle keyifli vakit geçirebilirsiniz. Sebzelerle ve protein kaynaklarıyla dengeli yemekler yaparak sağlıklı bir beslenme sağlayabilirsiniz. Ayrıca, yemek yaparken çocuklarınızı da dahil ederek onların yemek hazırlama becerilerini geliştirebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Eğlence ve Hobi Önerileri:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Evde yapılacak eğlenceli aktiviteler ve hobiler, stresi azaltır ve zihinsel sağlığı destekler. El işi projeleri yaparak yaratıcılığınızı kullanabilir veya bahçenizde vakit geçirerek doğayla bağlantı kurabilirsiniz. Ayrıca, kitap okuyarak veya film izleyerek keyifli zaman geçirebilir ve yeni hobiler keşfedebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Güvenlik İpuçları:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ev güvenliği, ailenizin ve eşyalarınızın güvenliğini sağlamak için önemlidir. Kapı ve pencereleri güvenlik sistemleriyle koruyarak hırsızlık riskini azaltabilirsiniz. Yangın güvenliği için düzenli olarak yangın söndürücülerinizi kontrol edin ve acil durum planları yapın. Ayrıca, evde küçük çocuklar varsa, ev güvenliği için ek önlemler almayı unutmayın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
