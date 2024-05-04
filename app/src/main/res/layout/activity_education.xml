@@ -6,15 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".EducationActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Education"
-        android:textSize="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="EĞİTİMLER VE KURSLAR"
+            android:textSize="27sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Beslenme Temelleri"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="360dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Play Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bslnm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Akıl Sağlığı"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="360dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Play Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/akil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Spor Planları"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Play Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fitness"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
