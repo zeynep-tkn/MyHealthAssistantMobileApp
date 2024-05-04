@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Başlık için TextView -->
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:text="BAŞARI HABERLERİ"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="583dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView96"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Metin -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENGELLERİ AŞAN YÜREK: MEHMET"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mehmet, çocukluğundan beri yaşadığı zorluklara rağmen hayallerinden vazgeçmedi. Ailesi maddi sıkıntılar içinde geçen bir çocukluk dönemi yaşadı. Ancak, bu durum Mehmet'in kararlılığını ve dayanma gücünü daha da arttırdı.
+
+Okula başladığında, öğrenme güçlüğü yaşadı. Ancak, ailesinin ve öğretmenlerinin desteğiyle asla pes etmedi. Günlerce, hatta aylarca sınıfta kalan Mehmet, derslerine olan inancını ve azmini hiç kaybetmedi. Her başarısızlık, onu daha da motive etti ve daha çok çalışmasına neden oldu.
+
+Mehmet'in hayali, bir gün bilgisayar mühendisi olmaktı. Bilgisayarlarla ilgili her şeyi merakla öğreniyor ve kendini geliştirmek için çaba harcıyordu. Bilgisayar derslerinde en iyisi olmak için gece gündüz çalışıyor ve kendini sürekli olarak yeniliyordu.
+
+Ancak, yolda karşısına çıkan engeller hiç de az değildi. Ailesinin maddi durumu, okumak için yeterli kaynağa sahip olmaması ve çevresindeki olumsuz etkiler, Mehmet'i yıldırmadı. Aksine, daha da güçlendirdi.
+
+Sonunda, üniversite sınavını kazandı. Ancak, üniversiteye gitmek için yeterli maddi kaynağı olmadığı için hayali tehlikeye girdi. Ancak, burslar ve destekler sayesinde, hayalini gerçekleştirmek için bir fırsat elde etti.
+
+Üniversitede, bilgisayar mühendisliği okumaya başladı. Derslerdeki başarısı ve azmi, hocalarının dikkatini çekti ve staj teklifleri almaya başladı. Stajlarını başarıyla tamamladıktan sonra, bir teknoloji şirketinde tam zamanlı bir iş teklifi aldı.
+
+Bugün, Mehmet bir bilgisayar mühendisi olarak çalışıyor ve başarılarıyla dikkat çekiyor. Geçmişte yaşadığı zorlukları ve engelleri aşarak, hayalini gerçekleştirmenin ne kadar mümkün olduğunu kanıtladı. Mehmet'in hikayesi, azimle çalışmanın ve asla vazgeçmemenin ne kadar önemli olduğunu gösteriyor. Herkesin hayaline ulaşabileceğini ve engelleri aşabileceğini bize hatırlatıyor."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
