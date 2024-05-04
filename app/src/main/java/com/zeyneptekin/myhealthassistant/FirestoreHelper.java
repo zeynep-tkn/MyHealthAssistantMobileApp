@@ -186,6 +186,62 @@ public class FirestoreHelper {
                     }
                 });
     }
+    //----
+    public int showProgressForSportPage(String egzersizAdi) {
+        final int[] egzersizVal = {0}; // Egzersiz değerini saklamak için bir dizi kullanıyoruz
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docRef = db.collection("users")
+                .document("aXjqaM073S5UPEMiT2fu")
+                .collection("egzersiz")
+                .document("1SihdqPNvOZLfZfdRNaF");
+
+        // Belgeyi al ve güncelleme işlemlerini yap
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        // Doküman başarıyla alındığında yapılacak işlemler
+                        if (documentSnapshot.exists()) {
+                            // Egzersizler map'ini al
+                            int egzersizValue = documentSnapshot.getLong(egzersizAdi) != null ?
+                                    documentSnapshot.getLong(egzersizAdi).intValue() : 0;
+                            // Değeri güncelle
+                            egzersizVal[0] = egzersizValue;
+                        } else {
+                            // Belirtilen belge bulunamadığında yapılacak işlemler
+                            System.out.println("Belirtilen belge bulunamadı. Yeni bir özellik oluşturulacak.");
+                            Map<String, Object> newData = new HashMap<>();
+                            newData.put(egzersizAdi, 0); // Yeni egzersiz adı ile 1 değeriyle yeni bir özellik oluşturulacak
+                            docRef.set(newData)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void aVoid) {
+                                            System.out.println("Yeni egzersiz özelliği başarıyla oluşturuldu ve değeri 1 olarak ayarlandı.");
+                                            // Değeri güncelle
+                                            egzersizVal[0] = 0;
+                                        }
+                                    })
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            System.out.println("Yeni egzersiz özelliği oluşturulurken bir hata oluştu: " + e.getMessage());
+                                        }
+                                    });
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Doküman alınırken hata oluştuğunda yapılacak işlemler
+                        Log.w(TAG, "Doküman alınırken hata oluştu", e);
+                        System.out.println("Doküman alınırken hata oldu");
+                    }
+                });
+
+        // Egzersiz değerini döndür
+        return egzersizVal[0];
+    }
 
 
 
