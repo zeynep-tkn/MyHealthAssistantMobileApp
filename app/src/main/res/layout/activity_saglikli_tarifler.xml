@@ -105,7 +105,11 @@
                         android:text="Meyveli Fındıklı Enerji Topları"
                         android:textColor="@color/black"
                         android:textAlignment="center"
+<<<<<<< HEAD
+                        android:textSize="18dp"
+=======
                         android:textSize="12sp"
+>>>>>>> df139dec1834920500f00aa279775536ac9cd8ca
                         android:textStyle="bold"/>
                 </LinearLayout>
 
@@ -144,7 +148,11 @@
                         android:text="Bademli Fındıklı Granola"
                         android:textAlignment="center"
                         android:textColor="@color/black"
+<<<<<<< HEAD
+                        android:textSize="18dp"
+=======
                         android:textSize="14sp"
+>>>>>>> df139dec1834920500f00aa279775536ac9cd8ca
                         android:textStyle="bold" />
                 </LinearLayout>
 
