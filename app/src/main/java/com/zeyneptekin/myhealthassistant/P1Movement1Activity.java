@@ -24,6 +24,8 @@ public class P1Movement1Activity extends AppCompatActivity {
     private FirestoreHelper firestoreHelper;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

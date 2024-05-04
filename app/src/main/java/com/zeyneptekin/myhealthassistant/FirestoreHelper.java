@@ -187,9 +187,7 @@ public class FirestoreHelper {
                 });
     }
     //----
-    public int showProgressForSportPage(String egzersizAdi) {
-        final int[] egzersizVal = {0}; // Egzersiz değerini saklamak için bir dizi kullanıyoruz
-
+    public void showProgressForSportPage(String egzersizAdi, final ProgressFetchListener listener) {
         // Firestore koleksiyonunu ve belirli bir belgeyi belirle
         DocumentReference docRef = db.collection("users")
                 .document("aXjqaM073S5UPEMiT2fu")
@@ -201,12 +199,11 @@ public class FirestoreHelper {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         // Doküman başarıyla alındığında yapılacak işlemler
+                        int egzersizValue = 0;
                         if (documentSnapshot.exists()) {
                             // Egzersizler map'ini al
-                            int egzersizValue = documentSnapshot.getLong(egzersizAdi) != null ?
+                            egzersizValue = documentSnapshot.getLong(egzersizAdi) != null ?
                                     documentSnapshot.getLong(egzersizAdi).intValue() : 0;
-                            // Değeri güncelle
-                            egzersizVal[0] = egzersizValue;
                         } else {
                             // Belirtilen belge bulunamadığında yapılacak işlemler
                             System.out.println("Belirtilen belge bulunamadı. Yeni bir özellik oluşturulacak.");
@@ -217,31 +214,36 @@ public class FirestoreHelper {
                                         @Override
                                         public void onSuccess(Void aVoid) {
                                             System.out.println("Yeni egzersiz özelliği başarıyla oluşturuldu ve değeri 1 olarak ayarlandı.");
-                                            // Değeri güncelle
-                                            egzersizVal[0] = 0;
+                                            listener.onProgressFetch(0); // Değeri geri dön
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
                                             System.out.println("Yeni egzersiz özelliği oluşturulurken bir hata oluştu: " + e.getMessage());
+                                            listener.onProgressFetch(-1); // Hata durumunu geri dön
                                         }
                                     });
                         }
+                        // Egzersiz değerini döndür
+                        listener.onProgressFetch(egzersizValue);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         // Doküman alınırken hata oluştuğunda yapılacak işlemler
-                        Log.w(TAG, "Doküman alınırken hata oluştu", e);
-                        System.out.println("Doküman alınırken hata oldu");
+                        System.out.println("Doküman alınırken hata oldu: " + e.getMessage());
+                        listener.onProgressFetch(-1); // Hata durumunu geri dön
                     }
                 });
-
-        // Egzersiz değerini döndür
-        return egzersizVal[0];
     }
+
+    // Firestore'dan değeri alındığında geri çağrı yapılacak arayüz
+    public interface ProgressFetchListener {
+        void onProgressFetch(int progress);
+    }
+
 
 
 
