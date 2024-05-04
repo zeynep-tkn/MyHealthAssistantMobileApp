@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="246dp"
+        android:layout_height="47dp"
+        android:text="ROPÖRTAJ SAYFASI"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="412dp"
+            android:layout_height="563dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DÖNÜŞÜMÜN GÜCÜ: OLIVIA'NIN DÖNÜŞÜMÜ"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giriş:"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bugün, sizlere dönüşümün ve kendini aşmanın gücünü gösteren bir hikayeyi aktaracağımız özel bir röportajımız var. Olivia isimli genç bir kadın, hayatının zorluklarına meydan okuyarak dönüşümünü başaran bir isim. Kendisiyle gerçekleştireceğimiz bu röportajda, yaşadığı deneyimleri, karşılaştığı engelleri ve başarıya giden yolu konuşacağız."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soru 1: Olivia, öncelikle kendinden biraz bahsedebilir misin? Adından, yaşından, yaşadığın yerden ve ailen hakkında kısaca bilgi verebilir misin?"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia: Tabii, ben Olivia. 30 yaşındayım ve New York'ta yaşıyorum. Burada ailemden ayrı bir apartmanda tek başıma yaşıyorum. Ailem, benim için her zaman büyük bir destek olmuştur, özellikle de zor zamanlarımda."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soru 2: Hayatında dönüm noktası olan olaylar nelerdi ve sana nasıl etki yaptılar?"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia: Hayatımda bir dönüm noktası, kariyerimde yaşadığım bir başarısızlık dönemi oldu. Bu süreçte kendimi çok değersiz hissettim ve gelecek hakkında büyük endişelerim vardı. Ancak, bu dönemde içsel bir dönüşüme yönelerek kendi gücümü keşfettim."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soru 3: Dönüşüm sürecinde en çok destek olan şey neydi?"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia: Dönüşüm sürecimde, en büyük destekçim ailem ve yakın arkadaşlarımdı. Onların inancı ve desteği, zor zamanlarımda bile ayakta kalabilmemi sağladı. Ayrıca, kendi içsel keşfimde bana rehberlik eden kitaplar ve mentorlar da büyük önem taşıdı."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buraya metin ekleyebilirsiniz."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soru 4: İçsel dönüşümü tamamladıktan sonra hayatında nasıl bir değişim gözlemledin?"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia: İçsel dönüşümümü tamamladıktan sonra, daha özgüvenli ve kararlı biri haline geldim. Hayatımda daha net hedefler belirlemeye başladım ve bu hedeflere doğru ilerlemek için daha fazla cesaret ve motivasyon buldum."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soru 5: Son olarak, başkalarına kendi dönüşüm yolculuğunda ilham olmak isteyenlere ne gibi tavsiyelerin var?"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia: Kendi dönüşüm yolculuğunda olanlara tavsiyem, içlerine doğru dalmaları ve kendi potansiyellerini keşfetmeleridir. Zorluklarla yüzleşmekten korkmamaları ve her zaman ileriye doğru adım atmaktan çekinmemeleri önemlidir. Herkesin içinde büyük bir güç ve potansiyel yatar, önemli olan bunu keşfetmek ve en iyi şekilde kullanmaktır."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sonuç:"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olivia'nın hikayesi, dönüşümün ve içsel keşfin gücünü gösteriyor. Zorluklarla karşılaşan herkes, Olivia'nın hikayesinden güç ve ilham alabilir ve kendi dönüşüm yolculuklarında ileriye adım atabilir."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
