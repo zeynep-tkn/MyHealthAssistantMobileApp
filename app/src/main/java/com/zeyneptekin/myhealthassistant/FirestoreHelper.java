@@ -239,6 +239,33 @@ public class FirestoreHelper {
                 });
     }
 
+    public void addHastalikBilgisi(String hastalikIsmi) {
+        // Firestore'a veri eklemek için bir Map oluştur
+        Map<String, Object> hastalikBilgisi = new HashMap<>();
+        hastalikBilgisi.put("hastalik Ismi", hastalikIsmi);
+
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Hastalıklarım").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(hastalikBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "Hastalık ismi başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "Hastalık ismi eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
     // Firestore'dan değeri alındığında geri çağrı yapılacak arayüz
     public interface ProgressFetchListener {
         void onProgressFetch(int progress);
@@ -248,6 +275,3 @@ public class FirestoreHelper {
 
 
 }
-
-
-
