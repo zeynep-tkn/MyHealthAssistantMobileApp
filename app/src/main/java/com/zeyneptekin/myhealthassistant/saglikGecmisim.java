@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+
+import com.google.firebase.Timestamp;
+
 import java.util.Map;
 import java.util.HashMap;
 
@@ -17,6 +20,8 @@ public class saglikGecmisim extends AppCompatActivity {
     private TableLayout hastaliklarimTable;
     private EditText editText1;
     private EditText editTextAlerji;
+    private EditText editTextAmeliyatAdi;
+    private EditText editTextAmeliyatTarihi;
     private TableLayout alerjilerimTable;
     private TableLayout ameliyatlarimTable;
     private Button addRowButtonhastaliklarim;
@@ -134,11 +139,28 @@ public class saglikGecmisim extends AppCompatActivity {
         });
 
         ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
+        editTextAmeliyatAdi = findViewById(R.id.editTextAmeliyatAdi);
+        editTextAmeliyatTarihi = findViewById(R.id.editTextAmeliyatTarihi);
         addRowButtonameliyatlarim = findViewById(R.id.addRowButtonAmeliyat);
 
         addRowButtonameliyatlarim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                // Yeni bir Firestore belgesi oluştur
+                Map<String, Object> ameliyatIsmi = new HashMap<>();
+
+                String ameliyatBilgisi = ""; // Boş bir String oluşturun
+
+                ameliyatBilgisi = editTextAmeliyatAdi.getText().toString();
+
+                String ameliyatTarihi = ""; // Boş bir String oluşturun
+
+                ameliyatTarihi = editTextAmeliyatTarihi.getText().toString();
+
+                db.addAmeliyatBilgisi(ameliyatBilgisi, ameliyatTarihi);
+
+
                 // Yeni bir satır oluştur
                 TableRow newRow = new TableRow(saglikGecmisim.this);
 
@@ -166,6 +188,9 @@ public class saglikGecmisim extends AppCompatActivity {
 
                 // Satırı tabloya ekle
                 ameliyatlarimTable.addView(newRow);
+
+                editTextAmeliyatAdi = newEditTextAmeliyatAdi;
+                editTextAmeliyatTarihi = newEditTextAmeliyatTarihi;
             }
         });
 

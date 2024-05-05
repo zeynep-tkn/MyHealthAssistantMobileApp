@@ -4,11 +4,8 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.Timestamp;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -289,6 +286,33 @@ public class FirestoreHelper {
                     public void onFailure(@NonNull Exception e) {
                         // Veri ekleme başarısız oldu
                         Toast.makeText(context, "Alerji ismi eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    public void addAmeliyatBilgisi(String ameliyatIsmi, String ameliyatTarihi) {
+        Map<String, Object> ameliyatBilgisi = new HashMap<>();
+        ameliyatBilgisi.put("Ameliyat Ismi", ameliyatIsmi);
+        ameliyatBilgisi.put("Ameliyat Tarihi",ameliyatTarihi);
+
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Ameliyatlarım").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(ameliyatBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "Ameliyat bilgisi başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "Ameliyat bilgisi eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
