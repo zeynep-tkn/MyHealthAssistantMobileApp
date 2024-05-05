@@ -109,6 +109,5 @@ dependencies {
 //>>>>>>> parent of e276ea1 (.)
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
-    compile 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
 
 }
