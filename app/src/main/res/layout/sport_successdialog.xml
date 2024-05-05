@@ -46,7 +46,7 @@
               android:layout_gravity="center"
               android:layout_marginTop="20dp"
               android:text="Ok"
-              android:background="#b57edc"
+              android:background="#7E87DC"
               android:textColor="@color/black"/>
 
       </LinearLayout>
