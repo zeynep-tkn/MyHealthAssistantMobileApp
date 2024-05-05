@@ -49,7 +49,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -108,6 +107,5 @@ dependencies {
 //>>>>>>> 34474c1efcb4cfa9f46d974b4723bf4aba2f8be9
 //>>>>>>> parent of e276ea1 (.)
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
-    implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
 
 }
