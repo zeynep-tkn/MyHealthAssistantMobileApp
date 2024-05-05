@@ -266,6 +266,33 @@ public class FirestoreHelper {
                 });
     }
 
+    public void addAlerjiBilgisi(String alerjiIsmi) {
+        // Firestore'a veri eklemek için bir Map oluştur
+        Map<String, Object> alerjiBilgisi = new HashMap<>();
+        alerjiBilgisi.put("Alerji Ismi", alerjiIsmi);
+
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Alerjilerim").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(alerjiBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "Alerji ismi başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "Alerji ismi eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
     // Firestore'dan değeri alındığında geri çağrı yapılacak arayüz
     public interface ProgressFetchListener {
         void onProgressFetch(int progress);

@@ -12,11 +12,11 @@ import android.widget.TableRow;
 import java.util.Map;
 import java.util.HashMap;
 
-
 public class saglikGecmisim extends AppCompatActivity {
 
     private TableLayout hastaliklarimTable;
     private EditText editText1;
+    private EditText editTextAlerji;
     private TableLayout alerjilerimTable;
     private TableLayout ameliyatlarimTable;
     private Button addRowButtonhastaliklarim;
@@ -81,35 +81,48 @@ public class saglikGecmisim extends AppCompatActivity {
                         removeLastRow(hastaliklarimTable);
                     }
                 });
+            }
+        });
 
-                alerjilerimTable = findViewById(R.id.alerjilerim_table);
-                addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
+        alerjilerimTable = findViewById(R.id.alerjilerim_table);
+        addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
+        editTextAlerji = findViewById(R.id.editTextAlerji);
 
-                addRowButtonalerjilerim.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // Yeni bir satır oluştur
-                        TableRow newRow = new TableRow(saglikGecmisim.this);
+        addRowButtonalerjilerim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Yeni bir Firestore belgesi oluştur
+                Map<String, Object> alerjiIsmi = new HashMap<>();
 
-                        // EditText'i içeren yeni bir hücre oluştur
-                        EditText newEditText = new EditText(saglikGecmisim.this);
-                        newEditText.setLayoutParams(new TableRow.LayoutParams(
-                                TableRow.LayoutParams.MATCH_PARENT,
-                                TableRow.LayoutParams.WRAP_CONTENT, 1f));
-                        newEditText.setHint("Alerji ismi");
-                        newEditText.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
-                        newEditText.setGravity(Gravity.CENTER_HORIZONTAL);
-                        newEditText.setGravity(Gravity.CENTER); // Yazıyı ortala
+                String alerjiBilgisi = ""; // Boş bir String oluşturun
 
-                        // Hücreyi satıra ekle
-                        newRow.addView(newEditText);
+                alerjiBilgisi = editTextAlerji.getText().toString();
 
-                        // Satırı tabloya ekle
-                        alerjilerimTable.addView(newRow);
-                    }
-                });
+                db.addAlerjiBilgisi(alerjiBilgisi);
 
-                // SİL butonuna tıklandığında en son eklenen alerji satırını kaldır
+                // Yeni bir satır oluştur
+                TableRow newRow = new TableRow(saglikGecmisim.this);
+
+                // EditText'i içeren yeni bir hücre oluştur
+                EditText alerjiGirisText = new EditText(saglikGecmisim.this);
+                alerjiGirisText.setLayoutParams(new TableRow.LayoutParams(
+                        TableRow.LayoutParams.MATCH_PARENT,
+                        TableRow.LayoutParams.WRAP_CONTENT, 1f));
+                alerjiGirisText.setHint("Alerji ismi");
+                alerjiGirisText.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
+                alerjiGirisText.setGravity(Gravity.CENTER_HORIZONTAL);
+                alerjiGirisText.setGravity(Gravity.CENTER); // Yazıyı ortala
+
+                // Hücreyi satıra ekle
+                newRow.addView(alerjiGirisText);
+
+                // Satırı tabloya ekle
+                alerjilerimTable.addView(newRow);
+
+                editTextAlerji = alerjiGirisText;
+
+
+                // SİL butonuna tıklandığında en son eklenen hastalık satırını kaldır
                 Button deleteButtonAlerji = findViewById(R.id.deleteButtonAlerji);
                 deleteButtonAlerji.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -117,59 +130,59 @@ public class saglikGecmisim extends AppCompatActivity {
                         removeLastRow(alerjilerimTable);
                     }
                 });
-
-                ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
-                addRowButtonameliyatlarim = findViewById(R.id.addRowButtonAmeliyat);
-
-                addRowButtonameliyatlarim.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // Yeni bir satır oluştur
-                        TableRow newRow = new TableRow(saglikGecmisim.this);
-
-                        // Ameliyat ismi EditText'i içeren yeni bir hücre oluştur
-                        EditText newEditTextAmeliyatAdi = new EditText(saglikGecmisim.this);
-                        newEditTextAmeliyatAdi.setLayoutParams(new TableRow.LayoutParams(
-                                0,
-                                TableRow.LayoutParams.WRAP_CONTENT, 1f));
-                        newEditTextAmeliyatAdi.setHint("Ameliyat İsmi");
-                        newEditTextAmeliyatAdi.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
-                        newEditTextAmeliyatAdi.setGravity(Gravity.CENTER_HORIZONTAL);
-
-                        // Ameliyat tarihi EditText'i içeren yeni bir hücre oluştur
-                        EditText newEditTextAmeliyatTarihi = new EditText(saglikGecmisim.this);
-                        newEditTextAmeliyatTarihi.setLayoutParams(new TableRow.LayoutParams(
-                                0,
-                                TableRow.LayoutParams.WRAP_CONTENT, 1f));
-                        newEditTextAmeliyatTarihi.setHint("Ameliyat Tarihi");
-                        newEditTextAmeliyatTarihi.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
-                        newEditTextAmeliyatTarihi.setGravity(Gravity.CENTER_HORIZONTAL);
-
-                        // Hücreleri satıra ekle
-                        newRow.addView(newEditTextAmeliyatAdi);
-                        newRow.addView(newEditTextAmeliyatTarihi);
-
-                        // Satırı tabloya ekle
-                        ameliyatlarimTable.addView(newRow);
-                    }
-                });
-
-                // SİL butonuna tıklandığında en son eklenen hastalık satırını kaldır
-                Button deleteButtonAmeliyat = findViewById(R.id.deleteButtonAmeliyat);
-                deleteButtonAmeliyat.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        removeLastRow(ameliyatlarimTable);
-                    }
-                });
-            }
-
-            private void removeLastRow(TableLayout tableLayout) {
-                int rowCount = tableLayout.getChildCount();
-                if (rowCount > 0) {
-                    tableLayout.removeViewAt(rowCount - 1);
-                }
             }
         });
+
+        ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
+        addRowButtonameliyatlarim = findViewById(R.id.addRowButtonAmeliyat);
+
+        addRowButtonameliyatlarim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Yeni bir satır oluştur
+                TableRow newRow = new TableRow(saglikGecmisim.this);
+
+                // Ameliyat ismi EditText'i içeren yeni bir hücre oluştur
+                EditText newEditTextAmeliyatAdi = new EditText(saglikGecmisim.this);
+                newEditTextAmeliyatAdi.setLayoutParams(new TableRow.LayoutParams(
+                        0,
+                        TableRow.LayoutParams.WRAP_CONTENT, 1f));
+                newEditTextAmeliyatAdi.setHint("Ameliyat İsmi");
+                newEditTextAmeliyatAdi.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
+                newEditTextAmeliyatAdi.setGravity(Gravity.CENTER_HORIZONTAL);
+
+                // Ameliyat tarihi EditText'i içeren yeni bir hücre oluştur
+                EditText newEditTextAmeliyatTarihi = new EditText(saglikGecmisim.this);
+                newEditTextAmeliyatTarihi.setLayoutParams(new TableRow.LayoutParams(
+                        0,
+                        TableRow.LayoutParams.WRAP_CONTENT, 1f));
+                newEditTextAmeliyatTarihi.setHint("Ameliyat Tarihi");
+                newEditTextAmeliyatTarihi.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
+                newEditTextAmeliyatTarihi.setGravity(Gravity.CENTER_HORIZONTAL);
+
+                // Hücreleri satıra ekle
+                newRow.addView(newEditTextAmeliyatAdi);
+                newRow.addView(newEditTextAmeliyatTarihi);
+
+                // Satırı tabloya ekle
+                ameliyatlarimTable.addView(newRow);
+            }
+        });
+
+        // SİL butonuna tıklandığında en son eklenen hastalık satırını kaldır
+        Button deleteButtonAmeliyat = findViewById(R.id.deleteButtonAmeliyat);
+        deleteButtonAmeliyat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeLastRow(ameliyatlarimTable);
+            }
+        });
+    }
+
+    private void removeLastRow(TableLayout tableLayout) {
+        int rowCount = tableLayout.getChildCount();
+        if (rowCount > 0) {
+            tableLayout.removeViewAt(rowCount - 1);
+        }
     }
 }
