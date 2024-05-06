@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,25 +12,19 @@
         android:layout_height="wrap_content"
         android:text="RÖPORTAJ SAYFASI"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
-=======
     <ScrollView
-        android:layout_width="412dp"
-        android:layout_height="563dp"
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView97"
-        app:layout_constraintVertical_bias="1.0">
->>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
+        app:layout_constraintTop_toBottomOf="@+id/textView97">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,12 +45,6 @@
                 android:textSize="18sp"
                 android:padding="8dp"/>
 
-<<<<<<< HEAD
-            </LinearLayout>
-        </ScrollView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-=======
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,9 +66,47 @@
                 android:textSize="18sp"
                 android:padding="8dp"/>
 
-            <!-- Diğer sorular ve cevapları buraya eklenebilir -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 2: İçsel dönüşüm yolculuğunuz nasıl başladı?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İçsel dönüşüm yolculuğum, birkaç yıl önce yaşadığım derin bir krizle başladı. Hayatımın o dönemlerinde, kendimi kaybolmuş ve tükenmiş hissediyordum. İçsel bir boşluk hissi beni sarmıştı ve bu beni bir şeylerin değişmesi gerektiği konusunda cesaretlendirdi."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 3: Karşılaştığınız zorluklar ve engeller nelerdi? Bu süreçte nasıl başa çıktınız?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İçsel dönüşüm yolculuğumda karşılaştığım en büyük zorluk, kendi korkularımla yüzleşmekti. Kendi değerimi sorgulamak, başkalarının beklentileriyle mücadele etmek ve geçmişteki acılarımla yüzleşmek benim için büyük bir meydan okumaydı. Ancak, terapi, meditasyon ve destek grupları gibi araçlarla bu zorlukların üstesinden gelmeyi öğrendim."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 4: Dönüşüm yolculuğunuzda size ilham veren veya destek olan şeyler nelerdi?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İlhamımı, içimdeki derin bilgelik kaynağından aldım. Kendi iç sesimi dinlemek ve ona güvenmek, benim için dönüşümün anahtarı oldu. Ayrıca, sevdiklerimin ve dostlarımın sürekli destekleri de beni ileriye taşıyan güçlü bir etkendi."
+                android:textSize="18sp"
+                android:padding="8dp"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7

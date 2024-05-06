@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.025" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/im1"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -37,13 +37,13 @@
         android:layout_width="86dp"
         android:layout_height="64dp"
         android:text="MANŞET HABERLER"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+        app:layout_constraintBottom_toBottomOf="@+id/im1"
+        app:layout_constraintEnd_toEndOf="@+id/im1"
+        app:layout_constraintStart_toStartOf="@+id/im1"
+        app:layout_constraintTop_toTopOf="@+id/im1" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/im2"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -60,13 +60,13 @@
         android:layout_width="95dp"
         android:layout_height="53dp"
         android:text="BAŞARI HABERLERİ"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
-        app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+        app:layout_constraintBottom_toBottomOf="@+id/im2"
+        app:layout_constraintEnd_toEndOf="@+id/im2"
+        app:layout_constraintStart_toStartOf="@+id/im2"
+        app:layout_constraintTop_toTopOf="@+id/im2" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/im3"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -83,13 +83,13 @@
         android:layout_width="85dp"
         android:layout_height="52dp"
         android:text="RÖPORTAJ SAYFASI"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="@+id/imageButton7"
-        app:layout_constraintTop_toTopOf="@+id/imageButton7" />
+        app:layout_constraintBottom_toBottomOf="@+id/im3"
+        app:layout_constraintEnd_toEndOf="@+id/im3"
+        app:layout_constraintStart_toStartOf="@+id/im3"
+        app:layout_constraintTop_toTopOf="@+id/im3" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/im4"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -106,13 +106,13 @@
         android:layout_width="96dp"
         android:layout_height="74dp"
         android:text="KİTAP ve KAYNAK ÖNERİLERİ"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-        app:layout_constraintStart_toStartOf="@+id/imageButton8"
-        app:layout_constraintTop_toTopOf="@+id/imageButton8" />
+        app:layout_constraintBottom_toBottomOf="@+id/im4"
+        app:layout_constraintEnd_toEndOf="@+id/im4"
+        app:layout_constraintStart_toStartOf="@+id/im4"
+        app:layout_constraintTop_toTopOf="@+id/im4" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/im5"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -129,13 +129,13 @@
         android:layout_width="84dp"
         android:layout_height="53dp"
         android:text="SİZDEN GELENLER"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-        app:layout_constraintStart_toStartOf="@+id/imageButton9"
-        app:layout_constraintTop_toTopOf="@+id/imageButton9" />
+        app:layout_constraintBottom_toBottomOf="@+id/im5"
+        app:layout_constraintEnd_toEndOf="@+id/im5"
+        app:layout_constraintStart_toStartOf="@+id/im5"
+        app:layout_constraintTop_toTopOf="@+id/im5" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/im6"
         android:layout_width="131dp"
         android:layout_height="169dp"
         android:src="@drawable/assistant_message_background"
@@ -152,9 +152,9 @@
         android:layout_width="84dp"
         android:layout_height="47dp"
         android:text="OKUYUCU YORUMLARI"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton10"
-        app:layout_constraintStart_toStartOf="@+id/imageButton10"
-        app:layout_constraintTop_toTopOf="@+id/imageButton10" />
+        app:layout_constraintBottom_toBottomOf="@+id/im6"
+        app:layout_constraintEnd_toEndOf="@+id/im6"
+        app:layout_constraintStart_toStartOf="@+id/im6"
+        app:layout_constraintTop_toTopOf="@+id/im6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
