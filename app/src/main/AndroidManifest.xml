@@ -16,6 +16,7 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Gazete6Activity"
             android:exported="false" />
         <activity
@@ -37,6 +38,11 @@
             android:name=".ui.theme.MotivationGazete1Activity"
             android:exported="false" />
         <activity
+=======
+<<<<<<< HEAD
+            android:name=".SporPlanlariActivity"
+=======
+>>>>>>> c6c09f06c3d46208d90641e7a86d956e065a2f6d
             android:name=".MotivationIpuclari9Activity"
             android:exported="false" />
         <activity
@@ -65,9 +71,13 @@
             android:exported="false" />
         <activity
             android:name=".deneme5"
+>>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
             android:exported="false" />
         <activity
-            android:name=".deneme44"
+            android:name=".AkilSagligiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EgitimBeslenmeActivity"
             android:exported="false" />
         <activity
             android:name=".MotivationEtkinlikActivity"
