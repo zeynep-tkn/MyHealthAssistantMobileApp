@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeyneptekin.myhealthassistant">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
+        <activity
+            android:name=".deneme5"
+            android:exported="false" />
+        <activity
+            android:name=".deneme44"
+            android:exported="false" />
         <activity
             android:name=".MotivationEtkinlikActivity"
             android:exported="false" />
@@ -45,7 +52,6 @@
         <activity
             android:name=".MotivationTakvimActivity"
             android:exported="false" />
-
         <activity
             android:name=".gizlilikVeGuvenlik"
             android:exported="false" />
@@ -100,9 +106,6 @@
         <activity
             android:name=".FoodActivity"
             android:exported="false" />
-
-
-
         <activity
             android:name=".saglikliTarifler"
             android:exported="false" />
@@ -112,9 +115,6 @@
         <activity
             android:name=".veganTarifler"
             android:exported="false" />
-
-
-
         <activity
             android:name=".EducationActivity"
             android:exported="false" />

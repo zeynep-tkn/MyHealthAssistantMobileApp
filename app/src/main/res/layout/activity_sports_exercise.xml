@@ -13,7 +13,8 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/lavender"
+        android:background="@color/logo_dark"
+        android:backgroundTint="#1097D6"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Sports &amp; Exercise"
@@ -146,7 +147,7 @@
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:layout_margin="10.0dp"
-                  android:background="@drawable/btn"
+                  android:backgroundTint="#1097D6"
                   android:text="Get Started"
                   android:textAllCaps="true"
                   android:textColor="#FFF"/>

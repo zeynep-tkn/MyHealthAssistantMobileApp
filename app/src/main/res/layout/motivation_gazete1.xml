@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:text="MANŞET HABERLER"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="413dp"
+            android:layout_height="234dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- İlgili metin için TextView ekleyebilirsiniz -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="80 YAŞINDAKİ EMEKLİ, OKUMA YAZMA ÖĞRENEREK ÜNİVERSİTEYE BAŞLADI!"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="80 yaşındaki emekli bir birey, hayatının son dönemlerinde okuma yazma öğrenerek üniversite eğitimine başladı. Yaşın sadece bir sayı olduğunu kanıtlamak için cesurca adım atan bu kişi, öğrenmeye olan açlığını ve merakını hiçbir zaman kaybetmedi. Başarısı, yaşam boyu öğrenmenin ve keşfetmenin hiçbir zaman geç olmadığını gösteriyor."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+
+                <!-- Daha fazla metin eklemek isterseniz buraya ekleyebilirsiniz -->
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="413dp"
+            android:layout_height="234dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- İlgili metin için TextView ekleyebilirsiniz -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="72 YAŞINDAKİ BÜYÜKANNE, MARATON KOŞARAK REKOR KIRDI!"
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" İspanya'nın güneyindeki küçük bir kasabada yaşayan 72 yaşındaki Maria Hernandez, hayatında ilk kez katıldığı bir maraton koşusunda yaş grubunda bir rekor kırarak büyük bir başarıya imza attı. Yıllar boyunca sporla pek iç içe olmayan Hernandez, torunlarının ısrarıyla maratona katılmaya karar verdi. Antrenmanlar için kendi mahallesindeki parkta günde birkaç tur koşmayı alışkanlık haline getiren Hernandez, yaşının sadece bir sayı olduğunu kanıtlamak için cesaretle yola çıktı. Maraton günü geldiğinde, binlerce kişinin arasından sıyrılarak bitiş çizgisine ulaşan Hernandez, yarış komitesini ve seyircileri büyüleyerek yaş grubunda rekor kırmayı başardı. Bu başarı, sadece yaşın bir engel olmadığını değil, aynı zamanda kararlılık ve azmin ne kadar güçlü olduğunu da kanıtladı. Maria Hernandez, tüm yaşlılara ve gençlere, hayallerini gerçekleştirmek için asla geç olmadığını hatırlatan bir ilham kaynağı oldu."
+                    android:textSize="18sp"
+                    android:padding="8dp"/>
+
+                <!-- Daha fazla metin eklemek isterseniz buraya ekleyebilirsiniz -->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
