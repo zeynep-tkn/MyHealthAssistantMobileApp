@@ -19,8 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.058" />
 
-<<<<<<< HEAD
-=======
+
     <ScrollView
         android:layout_width="412dp"
         android:layout_height="563dp"
@@ -30,7 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView97"
         app:layout_constraintVertical_bias="1.0">
->>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,12 +49,7 @@
                 android:textSize="18sp"
                 android:padding="8dp"/>
 
-<<<<<<< HEAD
-            </LinearLayout>
-        </ScrollView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-=======
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,4 +76,4 @@
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
+
