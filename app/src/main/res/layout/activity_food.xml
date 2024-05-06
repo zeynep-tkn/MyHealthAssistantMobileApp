@@ -216,6 +216,7 @@
                 android:layout_marginTop="14dp"
 
                 android:background="@drawable/kisiselasistan">
+
                 <TextView
                     android:id="@+id/textViewkalori6"
                     android:layout_width="wrap_content"

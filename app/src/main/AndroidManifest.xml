@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
-            android:name=".deneme5"
+            android:name=".SporPlanlariActivity"
             android:exported="false" />
         <activity
-            android:name=".deneme44"
+            android:name=".AkilSagligiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EgitimBeslenmeActivity"
             android:exported="false" />
         <activity
             android:name=".MotivationEtkinlikActivity"
