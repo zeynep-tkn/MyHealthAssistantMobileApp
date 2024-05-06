@@ -2,6 +2,7 @@ package com.zeyneptekin.myhealthassistant;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -16,6 +17,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class HomeFragment extends Fragment {
@@ -31,6 +39,9 @@ public class HomeFragment extends Fragment {
     private int kalanBardak;
     FirestoreHelper db = new FirestoreHelper(getActivity());
     double kullaniciKilo;
+    ArrayList<BarEntry> barArrayList;
+
+    BarChart barChart;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,7 +56,21 @@ public class HomeFragment extends Fragment {
         SportsCard = view.findViewById(R.id.sportsCard);
         EducationCard = view.findViewById(R.id.educationCard);
         FoodCard = view.findViewById(R.id.foodCard);
-        //db = new FirestoreHelper(getActivity());
+        barChart= view.findViewById(R.id.barchart);
+        getData();
+        BarDataSet barDataSet=new BarDataSet(barArrayList,"Kalori Değerleri");
+        BarData barData =new BarData(barDataSet);
+        barChart.setData(barData);
+        //color bar data set
+        barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        //text color
+        barDataSet.setValueTextColor(Color.BLACK);
+        //setting text size
+        barDataSet.setValueTextSize(16f);
+        barChart.getDescription().setEnabled(true);
+
+
+
 
 
         MotivationCard.setOnClickListener(new View.OnClickListener() {
@@ -172,7 +197,39 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    private void getData(){
+        barArrayList=new ArrayList<>();
+        barArrayList.add(new BarEntry(0,10)); // Pazartesi
+        barArrayList.add(new BarEntry(1,20)); // Salı
+        barArrayList.add(new BarEntry(2,15)); // Çarşamba
+        barArrayList.add(new BarEntry(3,25)); // Perşembe
+        barArrayList.add(new BarEntry(4,18)); // Cuma
 
+        // Günleri temsil eden bir dizi oluşturun
+        String[] days = {"Pzt", "Sal", "Çar", "Per", "Cum"};
+
+        // Her bir çubuk için bir BarEntry oluştururken bu günleri kullanarak BarEntry listesini doldurun
+        ArrayList<BarEntry> barEntries = new ArrayList<>();
+        for (int i = 0; i < barArrayList.size(); i++) {
+            barEntries.add(new BarEntry(i, barArrayList.get(i).getY()));
+        }
+
+        // BarDataSet oluşturun
+        BarDataSet barDataSet=new BarDataSet(barEntries,"Kalori Takibi");
+        BarData barData =new BarData(barDataSet);
+
+        // Grafiği güncelleyin
+        barChart.setData(barData);
+        barChart.invalidate();
+
+        //color bar data set
+        barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        //text color
+        barDataSet.setValueTextColor(Color.BLACK);
+        //setting text size
+        barDataSet.setValueTextSize(16f);
+        barChart.getDescription().setEnabled(true);
+    }
 
 
 }
