@@ -19,12 +19,14 @@ public class P2Movement1Activity extends AppCompatActivity {
     private long MTimeLeftinmillis;
     AlertDialog.Builder builderDialog;
     AlertDialog alertDialog;
-
+    private FirestoreHelper firestoreHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("onCreate metodu çalışıyo");
         super.onCreate(savedInstanceState);
+
+        // FirestoreHelper'ı başlat
+        firestoreHelper = new FirestoreHelper(this);
 
 
         Intent intent = getIntent();
@@ -111,8 +113,18 @@ public class P2Movement1Activity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                int newValue = Integer.valueOf(buttonvalue) + 1;
 
+                //Firestrore kısmı
+                // Egzersiz numarasını al
+                int exerciseNumber = Integer.valueOf(buttonvalue);
+                String egzersizName = "egzersiz2";
+                // FirestoreHelper üzerinden ilgili egzersizin durumunu güncelle
+                firestoreHelper.updateExerciseStatus(egzersizName,exerciseNumber);
+                // Yeni bir Intent oluşturarak bir sonraki egzersize geç
+                int newValue = exerciseNumber + 1;
+
+
+                //int newValue = Integer.valueOf(buttonvalue) + 1
                 if (newValue <= 10) {
                     Intent intent = new Intent(P2Movement1Activity.this, P2Movement1Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -146,7 +158,7 @@ public class P2Movement1Activity extends AppCompatActivity {
             }
         }.start();
 
-        startBtn.setText("Pause");
+        startBtn.setText("PAUSE");
         MTimeRunning = true;
     }
 

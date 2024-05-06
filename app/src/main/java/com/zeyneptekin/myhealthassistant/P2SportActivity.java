@@ -7,15 +7,43 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class P2SportActivity extends AppCompatActivity {
     int[] newArray;
-
+    List<TextView> successTextList;
+    FirestoreHelper db = new FirestoreHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_p1_sport);
+        setContentView(R.layout.activity_p2_sport);
+        successTextList = new ArrayList<TextView>();
 
+        for(int j = 1;j<=3;j++){
+            String textName = "testText" + j;
+            int resID = getResources().getIdentifier(textName, "id", getPackageName());
+            TextView successText = findViewById(resID);
+            successTextList.add(successText);
+        }
+        String exerciseName = "egzersiz2";
+        FirestoreHelper.ProgressFetchListener listener = new FirestoreHelper.ProgressFetchListener() {
+            @Override
+            public void onProgressFetch(int progress) {
+                // Firestore'dan alınan egzersiz değerini kullanarak istediğiniz işlemleri gerçekleştirin
+                int progressNum = progress;
+                for (TextView oneTextView:successTextList) {
+                    oneTextView.setVisibility(View.GONE);
+                }
+                for (int i = 0;i<progressNum;i++) {
+                    TextView selectedTextView = successTextList.get(i);
+                    selectedTextView.setVisibility(View.VISIBLE);
+                }
+            }
+        };
+        db.showProgressForSportPage(exerciseName, listener);
         Toolbar toolbar=findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 

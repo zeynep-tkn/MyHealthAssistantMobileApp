@@ -48,7 +48,6 @@ public class P1SportActivity extends AppCompatActivity {
             }
         };
         db.showProgressForSportPage(exerciseName, listener);
-
         Toolbar toolbar=findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 
