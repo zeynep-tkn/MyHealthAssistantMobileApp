@@ -10,11 +10,13 @@ import java.net.URL;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.*;
+import java.util.Properties;
 
 public class OpenAIChat {
     static String API_KEY = "";
     //Key bal, bu proje grubu harici kullanan mal
     //ben ve bu proje grubu harici kullanan olursa sağlam bozuşurum.
+
     static String API_URL = "https://api.openai.com/v1/chat/completions";
     static String model = "gpt-3.5-turbo";
     public static String sendRequest(String prompt) {
@@ -63,5 +65,6 @@ public class OpenAIChat {
             return "Hata, API'ye erişim sağlanamadı";
         }
     }
+
 
 }
