@@ -1,5 +1,4 @@
 package com.zeyneptekin.myhealthassistant;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,16 +8,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
-
+import android.os.Handler;
+import android.os.Looper;
 
 public class ChatFragment extends Fragment {
-
+    private final Handler responseHandler = new Handler(Looper.getMainLooper());
     private ArrayList<ChatMessageClass> messages;
     private ArrayAdapter<ChatMessageClass> adapter;
 
@@ -68,16 +69,30 @@ public class ChatFragment extends Fragment {
             public void onClick(View v) {
                 String messageText = messageEditText.getText().toString();
                 ChatMessageClass userMessage = new ChatMessageClass("Siz\n" + messageText, true); // Kullanıcı tarafından gönderilen mesaj
-                ChatMessageClass assistantMessage = new ChatMessageClass("Assistan\n"+"Deneme", false); // Asistan tarafından gönderilen mesaj
 
                 if (!userMessage.getContent().isEmpty()) {
                     messages.add(userMessage);
-                    messages.add(assistantMessage);
                     adapter.notifyDataSetChanged();
                     messageEditText.getText().clear();
+
+                    // Asistan mesajını almak için OpenAI API'sine istek gönder
+                    new Thread(() -> {
+                        String assistantResponse = OpenAIChat.sendRequest(messageText);
+
+                        responseHandler.post(() -> {
+                            if (assistantResponse != null) {
+                                ChatMessageClass assistantMessage = new ChatMessageClass("Assistan\n" + assistantResponse, false); // Asistan tarafından gönderilen mesaj
+                                messages.add(assistantMessage);
+                                adapter.notifyDataSetChanged();
+                            } else {
+                                Toast.makeText(getContext(), "API isteği başarısız oldu. Lütfen tekrar deneyin.", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }).start();
                 }
             }
         });
+
 
         return view;
     }

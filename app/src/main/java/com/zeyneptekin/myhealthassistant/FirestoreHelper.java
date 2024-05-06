@@ -12,6 +12,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import android.util.Log;
@@ -239,6 +241,85 @@ public class FirestoreHelper {
                 });
     }
 
+    public void addHastalikBilgisi(String hastalikIsmi) {
+        // Firestore'a veri eklemek için bir Map oluştur
+        Map<String, Object> hastalikBilgisi = new HashMap<>();
+        hastalikBilgisi.put("hastalik Ismi", hastalikIsmi);
+
+
+        // Firestore koleksiyonunu ve belirli bir belgeyi belirle
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Hastalıklarım").document();
+        // Belgeye veriyi ekle ve başarılı olduğunda bir onSuccessListener dinle
+        docref.set(hastalikBilgisi)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        // Veri başarıyla eklendi
+                        Toast.makeText(context, "Hastalık ismi başarıyla kaydedildi!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Veri ekleme başarısız oldu
+                        Toast.makeText(context, "Hastalık ismi eklenirken hata oluştu: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    public void SaveWaterTrackingData(int drunkedWater, int waterOfDrink, String date){
+        DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("Su-Takibi").document(date);
+        Map<String, Object> data = new HashMap<>();
+        data.put("icilenSu", drunkedWater);
+        data.put("icilmesiGerekenSu", waterOfDrink);
+        docref.set(data)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG, "Veri ekleme işlemi başarılı!");
+                System.out.println("Veri kaydetme başarılı");
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.w(TAG, "Veri ekleme işlemi başarısız!", e);
+                System.out.println("Veri kaydetme başarısız");
+            }
+        });
+    }
+
+    public void GetUserWeight(final WeightFetchListener listener){
+        DocumentReference docRef = db.collection("users")
+                .document("aXjqaM073S5UPEMiT2fu");
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                    // Firestore'dan ağırlık değerini al
+                    int weight = documentSnapshot.getLong("userWeight") != null ?
+                            documentSnapshot.getLong("userWeight").intValue() : 0;
+                    // Geri çağrı ile ağırlık değerini döndür
+                    listener.onWeightFetched(weight);
+                } else {
+                    // Belge bulunamadığında veya ağırlık değeri yoksa -1 döndür
+                    listener.onWeightFetched(-1);
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                // Firestore'dan veri alınırken bir hata oluştuğunda -1 döndür
+                System.out.println("weight verisi çağırılamadı");
+                listener.onWeightFetched(-1);
+            }
+        });
+    }
+    // Firestore'dan ağırlık değerini alındığında geri çağrı yapılacak arayüz
+    public interface WeightFetchListener {
+        void onWeightFetched(int weight);
+    }
     // Firestore'dan değeri alındığında geri çağrı yapılacak arayüz
     public interface ProgressFetchListener {
         void onProgressFetch(int progress);
@@ -248,6 +329,3 @@ public class FirestoreHelper {
 
 
 }
-
-
-

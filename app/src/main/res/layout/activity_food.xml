@@ -75,7 +75,7 @@
                     android:text="0"
                     android:textSize="24sp"
                     android:textColor="@android:color/white"
-                    android:layout_below="@id/textViewkalori4"
+                    android:layout_below="@id/textViewkalori3"
                     android:layout_marginStart="20dp"
                     android:layout_centerHorizontal="false"/>
 
@@ -87,9 +87,17 @@
                     android:text="yenilen"
                     android:textSize="18sp"
                     android:textColor="@android:color/black"
-                    android:layout_below="@id/textView4"
+                    android:layout_below="@id/textViewkalori4"
                     android:layout_marginStart="20dp"
                     android:layout_centerHorizontal="false"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/caduceus2"
+                    android:layout_marginEnd="20dp"/>
             </RelativeLayout>
 
             <!-- KALORİ HESABI BUTONLARI -->
@@ -115,22 +123,89 @@
                     android:layout_margin="8dp">
 
                     <!-- İçerik -->
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:layout_height="match_parent">
 
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleKahvalti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kahvaltı"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="6dp"/>
+
+                        <!-- Orta İmageView -->
                         <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="140dp"
-                            android:src="@drawable/kahvalti"/>
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/breakfast"/>
 
-                    </LinearLayout>
+                        <!-- Orta Alt Köşe İmageView (+) -->
+                        <ImageView
+                            android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/plus"/>
+
+
+
+                    </FrameLayout>
 
                 </androidx.cardview.widget.CardView>
 
+
                 <!-- İkinci cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ogleCard"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleOgle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Öğle Yemeği"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="6dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/lunch"/>
+                        <!-- Orta Alt Köşe İmageView (+) -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@drawable/plus"/>
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Üçüncü cardView -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/atistirmalikCard"
                     android:layout_width="139dp"
@@ -140,49 +215,43 @@
                     android:layout_margin="8dp">
 
                     <!-- İçerik -->
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:layout_height="match_parent">
 
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleAtistirmalik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Atıştırmalık"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="6dp"/>
+
+                        <!-- Orta İmageView -->
                         <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="140dp"
-                            android:src="@drawable/atistirmalik"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <!-- Üçüncü cardView -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/ogleyemegiCard"
-                    android:layout_width="139dp"
-                    android:layout_height="139dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp"
-                    android:layout_margin="8dp">
-
-                    <!-- İçerik -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fruit"/>
+                        <!-- Orta Alt Köşe İmageView (+) -->
                         <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="140dp"
-                            android:src="@drawable/ogleyemegi"/>
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@drawable/plus"/>
 
-                    </LinearLayout>
+
+
+                    </FrameLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <!-- Dördüncü cardView -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/dorduncuCard"
+                    android:id="@+id/aksamCard"
                     android:layout_width="139dp"
                     android:layout_height="139dp"
                     app:cardCornerRadius="20dp"
@@ -190,19 +259,38 @@
                     android:layout_margin="8dp">
 
                     <!-- İçerik -->
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:layout_height="match_parent">
 
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleAksam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Akşam Yemeği"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="6dp"/>
+
+                        <!-- Orta İmageView -->
                         <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="140dp"
-                            android:src="@drawable/aksamyemegi"/>
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dinner"/>
+                        <!-- Orta Alt Köşe İmageView (+) -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@drawable/plus"/>
 
 
-                    </LinearLayout>
+
+                    </FrameLayout>
 
                 </androidx.cardview.widget.CardView>
             </GridLayout>
@@ -215,19 +303,48 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
 
+<<<<<<< HEAD
                 android:background="@drawable/kisiselasistan">
+=======
+                android:background="@drawable/btn2">
+>>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
 
                 <TextView
-                    android:id="@+id/textViewkalori6"
+                    android:id="@+id/textViewAi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AI İle Kişisel Beslenme Planını Oluştur"
+                    android:text="AI İle Kişisel \nBeslenme Planını Oluştur"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
-                    android:layout_below="@id/textView4"
-                    android:layout_marginStart="20dp"
-                    android:layout_centerHorizontal="false"/>
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="210dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginRight="-20dp"
+                    android:src="@drawable/ai3" />
+
             </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewAI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senin Malzemelerin"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true" />
+
 
 
             <RelativeLayout
@@ -235,9 +352,34 @@
                 android:layout_height="180dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="3dp"
 
-                android:background="@drawable/buzdolabi">
+                android:background="@drawable/kaloribtn">
+
+
+                <TextView
+                    android:id="@+id/textViewAi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buzdolabındaki malzemeleri seç \nUygun tarifi oluşturalım"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/secondImageView2"
+                    android:layout_width="250dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-52dp"
+                    android:layout_marginRight="-52dp"
+                    android:layout_marginBottom="23dp"
+                    android:src="@drawable/fridge" />
             </RelativeLayout>
 
 
@@ -247,7 +389,7 @@
 
 
         </LinearLayout>
-=======
+
 
   <!--  <<RelativeLayout
     android:layout_width="match_parent"
@@ -517,106 +659,193 @@
     </GridLayout> -->
 
 
+        <TextView
+            android:id="@+id/textViewAI3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beslenme Tarifleri"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="1845dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true" />
+
+
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1050dp">
+            android:layout_marginTop="950dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/veganLayout"
-                    android:layout_marginLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/veganTarif"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/vegan"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Vegan Programlar"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/AsistanLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/asistan"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/gluten"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Kişisel Sağlık Asistanım"/>
-
-                </LinearLayout>
-                <LinearLayout
+                <!-- ilk cardView -->
+                <androidx.cardview.widget.CardView
                     android:id="@+id/SaglikliLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="vertical">
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
 
-                    <ImageView
-                        android:id="@+id/healthyTarif"
+                    <!-- İçerik -->
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/healthy"/>
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Sağlıklı Tarifler"/>
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleSaglik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sağlıklı Tarifler"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="110dp"/>
 
-                </LinearLayout>
-                <LinearLayout
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/nutrition"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <!-- ikinci cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/veganLayout"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleVegan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegan Tarifler"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="110dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/vegan"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Üçüncü cardView -->
+                <androidx.cardview.widget.CardView
                     android:id="@+id/glutensizLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="vertical">
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
 
-                    <ImageView
-                        android:id="@+id/nutritionganTarif"
+                    <!-- İçerik -->
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="5dp"
-                        android:src="@drawable/nutrition"/>
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Glutensiz Tarifler"/>
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleGluten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Glutensiz Tarifler"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="110dp"/>
 
-                </LinearLayout>
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/glutenyok"/>
 
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Dördüncü cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vegatarianCard"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleVejetaryen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vejetaryen Tarifler"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="110dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/meat"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -636,7 +865,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/veganCard"
+                android:id="@+id/kisiselCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="0"
@@ -669,7 +898,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/kisiselCard"
+                android:id="@+id/Cardasistan"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="0"
@@ -703,7 +932,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/glutenCard"
+                android:id="@+id/CardVegan"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="1"
@@ -737,7 +966,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/saglikCard"
+                android:id="@+id/saglikCard1"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
@@ -775,6 +1004,7 @@
 
 
     </RelativeLayout>
+
 </ScrollView>
 
 
