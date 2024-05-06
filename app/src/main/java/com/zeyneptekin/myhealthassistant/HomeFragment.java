@@ -28,54 +28,24 @@ public class HomeFragment extends Fragment {
     ImageButton PlusButton;
     ImageButton MinusButton;
     private TextView AmountText;
+    private int kalanBardak;
 
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    private String mParam1;
-    private String mParam2;
-
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         AmountText = view.findViewById(R.id.amountTextView);
-        // Takvim bileşenini bul
+        MinusButton=view.findViewById(R.id.minusButton);
+        PlusButton=view.findViewById(R.id.plusButton);
+
         calendarView = view.findViewById(R.id.calendarView);
-
-
-
-        // Diğer bileşenlerin tanımlamaları ve tıklama işlevselliği burada devam eder
-
         MotivationCard = view.findViewById(R.id.motivationCard);
         SportsCard = view.findViewById(R.id.sportsCard);
         EducationCard = view.findViewById(R.id.educationCard);
         FoodCard = view.findViewById(R.id.foodCard);
 
-        MinusButton=view.findViewById(R.id.minusButton);
-        PlusButton=view.findViewById(R.id.plusButton);
 
 
 
@@ -110,47 +80,89 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        double kullaniciKilo=90;
+        double katSayi = 0.033; //kilogram
+        double suKilogram = katSayi * kullaniciKilo; //su miktarı kilogram
+        double toplamBardak = suKilogram / 0.2; // İçilen suyun bardak sayısına çevrilmesi
+        kalanBardak = (int) toplamBardak;
+        System.out.println("toplam bardak sayısı:"+toplamBardak);
+
+
         PlusButton.setOnClickListener(new View.OnClickListener() {
+            // artı butonuna basıldığında -o günün tarihi
+            //icilen bardak:currentValue
+            //kalan bardak:kalanBardak
+            //currentDate:bugünün tarihi
+
             @Override
             public void onClick(View v) {
+                // Mevcut tarihi al
+                Calendar cal = Calendar.getInstance();
+                int year = cal.get(Calendar.YEAR);
+                int month = cal.get(Calendar.MONTH) + 1; // Ocak 0'dan başlar, bu yüzden 1 ekliyoruz
+                int day = cal.get(Calendar.DAY_OF_MONTH);
+                String currentDate = day + "/" + month + "/" + year;
+                System.out.println("Bugünün tarihi: " + currentDate);
+
                 // Mevcut değeri al
                 System.out.println("Plus butonuna tıklandı");
                 String currentValueString = AmountText.getText().toString();
                 // String'i integer'a dönüştür
-                int currentValue = Integer.parseInt(currentValueString);
-                // Eğer mevcut değer 8'den küçükse, değeri bir artır
-                System.out.println("Değer 1 arttırıldı");
-                if (currentValue < 8) {
-                    int newValue = currentValue + 1;
-                    // Yeni değeri TextView'e yaz
-                    AmountText.setText(newValue + "/8 bardak");
-                    System.out.println(newValue+ "/8 bardak");
-                    // Eğer yeni değer 8 ise "Başarılı" mesajını göster
-                    if (newValue == 8) {
-                        Toast.makeText(getActivity(), "Başarılı", Toast.LENGTH_SHORT).show();
+                try {
+                    int currentValue = Integer.parseInt(currentValueString);
+                    // Eğer mevcut değer küçükse, değeri bir artır
+                    if (currentValue < toplamBardak) {
+                        int newValue = currentValue + 1;
+                        kalanBardak--;
+                        AmountText.setText(String.valueOf(newValue));
+                        System.out.println(newValue);
+                        // Eğer yeni değer 8 ise "Başarılı" mesajını göster
+                        if (newValue >= toplamBardak) {
+                            Toast.makeText(getActivity(), "Başarılı", Toast.LENGTH_SHORT).show();
+                        }
                     }
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                    System.out.println("Metni bir tamsayıya dönüştürme hatası oluştu");
                 }
+
             }
         });
+
 
         MinusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Mevcut tarihi al
+                Calendar cal = Calendar.getInstance();
+                int year = cal.get(Calendar.YEAR);
+                int month = cal.get(Calendar.MONTH) + 1; // Ocak 0'dan başlar, bu yüzden 1 ekliyoruz
+                int day = cal.get(Calendar.DAY_OF_MONTH);
+                String currentDate = day + "/" + month + "/" + year;
+                System.out.println("Bugünün tarihi: " + currentDate);
+
+
                 System.out.println("Minus butonuna tıklandı");
                 // Mevcut değeri al
                 String currentValueString = AmountText.getText().toString();
-                // String'i integer'a dönüştür
-                int currentValue = Integer.parseInt(currentValueString);
+                try {
+                    int currentValue = Integer.parseInt(currentValueString);
                 // Eğer mevcut değer 0'dan büyükse, değeri bir azalt
                 if (currentValue > 0) {
                     int newValue = currentValue - 1;
+                    kalanBardak++;
+                    AmountText.setText(String.valueOf(newValue));
+                    System.out.println(newValue);
                     // Yeni değeri TextView'e yaz
-                    AmountText.setText(newValue + "/8 bardak");
-
+                    AmountText.setText(String.valueOf(newValue));
+                }
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                    System.out.println("Metni bir tamsayıya dönüştürme hatası oluştu");
                 }
             }
         });
-
 
         return view;
     }
