@@ -268,22 +268,24 @@ public class FirestoreHelper {
                 });
     }
 
-    public void SaveWaterTrackingData(int drunkedWater, int remainingWater, Date date){
+    public void SaveWaterTrackingData(int drunkedWater, int waterOfDrink, String date){
         DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
-                collection("Su-Takibi").document(date.toString());
+                collection("Su-Takibi").document(date);
         Map<String, Object> data = new HashMap<>();
         data.put("icilenSu", drunkedWater);
-        data.put("kalanSu", remainingWater);
+        data.put("icilmesiGerekenSu", waterOfDrink);
         docref.set(data)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Log.d(TAG, "Veri ekleme işlemi başarılı!");
+                System.out.println("Veri kaydetme başarılı");
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Log.w(TAG, "Veri ekleme işlemi başarısız!", e);
+                System.out.println("Veri kaydetme başarısız");
             }
         });
     }
@@ -309,6 +311,7 @@ public class FirestoreHelper {
             @Override
             public void onFailure(@NonNull Exception e) {
                 // Firestore'dan veri alınırken bir hata oluştuğunda -1 döndür
+                System.out.println("weight verisi çağırılamadı");
                 listener.onWeightFetched(-1);
             }
         });

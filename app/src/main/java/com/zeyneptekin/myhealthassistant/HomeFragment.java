@@ -29,8 +29,8 @@ public class HomeFragment extends Fragment {
     ImageButton MinusButton;
     private TextView AmountText;
     private int kalanBardak;
-
-
+    FirestoreHelper db = new FirestoreHelper(getActivity());
+    double kullaniciKilo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,8 +45,7 @@ public class HomeFragment extends Fragment {
         SportsCard = view.findViewById(R.id.sportsCard);
         EducationCard = view.findViewById(R.id.educationCard);
         FoodCard = view.findViewById(R.id.foodCard);
-
-
+        //db = new FirestoreHelper(getActivity());
 
 
         MotivationCard.setOnClickListener(new View.OnClickListener() {
@@ -81,13 +80,29 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        double kullaniciKilo=90;
+        kullaniciKilo = 90;
+        db.GetUserWeight(new FirestoreHelper.WeightFetchListener() {
+            @Override
+            public void onWeightFetched(int weight) {
+                if (weight != -1) {
+                    // Firestore'dan başarıyla ağırlık değeri alındı
+                    kullaniciKilo = weight;
+                    // İşlemleri burada gerçekleştir
+                }
+            }
+        });
         double katSayi = 0.033; //kilogram
         double suKilogram = katSayi * kullaniciKilo; //su miktarı kilogram
         double toplamBardak = suKilogram / 0.2; // İçilen suyun bardak sayısına çevrilmesi
         kalanBardak = (int) toplamBardak;
         System.out.println("toplam bardak sayısı:"+toplamBardak);
 
+        Calendar cal = Calendar.getInstance();
+        int year = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH) + 1; // Ocak 0'dan başlar, bu yüzden 1 ekliyoruz
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        String currentDate = day + "-" + month + "-" + year;
+        System.out.println("Bugünün tarihi: " + currentDate);
 
         PlusButton.setOnClickListener(new View.OnClickListener() {
             // artı butonuna basıldığında -o günün tarihi
@@ -97,13 +112,6 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                // Mevcut tarihi al
-                Calendar cal = Calendar.getInstance();
-                int year = cal.get(Calendar.YEAR);
-                int month = cal.get(Calendar.MONTH) + 1; // Ocak 0'dan başlar, bu yüzden 1 ekliyoruz
-                int day = cal.get(Calendar.DAY_OF_MONTH);
-                String currentDate = day + "/" + month + "/" + year;
-                System.out.println("Bugünün tarihi: " + currentDate);
 
                 // Mevcut değeri al
                 System.out.println("Plus butonuna tıklandı");
@@ -117,6 +125,7 @@ public class HomeFragment extends Fragment {
                         kalanBardak--;
                         AmountText.setText(String.valueOf(newValue));
                         System.out.println(newValue);
+                        db.SaveWaterTrackingData(newValue,(int)toplamBardak,currentDate);
                         // Eğer yeni değer 8 ise "Başarılı" mesajını göster
                         if (newValue >= toplamBardak) {
                             Toast.makeText(getActivity(), "Başarılı", Toast.LENGTH_SHORT).show();
@@ -135,12 +144,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Mevcut tarihi al
-                Calendar cal = Calendar.getInstance();
-                int year = cal.get(Calendar.YEAR);
-                int month = cal.get(Calendar.MONTH) + 1; // Ocak 0'dan başlar, bu yüzden 1 ekliyoruz
-                int day = cal.get(Calendar.DAY_OF_MONTH);
-                String currentDate = day + "/" + month + "/" + year;
-                System.out.println("Bugünün tarihi: " + currentDate);
+
 
 
                 System.out.println("Minus butonuna tıklandı");
@@ -155,6 +159,7 @@ public class HomeFragment extends Fragment {
                     AmountText.setText(String.valueOf(newValue));
                     System.out.println(newValue);
                     // Yeni değeri TextView'e yaz
+                    db.SaveWaterTrackingData(newValue,kalanBardak,currentDate);
                     AmountText.setText(String.valueOf(newValue));
                 }
                 } catch (NumberFormatException e) {
@@ -166,7 +171,6 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
-
 
 
 
