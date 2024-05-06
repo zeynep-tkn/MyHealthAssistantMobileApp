@@ -303,11 +303,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
 
-<<<<<<< HEAD
+
                 android:background="@drawable/kisiselasistan">
-=======
-                android:background="@drawable/btn2">
->>>>>>> 427d493664e814daea9a5eb06207ddcadc2423c7
 
                 <TextView
                     android:id="@+id/textViewAi"
