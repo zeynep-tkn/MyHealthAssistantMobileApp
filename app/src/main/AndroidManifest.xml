@@ -16,6 +16,27 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".Gazete6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.MotivationGazete1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MotivationIpuclari9Activity"
             android:exported="false" />
         <activity
