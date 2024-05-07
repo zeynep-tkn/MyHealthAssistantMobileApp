@@ -17,7 +17,7 @@ public class MotivationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivation);
 
-        MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
+        //MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
         TextView textView = findViewById(R.id.textView14);
         TextView quoteTextView = findViewById(R.id.textView230);
         Button motivationButton = findViewById(R.id.button6);
