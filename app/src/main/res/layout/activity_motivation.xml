@@ -1,127 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CEE9F4"
     app:layout_constraintBottom_toBottomOf="parent"
-
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    tools:context=".MotivationActivity"
+    tools:context=".MotivationActivity">
 
-    >
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="412dp"
+        android:layout_height="315dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="392dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="399dp"
+                    android:layout_height="311dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/motivation_beyazmenu_zemin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.48"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_goneMarginBottom="40dp"
+                    app:layout_goneMarginEnd="16dp"
+                    app:layout_goneMarginStart="16dp"
+                    app:layout_goneMarginTop="16dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="199dp"
+                        android:layout_height="112dp"
+                        android:elevation="3dp"
+                        android:src="@tools:sample/avatars"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/motivation_banner_background"
+                android:layout_margin="16dp"
+                android:layout_height="130dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bugün yapmadığınız şey, yarın istediğiniz sonuca ulaşmanızın engelidir."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="55dp"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#76ADC6"
         android:text="Motivasyon Gazetesi"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <Button
         android:id="@+id/button4"
         android:layout_width="137dp"
         android:layout_height="73dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="53dp"
+        android:backgroundTint="#76ADC6"
         android:text="Etkinliikler"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_editor_absoluteY="556dp" />
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="135dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="138dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#76ADC6"
         android:text="Hayatı Kolaylaştırıcı İpuçları"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="135dp"
-        android:layout_height="0dp"
+        android:layout_width="134dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#76ADC6"
         android:text="Eğlence"
-        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button11" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="139dp"
+        android:layout_height="72dp"
         android:layout_marginStart="48dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="#76ADC6"
         android:text="İlham Veren Hikayeler"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="0dp"
-        android:layout_height="71dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="135dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#76ADC6"
         android:text="Motivasyon Takvimi"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button13" />
+        tools:layout_editor_absoluteY="370dp" />
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
-        android:layout_marginBottom="18dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/button13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView230"
         android:layout_width="378dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="396dp"
         android:text="Bugün yapmadığınız şey, yarın istediğiniz sonuca ulaşmanızın engelidir."
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbar" />
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="323dp" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="326dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginBottom="51dp"
-        android:text="HER GÜN BİR ADIM             DAHA  YAKINSINIZ!"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView230"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
