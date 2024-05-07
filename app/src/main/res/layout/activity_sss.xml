@@ -29,12 +29,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.github.mikephil.charting.charts.BarChart
+        <org.naishadhparmar.zcustomcalendar.CustomCalendar
+            android:id="@+id/custom_calendar"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
 
-            />
     </LinearLayout>
 
 
