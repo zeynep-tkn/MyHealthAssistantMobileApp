@@ -33,8 +33,8 @@ public class HomeFragment extends Fragment {
     private CardView EducationCard;
     private CardView FoodCard;
     private CalendarView calendarView;
-    ImageButton PlusButton;
-    ImageButton MinusButton;
+    ImageView PlusButton;
+    ImageView MinusButton;
     private TextView AmountText;
     private int kalanBardak;
     FirestoreHelper db = new FirestoreHelper(getActivity());
@@ -105,7 +105,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        kullaniciKilo = 90;
+        kullaniciKilo = 70;
         db.GetUserWeight(new FirestoreHelper.WeightFetchListener() {
             @Override
             public void onWeightFetched(int weight) {
@@ -130,10 +130,6 @@ public class HomeFragment extends Fragment {
         System.out.println("Bugünün tarihi: " + currentDate);
 
         PlusButton.setOnClickListener(new View.OnClickListener() {
-            // artı butonuna basıldığında -o günün tarihi
-            //icilen bardak:currentValue
-            //kalan bardak:kalanBardak
-            //currentDate:bugünün tarihi
 
             @Override
             public void onClick(View v) {
@@ -153,7 +149,7 @@ public class HomeFragment extends Fragment {
                         db.SaveWaterTrackingData(newValue,(int)toplamBardak,currentDate);
                         // Eğer yeni değer 8 ise "Başarılı" mesajını göster
                         if (newValue >= toplamBardak) {
-                            Toast.makeText(getActivity(), "Başarılı", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Tebrikler! Hedefe ulaştınız", Toast.LENGTH_LONG).show();
                         }
                     }
                 } catch (NumberFormatException e) {
@@ -169,8 +165,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Mevcut tarihi al
-
-
 
                 System.out.println("Minus butonuna tıklandı");
                 // Mevcut değeri al

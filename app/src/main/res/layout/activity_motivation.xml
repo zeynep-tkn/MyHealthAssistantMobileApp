@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,93 +7,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CEE9F4"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
     tools:context=".MotivationActivity">
 
     <ScrollView
         android:id="@+id/scrollView5"
-        android:layout_width="412dp"
-        android:layout_height="315dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-    <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="660dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="288dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="394dp"
-                android:layout_height="274dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/motivation_beyazmenu_zemin"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.538"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_goneMarginBottom="40dp"
-                app:layout_goneMarginEnd="16dp"
-                app:layout_goneMarginStart="16dp"
-                app:layout_goneMarginTop="16dp">
-
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="199dp"
-                    android:layout_height="112dp"
-                    android:elevation="3dp"
-                    android:src="@drawable/motivation"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_margin="16dp"
-            android:background="@drawable/motivation_banner_background">
-
-            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="288dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="394dp"
+                    android:layout_height="274dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/motivation_beyazmenu_zemin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.538"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_goneMarginBottom="40dp"
+                    app:layout_goneMarginEnd="16dp"
+                    app:layout_goneMarginStart="16dp"
+                    app:layout_goneMarginTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="199dp"
+                        android:layout_height="112dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/motivation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/motivation_banner_background">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="264dp"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="66dp"
-                        android:background="@drawable/motivasyon_menu_butonu_zemin"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
                 </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/motivasyon_menu_butonu_zemin"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="137dp"
+                    android:layout_height="73dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="#76ADC6"
+                    android:text="Etkinlikler"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/button6"
+                    tools:layout_editor_absoluteY="556dp" />
+
             </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
-
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/button6"
@@ -106,18 +110,6 @@
         android:text="Motivasyon Gazetesi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="137dp"
-        android:layout_height="73dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#76ADC6"
-        android:text="Etkinliikler"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        tools:layout_editor_absoluteY="556dp" />
 
     <Button
         android:id="@+id/button11"
@@ -165,6 +157,5 @@
         android:text="Motivasyon Takvimi"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="370dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

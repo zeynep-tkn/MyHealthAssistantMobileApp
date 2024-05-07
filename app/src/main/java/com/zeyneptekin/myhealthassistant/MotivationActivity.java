@@ -18,8 +18,8 @@ public class MotivationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_motivation);
 
         //MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
-        TextView textView = findViewById(R.id.textView14);
-        TextView quoteTextView = findViewById(R.id.textView230);
+        //TextView textView = findViewById(R.id.textView14);
+        //TextView quoteTextView = findViewById(R.id.textView230);
         Button motivationButton = findViewById(R.id.button6);
         Button activitiesButton = findViewById(R.id.button4);
         Button tipsButton = findViewById(R.id.button11);
