@@ -10,6 +10,8 @@ import android.widget.TableRow;
 
 import com.google.firebase.Timestamp;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -25,6 +27,7 @@ import java.util.HashMap;
     private Button addRowButtonameliyatlarim;
     private Button addRowButtonalerjilerim;
     private Button deleteButtonHastalik;
+
     private FirestoreHelper firestoreHelper;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,17 @@ import java.util.HashMap;
         hastaliklarimTable = findViewById(R.id.hastaliklarim_table);
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
+
+        List<String> hastaliklarimList = new ArrayList<>();
+        String test1 = "test1";
+        String test2 = "test2";
+        String test3 = "test3";
+        hastaliklarimList.add(test1);
+        hastaliklarimList.add(test2);
+        hastaliklarimList.add(test3);
+        for (String hastaliklarimStr:hastaliklarimList) {
+            System.out.println(hastaliklarimStr);
+        }
         addRowButtonhastaliklarim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
