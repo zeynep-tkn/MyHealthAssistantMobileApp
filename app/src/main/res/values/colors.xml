@@ -15,4 +15,10 @@
     <color name="lavender">#8692f7</color>
     <color name="red">#D62518</color>
     <color name="green">#23AA29</color>
+
+    <color name="pink">#ffabff</color>
+    <color name="pink_dark">#c57de2</color>
+    <color name="purple">#7d57a1</color>
+    <color name="purple_dark">#49396e</color>
+    <color name="purple_black">#262347</color>
 </resources>
