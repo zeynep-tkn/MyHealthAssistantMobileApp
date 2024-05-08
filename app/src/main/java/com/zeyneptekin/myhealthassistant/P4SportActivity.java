@@ -22,7 +22,7 @@ public class P4SportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_p4_sport);
         successTextList = new ArrayList<TextView>();
 
-        for(int j = 1;j<=3;j++){
+        for(int j = 1;j<=10;j++){
             String textName = "testText" + j;
             int resID = getResources().getIdentifier(textName, "id", getPackageName());
             TextView successText = findViewById(resID);
