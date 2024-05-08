@@ -12,9 +12,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import android.util.Log;
 import android.widget.Toast;
@@ -378,6 +382,61 @@ public class FirestoreHelper {
         void onProgressFetch(int progress);
     }
 
+
+    public List<String> GetHastalıklarımTable() {
+        final List<String> hastaliklarListesi = new ArrayList<>();
+
+        getHastalıklarımTableFromFirestore(new StringListFetchListener() {
+            @Override
+            public void onStringListFetched(List<String> stringList) {
+                hastaliklarListesi.addAll(stringList);
+            }
+        });
+
+        // Firestore'dan verileri alırken bekleme süreci olduğu için, işlem tamamlanana kadar burada beklemeniz gerekir.
+        // Ancak bu, UI'nın donmasına ve performans sorunlarına neden olabilir.
+
+        return hastaliklarListesi;
+    }
+
+    private void getHastalıklarımTableFromFirestore(final StringListFetchListener listener) {
+        db.collection("users").document("aXjqaM073S5UPEMiT2fu")
+                .collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("randevularım")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            List<String> valueList = new ArrayList<>();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                // Her bir dökümandaki belirli bir alanın değerini al
+                                String value = document.getString("hastalik Ismi");
+                                if (value != null) {
+                                    valueList.add(value);
+                                }
+                            }
+                            // Dinleyiciye string listesini geri çağır
+                            listener.onStringListFetched(valueList);
+                        } else {
+                            // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                            listener.onStringListFetched(new ArrayList<String>());
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                        listener.onStringListFetched(new ArrayList<String>());
+                    }
+                });
+    }
+
+
+
+    public interface StringListFetchListener {
+        void onStringListFetched(List<String> stringList);
+    }
 
 
 
