@@ -23,8 +23,14 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
+import org.naishadhparmar.zcustomcalendar.CustomCalendar;
+import org.naishadhparmar.zcustomcalendar.OnDateSelectedListener;
+import org.naishadhparmar.zcustomcalendar.Property;
+
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Objects;
 
 public class HomeFragment extends Fragment {
 
@@ -32,9 +38,9 @@ public class HomeFragment extends Fragment {
     private CardView SportsCard;
     private CardView EducationCard;
     private CardView FoodCard;
-    private CalendarView calendarView;
-    ImageButton PlusButton;
-    ImageButton MinusButton;
+    private CustomCalendar customCalendar;
+    ImageView PlusButton;
+    ImageView MinusButton;
     private TextView AmountText;
     private int kalanBardak;
     FirestoreHelper db = new FirestoreHelper(getActivity());
@@ -51,12 +57,64 @@ public class HomeFragment extends Fragment {
         MinusButton=view.findViewById(R.id.minusButton);
         PlusButton=view.findViewById(R.id.plusButton);
 
-        calendarView = view.findViewById(R.id.calendarView);
+        customCalendar = view.findViewById(R.id.custom_calendar);
         MotivationCard = view.findViewById(R.id.motivationCard);
         SportsCard = view.findViewById(R.id.sportsCard);
         EducationCard = view.findViewById(R.id.educationCard);
         FoodCard = view.findViewById(R.id.foodCard);
         barChart= view.findViewById(R.id.barchart);
+
+
+        //takvim kodları
+        HashMap<Object, Property> descHashMap = new HashMap<>();
+
+        Property defaultProperty =new Property();
+        defaultProperty.layoutResource=R.layout.default_view;
+        defaultProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("default",defaultProperty);
+
+        Property currentProperty=new Property();
+        currentProperty.layoutResource=R.layout.current_view;
+        currentProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("current",currentProperty);
+
+        Property presentProperty =new Property();
+        presentProperty.layoutResource=R.layout.present_view;
+        presentProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("present",presentProperty);
+
+        Property absentProperty =new Property();
+        absentProperty.layoutResource=R.layout.absent_view;
+        absentProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("absent",absentProperty);
+
+        customCalendar.setMapDescToProp(descHashMap);
+        HashMap<Integer,Object> dateHashMap =new HashMap<>();
+        Calendar calendar=Calendar.getInstance();
+
+        dateHashMap.put(calendar.get(Calendar.DAY_OF_MONTH),"current");
+        dateHashMap.put(1,"present");
+        dateHashMap.put(2,"absent");
+        dateHashMap.put(3,"present");
+        dateHashMap.put(6,"absent");
+        dateHashMap.put(20,"present");
+        dateHashMap.put(30,"absent");
+
+        customCalendar.setDate(calendar,dateHashMap);
+        customCalendar.setOnDateSelectedListener(new OnDateSelectedListener() {
+            @Override
+            public void onDateSelected(View view, Calendar selectedDate, Object desc) {
+                String sDate=selectedDate.get(Calendar.DAY_OF_MONTH)
+                        +"/"+(selectedDate.get(Calendar.MONTH)+1)
+                        +"/"+selectedDate.get(Calendar.YEAR);
+
+                Toast.makeText(getContext(), sDate, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+        //kalori takip grafiği
         getData();
         BarDataSet barDataSet=new BarDataSet(barArrayList,"Kalori Değerleri");
         BarData barData =new BarData(barDataSet);
@@ -105,7 +163,9 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        kullaniciKilo = 90;
+
+        //su takip +firebase
+        kullaniciKilo = 70;
         db.GetUserWeight(new FirestoreHelper.WeightFetchListener() {
             @Override
             public void onWeightFetched(int weight) {
@@ -130,10 +190,6 @@ public class HomeFragment extends Fragment {
         System.out.println("Bugünün tarihi: " + currentDate);
 
         PlusButton.setOnClickListener(new View.OnClickListener() {
-            // artı butonuna basıldığında -o günün tarihi
-            //icilen bardak:currentValue
-            //kalan bardak:kalanBardak
-            //currentDate:bugünün tarihi
 
             @Override
             public void onClick(View v) {
@@ -153,7 +209,7 @@ public class HomeFragment extends Fragment {
                         db.SaveWaterTrackingData(newValue,(int)toplamBardak,currentDate);
                         // Eğer yeni değer 8 ise "Başarılı" mesajını göster
                         if (newValue >= toplamBardak) {
-                            Toast.makeText(getActivity(), "Başarılı", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Tebrikler! Hedefe ulaştınız", Toast.LENGTH_LONG).show();
                         }
                     }
                 } catch (NumberFormatException e) {
@@ -169,8 +225,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Mevcut tarihi al
-
-
 
                 System.out.println("Minus butonuna tıklandı");
                 // Mevcut değeri al
@@ -197,6 +251,8 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+
+    //kalori takip fonksiyonu
     private void getData(){
         barArrayList=new ArrayList<>();
         barArrayList.add(new BarEntry(0,10)); // Pazartesi

@@ -30,12 +30,6 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <org.naishadhparmar.zcustomcalendar.CustomCalendar
-            android:id="@+id/custom_calendar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
     </LinearLayout>
 
 
