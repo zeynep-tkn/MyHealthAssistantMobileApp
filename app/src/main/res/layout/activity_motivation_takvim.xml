@@ -137,6 +137,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="329dp" />
 
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="71dp"
