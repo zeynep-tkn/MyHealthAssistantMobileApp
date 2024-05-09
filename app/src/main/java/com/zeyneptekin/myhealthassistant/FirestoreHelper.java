@@ -383,25 +383,18 @@ public class FirestoreHelper {
     }
 
 
-    public List<String> GetHastalıklarımTable() {
-        final List<String> hastaliklarListesi = new ArrayList<>();
-
+    public void GetHastalıklarımTable(final StringListFetchListener listener) {
         getHastalıklarımTableFromFirestore(new StringListFetchListener() {
             @Override
             public void onStringListFetched(List<String> stringList) {
-                hastaliklarListesi.addAll(stringList);
+                listener.onStringListFetched(stringList);
             }
         });
-
-        // Firestore'dan verileri alırken bekleme süreci olduğu için, işlem tamamlanana kadar burada beklemeniz gerekir.
-        // Ancak bu, UI'nın donmasına ve performans sorunlarına neden olabilir.
-
-        return hastaliklarListesi;
     }
 
     private void getHastalıklarımTableFromFirestore(final StringListFetchListener listener) {
-        db.collection("users").document("aXjqaM073S5UPEMiT2fu")
-                .collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("randevularım")
+        db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Hastalıklarım")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
