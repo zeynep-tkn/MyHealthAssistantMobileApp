@@ -15,6 +15,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
+
+        <activity
+            android:name=".saglikliTarifler10"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler9"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".yesilBowlTarifi"
+            android:exported="false" />
         <activity
             android:name=".Gazete6Activity"
             android:exported="false" />

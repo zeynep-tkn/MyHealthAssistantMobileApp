@@ -27,8 +27,7 @@
                 android:layout_height="180dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-
-        android:background="@drawable/kaloribtn">
+                android:background="@drawable/kaloribtn">
 
                 <!-- İlk TextView: GÜNLÜK KALORİ HEDEFİ -->
                 <TextView

@@ -22,7 +22,7 @@ public class ChatFragment extends Fragment {
     private final Handler responseHandler = new Handler(Looper.getMainLooper());
     private ArrayList<ChatMessageClass> messages;
     private ArrayAdapter<ChatMessageClass> adapter;
-
+    //private FloatingActionButton sendMsgFAB
     public ChatFragment() {
         // Boş yapıcı metot
     }
@@ -35,7 +35,7 @@ public class ChatFragment extends Fragment {
         ListView chatListView = view.findViewById(R.id.chatListView);
         EditText messageEditText = view.findViewById(R.id.messageEditText);
         Button sendButton = view.findViewById(R.id.sendButton);
-
+        //sendMsgFAB =findViewById(R.id.idFABSend);
         messages = new ArrayList<>();
 
         adapter = new ArrayAdapter<ChatMessageClass>(requireContext(), android.R.layout.simple_list_item_1, messages) {
