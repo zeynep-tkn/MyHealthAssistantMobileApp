@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ListView
@@ -15,9 +18,9 @@
 
     <EditText
         android:id="@+id/messageEditText"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="Mesajınızı yazın"
+        android:hint="Mesaj Gönder"
         android:inputType="text" />
 
     <Button
@@ -25,5 +28,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gönder" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_send"
+        android:id="@+id/idFABSend"
+        android:layout_margin="4dp"
+        app:fabCustomSize="45dp"
+        app:backgroundTint="@color/purple_dark"
+        app:tint="@color/white"
+        android:layout_alignParentRight="true"/>
 
 </LinearLayout>
