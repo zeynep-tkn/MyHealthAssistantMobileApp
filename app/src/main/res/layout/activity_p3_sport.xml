@@ -41,25 +41,25 @@
 
 
 
-
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:onClick="ImageButtonClicked"
                         android:id="@+id/bir_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
+                        android:onClick="ImageButtonClicked"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -71,19 +71,28 @@
                                 android:text="Mountain Climbers"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
-                                android:textStyle="bold"/>
+                                android:textSize="15.0sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Repeate 2 time"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/testText1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -94,7 +103,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/mountainclimbing"/>
+                                android:src="@drawable/mountainclimbing" />
 
                         </LinearLayout>
 
@@ -102,18 +111,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0.0">
+                            android:layout_weight="0.0"
+                            android:gravity="center">
 
 
                             <ImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5.0dp"
-                                android:src="@drawable/baseline_arrow_outward_24"/>
+                                android:src="@drawable/baseline_arrow_outward_24" />
 
                         </LinearLayout>
-
 
 
                     </LinearLayout>
@@ -130,22 +138,23 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:onClick="ImageButtonClicked"
                         android:id="@+id/iki_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
+                        android:onClick="ImageButtonClicked"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -157,19 +166,28 @@
                                 android:text="Bicycle Crunch"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
-                                android:textStyle="bold"/>
+                                android:textSize="15.0sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Repeate 2 time"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/testText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -180,7 +198,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/kollarlabisiklet"/>
+                                android:src="@drawable/kollarlabisiklet" />
 
                         </LinearLayout>
 
@@ -188,18 +206,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0.0">
+                            android:layout_weight="0.0"
+                            android:gravity="center">
 
 
                             <ImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5.0dp"
-                                android:src="@drawable/baseline_arrow_outward_24"/>
+                                android:src="@drawable/baseline_arrow_outward_24" />
 
                         </LinearLayout>
-
 
 
                     </LinearLayout>
@@ -216,22 +233,23 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:onClick="ImageButtonClicked"
                         android:id="@+id/uc_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
+                        android:onClick="ImageButtonClicked"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -243,19 +261,29 @@
                                 android:text="Flutter Kicks"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
-                                android:textStyle="bold"/>
+                                android:textSize="15.0sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Repeate 2 time"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/testText3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -266,7 +294,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/kelebekhareketi"/>
+                                android:src="@drawable/kelebekhareketi" />
 
                         </LinearLayout>
 
@@ -274,18 +302,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0.0">
+                            android:layout_weight="0.0"
+                            android:gravity="center">
 
 
                             <ImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5.0dp"
-                                android:src="@drawable/baseline_arrow_outward_24"/>
+                                android:src="@drawable/baseline_arrow_outward_24" />
 
                         </LinearLayout>
-
 
 
                     </LinearLayout>
@@ -302,7 +329,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -311,13 +338,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/dort_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -329,7 +357,7 @@
                                 android:text="Lateral Heel Touches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -342,6 +370,13 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -388,7 +423,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -397,13 +432,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/bes_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -415,7 +451,7 @@
                                 android:text="Crunches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -428,6 +464,12 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -474,7 +516,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -483,13 +525,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/alti_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -501,7 +544,7 @@
                                 android:text="Lateral Heel Touches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -514,6 +557,12 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -560,22 +609,24 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
 
+
                     <LinearLayout
-                        android:onClick="ImageButtonClicked"
                         android:id="@+id/yedi_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
+                        android:onClick="ImageButtonClicked"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -587,19 +638,27 @@
                                 android:text="Mountain Climber"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
-                                android:textStyle="bold"/>
+                                android:textSize="15.0sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Repeate 2 time"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/testText7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -610,7 +669,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/mountainclimbing"/>
+                                android:src="@drawable/mountainclimbing" />
 
                         </LinearLayout>
 
@@ -618,22 +677,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0.0">
+                            android:layout_weight="0.0"
+                            android:gravity="center">
 
 
                             <ImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5.0dp"
-                                android:src="@drawable/baseline_arrow_outward_24"/>
+                                android:src="@drawable/baseline_arrow_outward_24" />
 
                         </LinearLayout>
 
 
-
                     </LinearLayout>
-
 
                     <TableRow
                         android:layout_width="fill_parent"
@@ -646,7 +703,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -655,13 +712,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/sekiz_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -673,7 +731,7 @@
                                 android:text="Flutter Kicks"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -686,6 +744,12 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -732,7 +796,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -741,13 +805,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/dokuz_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -759,7 +824,7 @@
                                 android:text="Bicycle Crunch"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -772,6 +837,12 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -818,7 +889,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
+                    android:layout_height="110.0dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -827,13 +898,14 @@
                         android:onClick="ImageButtonClicked"
                         android:id="@+id/on_pose"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:layout_margin="10.0dp"
+                        android:baselineAligned="false"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="80dp"
                             android:layout_margin="10.0dp"
                             android:layout_weight="1.0"
                             android:orientation="vertical">
@@ -845,7 +917,7 @@
                                 android:text="Lateral Heel Touches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
-                                android:textSize="15.0dp"
+                                android:textSize="15.0sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -858,6 +930,12 @@
                                 android:text="01:00 MIN"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/testText10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tamamlandı"
+                                android:textColor="@color/green"/>
                         </LinearLayout>
 
                         <LinearLayout

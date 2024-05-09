@@ -107,5 +107,8 @@ dependencies {
 //>>>>>>> 34474c1efcb4cfa9f46d974b4723bf4aba2f8be9
 //>>>>>>> parent of e276ea1 (.)
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.npanigrahy:custom-calendar-view:v1.1'
+    //implementation 'com.github.naishadhparmar:zcustomcalendar:1.0.1'
+    implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
 
 }

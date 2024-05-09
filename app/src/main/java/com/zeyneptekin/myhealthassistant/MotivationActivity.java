@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -17,15 +18,13 @@ public class MotivationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivation);
 
-        MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
-        TextView textView = findViewById(R.id.textView14);
-        TextView quoteTextView = findViewById(R.id.textView230);
-        Button motivationButton = findViewById(R.id.button6);
-        Button activitiesButton = findViewById(R.id.button4);
-        Button tipsButton = findViewById(R.id.button11);
-        Button entertainmentButton = findViewById(R.id.button12);
-        Button inspiringStoriesButton = findViewById(R.id.button13);
-        Button motivationCalendarButton = findViewById(R.id.button14);
+        //MaterialToolbar toolbar = findViewById(R.id.materialToolbar);
+        ImageView motivationButton = findViewById(R.id.button6);
+        ImageView activitiesButton = findViewById(R.id.button4);
+        ImageView tipsButton = findViewById(R.id.button11);
+        ImageView entertainmentButton = findViewById(R.id.button12);
+        ImageView inspiringStoriesButton = findViewById(R.id.button13);
+        ImageView motivationCalendarButton = findViewById(R.id.button14);
 
         // Motivasyon butonuna tıklama işlemi eklenebilir
         motivationButton.setOnClickListener(new View.OnClickListener() {

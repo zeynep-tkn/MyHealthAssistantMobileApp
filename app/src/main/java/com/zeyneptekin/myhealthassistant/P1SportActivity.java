@@ -24,7 +24,7 @@ public class P1SportActivity extends AppCompatActivity {
 
         successTextList = new ArrayList<TextView>();
 
-        for(int j = 1;j<=3;j++){
+        for(int j = 1;j<=10;j++){
             String textName = "testText" + j;
             int resID = getResources().getIdentifier(textName, "id", getPackageName());
             TextView successText = findViewById(resID);
@@ -48,7 +48,6 @@ public class P1SportActivity extends AppCompatActivity {
             }
         };
         db.showProgressForSportPage(exerciseName, listener);
-
         Toolbar toolbar=findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 

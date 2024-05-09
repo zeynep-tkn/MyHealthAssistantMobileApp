@@ -1,6 +1,7 @@
 package com.zeyneptekin.myhealthassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +11,9 @@ import android.widget.LinearLayout;
 
 public class FoodActivity extends AppCompatActivity {
 
-    private LinearLayout SaglikliTarif;
-    private LinearLayout VeganTarif;
-    private LinearLayout GlutensizTarif;
+    private CardView SaglikliTarif;
+    private CardView VeganTarif;
+    private CardView GlutensizTarif;
 
     //private LinearLayout KisiselAsistan;
 
@@ -30,10 +31,10 @@ public class FoodActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FoodActivity.this, saglikliTarifler.class);
-                System.out.println("Sağlıklı tarifler sayfasına geçti");
                 startActivity(intent);
             }
         });
+
 
         VeganTarif = findViewById(R.id.veganLayout);
         VeganTarif.setOnClickListener(new View.OnClickListener() {

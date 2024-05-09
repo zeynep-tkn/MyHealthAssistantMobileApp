@@ -121,7 +121,6 @@ public class P1Movement1Activity extends AppCompatActivity {
             public void onFinish() {
 
                 //Firestrore kısmı
-
                 // Egzersiz numarasını al
                 int exerciseNumber = Integer.valueOf(buttonvalue);
                 String egzersizName = "egzersiz1";
