@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zeyneptekin.myhealthassistant">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
+        <activity
+            android:name=".veganTarif1"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler10"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler9"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".yesilBowlTarifi"
+            android:exported="false" />
         <activity
             android:name=".deneme5"
             android:exported="false" />
