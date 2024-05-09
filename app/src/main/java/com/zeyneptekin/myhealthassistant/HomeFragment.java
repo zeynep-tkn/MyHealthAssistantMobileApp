@@ -94,11 +94,13 @@ public class HomeFragment extends Fragment {
 
         dateHashMap.put(calendar.get(Calendar.DAY_OF_MONTH),"current");
         dateHashMap.put(1,"present");
-        dateHashMap.put(2,"absent");
+        dateHashMap.put(2,"present");
         dateHashMap.put(3,"present");
-        dateHashMap.put(6,"absent");
-        dateHashMap.put(20,"present");
-        dateHashMap.put(30,"absent");
+        dateHashMap.put(4,"present");
+        dateHashMap.put(5,"present");
+        dateHashMap.put(6,"present");
+        dateHashMap.put(7,"present");
+        dateHashMap.put(8,"present");
 
         customCalendar.setDate(calendar,dateHashMap);
         customCalendar.setOnDateSelectedListener(new OnDateSelectedListener() {

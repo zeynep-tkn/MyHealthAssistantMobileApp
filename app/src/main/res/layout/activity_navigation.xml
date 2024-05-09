@@ -56,7 +56,7 @@
         android:background="#00000000"
         android:fontFamily="@font/poppins_semibold"
         android:text="Next"
-        android:textColor="@color/lavender"
+        android:textColor="@color/logo_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

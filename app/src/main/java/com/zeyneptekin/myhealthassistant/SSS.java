@@ -4,11 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SSS extends AppCompatActivity {
+import com.airbnb.lottie.LottieAnimationView;
 
+public class SSS extends AppCompatActivity {
+private LottieAnimationView lottieAnimationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sss);
+
+        lottieAnimationView =findViewById(R.id.Idchatbot);
+        lottieAnimationView.setAnimation(R.raw.chatbot);
+
+
     }
 }
