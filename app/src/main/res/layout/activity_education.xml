@@ -9,7 +9,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/mk"
+            android:id="@+id/mk1"
             android:layout_width="380dp"
             android:layout_height="30dp"
             android:layout_marginTop="16dp"
@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/textView64325"
+                    android:id="@+id/mk2"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_marginTop="1dp"
@@ -34,7 +34,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/tablo"
+            android:id="@+id/mk3"
             android:layout_width="380dp"
             android:layout_height="185dp"
             android:layout_marginTop="60dp"
@@ -47,7 +47,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/mk4"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
                     android:layout_marginLeft="100dp"
@@ -61,7 +61,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
-                    android:id="@+id/imageButton1"
+                    android:id="@+id/mk5"
                     android:layout_width="350dp"
                     android:layout_height="145dp"
                     android:layout_marginStart="16dp"
@@ -73,7 +73,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/tablo2"
+            android:id="@+id/mk6"
             android:layout_width="380dp"
             android:layout_height="185dp"
             android:layout_marginTop="256dp"
@@ -86,7 +86,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView35"
+                    android:id="@+id/mk7"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
                     android:layout_marginLeft="135dp"
@@ -101,7 +101,7 @@
 
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/mk8"
                     android:layout_width="350dp"
                     android:layout_height="145dp"
                     android:layout_marginStart="16dp"
@@ -113,7 +113,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/tablo5"
+            android:id="@+id/mk9"
             android:layout_width="380dp"
             android:layout_height="185dp"
             android:layout_marginTop="456dp"
@@ -125,7 +125,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/mk10"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_marginTop="1dp"
@@ -136,7 +136,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/mk11"
                     android:layout_width="350dp"
                     android:layout_height="145dp"
                     android:layout_marginStart="16dp"

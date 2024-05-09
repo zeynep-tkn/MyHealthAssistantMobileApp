@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,7 @@
     tools:context=".SporPlanlariActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk2"
+        android:id="@+id/mk12"
         android:layout_width="380dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6421"
+            android:id="@+id/mk13"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -33,7 +34,7 @@
 
 
     <ImageView
-        android:id="@+id/imageButton4"
+        android:id="@+id/mk14"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="48dp"
@@ -47,7 +48,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk"
+        android:id="@+id/mk15"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="100dp"
@@ -60,7 +61,7 @@
 
 
         <TextView
-            android:id="@+id/textView641"
+            android:id="@+id/mk16"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -73,13 +74,13 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton5"
+        android:id="@+id/mk17"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="204dp"
         android:contentDescription="Play Button"
         android:scaleType="fitCenter"
-        android:src="@drawable/mkl"
+        android:src="@drawable/makalee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +88,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk1"
+        android:id="@+id/mk18"
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginTop="248dp"
@@ -99,7 +100,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView64"
+            android:id="@+id/mk19"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -112,7 +113,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton6"
+        android:id="@+id/mk20"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="356dp"
@@ -125,7 +126,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk51"
+        android:id="@+id/mk21"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="416dp"
@@ -137,7 +138,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/mk26"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -150,7 +151,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton7"
+        android:id="@+id/mk27"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="508dp"
@@ -162,7 +163,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk591"
+        android:id="@+id/mk28"
         android:layout_width="130dp"
         android:layout_height="60dp"
         android:layout_marginTop="548dp"
@@ -174,7 +175,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView654"
+            android:id="@+id/mk29"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="1dp"

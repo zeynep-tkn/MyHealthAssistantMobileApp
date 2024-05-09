@@ -7,7 +7,7 @@
     tools:context=".EgitimBeslenmeActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk2"
+        android:id="@+id/mk30"
         android:layout_width="380dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6421"
+            android:id="@+id/mk31"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -32,7 +32,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton4"
+        android:id="@+id/mk32"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="48dp"
@@ -46,7 +46,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk"
+        android:id="@+id/mk33"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="100dp"
@@ -59,7 +59,7 @@
 
 
         <TextView
-            android:id="@+id/textView641"
+            android:id="@+id/mk34"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -72,13 +72,13 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton5"
+        android:id="@+id/mk35"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="204dp"
         android:contentDescription="Play Button"
         android:scaleType="fitCenter"
-        android:src="@drawable/mkl"
+        android:src="@drawable/makalee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk1"
+        android:id="@+id/mk36"
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginTop="248dp"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView64"
+            android:id="@+id/mk37"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -111,7 +111,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton6"
+        android:id="@+id/mk38"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="356dp"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk51"
+        android:id="@+id/mk39"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="416dp"
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/mk40"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
@@ -149,7 +149,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageButton7"
+        android:id="@+id/mk41"
         android:layout_width="200dp"
         android:layout_height="145dp"
         android:layout_marginTop="508dp"
@@ -161,7 +161,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mk591"
+        android:id="@+id/mk42"
         android:layout_width="130dp"
         android:layout_height="60dp"
         android:layout_marginTop="548dp"
@@ -173,7 +173,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView654"
+            android:id="@+id/mk43"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="1dp"
