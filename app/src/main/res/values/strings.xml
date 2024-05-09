@@ -4,15 +4,22 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="viewpager_description">Slide View Pager</string>
 
-    <string name="screen1">Ekran 1 </string>
-    <string name="screen2">Ekran 2</string>
+    <string name="screen1">Yapay Zeka(Sohbet)</string>
+    <string name="screen2">Beslenme Programları</string>
     <string name="screen3">Ekran 3</string>
     <string name="screen4">Ekran 4</string>
 
-    <string name="screen1desc">Ekran 1in açıklama yazısı. Burada 1.ekranda neler bulunduğu
-    hakkında bilgi veren tanıtım metni yazılmıştır </string>
-    <string name="screen2desc">Ekran 2in açıklama yazısı. Burada 2.ekranda neler bulunduğu
-    hakkında bilgi veren tanıtım metni yazılmıştır. </string>
+    <string name="screen1desc">Sağlık yolculuğunuzda size
+        eşlik edecek en özel rehber, sağlık mobil uygulamamızın
+        zeki chatbotu! Siz sorularınızı sormadan önce onun cevaplarını bulmuş olacak,
+        rahatlayıp sağlığınıza odaklanabileceksiniz. İhtiyacınız olan
+        bilgiye hızlı ve güvenilir bir şekilde erişmenizi sağlayacak olan
+        bu dost, sağlık deneyiminizi dönüştürecek! </string>
+    <string name="screen2desc">Sağlıklı yemek tarifleriyle dolu sayfamız,
+        beslenme alışkanlıklarınızı dönüştürmeye hazır. Yapay zeka entegreli
+        kişiselleştirilmiş yemek planları ile sağlıklı yaşamı
+        bir adım öne taşıyan bir rehber olarak hizmetinizdeyiz.
+        Sağlık dolu bir yaşam için doğru adımları atmak artık çok daha kolay! </string>
     <string name="screen3desc">Ekran 3in açıklama yazısı. Burada 3.ekranda neler bulunduğu
     hakkında bilgi veren tanıtım metni yazılmıştır</string>
     <string name="screen4desc">Ekran 4in açıklama yazısı. Burada 4.ekranda neler bulunduğu

@@ -17,7 +17,7 @@
         android:backgroundTint="@color/purple"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Sports &amp; Exercise"
+        app:title="Spor &amp; Egzersiz"
         app:titleTextColor="@color/white"
         android:gravity="end" />
 
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
                         android:padding="5.0dp"
-                        android:text="Before Age 18"
+                        android:text="18 Yaş Öncesi"
                         android:textColor="@color/black"
                         android:textSize="20.0sp"
                         android:textStyle="bold"/>
@@ -86,7 +86,7 @@
                          android:layout_height="wrap_content"
                           android:fontFamily="serif"
                            android:padding="5.0dp"
-                         android:text="Days 30"
+                         android:text="30 gün"
                          android:textColor="@color/black"
                          android:textSize="20.0dp"
                          android:textStyle="bold"/>
@@ -100,7 +100,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="serif"
                          android:padding="5.0dp"
-                         android:text="Every Day 15 Min"
+                         android:text="Her gün 15 dk"
                          android:textColor="#F60606"
                          android:textStyle="bold"/>
 
@@ -148,7 +148,9 @@
                   android:layout_height="60dp"
                   android:layout_margin="10.0dp"
                   android:backgroundTint="@color/purple"
-                  android:text="Get Started"
+                  android:text="Başla"
+                  android:textStyle="bold"
+                  android:textSize="17dp"
                   android:textAllCaps="true"
                   android:textColor="#FFF"/>
 
@@ -185,7 +187,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="monospace"
                            android:padding="5.0dp"
-                           android:text="After Age 18"
+                           android:text="18 Yaş Sonrası"
                            android:textColor="@color/black"
                            android:textSize="20.0dp"
                            android:textStyle="bold"/>
@@ -196,7 +198,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0sp"
-                           android:text="Days 30"
+                           android:text="30 gün"
                            android:textColor="@color/black"
                            android:textSize="20.0sp"
                            android:textStyle="bold"/>
@@ -210,7 +212,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0dp"
-                           android:text="Every Day 20 Min"
+                           android:text="Her gün 20 dk"
                            android:textColor="#F60606"
                            android:textStyle="bold"/>
 
@@ -258,7 +260,9 @@
                    android:layout_height="60dp"
                    android:layout_margin="10.0dp"
                    android:backgroundTint="@color/purple"
-                   android:text="Get Started"
+                   android:text="Başla"
+                   android:textStyle="bold"
+                   android:textSize="17dp"
                    android:textAllCaps="true"
                    android:textColor="#FFF"/>
 
@@ -295,7 +299,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="monospace"
                            android:padding="5.0dp"
-                           android:text="After Age 25"
+                           android:text="25 Yaş Sonrası"
                            android:textColor="@color/black"
                            android:textSize="20.0dp"
                            android:textStyle="bold"/>
@@ -306,7 +310,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0dp"
-                           android:text="Days 60"
+                           android:text="60 gün"
                            android:textColor="@color/black"
                            android:textSize="20.0dp"
                            android:textStyle="bold"/>
@@ -320,7 +324,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0dp"
-                           android:text="Every Day 25 Min"
+                           android:text="Her gün 25 dk"
                            android:textColor="#F60606"
                            android:textStyle="bold"/>
 
@@ -363,7 +367,9 @@
                    android:layout_height="60dp"
                    android:layout_margin="10.0dp"
                    android:backgroundTint="@color/purple"
-                   android:text="Get Started"
+                   android:text="Başla"
+                   android:textStyle="bold"
+                   android:textSize="17dp"
                    android:textAllCaps="true"
                    android:textColor="#FFF"/>
 
@@ -400,7 +406,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="monospace"
                            android:padding="5.0dp"
-                           android:text="After Age 25"
+                           android:text="25 Yaş Sonrası"
                            android:textColor="@color/black"
                            android:textSize="20.0dp"
                            android:textStyle="bold"/>
@@ -411,7 +417,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0sp"
-                           android:text="Days 60"
+                           android:text="60 gün"
                            android:textColor="@color/black"
                            android:textSize="20.0sp"
                            android:textStyle="bold"/>
@@ -425,7 +431,7 @@
                            android:layout_height="wrap_content"
                            android:fontFamily="serif"
                            android:padding="5.0dp"
-                           android:text="Every Day 30 Min"
+                           android:text="Her gün 30 dk"
                            android:textColor="#F60606"
                            android:textStyle="bold"/>
 
@@ -473,7 +479,9 @@
                    android:layout_height="60dp"
                    android:layout_margin="10.0dp"
                    android:backgroundTint="@color/purple"
-                   android:text="Get Started"
+                   android:text="Başla"
+                   android:textStyle="bold"
+                   android:textSize="17dp"
                    android:textAllCaps="true"
                    android:textColor="#FFF"/>
 
