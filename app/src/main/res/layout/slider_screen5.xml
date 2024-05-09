@@ -7,20 +7,20 @@
     android:orientation="vertical"
     app:flow_horizontalAlign="center">
     <ImageView
-        android:id="@+id/slider4Image"
-        android:layout_width="270dp"
-        android:layout_height="280dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
+        android:id="@+id/slider5Image"
+        android:layout_width="240dp"
+        android:layout_gravity="center"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/tanitimspor"/>
+        android:src="@drawable/tanitimegitim"/>
     <TextView
         android:id="@+id/sliderTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/screen4"
+        android:text="@string/screen5"
         android:textAlignment="center"
         android:textColor="@color/logo_dark"
         android:textSize="30sp"
@@ -31,9 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:text="@string/screen4desc"
+        android:text="@string/screen5desc"
         android:fontFamily="@font/poppins_semibold"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="8dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"/>
