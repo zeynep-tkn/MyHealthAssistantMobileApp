@@ -112,7 +112,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/gazete"/>
                     <TextView
-                        android:id="@id/textView1"
+                        android:id="@id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16dp"
@@ -137,7 +137,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/etkinlikler"/>
                     <TextView
-                        android:id="@id/textView2"
+                        android:id="@id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16dp"

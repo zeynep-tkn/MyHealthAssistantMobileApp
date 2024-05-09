@@ -9,7 +9,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/mk1"
+            android:id="@+id/androidd"
             android:layout_width="380dp"
             android:layout_height="30dp"
             android:layout_marginTop="16dp"
@@ -91,7 +91,7 @@
                     android:layout_height="25dp"
                     android:layout_marginLeft="135dp"
                     android:layout_marginTop="1dp"
-                    android:text="Akil Sağlığı"
+                    android:text="Akıl Sağlığı"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="parent"
