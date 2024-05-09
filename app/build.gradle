@@ -110,5 +110,5 @@ dependencies {
     implementation 'com.github.npanigrahy:custom-calendar-view:v1.1'
     //implementation 'com.github.naishadhparmar:zcustomcalendar:1.0.1'
     implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
-
+    implementation 'com.airbnb.android:lottie:3.7.0'
 }
