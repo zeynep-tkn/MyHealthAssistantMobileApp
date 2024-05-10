@@ -5,35 +5,149 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/logo_light"
+    android:paddingLeft="10dp"
     tools:context=".SSS">
 
+    <TextView
+        android:id="@+id/SSSBaslikTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="SIKÇA SORULAN SORULAR"
+        android:textColor="@color/logo_dark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="vertical">
+
 
         <TextView
-            android:id="@+id/SSSBaslikTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SIKÇA SORULAN SORULAR"
-            android:textSize="23sp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss1"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
             android:textStyle="bold" />
+
+
         <TextView
-            android:layout_width="wrap_content"
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Uygulamanızı nasıl indirebilirim?\nUygulamamızı indirmek için App Store veya Google Play Store'a gidin ve arama çubuğuna uygulama adımızı yazın. Ardından indirme ve kurma adımlarını takip edin.
-\nÜyelik nasıl alabilirim?\nÜyelik almak için ana sayfamızdaki Üye Ol veya Giriş Yap butonlarına tıklayın. Ardından gerekli bilgileri doldurarak üyeliğinizi tamamlayabilirsiniz.
-\nŞifremi unuttum, ne yapmalıyım?\nŞifrenizi unuttuysanız, giriş sayfasında bulunan Şifremi Unuttum seçeneğine tıklayın. E-posta adresinizi girerek şifrenizi sıfırlamanız için size bir bağlantı göndereceğiz.
-\nUygulamanızda hangi ödeme yöntemleri geçerlidir?\nUygulamamızda kredi kartı, banka kartı ve diğer popüler ödeme yöntemlerini kullanabilirsiniz. Güvenli ödeme sistemimiz sayesinde alışverişlerinizi kolayca tamamlayabilirsiniz.
-\nSıkça karşılaşılan teknik sorunlar için ne yapmalıyım?\nEğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır."
-            android:textSize="18dp"/>
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss11"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss2"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss22"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss3"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss33"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss4"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss44"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss5"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss55"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss6"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sliderDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/sss66"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
     </LinearLayout>
 
 

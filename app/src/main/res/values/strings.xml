@@ -33,6 +33,21 @@
 
     <string name="startDesc"> Yaşamınızı dönüştürecek, sağlık, motivasyon, egzersiz ve eğitim gibi her alanı kucaklayan kapsamlı bir rehber olarak bizim uygulamamız her adımda yanınızda. Zengin içeriği ve kullanıcı dostu arayüzüyle herkesin sağlık ve mutluluk yolculuğuna eşlik ediyoruz. Hayatınıza sağlık, neşe ve başarı getiren bir deneyim için bugün bize katılın!</string>
 
+    <string name="sss1"> Uygulamanızı nasıl indirebilirim?</string>
+    <string name="sss2"> Üyelik nasıl alabilirim?</string>
+    <string name="sss3"> Şifremi unuttum, ne yapmalıyım?</string>
+    <string name="sss4"> Şifremi unuttum, ne yapmalıyım?</string>
+    <string name="sss5"> Uygulamanızda hangi ödeme yöntemleri geçerlidir?</string>
+    <string name="sss6"> Sıkça karşılaşılan teknik sorunlar için ne yapmalıyım?</string>
+
+    <string name="sss11">Uygulamamızı indirmek için App Store veya Google Play Store a gidin ve arama çubuğuna uygulama adımızı yazın.Ardından indirme ve kurma adımlarını takip edin.</string>
+    <string name="sss22">Üyelik almak için ana sayfamızdaki Üye Ol veya Giriş Yap butonlarına tıklayın. Ardından gerekli bilgileri doldurarak üyeliğinizi tamamlayabilirsiniz.</string>
+    <string name="sss33">Şifrenizi unuttuysanız, giriş sayfasında bulunan Şifremi Unuttum seçeneğine tıklayın. E-posta adresinizi girerek şifrenizi sıfırlamanız için size bir bağlantı göndereceğiz.</string>
+    <string name="sss44">Uygulamamızda kredi kartı, banka kartı ve diğer popüler ödeme yöntemlerini kullanabilirsiniz. Güvenli ödeme sistemimiz sayesinde alışverişlerinizi kolayca tamamlayabilirsiniz.</string>
+    <string name="sss55">Eğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır.</string>
+    <string name="sss66">Eğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır.</string>
+
+
     <string name="pose1">    Step 1:- Start in the push-up position with your arms completely straight and directly beneath your shoulders.\n\n
                              Step 2:- Your body should form a straight line from your shoulders to your ankles. \n\n
                              Step 3:- Squeeze your abs, lift one foot off the floor and bring your knee up towards your chest while keeping your body in as straight of a line as possible. \n\n
