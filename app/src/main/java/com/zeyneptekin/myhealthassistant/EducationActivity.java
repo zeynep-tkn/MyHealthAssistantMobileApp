@@ -20,7 +20,7 @@ public class EducationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_education);
 
 
-        Sporplanlari = findViewById(R.id.imageButton3);
+        Sporplanlari = findViewById(R.id.mk11);
         Sporplanlari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class EducationActivity extends AppCompatActivity {
             }
         });
 
-        akilsagligi = findViewById(R.id.imageButton2);
+        akilsagligi = findViewById(R.id.mk8);
         akilsagligi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +41,7 @@ public class EducationActivity extends AppCompatActivity {
         });
 
 
-        beslenmetemelleri = findViewById(R.id.imageButton1);
+        beslenmetemelleri = findViewById(R.id.mk5);
         beslenmetemelleri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
