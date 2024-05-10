@@ -90,8 +90,8 @@ import java.util.HashMap;
             AddEditTextRowToTable(hastaliklarimTable,editText1);
             AddEditTextRowToTable(alerjilerimTable,editTextAlerji);
 
-            //deleteButtonHastalik.setVisibility(View.VISIBLE);
-            //addRowButtonhastaliklarim.setVisibility(View.VISIBLE);
+            deleteButtonHastalik.setVisibility(View.VISIBLE);
+            addRowButtonhastaliklarim.setVisibility(View.VISIBLE);
         }
 
 
