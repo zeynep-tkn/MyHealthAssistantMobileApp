@@ -16,6 +16,18 @@
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
         <activity
+            android:name=".KaloriAksam"
+            android:exported="false" />
+        <activity
+            android:name=".KaloriAtistirmalik"
+            android:exported="false" />
+        <activity
+            android:name=".KaloriOgle"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.KaloriKahvalti"
+            android:exported="false" />
+        <activity
             android:name=".GlutensizTarif10"
             android:exported="false" />
         <activity
