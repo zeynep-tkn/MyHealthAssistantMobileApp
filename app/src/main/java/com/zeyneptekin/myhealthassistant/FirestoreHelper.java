@@ -425,12 +425,58 @@ public class FirestoreHelper {
                 });
     }
 
+    public void getRandevular(final RandevuFetchListener listener) {
+        db.collection("users")
+                .document("aXjqaM073S5UPEMiT2fu")
+                .collection("HealthInformations")
+                .document("RbEvitDDUmvkeIO9EKHx")
+                .collection("randevularım")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            List<Randevu> randevuList = new ArrayList<>();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                // Her bir dökümandaki randevu bilgilerini al
+                                String bolum = document.getString("bolum");
+                                String tarih = document.getString("tarih");
+                                String saat = document.getString("saat");
+                                String hastahane = document.getString("hastahane");
+                                String doktor = document.getString("doktor");
+                                // Diğer gerekli bilgileri de buradan alabilirsiniz
+                                Randevu randevu;
+                                randevu = new Randevu(bolum, tarih, saat, hastahane, doktor);
+
+                                randevuList.add(randevu);
+                            }
+                            // Dinleyiciye randevu listesini geri çağır
+                            listener.onRandevuFetch(randevuList);
+                        } else {
+                            // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                            listener.onRandevuFetch(new ArrayList<Randevu>());
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                        listener.onRandevuFetch(new ArrayList<Randevu>());
+                    }
+                });
+    }
 
 
     public interface StringListFetchListener {
         void onStringListFetched(List<String> stringList);
     }
 
+    public interface RandevuFetchListener {
+        void onRandevuFetchListener(List<String> stringList);
+
+        void onRandevuFetch(List<Randevu> randevuList);
+    }
 
 
 }

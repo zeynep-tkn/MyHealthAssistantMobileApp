@@ -109,6 +109,9 @@ import java.util.HashMap;
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
         editTextAlerji = findViewById(R.id.editTextAlerji);
+
+
+
         addRowButtonalerjilerim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
