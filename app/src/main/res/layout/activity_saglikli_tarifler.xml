@@ -51,6 +51,7 @@
                 android:layout_column="0"
                 android:layout_margin="8dp"
 
+
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 

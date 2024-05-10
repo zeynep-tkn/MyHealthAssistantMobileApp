@@ -143,6 +143,224 @@
 7. Soğuduktan sonra üzerini dilerseniz meyve dilimleri veya granola ile süsleyerek servis yapın.\n\n</string>
 
 
+    <string name="yapilisi_tofu">1. Küp doğranmış tofu parçalarını bir kaseye alın. Üzerine soya sosu ve susam yağını ekleyin, iyice karıştırın ve en az 15 dakika marine etmeye bırakın.\n\n
+2. Bir tavada zeytinyağını orta ateşte ısıtın. Ardından ezilmiş sarımsak ve rendelenmiş zencefili ekleyin, kokusu çıkana kadar kavurun.\n\n
+3. Marine edilmiş tofu parçalarını tavaya ekleyin ve altın rengini alana kadar kızartın.\n\n
+4. Havuç, biber ve diğer sebzeleri ekleyin. Sebzeler yumuşayana kadar soteleyin. Tuz ve karabiberle tatlandırın.\n\n
+5. Son olarak brokoliyi ekleyin ve sebzeler hafifçe yumuşayana kadar pişirin.\n\n
+6. Susam tohumlarını ekleyin ve birkaç dakika daha karıştırarak pişirin.\n\n
+7. Servis yapmadan önce üzerine doğranmış yeşil soğan veya taze kişniş serpiştirin.\n\n
+8. Sıcak servis yapın ve yanında pilav veya noodle ile servis edebilirsiniz. Afiyet olsun!</string>
 
+    <string name="yapilisi_fasulye">1. Kuru fasulyeyi bir gece önceden bol suyla yıkayın ve üzerini geçecek kadar suyla kaplayarak ıslatın.\n\n
+2. Ertesi gün, ıslatılmış fasulyeleri süzün ve bir tencereye alın. Üzerini geçecek kadar su ekleyin ve yumuşayana kadar haşlayın (yaklaşık 45-60 dakika).\n\n
+3. Başka bir tencerede zeytinyağını veya tereyağını ısıtın. Doğranmış soğanı ekleyin ve şeffaflaşana kadar kavurun.\n\n
+4. Ardından doğranmış havuç ve patatesleri ekleyin, birkaç dakika daha kavurun.\n\n
+5. Sarımsak ve domates salçasını ekleyin, birkaç dakika daha kavurun.\n\n
+6. Haşlanmış fasulyeleri süzün ve sebzelerin üzerine ekleyin.\n\n
+7. Sebze suyu veya tavuk suyunu tencereye ekleyin. Tuz ve karabiberle tatlandırın.\n\n
+8. Çorba kaynamaya başlayana kadar orta ateşte pişirin, sonra ateşi kısın ve yaklaşık 20-30 dakika daha kısık ateşte pişirin.\n\n
+9. Pişen çorbayı blender veya çırpıcı ile pürüzsüz hale gelene kadar iyice çırpın.\n\n
+10. Servis yapmadan önce üzerine taze doğranmış maydanoz veya dereotu serpiştirin.\n\n
+11. Sıcak olarak servis yapın. Ekmek veya yanında bir dilim limon ile servis edebilirsiniz. Afiyet olsun!</string>
+
+    <string name="yapilisi_kabakcicegi">1. Pirinci yıkayın ve süzün.\n\n
+2. Bir tencerede zeytinyağını ısıtın. Doğranmış soğanları ekleyin ve yumuşayana kadar kavurun.\n\n
+3. Soğanlar kavrulduktan sonra pirinci ekleyin ve birkaç dakika daha kavurun.\n\n
+4. Rendelenmiş veya doğranmış domatesleri, doğranmış maydanoz, nane, dereotu, dolmalık fıstık, kuş üzümü, toz şeker, limon suyu, tuz ve karabiberi ekleyin. Karışımı birkaç dakika daha pişirin.\n\n
+5. Kabak çiçeklerini yıkayın ve yumuşak kısımlarını hafifçe keserek içlerini temizleyin.\n\n
+6. Hazırladığınız iç malzemeyi kabak çiçeklerine doldurun ve ağızlarını hafifçe kapatın.\n\n
+7. Bir tencereye dolmaları dizin.\n\n
+8. Üzerlerine sıcak suyu dökün.\n\n
+9. Kabak çiçeklerinin üzerine bir tabak veya kapak kapatın ve kısık ateşte yaklaşık 20-25 dakika kadar pişirin.\n\n
+10. Piştikten sonra ocaktan alın ve oda sıcaklığına gelene kadar dinlendirin.\n\n
+11. Servis yaparken üzerlerine isteğe bağlı olarak yoğurt döküp, taze nane veya dereotu ile süsleyebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_kuskus">1. Kuskusu derin bir kaseye alın. Üzerine sıcak su veya sebze suyu ekleyin ve kuskusun suyunu çekmesi için yaklaşık 10 dakika kadar bekletin. Sonra bir çatal veya kaşıkla kuskusu gevşetin.\n\n
+2. Havuçları rendeleyin veya küçük küpler halinde doğrayın.\n\n
+3. Şalgam turşularını küçük küpler halinde doğrayın.\n\n
+4. Taze maydanoz ve nane yapraklarını doğrayın.\n\n
+5. Bir karıştırma kabında limon suyu, zeytinyağı, tuz ve karabiberi karıştırarak salata sosunu hazırlayın.\n\n
+6. Hazırladığınız kuskusu, rendelenmiş havuçları, doğranmış şalgam turşularını ve doğranmış taze otları büyük bir salata kabına alın.\n\n
+7. Üzerine hazırladığınız salata sosunu dökün ve tüm malzemeleri iyice karıştırın, sosun her yere eşit şekilde dağılmasını sağlayın.\n\n
+8. Salatayı servis tabağına alın ve üzerini isteğe bağlı olarak taze otlarla süsleyerek servis yapın.\n\n
+9. Soğuk olarak servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_misirtaco">1. Bir tavada orta ateşte yağı ısıtın. Doğranmış soğanları ekleyin ve yumuşayana kadar kavurun.\n\n
+2. Ardından sarımsakları ekleyin ve kokusu çıkana kadar kavurun.\n\n
+3. Kıymayı ekleyin ve kahverengileşene kadar kavurun. İhtiyaç halinde fazla yağı süzün.\n\n
+4. Kırmızı biber ve yeşil biberi ekleyin, birkaç dakika daha kavurun.\n\n
+5. Domatesleri ekleyin ve yumuşayana kadar pişirin.\n\n
+6. Domates ve biberler suyunu bırakıp çekene kadar kısık ateşte pişirin.\n\n
+7. Salçaları, kimyonu, kırmızı pul biberi, tuzu ve karabiberi ekleyin. Karıştırın ve birkaç dakika daha pişirin.\n\n
+8. Mısır taco kabuklarını fırında veya tavada ısıtın.\n\n
+9. Isınmış taco kabuklarını doldurmak için kullanın. İsteğe bağlı olarak garnitürlerle süsleyin.\n\n
+10. Sıcak olarak servis yapın ve yanında ekstra garnitürlerle servis yapın. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_lazanya">1. Fırını 180 dereceye ısıtın.\n\n
+2. Kabakları uzunlamasına ince dilimler halinde kesin (lasagna yaprakları gibi).\n\n
+3. Kabak dilimlerini bir fırın tepsisine yerleştirin. Üzerlerine biraz tuz serpin ve yaklaşık 15 dakika bekletin. Bu süre zarfında suyunu salacaklar.\n\n
+4. Bir tavada zeytinyağını ısıtın. Doğranmış soğanı ekleyin ve yumuşayana kadar kavurun.\n\n
+5. Sarımsak, kırmızı biber, yeşil biber ve mantarları ekleyin. Sebzeler yumuşayana ve suyunu çekene kadar pişirin.\n\n
+6. Konserve domates, domates salçası, kekik, tuz ve karabiberi ekleyin. Biraz kaynatın ve ocaktan alın.\n\n
+7. Bir sos tenceresinde vegan tereyağını veya zeytinyağını eritin. Unu ekleyin ve kısık ateşte kokusu çıkana kadar kavurun.\n\n
+8. Ardından vegan sütü yavaşça ekleyin, sürekli karıştırarak topaklanmamasını sağlayın.\n\n
+9. Sos kıvam alana kadar karıştırarak pişirin. Tuz, karabiber ve muskat rendesini ekleyin. Ocaktan alın.\n\n
+10. Fırın tepsisindeki kabak dilimlerinin üstüne sebzeli sosu yayın.\n\n
+11. Ardından beşamel sosu ekleyin ve düzgünce yayın.\n\n
+12. Üzerine isteğe bağlı olarak vegan rendelenmiş kaşar peyniri serpin.\n\n
+13. Önceden ısıtılmış fırında 30-35 dakika veya peynir eriyene ve üzeri kızarana kadar pişirin.\n\n
+14. Fırından çıkarın, üzerine taze fesleğen yaprakları serpin ve birkaç dakika dinlendirin.\n\n
+15. Dilimleyerek sıcak olarak servis yapın. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_truf">1. İlk olarak bitter çikolatayı benmari usulü eritin. Bunun için bir tencereye su koyun ve kaynatın. Üzerine ısıya dayanıklı bir kase yerleştirin ve içine çikolatayı koyun. Çikolata eriyene kadar karıştırın.\n\n
+2. Eriyen çikolataya hindistancevizi sütü veya badem sütünü ekleyin. Karıştırın ve homojen bir kıvam elde edene kadar çırpın.\n\n
+3. Vanilya özütünü ve hindistancevizi yağını ekleyin. Tekrar karıştırın.\n\n
+4. Son olarak iri çekilmiş fındıkları ekleyin ve çikolata karışımına iyice yedirin.\n\n
+5. Karışımı birkaç dakika oda sıcaklığında dinlendirin. Ardından buzdolabına koyun ve en az 1 saat boyunca sertleşmesi için bekletin.\n\n
+6. Sertleşen karışımdan parçalar alın ve elinizde yuvarlayarak küçük toplar şeklinde şekillendirin. İsteğe bağlı olarak hindistancevizi rendesi veya kakao tozuyla kaplayın.\n\n
+7. Hazırladığınız vegan çikolatalı fındıklı trüfleri buzdolabında saklayın ve servis etmeden önce birkaç dakika oda sıcaklığında yumuşamasını bekleyin.\n\n
+8. Afiyetle yiyin!</string>
+
+
+    <string name="yapilisi_karnababar">1. Fırını 200 dereceye ısıtın ve bir fırın tepsisine yağlı kağıt serin.\n\n
+2. Karnabaharı küçük çiçeklere ayırın ve iyice yıkayın. Büyük parçalar varsa keserek boyutlarını eşitleyin.\n\n
+3. Bir kasede un, sarımsak tozu, soğan tozu, toz kırmızı biber, tuz ve karabiberi karıştırın. Başka bir kasede vegan sütü hazırlayın.\n\n
+4. Karnabahar çiçeklerini önce un karışımına, sonra vegan süt karışımına ve ardından ekmek kırıntıları veya galeta ununa bulayın. Her tarafı iyice kaplanmalıdır.\n\n
+5. Hazırladığınız karnabahar kanatlarını yağlı kağıt serili fırın tepsisine düzenli bir şekilde yerleştirin.\n\n
+6. Üzerlerine zeytinyağı veya bitkisel yağ sürün.\n\n
+7. Önceden ısıtılmış fırında yaklaşık 25-30 dakika veya altın rengini alana kadar pişirin. Ara sıra çevirerek her iki tarafının da eşit şekilde pişmesini sağlayın.\n\n
+8. Karnabahar kanatları pişerken, sos için biber sosu, zeytinyağı veya bitkisel yağ, sirke, sarımsak tozu, tuz ve karabiberi bir kapta karıştırın.\n\n
+9. Pişen karnabahar kanatlarını fırından çıkarın ve sıcakken hazırladığınız sosla karıştırın, sosun her tarafını kaplamasını sağlayın.\n\n
+10. Servis yapmadan önce üzerlerine isteğe bağlı olarak rendelenmiş vegan parmesan peyniri serpin.\n\n
+11. Sıcak olarak servis yapın ve yanında bir dip sos ile birlikte servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_risotto">1. Bir tencerede sebze suyunu ısıtın ve sıcak tutun.\n\n
+2. Başka bir tencerede zeytinyağını veya bitkisel margarini orta ateşte ısıtın. Soğanları ekleyin ve şeffaflaşana kadar yaklaşık 5 dakika soteleyin.\n\n
+3. Sarımsakları ekleyin ve kokusu çıkana kadar sotelemeye devam edin.\n\n
+4. Dilimlenmiş mantarları ekleyin ve suyunu bırakıp çekene kadar yaklaşık 7-8 dakika soteleyin. Mantarlar yumuşamalı ve hafif kahverengileşmelidir.\n\n
+5. Pirinci ekleyin ve pirincin her tarafı yağla kaplanana kadar karıştırın. Yaklaşık 2 dakika kavurun.\n\n
+6. Eğer kullanacaksanız beyaz şarabı ekleyin ve pirincin tamamı emene kadar karıştırarak pişirin.\n\n
+7. Sıcak sebze suyundan kepçe kepçe ekleyerek risottoyu pişirmeye başlayın. Her seferinde suyunu tamamen çekene kadar karıştırarak pişirin.\n\n
+8. Tüm sebze suyunu ekledikten sonra risotto kıvam alana kadar (yumuşak ama hafif sulu) pişirin. Bu süre yaklaşık 18-20 dakika olabilir. Ara sıra karıştırarak risottoyu kontrol edin.\n\n
+9. Pişen risottoyu tuz ve karabiberle tatlandırın.\n\n
+10. Servis yapmadan önce üzerine doğranmış maydanoz veya taze fesleğen serpin. Sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_baliktaco">1. Fırını 200 dereceye (400°F) ayarlayın. Fırın tepsisine yağlı kağıt serin.\n\n
+2. Balık filetolarını bir tabağa yerleştirin. Üzerlerine zeytinyağı ve limon suyu gezdirin. Tuz ve karabiber serpin. Balıkları fırın tepsisine yerleştirin ve yaklaşık 10-15 dakika pişirin veya balık filetoları iyice pişene kadar.\n\n
+3. Balıklar pişerken, salsa için mısır, siyah fasulye, doğranmış soğan, domates, kişniş veya maydanoz ve lime suyunu bir kasede karıştırın. Tuz ve karabiberle tatlandırın. Bu karışımı bir kenarda bekletin.\n\n
+4. Mısır tortillalarını fırın tepsisine tek sıra halinde yerleştirin. Zeytinyağı veya bitkisel yağ ile fırçalayın. Fırında 5-7 dakika veya hafifçe kızarana kadar pişirin.\n\n
+5. Balık filetolarını fırından çıkarın ve çatalla parçalara ayırın.\n\n
+6. Pişmiş mısır tortillalarını alın ve üzerlerine balık parçaları, mısır ve siyah fasulye salsası, avokado dilimleri, marul veya lahana, acı sos veya salsa, yoğurt veya vegan mayonez gibi istediğiniz garnitürleri ekleyin.\n\n
+7. Hazırladığınız glutensiz balık tacosunu sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_karides">1. Temizlenmiş ve kabuğu çıkarılmış karidesleri bir kaseye alın. Üzerlerine glutensiz soya sosu veya tamari sosu dökün ve karidesleri sosla kaplayın. Yaklaşık 15 dakika marine etmek için buzdolabında bekletin.\n\n
+2. Bir tavada zeytinyağı veya bitkisel yağı ısıtın. Doğranmış sarımsak ve taze zencefili ekleyin, kokusu çıkana kadar kavurun.\n\n
+3. Marine edilmiş karidesleri tavaya ekleyin ve her iki tarafı da pembeleşene kadar yaklaşık 2-3 dakika pişirin. Pişen karidesleri bir tabağa alın ve kenara alın.\n\n
+4. Aynı tavaya biraz daha yağ ekleyin. Doğranmış kırmızı biber, yeşil biber ve havucu ekleyin. Sebzeler yumuşayana kadar yaklaşık 3-4 dakika soteleyin.\n\n
+5. Sotelediğiniz sebzelerin üzerine dondurulmuş bezelyeleri ekleyin ve birkaç dakika daha pişirin.\n\n
+6. Pişen karidesleri ve doğranmış yeşil soğanı tavaya geri ekleyin. Tuz ve karabiberle tatlandırın. Karides ve sebzeler iyice karışana kadar birkaç dakika daha pişirin.\n\n
+7. Servis yapmadan önce isteğe bağlı olarak sushi pirinci veya glutensiz pilav ile servis tabağına alın.\n\n
+8. Sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+    <string name="yapilisi_mucver">1. Kabakları rendeleyin ve fazla suyunu sıkarak süzün. Bir kaba alın.\n\n
+2. Soğanı rendeleyin veya ince doğrayın. Kabakların üzerine ekleyin.\n\n
+3. Yumurtaları bir kasede çırpın. Kabak ve soğan karışımına ekleyin.\n\n
+4. Rendelenmiş peynir, ince doğranmış dereotu veya maydanoz, glutensiz un, toz kimyon, toz kırmızı biber, tuz ve karabiberi ekleyin. Tüm malzemeleri iyice karıştırın.\n\n
+5. Bir tavada zeytinyağını ısıtın.\n\n
+6. Hazırladığınız kabak mücver karışımından kaşık yardımıyla küçük parçalar alın ve tavaya yerleştirin. Mücverleri spatula yardımıyla hafifçe bastırarak şekillendirin.\n\n
+7. Alt tarafı altın rengi olana kadar yaklaşık 3-4 dakika pişirin, sonra spatula yardımıyla çevirin ve diğer tarafını da pişirin.\n\n
+8. Pişen kabak mücverleri kağıt havlu serili bir tabağa alarak fazla yağını emmelerini sağlayın.\n\n
+9. Sıcak veya ılık olarak servis yapın. İsteğe bağlı olarak yoğurt veya süzme yoğurt ile servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_crumble">1. Fırını 160 dereceye ısıtın. Elmaları ve kırmızı erikleri limon suyu, tarçın ve kahverengi şeker ile bir tencerede suyun içinde 3 dakika kadar haşlayın. Azıcık yumuşatın.\n\n
+
+2. Ayrı bir kapta un, yulaf, şeker ve zeytinyağını karıştırın. Meyvelerin suyunu döktükten sonra fırın tepsisine yerleştirin (suyunu dökmezseniz istenilen kıtırlıkta olmayacaktır).\n\n
+
+3. Üzerine un karışımını ilave edin. 20-25 dakika kadar fırınlayın.!</string>
+
+
+    <string name="yapilisi_brownie">1. Fırını 170 dereceye ısıtın ve bir kare veya dikdörtgen fırın kabını yağlayın veya yağlı kağıt serin.\n\n
+2. Bitter çikolatayı ve hindistancevizi yağını veya tereyağını bir kapta benmari usulü eritin. Erime işlemi tamamlandıktan sonra karışımı bir kenara alın ve soğumaya bırakın.\n\n
+3. Başka bir kapta yumurtaları ve şekeri iyice çırpın. Vanilya özütünü ekleyin ve çırpmaya devam edin.\n\n
+4. Eriyen çikolata karışımını yumurta karışımına yavaşça ekleyin, sürekli karıştırarak birleştirin.\n\n
+5. Ayrı bir kapta glutensiz un, kakao ve tuzu karıştırın. Bu karışımı çikolatalı karışıma ekleyin ve spatula ile nazikçe karıştırın. (Eğer kullanacaksanız, ceviz veya fındık parçalarını da ekleyin.)\n\n
+6. Hazırladığınız karışımı yağladığınız veya yağlı kağıtla kapladığınız fırın kabına dökün.\n\n
+7. Önceden ısıtılmış fırında yaklaşık 20-25 dakika pişirin. Brownie, kenarları kızarmış ama ortası hafifçe sallanıyorsa pişmiş demektir.\n\n
+8. Fırından çıkardıktan sonra brownieyi oda sıcaklığında soğumaya bırakın, daha sonra dilimleyip servis yapabilirsiniz.</string>
+
+    <string name="yapilisi_kabakpuresi">1. Kabakları iyice yıkayın ve kabuklarını soyun. Ardından rendeleyin veya küçük parçalara doğrayın.\n\n
+2. Tencereye rendelenmiş kabakları alın ve üzerine su veya et suyunu ekleyin. Su, kabakların yarı yüksekliğini geçmemeli.\n\n
+3. Tencereyi orta ateşte kaynatın. Kabaklar yumuşayıp suyunu çekene kadar yaklaşık 10-15 dakika pişirin.\n\n
+4. Pişen kabakları ocaktan alın ve bir blender veya çatalla ezerek püre haline getirin.\n\n
+5. Zeytinyağı veya tereyağını ekleyin ve iyice karıştırın.\n\n
+6. İsteğe bağlı olarak tuz ve karabiber ekleyerek lezzetlendirin.\n\n
+7. Hazırladığınız kabak püresini sıcak servis yapabilirsiniz.\n\n
+Bu kabak püresi, yanında et veya tavuk gibi ana yemeklerle veya garnitür olarak servis edilebilir. Ayrıca bebek maması olarak da kullanılabilir. Afiyet olsun!</string>
+
+    <string name="yapilisi_karabugday">1. Karabuğdayı iyice yıkayın. Bu işlem, karabuğdayın üzerindeki fazla nişastayı ve acı tadı uzaklaştırarak daha lezzetli bir pilav elde etmenizi sağlar.\n\n
+2. Bir tencereye yıkanmış karabuğdayı alın ve üzerine su veya et suyunu ekleyin. Su miktarı, karabuğdayın tamamen suya batması için yeterli olmalıdır.\n\n
+3. Tencereyi orta ateşe alın ve kaynamaya bırakın. Kaynadıktan sonra ateşi kısın ve karabuğday yumuşayıp suyunu çekene kadar yaklaşık 15-20 dakika pişirin.\n\n
+4. Pişen karabuğdayı ocaktan alın ve üzerine tereyağı veya zeytinyağı ekleyerek karıştırın.\n\n
+5. İsteğe bağlı olarak tuz ekleyerek lezzetlendirin.\n\n
+6. Pilavı servis tabağına alın ve üzerini istediğiniz şekilde süsleyebilirsiniz.\n\n
+Bu karabuğday pilavını et yemekleri, sebzeli yemekler veya salataların yanında servis edebilirsiniz. Ayrıca birçok kişiye hitap eden ve glutensiz bir alternatif olan bu pilavı, özellikle sağlıklı bir seçenek arayanlar tercih edebilir. Afiyet olsun!</string>
+
+    <string name="yapilisi_karniyarik">1. Patlıcanların sap kısımlarını kesin ve ortadan ikiye kesin. Tuzlu suya koyarak acısının çıkmasını sağlayın. Yaklaşık 15-20 dakika bekletin.\n\n
+2. Patlıcanları sudan çıkarın ve suyunu iyice süzün. Daha sonra kağıt havlu ile kurulayın.\n\n
+3. Patlıcanları kızgın yağda hafifçe kızartın. Kızarttıktan sonra fazla yağını alması için kağıt havlu üzerine alın.\n\n
+4. Derin bir tavada veya tencerede biraz yağ ile doğranmış soğanları pembeleşene kadar kavurun.\n\n
+5. Üzerine kıymayı ekleyin ve kavurmaya devam edin. Kıyma suyunu salıp çekene kadar kavurun.\n\n
+6. Ardından rendelenmiş veya doğranmış domatesleri ekleyin ve karıştırın.\n\n
+7. Sarımsakları ekleyin ve birkaç dakika daha kavurun.\n\n
+8. Salçaları, kimyonu, tuzu ve karabiberi ekleyin. İsteğe bağlı olarak toz kırmızı biberi ekleyin. Karışımı birkaç dakika daha pişirin.\n\n
+9. Kızarttığınız patlıcanları fırın tepsisine dizin. Her birinin üzerine bıçakla hafifçe çizikler atın.\n\n
+10. Patlıcanların içine kıymalı harçtan koyun.\n\n
+11. Önceden ısıtılmış 180 derece fırında üzeri kızarana kadar yaklaşık 20-25 dakika pişirin.\n\n
+12. Pişen karnıyarıkları sıcak servis yapın. İsteğe bağlı olarak yanında yoğurt veya salata ile servis edebilirsiniz.\n\n
+Afiyet olsun!</string>
+
+    <string name="yapilisi_incir">1.Kuru incirleri ılık suda 15-20 dakika kadar bekletin. Bu işlem, incirlerin yumuşamasını sağlayacaktır.\n\n
+2. Yumuşayan incirleri suyunu süzün ve bir bıçak yardımıyla incirlerin üzerine hafifçe kesikler atın.\n\n
+3. Bir tencereye sütü ekleyin ve ısıtın. Süt kaynama noktasına gelene kadar ısıtın.\n\n
+4. Kaynamış sütün içine bal veya akçaağaç şurubu ve vanilya özütünü ekleyin. Karıştırarak eritin.\n\n
+5. Hazırladığınız süt karışımını ocaktan alın ve ılımaya bırakın.\n\n
+6. Ilıyan süt karışımını incirlerin üzerine dökün.\n\n
+7. İncirleri sütün içinde 30 dakika kadar bekletin, bu süre içinde incirler sütü içine çekecek ve yumuşayacaktır.\n\n
+8. Tatlı servis edilmeden önce incirleri soğumaya bırakın. İsteğe bağlı olarak üzerine dövülmüş ceviz veya badem serpebilirsiniz.\n\n
+9. Soğuyan sütlü incir tatlısını servis tabağına alın ve üzerine isteğe bağlı olarak hindistancevizi rendesi veya tarçın serperek servis yapın.\n\n
+Bu nefis sütlü incir tatlısını çay saatlerinde veya özel günlerde misafirlerinize sunabilirsiniz. Afiyet olsun!</string>
+
+
+
+    <string name="yapilisi_cheesecake">1.Bisküvileri blenderden geçirip toz haline getirin.\n\n
+2. Tereyağını eriterek bisküvilerle karıştırın.\n\n
+3. Hazırladığınız karışımı pişirme kağıdı ile kapladığınız 20cm.lik kelepçeli kek kalıbının tabanına yayıp, üzerine bastırarak sıkıştırın.\n\n
+4. Peynirleri çırpıcı yardımıyla güzelce karıştırın.\n\n
+5. Üzerine şeker ve yumurtayı ekleyerek çırpmaya devam edin.\n\n
+6. Son olarak un ve vanilyayı ekleyip, bisküvi tabanının üzerine dökün.\n\n
+7. Önceden ısıtılmış 180 derece fırında 45 dakika pişirin.</string>
+
+
+
+
+    <string name="yapilisi_meksikasalatasi">1. Salatalığı, domatesi ve avokadoyu küp şeklinde doğrayın ve büyük bir salata kabına alın.\n\n
+2. Kırmızı soğanı ince dilimler halinde doğrayın ve salata kabına ekleyin.\n\n
+3. Jalapeno biberini ince halkalar halinde doğrayın ve salata kabına ekleyin (isteğe bağlı olarak).\n\n
+4. Taze kişnişi doğrayın ve salata kabına ekleyin (isteğe bağlı olarak).\n\n
+5. Limon suyu ve zeytinyağını salatanın üzerine ekleyin.\n\n
+6. Tuz ve karabiber ile tatlandırın.\n\n
+7. Tüm malzemeleri hafifçe karıştırın, böylece sos malzemeleri tüm sebzelerin üzerine eşit olarak dağılsın.\n\n
+8. Salatayı buzdolabında en az 30 dakika soğutun, bu süre içinde tüm lezzetler birbirine karışacak ve daha lezzetli bir hale gelecektir.\n\n
+9. Soğutulmuş olarak servis yapın ve isteğe bağlı olarak ekstra taze kişniş yaprakları ile süsleyin.\n\n
+Bu Meksika salatası, ana yemeklerin yanında veya tek başına bir öğün olarak servis edilebilir. Glutensiz ve sağlıklı bir seçenek olmasının yanı sıra, lezzetiyle de dikkat çekecek bir tarif. Afiyet olsun!</string>
 
 </resources>

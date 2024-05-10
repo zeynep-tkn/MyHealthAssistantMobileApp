@@ -15,7 +15,66 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
-
+        <activity
+            android:name=".GlutensizTarif10"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif9"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif1"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif10"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif9"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif1"
+            android:exported="false" />
         <activity
             android:name=".saglikliTarifler10"
             android:exported="false" />
@@ -64,14 +123,14 @@
         <activity
             android:name=".Gazete1Activity"
             android:exported="false" />
-            <!--
+        <!--
         <activity
             android:name=".ui.theme.MotivationGazete1Activity"
             android:exported="false" />
-            -->
-            <activity
-                android:name=".SporPlanlariActivity"
-                android:exported="false" />
+        -->
+        <activity
+            android:name=".SporPlanlariActivity"
+            android:exported="false" />
         <activity
             android:name=".MotivationIpuclari9Activity"
             android:exported="false" />
@@ -96,10 +155,11 @@
         <activity
             android:name=".MotivationIpuclari2Activity"
             android:exported="false" />
-
-       <!-- <activity
+        <!--
+ <activity
             android:name=".ui.theme.MotivationIpuclariActivity"
-            android:exported="false" />-->
+            android:exported="false" />
+        -->
         <activity
             android:name=".AkilSagligiActivity"
             android:exported="false" />

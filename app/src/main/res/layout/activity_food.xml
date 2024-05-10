@@ -133,7 +133,7 @@
                             android:layout_height="wrap_content"
                             android:text="Kahvaltı"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="6dp"/>
 
@@ -180,7 +180,7 @@
                             android:layout_height="wrap_content"
                             android:text="Öğle Yemeği"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="6dp"/>
 
@@ -225,7 +225,7 @@
                             android:layout_height="wrap_content"
                             android:text="Atıştırmalık"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="6dp"/>
 
@@ -270,7 +270,7 @@
                             android:layout_height="wrap_content"
                             android:text="Akşam Yemeği"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="6dp"/>
 
@@ -700,7 +700,7 @@
                             android:layout_height="wrap_content"
                             android:text="Sağlıklı Tarifler"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="110dp"/>
 
@@ -742,7 +742,7 @@
                             android:layout_height="wrap_content"
                             android:text="Vegan Tarifler"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="110dp"/>
 
@@ -783,7 +783,7 @@
                             android:layout_height="wrap_content"
                             android:text="Glutensiz Tarifler"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="110dp"/>
 
@@ -824,7 +824,7 @@
                             android:layout_height="wrap_content"
                             android:text="Vejetaryen Tarifler"
                             android:textSize="16sp"
-                            android:textColor="@android:color/white"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="top|center_horizontal"
                             android:layout_marginTop="110dp"/>
 
@@ -847,154 +847,7 @@
 
         </HorizontalScrollView>
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/gridLayoutFood"
-            android:rowCount="2"
-            android:columnCount="4"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="1150dp"
-            android:layout_marginBottom="80dp">
 
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/kisiselCard"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/gluten"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kişisel Beslenme Asistanım"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:textSize="22sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Cardasistan"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_margin="8dp"
-
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/healthy"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sağlıklı Tarifler"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:textSize="22sp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/CardVegan"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_margin="8dp"
-
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/vegan"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Vegan Programlar"
-                        android:textSize="22sp"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/saglikCard1"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_column="1"
-
-                android:layout_margin="8dp"
-
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/nutrition"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Glutensiz Programlar"
-                        android:textSize="22sp"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
 
 
 
