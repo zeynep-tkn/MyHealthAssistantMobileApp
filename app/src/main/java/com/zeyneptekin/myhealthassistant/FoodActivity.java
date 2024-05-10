@@ -9,11 +9,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.zeyneptekin.myhealthassistant.ui.theme.KaloriKahvalti;
+
 public class FoodActivity extends AppCompatActivity {
 
     private CardView SaglikliTarif;
     private CardView VeganTarif;
     private CardView GlutensizTarif;
+    private CardView Kahvalti;
+    private CardView OgleYemegi;
+    private CardView Atistirmalik;
+    private CardView AksamYemegi;
 
     //private LinearLayout KisiselAsistan;
 
@@ -63,6 +69,46 @@ public class FoodActivity extends AppCompatActivity {
             }
         });
         */
+
+
+        Kahvalti = findViewById(R.id.kahvaltiCard);
+        Kahvalti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, KaloriKahvalti.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        OgleYemegi = findViewById(R.id.ogleCard);
+        OgleYemegi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, KaloriOgle.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Atistirmalik = findViewById(R.id.atistirmalikCard);
+        Atistirmalik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, KaloriAtistirmalik.class);
+                startActivity(intent);
+            }
+        });
+
+        AksamYemegi = findViewById(R.id.aksamCard);
+        AksamYemegi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, KaloriAksam.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

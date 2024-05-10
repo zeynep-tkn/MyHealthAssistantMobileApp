@@ -78,7 +78,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/elmaliKekCard"
+                android:id="@+id/karidesCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="0"
@@ -111,7 +111,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/educationCard"
+                android:id="@+id/mucverCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="1"
@@ -150,7 +150,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/foodCard"
+                android:id="@+id/brownieCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
@@ -255,7 +255,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Carddeneme"
+                android:id="@+id/karniyarikCard"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_row="3"

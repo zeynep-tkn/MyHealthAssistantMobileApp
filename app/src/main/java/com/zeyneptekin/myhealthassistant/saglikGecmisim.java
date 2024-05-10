@@ -41,6 +41,10 @@ import java.util.HashMap;
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
 
+        alerjilerimTable = findViewById(R.id.alerjilerim_table);
+        addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
+        editTextAlerji = findViewById(R.id.editTextAlerji);
+
         //
         editText1.setVisibility(View.GONE);
         db.GetHastalıklarımTable(new FirestoreHelper.StringListFetchListener() {
@@ -56,16 +60,38 @@ import java.util.HashMap;
                 for (String hastalik : stringList) {
                     AddRowToTable(hastaliklarimTable, hastalik);
                 }
-                AddEditTextRowToTable(hastaliklarimTable);
-                editText1.setVisibility(View.VISIBLE);
+                AddEditTextRowToTable(hastaliklarimTable,editText1);
+                //editText1.setVisibility(View.VISIBLE);
             }
         });
+
+        //Alerjilerim Kısmı Database çağrısı
+        editTextAlerji.setVisibility(View.GONE);    //bunu iki defa yapıyorum, normalde tek sefer yapsam da olur ama ne olur ne olmaz 2 defa yaptım.
+        db.GetAlerjilerimTable(new FirestoreHelper.AlerjilerimDatabaseListener() {
+            @Override
+            public void getAlerjilerim(List<String> stringList) {
+                editTextAlerji.setVisibility(View.GONE);
+                removeLastRow(alerjilerimTable);
+                editTextAlerji.setVisibility(View.GONE);
+                int sayac = 0;
+                while(stringList == null){
+                }   //Bekleme süresi oluşturması için
+                for (String alerji : stringList) {
+                    AddRowToTable(alerjilerimTable, alerji);
+                }
+                AddEditTextRowToTable(alerjilerimTable,editTextAlerji);
+                //editTextAlerji.setVisibility(View.VISIBLE);
+            }
+        });
+
         deleteButtonHastalik.setVisibility(View.GONE);
         addRowButtonhastaliklarim.setVisibility(View.GONE);
-        if(hastaliklarimTable.getChildCount() != 0){
-            AddEditTextRowToTable(hastaliklarimTable);
-            deleteButtonHastalik.setVisibility(View.VISIBLE);
-            addRowButtonhastaliklarim.setVisibility(View.VISIBLE);
+        if(hastaliklarimTable.getChildCount() != 0 && alerjilerimTable.getChildCount() !=0){
+            AddEditTextRowToTable(hastaliklarimTable,editText1);
+            AddEditTextRowToTable(alerjilerimTable,editTextAlerji);
+
+            //deleteButtonHastalik.setVisibility(View.VISIBLE);
+            //addRowButtonhastaliklarim.setVisibility(View.VISIBLE);
         }
 
 
@@ -109,6 +135,8 @@ import java.util.HashMap;
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
         editTextAlerji = findViewById(R.id.editTextAlerji);
+
+
         addRowButtonalerjilerim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,6 +146,7 @@ import java.util.HashMap;
                 alerjiBilgisi = editTextAlerji.getText().toString();
                 db.addAlerjiBilgisi(alerjiBilgisi);
                 // Yeni bir satır oluştur
+                removeLastRowAndChangeToTextView(alerjilerimTable);
                 TableRow newRow = new TableRow(saglikGecmisim.this);
                 // EditText'i içeren yeni bir hücre oluştur
                 EditText alerjiGirisText = new EditText(saglikGecmisim.this);
@@ -231,7 +260,7 @@ import java.util.HashMap;
                  textView.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER);
                  // Yeni TextView'i içeren yeni bir satır oluştur
                  TableRow newRow = new TableRow(this);
-                 removeLastRow(hastaliklarimTable);
+                 removeLastRow(tableLayout);
                  newRow.addView(textView); // TextView'i satıra ekle
                  tableLayout.addView(newRow); // Yeni satırı tabloya ekle
              }
@@ -253,10 +282,10 @@ import java.util.HashMap;
         // Hücreyi satıra ekle
         newRow.addView(oldHastalikInfoText);
         // Satırı tabloya ekle
-        hastaliklarimTable.addView(newRow);
+         tableLayout.addView(newRow);
     }
 
-     private void AddEditTextRowToTable(TableLayout tableLayout) {
+     private void AddEditTextRowToTable(TableLayout tableLayout,EditText _editText) {
          // Yeni bir satır oluştur
          TableRow newRow = new TableRow(this);
 
@@ -265,10 +294,10 @@ import java.util.HashMap;
          editText.setLayoutParams(new TableRow.LayoutParams(
                  0,
                  TableRow.LayoutParams.WRAP_CONTENT, 1f));
-         editText.setHint("Hastalık ismi");
+         editText.setHint("Alerji İsmi");
          editText.setTextSize(14);
          editText.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER);
-         editText1 = editText;
+         _editText = editText;
          // Hücreyi satıra ekle
          newRow.addView(editText);
 
