@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1D4EF"
+    android:background="@color/logo_light"
     tools:context=".Randevularim">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RANDEVULARIM"
-        android:textSize="23sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         android:id="@+id/RandevuEklebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E8B9AA"
+        android:backgroundTint="@color/logo_dark"
         android:text="+"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

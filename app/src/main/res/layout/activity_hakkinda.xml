@@ -12,11 +12,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HAKKINDA"
-        android:textSize="23sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+My Health Asisstant\n
+My Health Asisstant, sağlık, motivasyon, egzersiz ve eğitim gibi farklı alanlarda kullanıcılarına kapsamlı bir deneyim sunan bir mobil uygulamadır. Kullanıcıların sağlıklı yaşam tarzı hedeflerine ulaşmalarına yardımcı olmak için tasarlanmıştır.
+\nNeler Sunuyoruz?
+\nSağlık kategorisinde, kullanıcılarımıza sağlıklı yaşam tarzıyla ilgili bilgiler, beslenme önerileri ve sağlık ipuçları sunuyoruz. Motivasyon kategorisinde, günlük hayatlarını iyileştirmek için ilham veren içerikler, motivasyon takvimi ve hayatı kolaylaştıran ipuçları bulabilirsiniz.
+\nEgzersiz kategorisinde, her yaş ve seviyeye uygun egzersiz programları, video dersleri ve hareketli egzersizlerle kullanıcılarımızın aktif kalmasına yardımcı oluyoruz. Eğitim kategorisinde, farklı alanlardaki uzmanlar tarafından hazırlanmış video podcast ve e-kitaplarla kişisel gelişimlerine katkı sağlıyoruz.
+\nNeden Bizi Tercih Etmelisiniz?
+\nMy Health Asisstant, kullanıcılarına zengin içerik ve kullanıcı dostu arayüzüyle kolay kullanım sunar. Uzmanlar tarafından hazırlanan içerikler ve özelleştirilmiş programlarla, her kullanıcının ihtiyaçlarına uygun çözümler sunarız. Sağlık, mutluluk ve başarı dolu bir yaşam için bizi tercih edin!"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
