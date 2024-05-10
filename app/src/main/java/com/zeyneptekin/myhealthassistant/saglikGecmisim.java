@@ -132,14 +132,10 @@ import java.util.HashMap;
                 });
             }
         });
-<<<<<<< HEAD
-=======
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         addRowButtonalerjilerim = findViewById(R.id.addRowButtonAlerji);
         editTextAlerji = findViewById(R.id.editTextAlerji);
 
-
->>>>>>> d5022a3be801ca7f80c619f36c928cf6fb7324d9
 
         addRowButtonalerjilerim.setOnClickListener(new View.OnClickListener() {
             @Override
