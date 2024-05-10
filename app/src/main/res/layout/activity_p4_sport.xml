@@ -13,10 +13,10 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/lavender"
+        android:background="@color/purple"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Sports &amp; Exercise" />
+        app:title="Spor &amp; Egzersiz" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -34,7 +34,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:orientation="vertical">
-
 
 
 
@@ -79,13 +78,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold" />
 
@@ -174,13 +173,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold" />
 
@@ -269,13 +268,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold" />
 
@@ -364,12 +363,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -458,12 +457,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -551,12 +550,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -646,13 +645,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold" />
                             <TextView
@@ -738,12 +737,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -831,12 +830,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -924,12 +923,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Repeate 2 time"
+                                android:text="2 kez tekrarla"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="01:00 MIN"
+                                android:text="01:00 dk"
                                 android:textColor="#ffff5722"
                                 android:textStyle="bold"/>
                             <TextView
@@ -982,8 +981,6 @@
 
 
                 </LinearLayout>
-
-
 
 
 
