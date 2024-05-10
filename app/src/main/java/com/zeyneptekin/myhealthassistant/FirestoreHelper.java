@@ -425,7 +425,50 @@ public class FirestoreHelper {
                 });
     }
 
+    public void GetAlerjilerimTable(final AlerjilerimDatabaseListener listener) {
+        getAlerjilerimTableFromFirestore(new AlerjilerimDatabaseListener() {
+            @Override
+            public void getAlerjilerim(List<String> alerjilerimList) {
+                listener.getAlerjilerim(alerjilerimList);
+            }
+        });
+    }
 
+    private void getAlerjilerimTableFromFirestore(final AlerjilerimDatabaseListener listener) {
+        db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Alerjilerim")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            List<String> valueList = new ArrayList<>();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                // Her bir dökümandaki belirli bir alanın değerini al
+                                String value = document.getString("Alerji Ismi");
+                                if (value != null) {
+                                    valueList.add(value);
+                                }
+                            }
+                            // Dinleyiciye string listesini geri çağır
+                            listener.getAlerjilerim(valueList);
+                        } else {
+                            // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                            listener.getAlerjilerim(new ArrayList<String>());
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                        listener.getAlerjilerim(new ArrayList<String>());
+                    }
+                });
+    }
+    public  interface AlerjilerimDatabaseListener{
+        void  getAlerjilerim(List<String> alerjilerimList);
+    }
 
     public interface StringListFetchListener {
         void onStringListFetched(List<String> stringList);
