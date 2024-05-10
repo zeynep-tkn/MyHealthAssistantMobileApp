@@ -58,7 +58,8 @@ public class OpenAIChat {
             JSONObject message = firstChoice.getJSONObject("message");
             String content = message.getString("content");
 
-            return content + "\n\nTest\nTotal Token: "+totalTokens;
+            return content ;
+            //+ "\n\nTest\nTotal Token: "+totalTokens;
 
         } catch (Exception e) {
             e.printStackTrace();

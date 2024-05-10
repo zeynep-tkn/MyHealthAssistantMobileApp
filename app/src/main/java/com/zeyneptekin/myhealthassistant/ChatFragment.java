@@ -3,21 +3,19 @@ package com.zeyneptekin.myhealthassistant;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -25,7 +23,7 @@ import java.util.ArrayList;
 public class ChatFragment extends Fragment {
     private final Handler responseHandler = new Handler(Looper.getMainLooper());
     private ArrayList<ChatMessageClass> messages;
-    private ArrayAdapter<ChatMessageClass> adapter;
+    private ChatAdapter adapter;
 
     public ChatFragment() {
         // Boş yapıcı metot
@@ -36,38 +34,16 @@ public class ChatFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
-        ListView chatListView = view.findViewById(R.id.chatListView);
+        RecyclerView chatRecyclerView = view.findViewById(R.id.chatRecyclerView);
         EditText messageEditText = view.findViewById(R.id.messageEditText);
         messages = new ArrayList<>();
 
-        adapter = new ArrayAdapter<ChatMessageClass>(requireContext(), android.R.layout.simple_list_item_1, messages) {
-            @NonNull
-            @Override
-            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-                View view = super.getView(position, convertView, parent);
-
-                TextView textView = view.findViewById(android.R.id.text1);
-                ChatMessageClass message = messages.get(position);
-
-                textView.setText(message.getContent());
-
-                // Mesajın kullanıcı tarafından mı asistan tarafından mı gönderildiğini kontrol et
-                if (message.getIsUserMessage()) {
-                    // Kullanıcı tarafından gönderilmişse
-                    textView.setBackgroundResource(R.drawable.user_message_background);
-                } else {
-                    // Asistan tarafından gönderilmişse
-                    textView.setBackgroundResource(R.drawable.assistant_message_background);
-                }
-
-                return view;
-            }
-        };
-
-        chatListView.setAdapter(adapter);
+        adapter = new ChatAdapter(messages);
+        chatRecyclerView.setAdapter(adapter);
+        chatRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
         messageEditText.setOnEditorActionListener((v, actionId, event) -> {
-            if (actionId == EditorInfo.IME_ACTION_SEND) {
+            if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
                 sendMessage(messageEditText);
                 return true;
             }

@@ -33,6 +33,7 @@
                 android:layout_gravity="center"
                 android:backgroundTint="@color/logo_dark"
                 app:cardCornerRadius="38dp">
+                <!--
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -40,7 +41,7 @@
                     app:lottie_rawRes="@raw/chatbot"
                     app:lottie_autoPlay="true">
                 </com.airbnb.lottie.LottieAnimationView>
-
+            -->
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -81,7 +82,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/chatListView">
+                android:id="@+id/chatRecyclerView">
 
             </androidx.recyclerview.widget.RecyclerView>
         </ScrollView>
