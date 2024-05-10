@@ -72,7 +72,7 @@ public class randevuEkleme extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder uyari = new AlertDialog.Builder(randevuEkleme.this);
                 uyari.setTitle("DİKKAT");
-                uyari.setMessage("Randevu ekleme işlemi gerçekleştirilmemiştir.");
+                uyari.setMessage("Yeni randevu EKLENEMEDİ.");
                 uyari.setPositiveButton("Tamam", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         Intent intent = new Intent(randevuEkleme.this, Randevularim.class);

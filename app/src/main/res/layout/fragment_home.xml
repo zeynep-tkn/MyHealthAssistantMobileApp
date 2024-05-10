@@ -11,31 +11,21 @@
         android:layout_width="match_parent"
         android:background="#FFF"
         android:layout_height="wrap_content">
-        <GridLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
-         <androidx.cardview.widget.CardView
-             android:id="@+id/kalenderCard"
-             android:layout_width="380dp"
-             android:layout_height="300dp"
-             android:layout_row="0"
-             android:layout_column="0"
-             android:layout_margin="8dp"
-             android:layout_marginStart="10dp"
-             android:layout_marginTop="20dp"
-             android:layout_marginEnd="8dp"
-             android:layout_marginBottom="8dp"
-             app:cardCornerRadius="20dp"
-             app:cardElevation="10dp">
 
-             <org.naishadhparmar.zcustomcalendar.CustomCalendar
-                 android:id="@+id/custom_calendar"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content" />
-
-         </androidx.cardview.widget.CardView>
-     </GridLayout>
-
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginBottom="100dp"
+            android:text="KATEGORİLER"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold" />
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -44,7 +34,7 @@
             android:columnCount="3"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginTop="370dp"
+            android:layout_marginTop="38dp"
             android:layout_marginBottom="80dp">
 
             <androidx.cardview.widget.CardView
@@ -54,7 +44,6 @@
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -64,14 +53,14 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal">
-                   <ImageView
-                       android:layout_width="120dp"
-                       android:layout_height="120dp"
-                       android:src="@drawable/motivation"/>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/motivation"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Motivation"
+                        android:text="Motivasyon"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="22dp"
@@ -105,7 +94,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sports-Exercise"
+                        android:text="Spor ve Egzersiz"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textSize="22dp"
@@ -139,7 +128,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Education"
+                        android:text="Eğitim"
                         android:textSize="22dp"
                         android:textColor="@color/black"
                         android:textAlignment="center"
@@ -173,7 +162,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Food"
+                        android:text="Beslenme"
                         android:textSize="22dp"
                         android:textColor="@color/black"
                         android:textAlignment="center"
@@ -186,20 +175,6 @@
 
         </GridLayout>
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="340dp"
-            android:layout_marginEnd="190dp"
-            android:layout_marginBottom="100dp"
-            android:text="KATEGORİLER"
-            android:textAlignment="textStart"
-            android:textSize="20dp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView4"
@@ -208,14 +183,13 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="730dp"
+            android:layout_marginTop="380dp"
             android:layout_marginEnd="190dp"
             android:layout_marginBottom="100dp"
             android:text="SU İZLEYİCİSİ"
             android:textAlignment="textStart"
             android:textSize="20dp"
             android:textStyle="bold" />
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -224,13 +198,13 @@
             android:columnCount="1"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="120dp"
             android:layout_marginBottom="80dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/waterReminderCard"
                 android:layout_width="380dp"
-                android:layout_height="250dp"
+                android:layout_height="220dp"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_margin="8dp"
@@ -248,20 +222,20 @@
                     android:gravity="center_vertical">
 
                     <!-- Sol tarafta - ikonu -->
-                <LinearLayout
-                    android:layout_width="60dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/minusButton"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:src="@drawable/eksi"/>
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/minusButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/eksi"/>
+                    </LinearLayout>
                     <!-- Orta kısımda bardak görseli ve 3/8 yazısı -->
                     <LinearLayout
                         android:layout_width="0dp"
@@ -273,7 +247,7 @@
                         <ImageView
                             android:id="@+id/cupImageView"
                             android:layout_width="190dp"
-                            android:layout_height="190dp"
+                            android:layout_height="180dp"
                             android:src="@drawable/bardak" />
 
                         <LinearLayout
@@ -305,25 +279,68 @@
                     </LinearLayout>
 
                     <!-- Sağ tarafta + ikonu -->
-                <LinearLayout
-                    android:layout_width="60dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/plusButton"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginRight="15dp"
-                        android:src="@drawable/plus"/>
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/plusButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/plus"/>
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginBottom="100dp"
+            android:text="SPOR İZLEYİCİSİ"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kalenderCard"
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="690dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <org.naishadhparmar.zcustomcalendar.CustomCalendar
+                    android:id="@+id/custom_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
 
         <TextView
             android:id="@+id/textView5"
@@ -332,7 +349,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="1060dp"
+            android:layout_marginTop="1010dp"
             android:layout_marginEnd="190dp"
             android:layout_marginBottom="100dp"
             android:text="KALORİ İZLEYİCİSİ"
@@ -345,7 +362,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="830dp"
+            android:layout_marginTop="780dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="80dp"
             android:columnCount="2"
@@ -381,6 +398,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
 
     </RelativeLayout>
 
