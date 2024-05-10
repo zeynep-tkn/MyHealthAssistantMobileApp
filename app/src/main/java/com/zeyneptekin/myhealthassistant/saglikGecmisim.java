@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
 
 import com.google.firebase.Timestamp;
 
@@ -28,12 +29,11 @@ import java.util.HashMap;
     private Button addRowButtonalerjilerim;
     private Button deleteButtonHastalik;
 
-    private FirestoreHelper firestoreHelper;
+    private FirestoreHelper db = new FirestoreHelper(this);
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saglik_gecmisim);
         // FirestoreHelper sınıfını başlat
-        FirestoreHelper db = new FirestoreHelper(this);
         addRowButtonhastaliklarim = findViewById(R.id.addRowButtonHastalik);
         deleteButtonHastalik = findViewById(R.id.deleteButtonHastalik);
         editText1 = findViewById(R.id.editText1);
@@ -41,16 +41,35 @@ import java.util.HashMap;
         alerjilerimTable = findViewById(R.id.alerjilerim_table);
         ameliyatlarimTable = findViewById(R.id.ameliyatlarim_table);
 
-        List<String> hastaliklarimList = new ArrayList<>();
-        String test1 = "test1";
-        String test2 = "test2";
-        String test3 = "test3";
-        hastaliklarimList.add(test1);
-        hastaliklarimList.add(test2);
-        hastaliklarimList.add(test3);
-        for (String hastaliklarimStr:hastaliklarimList) {
-            System.out.println(hastaliklarimStr);
+        //
+        editText1.setVisibility(View.GONE);
+        db.GetHastalıklarımTable(new FirestoreHelper.StringListFetchListener() {
+            @Override
+            public void onStringListFetched(List<String> stringList) {
+                editText1.setVisibility(View.GONE);
+                removeLastRow(hastaliklarimTable);
+                editText1.setVisibility(View.GONE);
+                int sayac = 0;
+                while(stringList == null){
+
+                }
+                for (String hastalik : stringList) {
+                    AddRowToTable(hastaliklarimTable, hastalik);
+                }
+                AddEditTextRowToTable(hastaliklarimTable);
+                editText1.setVisibility(View.VISIBLE);
+            }
+        });
+        deleteButtonHastalik.setVisibility(View.GONE);
+        addRowButtonhastaliklarim.setVisibility(View.GONE);
+        if(hastaliklarimTable.getChildCount() != 0){
+            AddEditTextRowToTable(hastaliklarimTable);
+            deleteButtonHastalik.setVisibility(View.VISIBLE);
+            addRowButtonhastaliklarim.setVisibility(View.VISIBLE);
         }
+
+
+
         addRowButtonhastaliklarim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +79,9 @@ import java.util.HashMap;
                 hastalikBilgisi = editText1.getText().toString();
                 db.addHastalikBilgisi(hastalikBilgisi);
                 // Yeni bir satır oluştur
+                removeLastRowAndChangeToTextView(hastaliklarimTable);
                 TableRow newRow = new TableRow(saglikGecmisim.this);
+
                 // EditText'i içeren yeni bir hücre oluştur
                 EditText hastalikGirisText = new EditText(saglikGecmisim.this);
                 hastalikGirisText.setLayoutParams(new TableRow.LayoutParams(
@@ -191,5 +212,67 @@ import java.util.HashMap;
         if (rowCount > 0) {
             tableLayout.removeViewAt(rowCount - 1);
         }
+
     }
+     private void removeLastRowAndChangeToTextView(TableLayout tableLayout) {
+         int rowCount = tableLayout.getChildCount();
+         if (rowCount > 0) {
+             TableRow lastRow = (TableRow) tableLayout.getChildAt(rowCount - 1);
+             if (lastRow != null && lastRow.getChildCount() > 0) {
+                 TextView textView = new TextView(this); // Yeni bir TextView oluştur
+                 EditText lastEditText = (EditText) lastRow.getChildAt(0); // Son EditText'i al
+                 String text = lastEditText.getText().toString(); // EditText'ten metni al
+                 textView.setText(text); // TextView'e metni ata
+                 // İhtiyacınıza göre TextView'i özelleştirin (boyut, renk, vs.)
+                 textView.setLayoutParams(new TableRow.LayoutParams(
+                         TableRow.LayoutParams.MATCH_PARENT,
+                         TableRow.LayoutParams.WRAP_CONTENT, 1f));
+                 textView.setTextSize(14);
+                 textView.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER);
+                 // Yeni TextView'i içeren yeni bir satır oluştur
+                 TableRow newRow = new TableRow(this);
+                 removeLastRow(hastaliklarimTable);
+                 newRow.addView(textView); // TextView'i satıra ekle
+                 tableLayout.addView(newRow); // Yeni satırı tabloya ekle
+             }
+         }
+     }
+
+     private void AddRowToTable(TableLayout tableLayout,String data){
+        TableRow newRow = new TableRow(saglikGecmisim.this);
+        TextView oldHastalikInfoText = new TextView(saglikGecmisim.this);
+        oldHastalikInfoText.setLayoutParams(new TableRow.LayoutParams(
+                TableRow.LayoutParams.MATCH_PARENT,
+                TableRow.LayoutParams.WRAP_CONTENT, 1f));
+        oldHastalikInfoText.setHint("Hastalık ismi");
+        oldHastalikInfoText.setText(data);
+        oldHastalikInfoText.setTextSize(14); // Yazı boyutunu 14sp olarak ayarla
+        oldHastalikInfoText.setGravity(Gravity.CENTER_HORIZONTAL);
+        oldHastalikInfoText.setGravity(Gravity.CENTER); // Yazıyı ortala
+
+        // Hücreyi satıra ekle
+        newRow.addView(oldHastalikInfoText);
+        // Satırı tabloya ekle
+        hastaliklarimTable.addView(newRow);
+    }
+
+     private void AddEditTextRowToTable(TableLayout tableLayout) {
+         // Yeni bir satır oluştur
+         TableRow newRow = new TableRow(this);
+
+         // EditText içeren hücre oluştur
+         EditText editText = new EditText(this);
+         editText.setLayoutParams(new TableRow.LayoutParams(
+                 0,
+                 TableRow.LayoutParams.WRAP_CONTENT, 1f));
+         editText.setHint("Hastalık ismi");
+         editText.setTextSize(14);
+         editText.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER);
+         editText1 = editText;
+         // Hücreyi satıra ekle
+         newRow.addView(editText);
+
+         // Satırı tabloya ekle
+         tableLayout.addView(newRow);
+     }
 }

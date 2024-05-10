@@ -6,27 +6,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:flow_horizontalAlign="center">
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center_horizontal"
-        app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/chatbot"
-        app:lottie_repeatMode="reverse"
-        android:id="@+id/Idchatbot" />
-
-
-
+    <ImageView
+        android:id="@+id/slider5Image"
+        android:layout_width="240dp"
+        android:layout_gravity="center"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tanitimegitim"/>
     <TextView
         android:id="@+id/sliderTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/screen1"
+        android:text="@string/screen5"
         android:textAlignment="center"
-        android:textColor="@color/lavender"
+        android:textColor="@color/logo_dark"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -34,12 +30,12 @@
         android:id="@+id/sliderDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:text="@string/screen1desc"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/screen5desc"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="8dp"
         android:textAlignment="center"
-        android:textColor="@color/lavender"
-        android:textSize="25sp"/>
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
 
 </LinearLayout>
