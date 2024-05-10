@@ -113,4 +113,7 @@ dependencies {
     //implementation 'com.github.naishadhparmar:zcustomcalendar:1.0.1'
     implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
     implementation 'com.airbnb.android:lottie:3.7.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 }
