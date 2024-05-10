@@ -101,6 +101,7 @@ public class HomeFragment extends Fragment {
         dateHashMap.put(6,"present");
         dateHashMap.put(7,"present");
         dateHashMap.put(8,"present");
+        dateHashMap.put(9,"present");
 
         customCalendar.setDate(calendar,dateHashMap);
         customCalendar.setOnDateSelectedListener(new OnDateSelectedListener() {
