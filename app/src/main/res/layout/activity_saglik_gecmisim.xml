@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#B1D4EF"
+    android:background="@color/logo_light"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     tools:ignore="ExtraText">
@@ -20,7 +20,7 @@
             android:padding="10dp"
             android:text="SAĞLIK GEÇMİŞİM"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TableLayout
@@ -34,7 +34,7 @@
             android:background="@android:color/white"
             android:layout_margin="70dp">
 
-            <TableRow android:background="#7D108F">
+            <TableRow android:background="@color/logo_dark">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:background="@android:color/white"
             android:layout_margin="70dp">
 
-            <TableRow android:background="#7D108F">
+            <TableRow android:background="@color/logo_dark">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -111,7 +111,7 @@
             android:layout_margin="70dp">
 
             <TableRow
-                android:background="#7D108F">
+                android:background="@color/logo_dark">
 
                 <TextView
                     android:layout_width="0dp"
@@ -172,7 +172,8 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#D7AFDD"
+            android:backgroundTint="@color/logo_dark"
+            android:textColor="@color/white"
             android:text="EKLE" />
 
         <Button
@@ -183,8 +184,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_toStartOf="@id/addRowButtonHastalik"
-            android:backgroundTint="#D7AFDD"
-            android:text="SİL" />
+            android:text="SİL"
+            android:backgroundTint="@color/logo_dark"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/addRowButtonAlerji"
@@ -196,7 +198,8 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#D7AFDD"
+            android:backgroundTint="@color/logo_dark"
+            android:textColor="@color/white"
             android:text="EKLE" />
 
         <Button
@@ -207,7 +210,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_toStartOf="@id/addRowButtonAlerji"
-            android:backgroundTint="#D7AFDD"
+            android:backgroundTint="@color/logo_dark"
+            android:textColor="@color/white"
             android:text="SİL" />
 
         <Button
@@ -220,7 +224,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#D7AFDD"
+            android:backgroundTint="@color/logo_dark"
             android:text="EKLE" />
 
         <Button
@@ -231,7 +235,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_toStartOf="@id/addRowButtonAmeliyat"
-            android:backgroundTint="#D7AFDD"
+            android:backgroundTint="@color/logo_dark"
             android:text="SİL" />
 
 

@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    app:flow_horizontalAlign="center">
+    android:background="@color/logo_light"
+    tools:context=".SSS">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center_horizontal"
-        app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/chatbot"
-        app:lottie_repeatMode="reverse"
-        android:id="@+id/Idchatbot" />
-
-
-
-    <TextView
-        android:id="@+id/sliderTitle"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/screen1"
-        android:textAlignment="center"
-        android:textColor="@color/lavender"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/sliderDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:text="@string/screen1desc"
-        android:fontFamily="@font/poppins_semibold"
-        android:layout_marginTop="8dp"
-        android:textAlignment="center"
-        android:textColor="@color/lavender"
-        android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/SSSBaslikTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIKÇA SORULAN SORULAR"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uygulamanızı nasıl indirebilirim?\nUygulamamızı indirmek için App Store veya Google Play Store'a gidin ve arama çubuğuna uygulama adımızı yazın. Ardından indirme ve kurma adımlarını takip edin.
+\nÜyelik nasıl alabilirim?\nÜyelik almak için ana sayfamızdaki Üye Ol veya Giriş Yap butonlarına tıklayın. Ardından gerekli bilgileri doldurarak üyeliğinizi tamamlayabilirsiniz.
+\nŞifremi unuttum, ne yapmalıyım?\nŞifrenizi unuttuysanız, giriş sayfasında bulunan Şifremi Unuttum seçeneğine tıklayın. E-posta adresinizi girerek şifrenizi sıfırlamanız için size bir bağlantı göndereceğiz.
+\nUygulamanızda hangi ödeme yöntemleri geçerlidir?\nUygulamamızda kredi kartı, banka kartı ve diğer popüler ödeme yöntemlerini kullanabilirsiniz. Güvenli ödeme sistemimiz sayesinde alışverişlerinizi kolayca tamamlayabilirsiniz.
+\nSıkça karşılaşılan teknik sorunlar için ne yapmalıyım?\nEğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır."
+            android:textSize="18dp"/>
 
-</LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

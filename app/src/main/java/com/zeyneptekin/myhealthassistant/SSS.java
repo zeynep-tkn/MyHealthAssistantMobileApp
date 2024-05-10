@@ -13,8 +13,6 @@ private LottieAnimationView lottieAnimationView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sss);
 
-        lottieAnimationView =findViewById(R.id.Idchatbot);
-        lottieAnimationView.setAnimation(R.raw.chatbot);
 
 
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1D4EF"
+    android:background="@color/logo_light"
     tools:context=".saglikProfilim">
 
 
@@ -14,8 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="SAĞLIK PROFİLİM"
-        android:textSize="23sp"
-
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -216,7 +215,7 @@
         android:layout_marginTop="203dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="202dp"
-        android:backgroundTint="#E8B9AA"
+        android:backgroundTint="@color/logo_dark"
         android:text="Sağlık Geçmişim"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -233,7 +232,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="38dp"
         android:layout_marginBottom="26dp"
-        android:backgroundTint="#E8B9AA"
+        android:backgroundTint="@color/logo_dark"
         android:text="İlaç Bilgilerim"
         app:layout_constraintBottom_toTopOf="@+id/ilerlemeTakibiBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -248,7 +247,7 @@
         android:layout_marginStart="39dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="#E8B9AA"
+        android:backgroundTint="@color/logo_dark"
         android:text="İlerleme Takibi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

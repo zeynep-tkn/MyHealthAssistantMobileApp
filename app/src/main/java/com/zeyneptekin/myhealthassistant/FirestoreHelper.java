@@ -27,6 +27,7 @@ public class FirestoreHelper {
     private static final String TAG = "FirestoreHelper";
     private FirebaseFirestore db;
     private Context context;
+
     public FirestoreHelper(Context context) {
         // Firestore bağlantısını başlat
         db = FirebaseFirestore.getInstance();
@@ -88,6 +89,7 @@ public class FirestoreHelper {
                     }
                 });
     }
+
     public void addRandevuBilgisi(String bolum, String tarih, String saat, String doktor, String hastahane) {
         Map<String, Object> randevuBilgisi = new HashMap<>();
         randevuBilgisi.put("bolum", bolum);
@@ -118,7 +120,7 @@ public class FirestoreHelper {
     }
 
 
-    public void updateExerciseStatus(String egzersizAdi,int egzersizVal) {
+    public void updateExerciseStatus(String egzersizAdi, int egzersizVal) {
         // Firestore koleksiyonunu ve belirli bir belgeyi belirle
         DocumentReference docRef = db.collection("users")
                 .document("aXjqaM073S5UPEMiT2fu")
@@ -135,14 +137,14 @@ public class FirestoreHelper {
                             int egzersizValue = documentSnapshot.getLong(egzersizAdi) != null ?
                                     documentSnapshot.getLong(egzersizAdi).intValue() : 0;
                             //egzersizValue++; // Egzersiz değerini arttır
-                            if(egzersizValue < egzersizVal) {
+                            if (egzersizValue < egzersizVal) {
                                 egzersizValue = egzersizVal;
                                 //test amaçlı veya isteğe bağlı ayarlanma,
                                 //anlık olarak hangi aşamadaysa o aşama bittikten sonra database ye o aşama değerini kaydedicek
                                 //eğer yapılması gerekenden başka bir şey yapıldığında artmayacak çünkü o hareket çoktan yapıldı
                             }
 
-                            if(egzersizValue == 10){
+                            if (egzersizValue == 10) {
                                 egzersizValue = 0;
                             }
 
@@ -192,6 +194,7 @@ public class FirestoreHelper {
                     }
                 });
     }
+
     //----
     public void showProgressForSportPage(String egzersizAdi, final ProgressFetchListener listener) {
         // Firestore koleksiyonunu ve belirli bir belgeyi belirle
@@ -298,10 +301,11 @@ public class FirestoreHelper {
                     }
                 });
     }
+
     public void addAmeliyatBilgisi(String ameliyatIsmi, String ameliyatTarihi) {
         Map<String, Object> ameliyatBilgisi = new HashMap<>();
         ameliyatBilgisi.put("Ameliyat Ismi", ameliyatIsmi);
-        ameliyatBilgisi.put("Ameliyat Tarihi",ameliyatTarihi);
+        ameliyatBilgisi.put("Ameliyat Tarihi", ameliyatTarihi);
 
 
         // Firestore koleksiyonunu ve belirli bir belgeyi belirle
@@ -325,7 +329,7 @@ public class FirestoreHelper {
                 });
     }
 
-    public void SaveWaterTrackingData(int drunkedWater, int waterOfDrink, String date){
+    public void SaveWaterTrackingData(int drunkedWater, int waterOfDrink, String date) {
         DocumentReference docref = db.collection("users").document("aXjqaM073S5UPEMiT2fu").
                 collection("Su-Takibi").document(date);
         Map<String, Object> data = new HashMap<>();
@@ -333,21 +337,21 @@ public class FirestoreHelper {
         data.put("icilmesiGerekenSu", waterOfDrink);
         docref.set(data)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                Log.d(TAG, "Veri ekleme işlemi başarılı!");
-                System.out.println("Veri kaydetme başarılı");
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.w(TAG, "Veri ekleme işlemi başarısız!", e);
-                System.out.println("Veri kaydetme başarısız");
-            }
-        });
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.d(TAG, "Veri ekleme işlemi başarılı!");
+                        System.out.println("Veri kaydetme başarılı");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(TAG, "Veri ekleme işlemi başarısız!", e);
+                        System.out.println("Veri kaydetme başarısız");
+                    }
+                });
     }
 
-    public void GetUserWeight(final WeightFetchListener listener){
+    public void GetUserWeight(final WeightFetchListener listener) {
         DocumentReference docRef = db.collection("users")
                 .document("aXjqaM073S5UPEMiT2fu");
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -373,10 +377,12 @@ public class FirestoreHelper {
             }
         });
     }
+
     // Firestore'dan ağırlık değerini alındığında geri çağrı yapılacak arayüz
     public interface WeightFetchListener {
         void onWeightFetched(int weight);
     }
+
     // Firestore'dan değeri alındığında geri çağrı yapılacak arayüz
     public interface ProgressFetchListener {
         void onProgressFetch(int progress);
@@ -425,12 +431,102 @@ public class FirestoreHelper {
                 });
     }
 
-
-
-    public interface StringListFetchListener {
-        void onStringListFetched(List<String> stringList);
+    public void GetAlerjilerimTable(final AlerjilerimDatabaseListener listener) {
+        getAlerjilerimTableFromFirestore(new AlerjilerimDatabaseListener() {
+            @Override
+            public void getAlerjilerim(List<String> alerjilerimList) {
+                listener.getAlerjilerim(alerjilerimList);
+            }
+        });
     }
+        public void getRandevular ( final RandevuFetchListener listener){
+            db.collection("users")
+                    .document("aXjqaM073S5UPEMiT2fu")
+                    .collection("HealthInformations")
+                    .document("RbEvitDDUmvkeIO9EKHx")
+                    .collection("randevularım")
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                            if (task.isSuccessful()) {
+                                List<Randevu> randevuList = new ArrayList<>();
+                                for (QueryDocumentSnapshot document : task.getResult()) {
+                                    // Her bir dökümandaki randevu bilgilerini al
+                                    String bolum = document.getString("bolum");
+                                    String tarih = document.getString("tarih");
+                                    String saat = document.getString("saat");
+                                    String hastahane = document.getString("hastahane");
+                                    String doktor = document.getString("doktor");
+                                    // Diğer gerekli bilgileri de buradan alabilirsiniz
+                                    Randevu randevu;
+                                    randevu = new Randevu(bolum, tarih, saat, hastahane, doktor);
+
+                                    randevuList.add(randevu);
+                                }
+                                // Dinleyiciye randevu listesini geri çağır
+                                listener.onRandevuFetch(randevuList);
+                            } else {
+                                // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                                listener.onRandevuFetch(new ArrayList<Randevu>());
+                            }
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                            listener.onRandevuFetch(new ArrayList<Randevu>());
+                        }
+                    });
+        }
 
 
+        private void getAlerjilerimTableFromFirestore ( final AlerjilerimDatabaseListener listener){
+            db.collection("users").document("aXjqaM073S5UPEMiT2fu").
+                    collection("HealthInformations").document("RbEvitDDUmvkeIO9EKHx").collection("Alerjilerim")
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                            if (task.isSuccessful()) {
+                                List<String> valueList = new ArrayList<>();
+                                for (QueryDocumentSnapshot document : task.getResult()) {
+                                    // Her bir dökümandaki belirli bir alanın değerini al
+                                    String value = document.getString("Alerji Ismi");
+                                    if (value != null) {
+                                        valueList.add(value);
+                                    }
+                                }
+                                // Dinleyiciye string listesini geri çağır
+                                listener.getAlerjilerim(valueList);
+                            } else {
+                                // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                                listener.getAlerjilerim(new ArrayList<String>());
+                            }
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            // Firestore'dan dökümanları alırken bir hata oluştuğunda boş bir liste döndür
+                            listener.getAlerjilerim(new ArrayList<String>());
+                        }
+                    });
+        }
+        public interface AlerjilerimDatabaseListener {
+            void getAlerjilerim(List<String> alerjilerimList);
+        }
 
-}
+        public interface StringListFetchListener {
+            void onStringListFetched(List<String> stringList);
+        }
+
+        public interface RandevuFetchListener {
+            void onRandevuFetchListener(List<String> stringList);
+
+            void onRandevuFetch(List<Randevu> randevuList);
+        }
+
+
+    }
