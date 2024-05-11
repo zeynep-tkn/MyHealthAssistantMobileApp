@@ -4,37 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1D4EF"
+    android:background="@color/logo_light"
+    android:paddingLeft="10dp"
     tools:context=".hakkinda">
 
     <TextView
-        android:id="@+id/hakkindaBaslikTxt"
+        android:id="@+id/SSSBaslikTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:text="HAKKINDA"
-        android:textSize="28sp"
+        android:textColor="@color/logo_dark"
+        android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="
-My Health Asisstant\n
-My Health Asisstant, sağlık, motivasyon, egzersiz ve eğitim gibi farklı alanlarda kullanıcılarına kapsamlı bir deneyim sunan bir mobil uygulamadır. Kullanıcıların sağlıklı yaşam tarzı hedeflerine ulaşmalarına yardımcı olmak için tasarlanmıştır.
-\nNeler Sunuyoruz?
-\nSağlık kategorisinde, kullanıcılarımıza sağlıklı yaşam tarzıyla ilgili bilgiler, beslenme önerileri ve sağlık ipuçları sunuyoruz. Motivasyon kategorisinde, günlük hayatlarını iyileştirmek için ilham veren içerikler, motivasyon takvimi ve hayatı kolaylaştıran ipuçları bulabilirsiniz.
-\nEgzersiz kategorisinde, her yaş ve seviyeye uygun egzersiz programları, video dersleri ve hareketli egzersizlerle kullanıcılarımızın aktif kalmasına yardımcı oluyoruz. Eğitim kategorisinde, farklı alanlardaki uzmanlar tarafından hazırlanmış video podcast ve e-kitaplarla kişisel gelişimlerine katkı sağlıyoruz.
-\nNeden Bizi Tercih Etmelisiniz?
-\nMy Health Asisstant, kullanıcılarına zengin içerik ve kullanıcı dostu arayüzüyle kolay kullanım sunar. Uzmanlar tarafından hazırlanan içerikler ve özelleştirilmiş programlarla, her kullanıcının ihtiyaçlarına uygun çözümler sunarız. Sağlık, mutluluk ve başarı dolu bir yaşam için bizi tercih edin!"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h1"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h11"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h2"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h22"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h3"
+            android:textColor="@color/logo_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/h33"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

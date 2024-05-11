@@ -25,20 +25,24 @@
         android:id="@+id/kullanıcıAdSoyadiGirisTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="20dp"
         android:text="Beyzanur Bayır"
 
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/dogumTarihiTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:text="Doğum Tarihi"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,11 +148,11 @@
         android:id="@+id/kiloTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="12dp"
         android:text="Kilo"
         app:layout_constraintBottom_toTopOf="@+id/kiloGirisTxt"
         app:layout_constraintEnd_toStartOf="@+id/vucutKitleIndeksiTxt"
-        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -198,7 +202,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="110dp"
-        android:layout_height="64dp"
+        android:layout_height="84dp"
         android:layout_marginTop="73dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"

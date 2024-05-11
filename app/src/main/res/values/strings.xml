@@ -56,6 +56,73 @@
     <string name="sss66">Eğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır.</string>
 
 
+    <string name="h1"> My Health Asisstant</string>
+    <string name="h2"> Neler Sunuyoruz?</string>
+    <string name="h3"> Neden Bizi Tercih Etmelisiniz?</string>
+
+    <string name="h11"> My Health Asisstant, sağlık, motivasyon,
+ egzersiz ve eğitim gibi farklı alanlarda
+ kullanıcılarına kapsamlı bir deneyim sunan
+  bir mobil uygulamadır. Kullanıcıların sağlıklı
+  yaşam tarzı hedeflerine ulaşmalarına yardımcı
+   olmak için tasarlanmıştır.</string>
+    <string name="h22"> Sağlık kategorisinde, kullanıcılarımıza sağlıklı
+ yaşam tarzıyla ilgili bilgiler, beslenme önerileri
+  ve sağlık ipuçları sunuyoruz. Motivasyon kategorisinde
+  , günlük hayatlarını iyileştirmek için ilham veren
+  içerikler, motivasyon takvimi ve hayatı kolaylaştıran
+   ipuçları bulabilirsiniz.
+Egzersiz kategorisinde, her yaş ve seviyeye uygun
+ egzersiz programları, video dersleri ve hareketli
+ egzersizlerle kullanıcılarımızın aktif kalmasına yardımcı
+  oluyoruz. Eğitim kategorisinde, farklı alanlardaki
+   uzmanlar tarafından hazırlanmış video podcast
+    ve e-kitaplarla kişisel gelişimlerine katkı sağlıyoruz.</string>
+    <string name="h33"> My Health Asisstant, kullanıcılarına
+        zengin içerik ve kullanıcı dostu arayüzüyle kolay
+        kullanım sunar. Uzmanlar tarafından hazırlanan
+        içerikler ve özelleştirilmiş programlarla,
+        her kullanıcının ihtiyaçlarına uygun çözümler sunarız.
+        Sağlık, mutluluk ve başarı dolu bir yaşam için bizi tercih edin!</string>
+
+    <string name="g2">Toplanan Bilgiler</string>
+    <string name="g3">Bilgi Kullanımı</string>
+    <string name="g4">Bilgi Paylaşımı</string>
+    <string name="g5">Veri Güvenliği</string>
+    <string name="g6">Çocukların Gizliliği</string>
+    <string name="g7">Değişiklikler</string>
+
+
+    <string name="g11"> Bu gizlilik ve güvenlik politikası,
+        sağlık verilerinizi nasıl topladığımızı, kullandığımızı,
+        paylaştığımızı ve koruduğumuzu açıklar.
+        Lütfen bu politikayı dikkatlice okuyun ve uygulamamızı
+        kullanırken sağlık verilerinizin nasıl işlendiğini anlayın.</string>
+    <string name="g22">Uygulamamız, kullanıcılarımızın sağlık
+        durumuyla ilgili çeşitli bilgileri toplayabilir.
+        Bu bilgiler, kullanıcının sağlık durumunu izlemek, analiz etmek
+        ve sağlık hizmetlerini iyileştirmek amacıyla kullanılır.</string>
+    <string name="g33">Topladığımız sağlık bilgileri, kullanıcılara
+        daha iyi sağlık hizmetleri sunmak, sağlık alışkanlıklarını
+        izlemek için kullanılır. Bu bilgiler ayrıca anonimleştirilerek
+        genel eğilimleri analiz etmek, araştırma yapmak ve ürünlerimizi
+        geliştirmek için kullanılabilir.</string>
+    <string name="g44">Sağlık bilgileriniz, üçüncü taraflarla
+        paylaşılmaz veya satılmaz. Ancak, kullanıcılarımızın
+        sağlık durumlarını izlemek ve iyileştirmek için işbirliği
+        yaptığımız sağlık profesyonelleri veya sağlık kuruluşlarıyla
+        bilgi paylaşılabilir. Ayrıca, yasal gereksinimler veya mahkeme
+        kararları doğrultusunda sağlık bilgileri yetkilendirilmiş mercilere açıklanabilir.</string>
+    <string name="g55">Sağlık bilgileriniz, en yüksek güvenlik standartlarına
+        uygun olarak korunur. Ayrıca, veri erişimini ve izini sınırlamak için gelişmiş kimlik
+        doğrulama ve erişim kontrolü önlemleri alınmıştır.</string>
+    <string name="g66">Uygulamamız, 13 yaşın altındaki çocukların kişisel
+        bilgilerini bilerek toplamamaktadır. Ebeveynlerin çocuklarının sağlık
+        bilgilerini kontrol etmeleri ve yönetmeleri önemlidir.</string>
+    <string name="g77">Bu gizlilik ve güvenlik politikası, zaman zaman güncellenebilir.
+    Herhangi bir güncelleme durumunda, bu sayfada güncellenmiş politikanın bir sürümü yayınlanacaktır.</string>
+
+
     <string name="pose1">    Step 1:- Start in the push-up position with your arms completely straight and directly beneath your shoulders.\n\n
                              Step 2:- Your body should form a straight line from your shoulders to your ankles. \n\n
                              Step 3:- Squeeze your abs, lift one foot off the floor and bring your knee up towards your chest while keeping your body in as straight of a line as possible. \n\n
