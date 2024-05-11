@@ -52,7 +52,7 @@ public class ChatFragment extends Fragment {
             public void run() {
                 gifImageView.setVisibility(View.GONE);
             }
-        }, 12000); // 12 saniye sonra gizle
+        }, 9000); // 9 saniye sonra gizle
 
 
 

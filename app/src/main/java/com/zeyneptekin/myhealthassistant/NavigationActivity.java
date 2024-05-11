@@ -29,7 +29,7 @@ public class NavigationActivity extends AppCompatActivity {
             } else {
                 backButton.setVisibility(View.INVISIBLE);
             }
-            if (position == 3){
+            if (position == 4){
                 nextButton.setText("Finish");
             } else {
                 nextButton.setText("Next");
@@ -60,7 +60,7 @@ public class NavigationActivity extends AppCompatActivity {
             nextButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (getItem(0) < 3)
+                    if (getItem(0) < 4)
                         slideViewPager.setCurrentItem(getItem(1), true);
                     else {
                         Intent i = new Intent(NavigationActivity.this, GetStarted.class);
@@ -86,7 +86,7 @@ public class NavigationActivity extends AppCompatActivity {
         }
 
     public void setDotIndicator(int position) {
-        dots = new TextView[4];
+        dots = new TextView[5];
         dotIndicator.removeAllViews();
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
