@@ -98,20 +98,19 @@
         android:layout_marginTop="200dp"
         />
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="440dp"
         android:layout_height="wrap_content"
         android:id="@+id/above"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginBottom="8dp"
         android:layout_alignParentBottom="true">
 
   <androidx.cardview.widget.CardView
-      android:layout_width="match_parent"
+      android:layout_width="400dp"
       android:layout_height="wrap_content"
       app:cardCornerRadius="28dp"
-      android:layout_marginLeft="14dp"
-      android:layout_marginRight="14dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginRight="68dp"
       >
 
       <EditText
@@ -124,15 +123,31 @@
           android:paddingLeft="24dp"
           android:paddingBottom="16dp"
           android:paddingTop="16dp"
-          android:paddingRight="18dp"
-          android:drawableRight="@drawable/ic_send"
+          android:paddingRight="22dp"
           android:inputType="text" />
 
 
   </androidx.cardview.widget.CardView>
-
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/imageSend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gonder"
+            android:layout_alignParentRight="true"/>
 
     </RelativeLayout>
+
 </RelativeLayout>
 
 
