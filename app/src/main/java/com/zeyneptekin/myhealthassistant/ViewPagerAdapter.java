@@ -18,7 +18,6 @@ public class ViewPagerAdapter extends PagerAdapter {
             R.drawable.mn,
             R.drawable.exercise,
             R.drawable.egitim,
-            R.drawable.food,
             R.drawable.tanitimspor,
             R.drawable.tanitimegitim,
     };

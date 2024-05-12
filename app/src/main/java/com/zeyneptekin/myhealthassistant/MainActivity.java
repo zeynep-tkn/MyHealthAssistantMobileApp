@@ -17,6 +17,18 @@ public class MainActivity extends AppCompatActivity {
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
+        if (getIntent().hasExtra("fragment_to_load")) {
+            // ChatFragment'i yükle
+            replaceFragment(new ChatFragment());
+            binding.bottomNavigationView.setSelectedItemId(R.id.chat);
+            // Seçili olan alt menü öğesini chat olarak ayarla
+
+        } else {
+            // Varsayılan olarak HomeFragment'i yükle
+            replaceFragment(new HomeFragment());
+        }
+
+
 
         binding.bottomNavigationView.setOnItemSelectedListener(item ->{
             int itemId=item.getItemId();
@@ -35,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();

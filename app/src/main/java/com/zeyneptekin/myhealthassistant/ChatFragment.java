@@ -18,13 +18,17 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
+
+import pl.droidsonroids.gif.GifImageView;
 
 public class ChatFragment extends Fragment {
     private final Handler responseHandler = new Handler(Looper.getMainLooper());
     private ArrayList<ChatMessageClass> messages;
     private ChatAdapter adapter;
-
+    private GifImageView gifImageView;
     public ChatFragment() {
         // Boş yapıcı metot
     }
@@ -34,13 +38,38 @@ public class ChatFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
+        gifImageView = view.findViewById(R.id.gifImageView);
+
+        // GifImageView'in görünürlüğünü ayarla
+        gifImageView.setVisibility(View.VISIBLE);
+
+        // Gif hareketini başlat
+        playGif();
+
+
+
+        // Gif'in görünürlüğünü belirli bir süre sonra gizle
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                gifImageView.setVisibility(View.GONE);
+            }
+        }, 9000); // 9 saniye sonra gizle
+
         RecyclerView chatRecyclerView = view.findViewById(R.id.chatRecyclerView);
         EditText messageEditText = view.findViewById(R.id.messageEditText);
-        messages = new ArrayList<>();
 
+
+        messages = new ArrayList<>();
         adapter = new ChatAdapter(messages);
         chatRecyclerView.setAdapter(adapter);
         chatRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+
+        if (getArguments() != null && getArguments().containsKey("welcome_message")) {
+            String welcomeMessage = getArguments().getString("welcome_message");
+            messages.add(new ChatMessageClass("Assistan\n" + welcomeMessage, false));
+            System.out.println(welcomeMessage);
+        }
 
         messageEditText.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
@@ -50,8 +79,19 @@ public class ChatFragment extends Fragment {
             return false;
         });
 
+
+
         return view;
     }
+
+    private void playGif() {
+        // Glide kütüphanesini kullanarak GIF dosyasını yükleme
+        Glide.with(this)
+                .asGif()
+                .load(R.drawable.robotgif)
+                .into(gifImageView);
+    }
+
 
     private void sendMessage(EditText messageEditText) {
         String messageText = messageEditText.getText().toString();
