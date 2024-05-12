@@ -13,7 +13,7 @@ import java.io.*;
 import java.util.Properties;
 
 public class OpenAIChat {
-    static String API_KEY = "";
+    static String API_KEY = "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";
     //Key bal, bu proje grubu harici kullanan mal
     //ben ve bu proje grubu harici kullanan olursa sağlam bozuşurum.
 
@@ -29,7 +29,7 @@ public class OpenAIChat {
 
             connection.setDoOutput(true);
 
-            String systemPrompt = "Sen bir sağlık asistanısın. Cevaplara Türkçe cevap ver.";
+            String systemPrompt = "Sen bir sağlık asistanısın. İsmin Rubix. Cevaplara Türkçe cevap ver.";
             String body = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"system\", \"content\": \""+ systemPrompt +"\"}, {\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
 
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
