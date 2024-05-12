@@ -74,7 +74,7 @@ public class ChatFragment extends Fragment {
             return false;
         });
 
-        return view;
+        return inflater.inflate(R.layout.fragment_chat, container, false);
     }
 
     private void playGif() {

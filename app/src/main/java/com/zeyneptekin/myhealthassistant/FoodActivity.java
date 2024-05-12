@@ -2,12 +2,14 @@ package com.zeyneptekin.myhealthassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.zeyneptekin.myhealthassistant.ui.theme.KaloriKahvalti;
 
@@ -21,7 +23,7 @@ public class FoodActivity extends AppCompatActivity {
     private CardView Atistirmalik;
     private CardView AksamYemegi;
 
-    //private LinearLayout KisiselAsistan;
+    private RelativeLayout KisiselAsistan;
 
 
 
@@ -59,16 +61,18 @@ public class FoodActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*
-        KisiselAsistan = findViewById(R.id.AsistanLayout);
+        KisiselAsistan = findViewById(R.id.aiRelativeLayout);
         KisiselAsistan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FoodActivity.this,KisiselAistan.class);
+                // FragmentTransaction oluştur
+                Intent intent = new Intent(FoodActivity.this, MainActivity.class);
+                intent.putExtra("fragment_to_load", "chat_fragment");
                 startActivity(intent);
+                // FoodActivity'yi sonlandır
+                finish();
             }
         });
-        */
 
 
         Kahvalti = findViewById(R.id.kahvaltiCard);
