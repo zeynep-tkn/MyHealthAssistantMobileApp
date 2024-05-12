@@ -8,9 +8,9 @@
     app:flow_horizontalAlign="center">
     <ImageView
         android:id="@+id/slider3Image"
-        android:layout_width="210dp"
+        android:layout_width="207dp"
         android:layout_gravity="center"
-        android:layout_height="240dp"
+        android:layout_height="237dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/egitim"/>
@@ -18,12 +18,12 @@
         android:id="@+id/sliderTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/screen3"
         android:textAlignment="center"
         android:textColor="@color/logo_dark"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
     <TextView
