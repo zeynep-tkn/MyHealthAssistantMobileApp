@@ -1,5 +1,6 @@
 package com.zeyneptekin.myhealthassistant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +31,7 @@ public class ChatFragment extends Fragment {
     private ArrayList<ChatMessageClass> messages;
     private ChatAdapter adapter;
     private GifImageView gifImageView;
+    private Button sendButton;
     public ChatFragment() {
         // Boş yapıcı metot
     }
@@ -79,6 +82,13 @@ public class ChatFragment extends Fragment {
             return false;
         });
 
+        sendButton = view.findViewById(R.id.sendButton);
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMessage(messageEditText);
+            }
+        });
 
 
         return view;
