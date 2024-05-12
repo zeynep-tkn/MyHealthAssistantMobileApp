@@ -96,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#F8D9F8"
-                        android:text="@string/pose1"
+                        android:text="@string/pose2"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"/>
 
