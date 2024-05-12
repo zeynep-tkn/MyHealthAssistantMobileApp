@@ -387,4 +387,22 @@ Bu nefis sütlü incir tatlısını çay saatlerinde veya özel günlerde misafi
 9. Soğutulmuş olarak servis yapın ve isteğe bağlı olarak ekstra taze kişniş yaprakları ile süsleyin.\n\n
 Bu Meksika salatası, ana yemeklerin yanında veya tek başına bir öğün olarak servis edilebilir. Glutensiz ve sağlıklı bir seçenek olmasının yanı sıra, lezzetiyle de dikkat çekecek bir tarif. Afiyet olsun!</string>
 
+    <string-array name="GenderList">
+        <item>Kadın</item>
+        <item>Erkek</item>
+    </string-array>
+
+    <string-array name="BloodTypeList">
+        <item>0 RH-</item>
+        <item>0 RH+</item>
+        <item>A RH-</item>
+        <item>A RH+</item>
+        <item>B RH-</item>
+        <item>B RH+</item>
+        <item>AB RH-</item>
+        <item>AB RH+</item>
+    </string-array>
+
+
+
 </resources>

@@ -215,9 +215,6 @@
             android:name=".gizlilikVeGuvenlik"
             android:exported="false" />
         <activity
-            android:name=".ilerlemeTakibi"
-            android:exported="false" />
-        <activity
             android:name=".ilacBilgilerim"
             android:exported="false" />
         <activity
