@@ -46,6 +46,8 @@ public class ChatFragment extends Fragment {
         // Gif hareketini başlat
         playGif();
 
+
+
         // Gif'in görünürlüğünü belirli bir süre sonra gizle
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -54,17 +56,20 @@ public class ChatFragment extends Fragment {
             }
         }, 9000); // 9 saniye sonra gizle
 
-
-
-
-
         RecyclerView chatRecyclerView = view.findViewById(R.id.chatRecyclerView);
         EditText messageEditText = view.findViewById(R.id.messageEditText);
-        messages = new ArrayList<>();
 
+
+        messages = new ArrayList<>();
         adapter = new ChatAdapter(messages);
         chatRecyclerView.setAdapter(adapter);
         chatRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+
+        if (getArguments() != null && getArguments().containsKey("welcome_message")) {
+            String welcomeMessage = getArguments().getString("welcome_message");
+            messages.add(new ChatMessageClass("Assistan\n" + welcomeMessage, false));
+            System.out.println(welcomeMessage);
+        }
 
         messageEditText.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
@@ -74,7 +79,9 @@ public class ChatFragment extends Fragment {
             return false;
         });
 
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+
+
+        return view;
     }
 
     private void playGif() {

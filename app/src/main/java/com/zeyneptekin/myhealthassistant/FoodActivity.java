@@ -68,6 +68,7 @@ public class FoodActivity extends AppCompatActivity {
                 // FragmentTransaction oluştur
                 Intent intent = new Intent(FoodActivity.this, MainActivity.class);
                 intent.putExtra("fragment_to_load", "chat_fragment");
+                intent.putExtra("welcome_message", "Hoş Geldiniz, nasıl bir yemek programı oluşturmak istersiniz");
                 startActivity(intent);
                 // FoodActivity'yi sonlandır
                 finish();
