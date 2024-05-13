@@ -13,7 +13,7 @@ import java.io.*;
 import java.util.Properties;
 
 public class OpenAIChat {
-    static String API_KEY = "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";
+    static String API_KEY = "";
     //Key bal, bu proje grubu harici kullanan mal
     //ben ve bu proje grubu harici kullanan olursa sağlam bozuşurum.
 
