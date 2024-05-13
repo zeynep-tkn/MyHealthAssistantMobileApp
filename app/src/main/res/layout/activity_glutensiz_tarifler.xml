@@ -33,24 +33,22 @@
             app:layout_constraintVertical_bias="0.071" />
 
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/gridLayout"
             android:rowCount="8"
             android:columnCount="9"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="80dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/BalikTacoCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -60,8 +58,9 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal">
+
                     <ImageView
-                        android:layout_width="175dp"
+                        android:layout_width="213dp"
                         android:layout_height="120dp"
                         android:src="@drawable/taco4"/>
                     <TextView
@@ -70,7 +69,7 @@
                         android:text="Balık Tacos"
                         android:textColor="@color/black"
                         android:textAlignment="center"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textStyle="bold"/>
 
                 </LinearLayout>
@@ -79,12 +78,11 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/karidesCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="0"
                 android:layout_column="1"
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -104,7 +102,7 @@
                         android:text="Karides Stir-Fry"
                         android:textColor="@color/black"
                         android:textAlignment="center"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
@@ -112,7 +110,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/mucverCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="1"
                 android:layout_column="0"
@@ -143,7 +141,7 @@
                         android:text="Peynirli Kabak Mücver"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="17dp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -151,7 +149,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/brownieCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
 
@@ -175,7 +173,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Glutensiz Brownie"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textStyle="bold"/>
@@ -185,13 +183,11 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/KabakPureCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_column="0"
                 android:layout_row="2"
-
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -210,7 +206,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kabak Püresi"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:textStyle="bold"/>
@@ -220,7 +216,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/karabugdayCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
                 android:layout_row="2"
@@ -240,7 +236,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="120dp"
-                        android:src="@drawable/karabugday2" />
+                        android:src="@drawable/karabugday2"  />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -248,7 +244,7 @@
                         android:text="Karabuğday Pilavı"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -256,13 +252,11 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/karniyarikCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="3"
                 android:layout_column="0"
-
                 android:layout_margin="8dp"
-
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
@@ -288,7 +282,7 @@
                         android:text="Karnıyarık"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -296,13 +290,11 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/incirCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
                 android:layout_row="3"
-
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -324,7 +316,7 @@
                         android:text="Sütlü İncir Tatlısı"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22dp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -332,7 +324,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cheesecakeCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="4"
                 android:layout_column="0"
@@ -351,26 +343,26 @@
                     <ImageView
                         android:layout_width="221dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/cheesecake" />
+                        android:src="@drawable/cheesecake"  />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kestaneli Cheesecake"
                         android:textColor="@color/black"
                         android:textAlignment="center"
-                        android:textSize="17dp"
+                        android:textSize="13sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/meksikaCard"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="150dp"
                 android:layout_row="4"
                 android:layout_column="1"
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp">
 
@@ -384,14 +376,14 @@
                     <ImageView
                         android:layout_width="221dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/meksika2" />
+                        android:src="@drawable/meksika2"  />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Meksika  Salatası"
                         android:textColor="@color/black"
                         android:textAlignment="center"
-                        android:textSize="19dp"
+                        android:textSize="13sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
@@ -402,8 +394,6 @@
 
         </GridLayout>
     </RelativeLayout>
-
-
 
 
 
