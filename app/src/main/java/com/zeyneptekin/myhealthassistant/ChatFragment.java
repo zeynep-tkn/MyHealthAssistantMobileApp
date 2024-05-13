@@ -118,7 +118,7 @@ public class ChatFragment extends Fragment {
 
                 responseHandler.post(() -> {
                     if (assistantResponse != null) {
-                        ChatMessageClass assistantMessage = new ChatMessageClass("Rubix\n" + assistantResponse, false); // Asistan tarafından gönderilen mesaj
+                        ChatMessageClass assistantMessage = new ChatMessageClass("Robix\n" + assistantResponse, false); // Asistan tarafından gönderilen mesaj
                         messages.add(assistantMessage);
                         adapter.notifyDataSetChanged();
                     } else {
