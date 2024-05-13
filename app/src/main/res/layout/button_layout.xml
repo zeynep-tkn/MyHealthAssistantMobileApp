@@ -11,4 +11,5 @@
     android:stateListAnimator="@null"
     android:text="Randevu Al"
     android:textColor="#FFFFFF"
+    android:background="@drawable/buton_bg2"
     android:textSize="18sp" />
