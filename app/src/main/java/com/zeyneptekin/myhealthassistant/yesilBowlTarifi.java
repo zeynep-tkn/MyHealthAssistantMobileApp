@@ -9,6 +9,6 @@ public class yesilBowlTarifi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yesil_bowl_tarifi);
+        setContentView(R.layout.activity_saglikli_tarif1);
     }
 }
