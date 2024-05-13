@@ -10,10 +10,11 @@
         android:id="@+id/textView66"
         android:layout_width="74dp"
         android:layout_height="54dp"
+        android:background="@color/logo_light"
         android:text="Sağlıklı Atıştırmalık Tüketin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.801" />
@@ -30,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="81dp" />
+        app:layout_constraintGuide_end="578dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -143,7 +144,9 @@
         android:layout_width="71dp"
         android:layout_height="33dp"
         android:text="1 Mayıs Çarşamba"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.017"
@@ -156,7 +159,9 @@
         android:layout_width="73dp"
         android:layout_height="35dp"
         android:text="2 Mayıs Perşembe "
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.273"
@@ -169,7 +174,9 @@
         android:layout_width="70dp"
         android:layout_height="35dp"
         android:text="3 Mayıs Cuma"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -182,7 +189,9 @@
         android:layout_width="75dp"
         android:layout_height="35dp"
         android:text="4 Mayıs Cumartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.741"
@@ -195,7 +204,9 @@
         android:layout_width="75dp"
         android:layout_height="36dp"
         android:text="5 Mayıs Pazar"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.994"
@@ -207,33 +218,39 @@
         android:id="@+id/textView28"
         android:layout_width="75dp"
         android:layout_height="34dp"
+        android:background="@color/logo_dark"
         android:text="6 Mayıs Pazartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="56dp"
-        android:layout_height="36dp"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:background="@color/logo_dark"
         android:text="7 Mayıs Salı"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="69dp"
-        android:layout_height="35dp"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:background="@color/logo_dark"
         android:text="8 Mayıs Çarşamba"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -247,7 +264,9 @@
         android:layout_width="72dp"
         android:layout_height="34dp"
         android:text="9 Mayıs Perşembe"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.734"
@@ -260,7 +279,9 @@
         android:layout_width="76dp"
         android:layout_height="36dp"
         android:text="10 Mayıs Cuma"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.997"
@@ -270,48 +291,56 @@
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="67dp"
-        android:layout_height="37dp"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:background="@color/logo_dark"
         android:text="11 Mayıs Cumartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.264" />
 
     <TextView
         android:id="@+id/textView34"
-        android:layout_width="62dp"
-        android:layout_height="37dp"
+        android:layout_width="71dp"
+        android:layout_height="42dp"
+        android:background="@color/logo_dark"
         android:text="12 Mayıs Pazar"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="66dp"
-        android:layout_height="37dp"
+        android:layout_width="72dp"
+        android:layout_height="39dp"
+        android:background="@color/logo_dark"
         android:text="13 Mayıs Pazartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.264" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="68dp"
-        android:layout_height="32dp"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:background="@color/logo_dark"
         android:text="14 Mayıs Salı"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -322,48 +351,56 @@
 
     <TextView
         android:id="@+id/textView37"
-        android:layout_width="74dp"
-        android:layout_height="35dp"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:background="@color/logo_dark"
         android:text="15 Mayıs Çarşamba"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.264" />
 
     <TextView
         android:id="@+id/textView38"
         android:layout_width="72dp"
         android:layout_height="35dp"
+        android:background="@color/logo_dark"
         android:text="16 Mayıs Perşembe"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="69dp"
         android:layout_height="34dp"
+        android:background="@color/logo_dark"
         android:text="17 Mayıs Cuma"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
+        app:layout_constraintVertical_bias="0.409" />
 
     <TextView
         android:id="@+id/textView40"
         android:layout_width="74dp"
-        android:layout_height="41dp"
+        android:layout_height="37dp"
+        android:background="@color/logo_dark"
         android:text="18 Mayıs Cumartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -374,23 +411,27 @@
 
     <TextView
         android:id="@+id/textView41"
-        android:layout_width="63dp"
-        android:layout_height="35dp"
+        android:layout_width="76dp"
+        android:layout_height="36dp"
+        android:background="@color/logo_dark"
         android:text="19 Mayıs Pazar"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
+        app:layout_constraintVertical_bias="0.402" />
 
     <TextView
         android:id="@+id/textView42"
         android:layout_width="74dp"
         android:layout_height="39dp"
         android:text="20 Mayıs Pazartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.991"
@@ -400,9 +441,11 @@
 
     <TextView
         android:id="@+id/textView43"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:background="@color/logo_dark"
         android:text="21 Mayıs Salı"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -416,7 +459,9 @@
         android:layout_width="75dp"
         android:layout_height="39dp"
         android:text="22 Mayıs Çarşamba"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
@@ -429,7 +474,9 @@
         android:layout_width="75dp"
         android:layout_height="40dp"
         android:text="23 Mayıs Perşembe"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -441,7 +488,9 @@
         android:layout_width="70dp"
         android:layout_height="37dp"
         android:text="24 Mayıs Cuma"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
@@ -455,7 +504,9 @@
         android:layout_height="36dp"
         android:layout_marginStart="316dp"
         android:text="25 Mayıs Cumartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/logo_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
@@ -465,9 +516,11 @@
 
     <TextView
         android:id="@+id/textView48"
-        android:layout_width="69dp"
-        android:layout_height="38dp"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:background="@color/logo_dark"
         android:text="26 Mayıs Pazar"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -478,9 +531,11 @@
 
     <TextView
         android:id="@+id/textView49"
-        android:layout_width="75dp"
-        android:layout_height="38dp"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:background="@color/logo_dark"
         android:text="27 Mayıs Pazartesi"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -491,34 +546,41 @@
 
     <TextView
         android:id="@+id/textView50"
-        android:layout_width="65dp"
-        android:layout_height="35dp"
+        android:layout_width="68dp"
+        android:layout_height="41dp"
+        android:background="@color/logo_dark"
         android:text="28 Mayıs Salı"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.71" />
 
     <TextView
         android:id="@+id/textView51"
-        android:layout_width="79dp"
-        android:layout_height="38dp"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:background="@color/logo_dark"
         android:text="29 Mayıs Çarşamba"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.707" />
 
     <TextView
         android:id="@+id/textView52"
-        android:layout_width="76dp"
-        android:layout_height="37dp"
+        android:layout_width="81dp"
+        android:layout_height="41dp"
+        android:background="@color/logo_dark"
         android:text="30 Mayıs Perşembe"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -529,22 +591,25 @@
 
     <TextView
         android:id="@+id/textView53"
-        android:layout_width="69dp"
-        android:layout_height="33dp"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:background="@color/logo_dark"
         android:text="31 Mayıs Cuma"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <TextView
         android:id="@+id/textView65"
         android:layout_width="70dp"
         android:layout_height="41dp"
         android:text="30 Dakika Yürüyüş"
+        android:background="@color/logo_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.023"
@@ -554,80 +619,88 @@
 
     <TextView
         android:id="@+id/textView67"
-        android:layout_width="61dp"
-        android:layout_height="49dp"
+        android:layout_width="69dp"
+        android:layout_height="42dp"
+        android:background="@color/logo_light"
         android:text="Derin Nefes Alın"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/textView68"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:background="@color/logo_light"
         android:text="Dijital Mola"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <TextView
         android:id="@+id/textView69"
-        android:layout_width="75dp"
-        android:layout_height="50dp"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:background="@color/logo_light"
         android:text="Yaratıcılığa Zaman Ayırın"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <TextView
         android:id="@+id/textView70"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:background="@color/logo_light"
         android:text="İyi Bir Uyku"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <TextView
         android:id="@+id/textView71"
-        android:layout_width="91dp"
-        android:layout_height="55dp"
+        android:layout_width="72dp"
+        android:layout_height="59dp"
+        android:background="@color/logo_light"
         android:text="Gönüllü Bir Çalışmada  Yer Alın"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.803" />
 
     <TextView
         android:id="@+id/textView72"
-        android:layout_width="53dp"
-        android:layout_height="59dp"
+        android:layout_width="72dp"
+        android:layout_height="45dp"
+        android:background="@color/logo_light"
         android:text="Doğal Gıdalar Tüketin"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.191" />
 
     <TextView
         android:id="@+id/textView73"
-        android:layout_width="65dp"
-        android:layout_height="35dp"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        android:background="@color/logo_light"
         android:text="Kendinizi Kutlayın"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -638,9 +711,10 @@
 
     <TextView
         android:id="@+id/textView74"
-        android:layout_width="86dp"
-        android:layout_height="54dp"
-        android:text=" Arkadaşınızı Güldürün"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:background="@color/logo_light"
+        android:text="Arkadaşınızı Güldürün"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -652,66 +726,72 @@
         android:id="@+id/textView75"
         android:layout_width="77dp"
         android:layout_height="45dp"
+        android:background="@color/logo_light"
         android:text="Pozitif Düşünce"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_bias="0.336" />
 
     <TextView
         android:id="@+id/textView76"
-        android:layout_width="85dp"
-        android:layout_height="39dp"
+        android:layout_width="73dp"
+        android:layout_height="41dp"
+        android:background="@color/logo_light"
         android:text="Yetenek Geliştirin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_bias="0.337" />
 
     <TextView
         android:id="@+id/textView77"
-        android:layout_width="73dp"
-        android:layout_height="31dp"
+        android:layout_width="74dp"
+        android:layout_height="37dp"
+        android:background="@color/logo_light"
         android:text="Meditasyon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/textView78"
-        android:layout_width="62dp"
-        android:layout_height="41dp"
+        android:layout_width="74dp"
+        android:layout_height="42dp"
+        android:background="@color/logo_light"
         android:text="Rutinden Çıkın"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.335" />
 
     <TextView
         android:id="@+id/textView79"
         android:layout_width="76dp"
         android:layout_height="44dp"
+        android:background="@color/logo_light"
         android:text="Kitap Okuyun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.331" />
 
     <TextView
         android:id="@+id/textView80"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:background="@color/logo_light"
         android:text="Bol Su İçin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -724,30 +804,32 @@
         android:id="@+id/textView81"
         android:layout_width="74dp"
         android:layout_height="39dp"
+        android:background="@color/logo_light"
         android:text="Esneklik Egzersizi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.472" />
 
     <TextView
         android:id="@+id/textView82"
         android:layout_width="65dp"
         android:layout_height="41dp"
+        android:background="@color/logo_light"
         android:text="Teşekkür Edin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <TextView
         android:id="@+id/textView83"
         android:layout_width="91dp"
         android:layout_height="50dp"
+        android:background="@color/logo_light"
         android:text="Günlük Alışkanlıkları Değerlendirin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -758,80 +840,88 @@
 
     <TextView
         android:id="@+id/textView84"
-        android:layout_width="74dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_light"
         android:text="Sağlıklı Tarif Deneyin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.479" />
 
     <TextView
         android:id="@+id/textView85"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="328dp"
+        android:background="@color/logo_light"
         android:text="Hayal Kurun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <TextView
         android:id="@+id/textView86"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_light"
         android:text="Dinlenme Zamanı"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/textView87"
-        android:layout_width="84dp"
-        android:layout_height="51dp"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:background="@color/logo_light"
         android:text="Yardım İstemekten Çekinmeyin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintVertical_bias="0.627" />
 
     <TextView
         android:id="@+id/textView88"
-        android:layout_width="71dp"
-        android:layout_height="51dp"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:background="@color/logo_light"
         android:text="Yıldızları İzleyin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.626" />
 
     <TextView
         android:id="@+id/textView89"
         android:layout_width="81dp"
         android:layout_height="52dp"
+        android:background="@color/logo_light"
         android:text="Bol Güneş Işığı Alın"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.996"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.627" />
 
     <TextView
         android:id="@+id/textView90"
-        android:layout_width="89dp"
-        android:layout_height="52dp"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:background="@color/logo_light"
         android:text="Arkadaşlarla Zaman Geçirin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView94"
@@ -842,56 +932,61 @@
 
     <TextView
         android:id="@+id/textView91"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="76dp"
+        android:layout_height="43dp"
+        android:background="@color/logo_light"
         android:text="Gülümseyin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintHorizontal_bias="0.256"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <TextView
         android:id="@+id/textView92"
-        android:layout_width="79dp"
-        android:layout_height="62dp"
+        android:layout_width="78dp"
+        android:layout_height="58dp"
+        android:background="@color/logo_light"
         android:text="Yaratıcı Bir Proje Geliştirin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.805" />
 
     <TextView
         android:id="@+id/textView93"
         android:layout_width="86dp"
-        android:layout_height="64dp"
+        android:layout_height="59dp"
+        android:background="@color/logo_light"
         android:text="Kendinizi Takdir Edin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.805" />
 
     <TextView
         android:id="@+id/textView94"
-        android:layout_width="67dp"
-        android:layout_height="48dp"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:background="@color/logo_light"
         android:text="Yeni Bir Hobi Edinin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/textView95"
-        android:layout_width="82dp"
-        android:layout_height="49dp"
+        android:layout_width="81dp"
+        android:layout_height="53dp"
+        android:background="@color/logo_light"
         android:text="Doğa ile Bağ Kurun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
