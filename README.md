@@ -14,21 +14,25 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 
 ## Ekran Görüntüleri
 
+### Başlangıç Ekranı
+![Logo](images/logo.png)
+
 ### Ana Ekran
-![Ana Ekran](images/ana-ekran.png)
+![Ana Ekran](images/anasayfa.png)
 
 ### Sağlık AI asistanı
-![Kişiselleştirilmiş Öneriler](images/kisisellestirilmis-oneriler.png)
+![Kişiselleştirilmiş Öneriler](images/robix.png)
+![robix](images/robixyazi.png)
 
 ### Beslenme Programı
-![Beslenme Programı](images/beslenme-programi.png)
+![Beslenme Programı](images/beslenme.png)
 
 ### Spor Programı
-![Spor Programı](images/spor-programi.png)
-
-### Eğitim İçerikleri
-![Eğitim İçerikleri](images/egitim-icerikleri.png)
+![Spor Programı](images/sporprogramlari.png)
+![Spor Programı2](images/sporhareketleri.png)
 
 ### Motivasyon Bölümü
-![Motivasyon Bölümü](images/motivasyon-bolumu.png)
+![Motivasyon Bölümü](images/motivasyonsayfasi.png)
 
+### Ayarlar Bölümü
+![Ayarlar Bölümü](images/ayarlar.png)
