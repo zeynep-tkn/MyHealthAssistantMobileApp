@@ -18,7 +18,7 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 <img src="images/logo.png" alt="Logo" width="200" height="400">
 
 ### Ana Ekran
-![Ana Ekran](images/anasayfa.png)
+<img src="images/anasayfa.png" alt="Ana Ekran" width="200" height="400">
 
 ### Sağlık AI asistanı
 ![Kişiselleştirilmiş Öneriler](images/robix.png)
