@@ -6,7 +6,7 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 
 ## Özellikler
 
-- Kişiselleştirilmiş sağlık önerileri
+- Sağlık AI asistanı
 - Beslenme programları
 - Spor programları
 - Eğitim içerikleri
@@ -17,7 +17,7 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 ### Ana Ekran
 ![Ana Ekran](images/ana-ekran.png)
 
-### Kişiselleştirilmiş Öneriler
+### Sağlık AI asistanı
 ![Kişiselleştirilmiş Öneriler](images/kisisellestirilmis-oneriler.png)
 
 ### Beslenme Programı
