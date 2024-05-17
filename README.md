@@ -15,7 +15,7 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 ## Ekran Görüntüleri
 
 ### Başlangıç Ekranı
-![Logo](images/logo.png)
+![Logo](images/logo.png){ width=50% }
 
 ### Ana Ekran
 ![Ana Ekran](images/anasayfa.png)
