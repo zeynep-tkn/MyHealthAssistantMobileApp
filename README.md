@@ -21,18 +21,18 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 <img src="images/anasayfa.png" alt="Ana Ekran" width="200" height="400">
 
 ### Sağlık AI asistanı
-![Kişiselleştirilmiş Öneriler](images/robix.png)
-![robix](images/robixyazi.png)
+<img src="images/robix.png" alt="Kişiselleştirilmiş Öneriler" width="200" height="400">
+<img src="images/robixyazi.png" alt="robix" width="200" height="400">
 
 ### Beslenme Programı
-![Beslenme Programı](images/beslenme.png)
+<img src="images/beslenme.png" alt="Beslenme Programı" width="200" height="400">
 
 ### Spor Programı
-![Spor Programı](images/sporprogramlari.png)
-![Spor Programı2](images/sporhareketleri.png)
+<img src="images/sporprogramlari.png" alt="Spor Programı" width="200" height="400">
+<img src="images/sporhareketleri.png" alt="Spor Programı2" width="200" height="400">
 
 ### Motivasyon Bölümü
-![Motivasyon Bölümü](images/motivasyonsayfasi.png)
+<img src="images/motivasyonsayfasi.png" alt="Motivasyon Bölümü" width="200" height="400">
 
 ### Ayarlar Bölümü
-![Ayarlar Bölümü](images/ayarlar.png)
+<img src="images/ayarlar.png" alt="Ayarlar Bölümü" width="200" height="400">
