@@ -32,7 +32,7 @@ My Health Assistant, fiziksel ve zihinsel sağlığınızı desteklemek için ge
 <img src="images/sporhareketleri.png" alt="Spor Programı2" width="200" height="400">
 
 ### Motivasyon Bölümü
-<img src="images/motivasyonsayfasi.png" alt="Motivasyon Bölümü" width="200" height="400">
+<img src="images/moivasyonsayfasi.png" alt="Motivasyon Bölümü" width="200" height="400">
 
 ### Ayarlar Bölümü
 <img src="images/ayarlar.png" alt="Ayarlar Bölümü" width="200" height="400">
