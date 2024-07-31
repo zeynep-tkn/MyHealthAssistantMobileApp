@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EgitimBeslenmeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mk30"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mk31"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="BESLENME TEMELLERİ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mk32"
+        android:layout_width="200dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Play Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mk33"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/mk34"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="Videolar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mk35"
+        android:layout_width="200dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="204dp"
+        android:contentDescription="Play Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mkl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mk36"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="248dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mk37"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="Makaleler"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mk38"
+        android:layout_width="200dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="356dp"
+        android:contentDescription="Play Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kitap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mk39"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="416dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mk40"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="e-kitap"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mk41"
+        android:layout_width="200dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="508dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/indir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mk42"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="548dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mk43"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="Yüz yüze programlar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

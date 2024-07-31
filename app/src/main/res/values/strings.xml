@@ -2,4 +2,479 @@
     <string name="app_name">MyHealthAssistant</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewpager_description">Slide View Pager</string>
+
+    <string name="screen1">Yapay Zeka(Sohbet)</string>
+    <string name="screen2">Beslenme Programları</string>
+    <string name="screen3">Motivasyon Sayfası</string>
+    <string name="screen4">Spor Programları</string>
+    <string name="screen5">Eğitim ve Kurslar</string>
+
+    <string name="screen1desc">Sağlık yolculuğunuzda size
+        eşlik edecek en özel rehber, mobil uygulamamızın
+        zeki chatbotu! Siz sorularınızı sormadan önce o cevaplarını bulmuş olacak. İhtiyacınız olan
+        bilgiye hızlı ve güvenilir bir şekilde erişmenizi sağlayacak olan
+        bu dost, sağlık deneyiminizi dönüştürecek! </string>
+
+    <string name="screen2desc">Sağlıklı yemek tarifleriyle dolu sayfamız,
+        beslenme alışkanlıklarınızı dönüştürmeye hazır. Yapay zeka entegreli
+        kişiselleştirilmiş yemek planları ile sağlıklı yaşamı
+        bir adım öne taşıyan bir rehber olarak hizmetinizdeyiz!</string>
+
+    <string name="screen3desc">"Hayatınızı renklendiren etkinliklerden ilham veren hikayelere,
+        motivasyon sayfamız her anınıza pozitif bir dokunuş sağlıyor.
+        motivasyon takviminden günlük ilham alırken, hayatı kolaylaştıran
+        ipuçlarıyla daha güçlü adımlar atmanız için buradayız!</string>
+
+    <string name="screen4desc">Yaş ve hareket seviyesine uygun esnek egzersiz programlarının
+        bulunduğu sayfamız, sağlıklı yaşam için sizin yanınızda. Uygulanacak gün sayısı ve
+        yaşınıza göre özelleştirilmiş 10 hareketli egzersiz programı seçenekleriyle daha
+        sağlıklı ve enerjik bir yaşam için adım atmaya hazır olun!</string>
+
+    <string name="screen5desc">Her kategoride uzmanlar tarafından hazırlanmış video
+        podcast ve e-kitaplarla dolu eğitim sayfamız, bilgiyi kolay erişilebilir kılıyor.
+        Kişisel gelişiminiz için gereken kaynaklar burada sizi bekliyor!</string>
+
+    <string name="startDesc"> Yaşamınızı dönüştürecek, sağlık, motivasyon, egzersiz
+        ve eğitim gibi her alanı kucaklayan kapsamlı bir rehber olarak bizim uygulamamız
+        her adımda yanınızda. Zengin içeriği ve kullanıcı dostu arayüzüyle herkesin
+        sağlık ve mutluluk yolculuğuna eşlik ediyoruz. Hayatınıza sağlık, neşe ve başarı
+        getiren bir deneyim için haydi başlayın!</string>
+
+    <string name="sss1"> Uygulamanızı nasıl indirebilirim?</string>
+    <string name="sss2"> Üyelik nasıl alabilirim?</string>
+    <string name="sss3"> Şifremi unuttum, ne yapmalıyım?</string>
+    <string name="sss4"> Şifremi unuttum, ne yapmalıyım?</string>
+    <string name="sss5"> Uygulamanızda hangi ödeme yöntemleri geçerlidir?</string>
+    <string name="sss6"> Sıkça karşılaşılan teknik sorunlar için ne yapmalıyım?</string>
+
+    <string name="sss11">Uygulamamızı indirmek için App Store veya Google Play Store a gidin ve arama çubuğuna uygulama adımızı yazın.Ardından indirme ve kurma adımlarını takip edin.</string>
+    <string name="sss22">Üyelik almak için ana sayfamızdaki Üye Ol veya Giriş Yap butonlarına tıklayın. Ardından gerekli bilgileri doldurarak üyeliğinizi tamamlayabilirsiniz.</string>
+    <string name="sss33">Şifrenizi unuttuysanız, giriş sayfasında bulunan Şifremi Unuttum seçeneğine tıklayın. E-posta adresinizi girerek şifrenizi sıfırlamanız için size bir bağlantı göndereceğiz.</string>
+    <string name="sss44">Uygulamamızda kredi kartı, banka kartı ve diğer popüler ödeme yöntemlerini kullanabilirsiniz. Güvenli ödeme sistemimiz sayesinde alışverişlerinizi kolayca tamamlayabilirsiniz.</string>
+    <string name="sss55">Eğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır.</string>
+    <string name="sss66">Eğer uygulamamızla ilgili teknik bir sorunla karşılaşıyorsanız, lütfen bize hemen bildirin. Müşteri hizmetleri ekibimiz sorununuzu çözmek için size yardımcı olacaktır.</string>
+
+
+    <string name="h1"> My Health Asisstant</string>
+    <string name="h2"> Neler Sunuyoruz?</string>
+    <string name="h3"> Neden Bizi Tercih Etmelisiniz?</string>
+
+    <string name="h11"> My Health Asisstant, sağlık, motivasyon,
+ egzersiz ve eğitim gibi farklı alanlarda
+ kullanıcılarına kapsamlı bir deneyim sunan
+  bir mobil uygulamadır. Kullanıcıların sağlıklı
+  yaşam tarzı hedeflerine ulaşmalarına yardımcı
+   olmak için tasarlanmıştır.</string>
+    <string name="h22"> Sağlık kategorisinde, kullanıcılarımıza sağlıklı
+ yaşam tarzıyla ilgili bilgiler, beslenme önerileri
+  ve sağlık ipuçları sunuyoruz. Motivasyon kategorisinde
+  , günlük hayatlarını iyileştirmek için ilham veren
+  içerikler, motivasyon takvimi ve hayatı kolaylaştıran
+   ipuçları bulabilirsiniz.
+Egzersiz kategorisinde, her yaş ve seviyeye uygun
+ egzersiz programları, video dersleri ve hareketli
+ egzersizlerle kullanıcılarımızın aktif kalmasına yardımcı
+  oluyoruz. Eğitim kategorisinde, farklı alanlardaki
+   uzmanlar tarafından hazırlanmış video podcast
+    ve e-kitaplarla kişisel gelişimlerine katkı sağlıyoruz.</string>
+    <string name="h33"> My Health Asisstant, kullanıcılarına
+        zengin içerik ve kullanıcı dostu arayüzüyle kolay
+        kullanım sunar. Uzmanlar tarafından hazırlanan
+        içerikler ve özelleştirilmiş programlarla,
+        her kullanıcının ihtiyaçlarına uygun çözümler sunarız.
+        Sağlık, mutluluk ve başarı dolu bir yaşam için bizi tercih edin!</string>
+
+    <string name="g2">Toplanan Bilgiler</string>
+    <string name="g3">Bilgi Kullanımı</string>
+    <string name="g4">Bilgi Paylaşımı</string>
+    <string name="g5">Veri Güvenliği</string>
+    <string name="g6">Çocukların Gizliliği</string>
+    <string name="g7">Değişiklikler</string>
+
+
+    <string name="g11"> Bu gizlilik ve güvenlik politikası,
+        sağlık verilerinizi nasıl topladığımızı, kullandığımızı,
+        paylaştığımızı ve koruduğumuzu açıklar.
+        Lütfen bu politikayı dikkatlice okuyun ve uygulamamızı
+        kullanırken sağlık verilerinizin nasıl işlendiğini anlayın.</string>
+    <string name="g22">Uygulamamız, kullanıcılarımızın sağlık
+        durumuyla ilgili çeşitli bilgileri toplayabilir.
+        Bu bilgiler, kullanıcının sağlık durumunu izlemek, analiz etmek
+        ve sağlık hizmetlerini iyileştirmek amacıyla kullanılır.</string>
+    <string name="g33">Topladığımız sağlık bilgileri, kullanıcılara
+        daha iyi sağlık hizmetleri sunmak, sağlık alışkanlıklarını
+        izlemek için kullanılır. Bu bilgiler ayrıca anonimleştirilerek
+        genel eğilimleri analiz etmek, araştırma yapmak ve ürünlerimizi
+        geliştirmek için kullanılabilir.</string>
+    <string name="g44">Sağlık bilgileriniz, üçüncü taraflarla
+        paylaşılmaz veya satılmaz. Ancak, kullanıcılarımızın
+        sağlık durumlarını izlemek ve iyileştirmek için işbirliği
+        yaptığımız sağlık profesyonelleri veya sağlık kuruluşlarıyla
+        bilgi paylaşılabilir. Ayrıca, yasal gereksinimler veya mahkeme
+        kararları doğrultusunda sağlık bilgileri yetkilendirilmiş mercilere açıklanabilir.</string>
+    <string name="g55">Sağlık bilgileriniz, en yüksek güvenlik standartlarına
+        uygun olarak korunur. Ayrıca, veri erişimini ve izini sınırlamak için gelişmiş kimlik
+        doğrulama ve erişim kontrolü önlemleri alınmıştır.</string>
+    <string name="g66">Uygulamamız, 13 yaşın altındaki çocukların kişisel
+        bilgilerini bilerek toplamamaktadır. Ebeveynlerin çocuklarının sağlık
+        bilgilerini kontrol etmeleri ve yönetmeleri önemlidir.</string>
+    <string name="g77">Bu gizlilik ve güvenlik politikası, zaman zaman güncellenebilir.
+    Herhangi bir güncelleme durumunda, bu sayfada güncellenmiş politikanın bir sürümü yayınlanacaktır.</string>
+
+
+    <string name="pose1">    Adım 1: - Egzersiz matının üzerine ellerinizin ve ayaklarınızın üstüne doğru yüz üstü bir pozisyonda gelin. Omuzlarınız doğrudan el bileklerinizin üzerinde olsun ve vücudunuz düz bir çizgi oluştursun.\n\n
+Adım 2: - Nefes verirken, sağ dizinizi göğsünüze doğru çekin, sol ayağınızı da yerde sabit tutun ve gerilimi hissedin.\n\n
+Adım 3: - Nefes alarak sağ ayağınızı geriye doğru itin ve sol dizinizi göğsünüze doğru çekin.\n\n
+Adım 4: - Bu hareketi hızlı bir şekilde tekrarlayarak sağ ve sol bacaklarınız arasında sürekli olarak değişim yapın, adeta bir dağcı gibi tırmanıyormuş gibi hissedin.</string>
+
+    <string name="pose2">    Adım 1: - Bir egzersiz matı üzerine sırt üstü uzanın. Kollarınızı başınızın arkasına hafifçe koyun, dirsekleriniz yanlarda olsun ve dizleriniz bükülü bir pozisyonda yukarı kaldırın, ayaklarınız yerde olacak şekilde.\n\n
+Adım 2: - Nefes verirken, sağ dizinizi göğsünüze doğru çekin ve aynı anda sol dirseğinizi sağ dizinize doğru çevirin, üst vücudunuzu sağa doğru döndürün.\n\n
+Adım 3: - Aynı anda, sol dizinizi düz bir şekilde uzatın, sağ dizinizi göğsünüze doğru bükün ve sol dirseğinizi sol dizinize doğru çevirin, üst vücudunuzu sola doğru döndürün.\n\n
+Adım 4: - Bu hareketi sırayla ve kontrollü bir şekilde tekrarlayın, pedal çevirir gibi hissedin. Karın kaslarınızı aktif bir şekilde çalıştırın ve her bir dönüşte nefes alıp verin. </string>
+
+    <string name="pose3">    Adım 1: - Bir egzersiz matı üzerine sırt üstü uzanın. Kollarınızı yanlara doğru düz tutun ve ellerinizi matın üzerine yerleştirin.\n\n
+Adım 2: - Dizlerinizi bükerek ayak tabanlarınızı birbirine değdirin, topuklarınızı mümkün olduğunca yakın bir şekilde kalçalarınıza getirin.\n\n
+Adım 3: - Nefes verirken, dizlerinizi yavaşça dışarı doğru itin, iç uyluklarınızı gerdirin ve ayak tabanlarınızı birbirinden ayırın.\n\n
+Adım 4: - Kısa bir süre bu pozisyonda kalın ve sonra nefes alarak başlangıç pozisyonunuza geri dönün.\n\n
+Adım 5: - Bu hareketi tekrarlayarak iç uyluklarınızı ve kalçalarınızı çalıştırın. Nefes alıp verirken dikkatli olun ve hareketi kontrol altında yapın.</string>
+
+    <string name="pose4">    Adım 1: - Bir egzersiz matı üzerine sırt üstü uzanın. Kollarınızı yanlara doğru düz tutun ve ellerinizi matın yanlarına yerleştirin.\n\n
+Adım 2: - Dizlerinizi bükerek ayaklarınızı yere yerleştirin, ayaklarınız omuz genişliğinde açık olsun.\n\n
+Adım 3: - Nefes verirken, karın kaslarınızı sıkarak üst gövdenizi hafifçe yukarı kaldırın.\n\n
+Adım 4: - Sağ elinizle sağ topuğunuza doğru uzanın, sol elinizle de sol topuğunuza doğru uzanın, ancak üst gövdenizi yerden kaldırmadan.\n\n
+Adım 5: - Her bir yanı tekrarlayarak karın kaslarınızı çalıştırın. Nefes alıp verirken dikkatli olun ve hareketi kontrol altında yapın. </string>
+
+    <string name="pose5">   Step 1:- Lay down with your hands to your sides for support. \n\n
+                             Step 2:- Raise your legs so they are off the ground, keeping the abdominals tight.\n\n
+                             Step 3:- Slowly raise your legs 90 degrees, contracting the abdominal muscles. Slowly return to starting position. Do not touch the floor with your feet.\n\n
+                            </string>
+
+
+    <string name="pose6">    Step 1:- Lie on your back on an exercise mat. With your arms straight at your sides, bend your knees and place your feet flat on the floor between18 and 24 inches apart.\n\n
+                             Step 2:- Breathing out, crunch your ab slightly upward and sideways to the right a couple of inches until your right hand touches your right heel.\n\n
+                             Step 3:- Hold brief|y and then return to your starting position while inhaling. Repeat on the left side. </string>
+
+    <string name="pose7">    Step 1:- You can perform straight-leg crunches by lying face up on the floor with your legs straight and then moving your upper body as you would for a standard bent-knee crunch.\n\n
+                             Step 2:- Alternatively, lie on your back, raise your legs so they are perpendicular to the floor and then perform the standard crunching motion with your torso.
+                             </string>
+
+    <string name="pose8">    Step 1:- Lie down on the floor placing your feet either under something that Will not move or by having a partner hold them. Your legs should be bent at the kneesPlace your hands behind your head and lock them together by claspihg your fingers. This is the starting position.\n\n
+                             Step 2:- Elevate your upper body so that it creates an imaginary V-shape with your thighs. Breathe out when performing this part of the exercise.\n\n
+                             Step 3:- Once you feel the contraction for a second, lower your upper body back down to the starting position while inhahng. \n\n
+                             Step 4:- Repeat for the recommended amount of repetitions.
+                            </string>
+
+    <string name="pose9">    Step 1:- Lying on the back,lift stright leg,extend opposite hand to touch toe. \n\n
+                             Step 2:- Please,return,alternate inhale down,exhale up at toe touch.
+                            </string>
+
+    <string name="pose10">    Step 1:- High Plank position then slowly rotate your torso to the side raising your arm till it gets ihlihe with the other one. \n\n
+                             Step 2:- Then return to the initial position.
+                            </string>
+
+
+
+
+    <string name="tebrikler">Tebrikler!</string>
+
+    <string name="yapilisi_bowl">1. Muz, avokado, bebek ıspanak, salatalık, chia tohumu, limon suyu ve badem sütünü veya hindistancevizi suyunu bir blenderda pürüzsüz bir kıvam alana kadar karıştırın.\n\n
+2. Karışımı bir kaseye boşaltın.\n\n
+3. Üzerine dilimlenmiş meyvelerle süsleyin.\n\n
+4. İsteğe bağlı olarak granola, hindistancevizi rendesi veya ceviz gibi ek malzemelerle süsleyebilirsiniz.\n\n
+5. Hemen servis yapın ve afiyetle yiyin!</string>
+
+    <string name="yapilisi_top">1.Bir karıştırma kabında yulaf ezmesi, doğal fındık ezmesi, bal veya akçaağaç şurubu, vanilya özütü veya tozu, tarçın ve isteğe bağlı olarak bir tutam deniz tuzunu karıştırın. Karışım homojen bir kıvam alana kadar iyice karıştırın.\n\n
+2.Kuru meyveleri (yaban mersini, kuru üzüm, kuru kayısı, kuru hurma, kuru incir veya kuru erik) ve çekilmiş fındık veya bademi karışıma ekleyin. Tüm malzemeler iyice birbirine karışana kadar spatula veya kaşık yardımıyla karıştırın.\n\n
+3.Karışımdan ceviz büyüklüğünde parçalar alın ve avuç içinde yuvarlayarak küçük toplar şeklinde şekil verin.\n\n
+4.Hazırladığınız enerji toplarını bir tepsi veya tabağa dizin.\n\n
+5.Enerji toplarınızı buzdolabında en az 30 dakika boyunca dinlendirin, böylece sertleşip tutarlı bir yapıya sahip olacaklar.\n\n
+6.Soğuduktan sonra meyveli fındıklı enerji toplarınızı servis yapın veya hava geçirmez bir kapta buzdolabında saklayarak daha sonra tüketebilirsiniz. \n\n</string>
+
+
+    <string name="yapilisi_granola">  1.Fırını 160°C (325°F) dereceye ısıtın ve bir fırın tepsisine yağlı kağıt serin veya tepsinizi hafifçe yağlayın.\n\n
+2.Bir karıştırma kabında yulaf ezmesi, doğranmış fındık ve bademleri karıştırın.\n\n
+3.Başka bir kapta bal veya akçaağaç şurubu, hindistancevizi yağı veya sıvı yağ, vanilya özütü, tarçın ve isteğe bağlı olarak bir tutam deniz tuzunu karıştırın.\n\n
+4.Islak ve kuru malzemeleri birleştirin. Islak malzemeleri kuru karışıma ekleyin ve spatula veya kaşık yardımıyla iyice karıştırın, granolanın her tarafının kaplanmasını sağlayın.\n\n
+5.Hazırladığınız karışımı yağlı kağıt serili fırın tepsisine yayın. Granolanın eşit şekilde yayılmasını sağlamak için spatula kullanabilirsiniz.\n\n
+6.Granolayı önceden ısıtılmış fırında yaklaşık 25-30 dakika veya altın kahverengi olana kadar pişirin. Fırından çıkardıktan sonra granolanın soğumasını bekleyin böylece gevrek hale gelir.\n\n
+7.Soğuduktan sonra isteğe bağlı olarak kuru üzüm veya kuru kayısı gibi kurutulmuş meyveler ekleyebilirsiniz.\n\n
+8.Granolayı hava geçirmez bir kapta saklayın ve kahvaltıda yoğurtla veya süt ile servis yapın veya üzerine meyve ekleyerek atıştırmalık olarak tüketin.\n\n</string>
+
+    <string name="yapilisi_spagetti">1.Kabakları spagetti gibi ince şeritler halinde kesmek için bir spiralizer kullanın veya bir sebze soyacağı veya bıçağı kullanarak ince şeritler elde edin. Kabakları soymanıza gerek yok, çünkü kabukları yenebilir ve lezzetlidir.\n\n
+2.Bir tavada orta ateşte zeytinyağını ısıtın. İnce dilimlenmiş sarımsakları ekleyin ve hafifçe kavurun, yaklaşık 1 dakika kadar.\n\n
+3.Sarımsaklar hafifçe kavrulduktan sonra kabak spagettisini tavaya ekleyin. Tuz ve karabiber serpin ve kabaklar yumuşayana kadar yaklaşık 5-7 dakika kadar pişirin. Kabaklar yumuşamaya başladığında pişirmeyi durdurun, çünkü çok fazla pişirildiğinde eriyebilirler.\n\n
+4.Kabak spagettisini servis tabağına alın ve isteğe bağlı olarak rendelenmiş parmesan peyniri ve taze doğranmış otlar ile süsleyin.\n\n
+5.Sıcak olarak servis yapın ve hemen tüketin.\n\n</string>
+
+
+    <string name="yapilisi_bar">1. Kuru incirleri ve hurmaları bir miktar sıcak suya koyun ve yaklaşık 10 dakika kadar bekletin. Bu, meyvelerin yumuşamasına ve karışımda daha kolay işlenmesine yardımcı olacaktır.\n\n
+2. Yumuşamış incirleri ve hurmaları süzün ve bir mutfak robotu veya blender içine alın. Pürüzsüz bir kıvam elde edene kadar iyice çekin.\n\n
+3. Karışıma yulaf ezmesi, çekilmiş badem veya fındık, chia tohumu veya keten tohumu, kakao tozu (isteğe bağlı) ve isteğe bağlı olarak bir tutam deniz tuzu ekleyin. Tüm malzemeler iyice karışana kadar mutfak robotunda veya blenderda karıştırın.\n\n
+4. Karışıma hindistancevizi yağı veya sıvı yağ ekleyin ve tekrar karıştırın. Karışımın kıvamı tutarlı bir hamur kıvamına gelene kadar azar-azar yağ ekleyebilirsiniz.\n\n
+5. Hazırladığınız karışımı bir kaseye alın ve hafifçe bastırarak düz bir yüzey elde edin. Dilerseniz hamuru farklı bir şekilde şekillendirip dilimleyebilirsiniz.\n\n
+6. Hamuru buzdolabında en az bir saat kadar dinlendirin veya dondurucuda 30 dakika kadar bekletin, böylece daha iyi bir tutarlılık elde edersiniz.\n\n
+7. Dinlenen enerji barınızı dilimleyin ve servis yapın veya hava geçirmez bir kapta saklayın.\n\n</string>
+
+
+    <string name="yapilisi_kinoa">1. Kinoayı su veya sebze suyu ile bir tencereye koyun. Kaynamaya başlayana kadar yüksek ateşte pişirin, ardından kısık ateşe alın ve suyunu çekene kadar yaklaşık 15-20 dakika kadar pişirin. Pişirme süresi tamamlandığında tencereyi ocaktan alın ve kinoa dinlensin.\n\n
+2. Bir büyük salata kasesinde pişmiş kinoa, doğranmış salatalık, domates, kırmızı soğan, salatalık biberi, maydanoz veya taze nane, dilimlenmiş siyah zeytin ve dilimlenmiş badem veya ceviz içini birleştirin.\n\n
+3. Bir başka küçük kasede, zeytinyağı, limon suyu veya elma sirkesi, ezilmiş veya rendelenmiş sarımsak, bal veya akçaağaç şurubu, tuz ve karabiberi karıştırarak sosu hazırlayın.\n\n
+4. Hazırladığınız sosu kinoa karışımına ekleyin ve hafifçe karıştırın, böylece tüm malzemelerin sosla kaplanmasını sağlayın.\n\n
+5. Kinoa salatasını en az 30 dakika buzdolabında dinlendirin, böylece lezzetleri iyice harmanlanır ve soğur.\n\n
+6. Servis öncesi isteğe bağlı olarak üzerine biraz daha taze nane veya maydanoz serpiştirebilirsiniz.\n\n</string>
+
+
+    <string name="yapilisi_chia">1.Bir kasede chia tohumunu, sütü, bal veya akçaağaç şurubunu ve vanilya özütünü bir araya getirin.\n\n
+2.Tüm malzemeleri iyice karıştırın, özellikle chia tohumlarının sıvıyı emmesi için karışımı birkaç dakika boyunca dinlendirin ve bir kez daha karıştırın.\n\n
+3.Karışımı buzdolabında en az 2 saat veya tercihen bir gece boyunca dinlendirin. Chia tohumları sıvıyı emerken puding kıvamını alacak ve yoğunlaşacaktır.\n\n
+4.Puding kıvamına geldiğinde, buzdolabından çıkarın ve isteğe bağlı olarak mevsim meyveleri, granola veya doğranmış fındık veya badem gibi ek malzemelerle süsleyin.\n\n
+5.Servis yapmadan önce pudingi iyice karıştırın ve kaselere veya cam kavanozlara paylaştırın.\n\n
+6.İsteğe bağlı olarak üzerine daha fazla meyve veya fındık serpip servis yapın.\n\n</string>
+
+
+    <string name="yapilisi_parfe">1. Bir karıştırma kabında yoğurdu ve balı veya akçaağaç şurubunu karıştırın. Yoğurdu tatlandırıcı ile iyice karıştırın.\n\n
+2. Bir parfe veya servis bardağına bir kat yoğurt ekleyin. Üzerine bir kat granola veya müsli ekleyin.\n\n
+3. Granola katının üzerine bir kat mevsim meyveleri serpin.\n\n
+4. İsteğe bağlı olarak doğranmış fındık, badem veya ceviz gibi ek malzemelerle katmanları süsleyin.\n\n
+5. Kalan yoğurtu, granola ve meyveyle aynı şekilde katmanlar oluşturarak parfe bardağını doldurun.\n\n
+6. Parfeyi buzdolabında en az 1 saat veya daha uzun süre soğumaya bırakın, böylece katmanlar iyice birbirine geçer ve yoğurt kıvamını alır.\n\n
+7. Soğuduktan sonra üzerini dilerseniz meyve dilimleri veya granola ile süsleyerek servis yapın.\n\n</string>
+
+
+    <string name="yapilisi_tofu">1. Küp doğranmış tofu parçalarını bir kaseye alın. Üzerine soya sosu ve susam yağını ekleyin, iyice karıştırın ve en az 15 dakika marine etmeye bırakın.\n\n
+2. Bir tavada zeytinyağını orta ateşte ısıtın. Ardından ezilmiş sarımsak ve rendelenmiş zencefili ekleyin, kokusu çıkana kadar kavurun.\n\n
+3. Marine edilmiş tofu parçalarını tavaya ekleyin ve altın rengini alana kadar kızartın.\n\n
+4. Havuç, biber ve diğer sebzeleri ekleyin. Sebzeler yumuşayana kadar soteleyin. Tuz ve karabiberle tatlandırın.\n\n
+5. Son olarak brokoliyi ekleyin ve sebzeler hafifçe yumuşayana kadar pişirin.\n\n
+6. Susam tohumlarını ekleyin ve birkaç dakika daha karıştırarak pişirin.\n\n
+7. Servis yapmadan önce üzerine doğranmış yeşil soğan veya taze kişniş serpiştirin.\n\n
+8. Sıcak servis yapın ve yanında pilav veya noodle ile servis edebilirsiniz. Afiyet olsun!</string>
+
+    <string name="yapilisi_fasulye">1. Kuru fasulyeyi bir gece önceden bol suyla yıkayın ve üzerini geçecek kadar suyla kaplayarak ıslatın.\n\n
+2. Ertesi gün, ıslatılmış fasulyeleri süzün ve bir tencereye alın. Üzerini geçecek kadar su ekleyin ve yumuşayana kadar haşlayın (yaklaşık 45-60 dakika).\n\n
+3. Başka bir tencerede zeytinyağını veya tereyağını ısıtın. Doğranmış soğanı ekleyin ve şeffaflaşana kadar kavurun.\n\n
+4. Ardından doğranmış havuç ve patatesleri ekleyin, birkaç dakika daha kavurun.\n\n
+5. Sarımsak ve domates salçasını ekleyin, birkaç dakika daha kavurun.\n\n
+6. Haşlanmış fasulyeleri süzün ve sebzelerin üzerine ekleyin.\n\n
+7. Sebze suyu veya tavuk suyunu tencereye ekleyin. Tuz ve karabiberle tatlandırın.\n\n
+8. Çorba kaynamaya başlayana kadar orta ateşte pişirin, sonra ateşi kısın ve yaklaşık 20-30 dakika daha kısık ateşte pişirin.\n\n
+9. Pişen çorbayı blender veya çırpıcı ile pürüzsüz hale gelene kadar iyice çırpın.\n\n
+10. Servis yapmadan önce üzerine taze doğranmış maydanoz veya dereotu serpiştirin.\n\n
+11. Sıcak olarak servis yapın. Ekmek veya yanında bir dilim limon ile servis edebilirsiniz. Afiyet olsun!</string>
+
+    <string name="yapilisi_kabakcicegi">1. Pirinci yıkayın ve süzün.\n\n
+2. Bir tencerede zeytinyağını ısıtın. Doğranmış soğanları ekleyin ve yumuşayana kadar kavurun.\n\n
+3. Soğanlar kavrulduktan sonra pirinci ekleyin ve birkaç dakika daha kavurun.\n\n
+4. Rendelenmiş veya doğranmış domatesleri, doğranmış maydanoz, nane, dereotu, dolmalık fıstık, kuş üzümü, toz şeker, limon suyu, tuz ve karabiberi ekleyin. Karışımı birkaç dakika daha pişirin.\n\n
+5. Kabak çiçeklerini yıkayın ve yumuşak kısımlarını hafifçe keserek içlerini temizleyin.\n\n
+6. Hazırladığınız iç malzemeyi kabak çiçeklerine doldurun ve ağızlarını hafifçe kapatın.\n\n
+7. Bir tencereye dolmaları dizin.\n\n
+8. Üzerlerine sıcak suyu dökün.\n\n
+9. Kabak çiçeklerinin üzerine bir tabak veya kapak kapatın ve kısık ateşte yaklaşık 20-25 dakika kadar pişirin.\n\n
+10. Piştikten sonra ocaktan alın ve oda sıcaklığına gelene kadar dinlendirin.\n\n
+11. Servis yaparken üzerlerine isteğe bağlı olarak yoğurt döküp, taze nane veya dereotu ile süsleyebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_kuskus">1. Kuskusu derin bir kaseye alın. Üzerine sıcak su veya sebze suyu ekleyin ve kuskusun suyunu çekmesi için yaklaşık 10 dakika kadar bekletin. Sonra bir çatal veya kaşıkla kuskusu gevşetin.\n\n
+2. Havuçları rendeleyin veya küçük küpler halinde doğrayın.\n\n
+3. Şalgam turşularını küçük küpler halinde doğrayın.\n\n
+4. Taze maydanoz ve nane yapraklarını doğrayın.\n\n
+5. Bir karıştırma kabında limon suyu, zeytinyağı, tuz ve karabiberi karıştırarak salata sosunu hazırlayın.\n\n
+6. Hazırladığınız kuskusu, rendelenmiş havuçları, doğranmış şalgam turşularını ve doğranmış taze otları büyük bir salata kabına alın.\n\n
+7. Üzerine hazırladığınız salata sosunu dökün ve tüm malzemeleri iyice karıştırın, sosun her yere eşit şekilde dağılmasını sağlayın.\n\n
+8. Salatayı servis tabağına alın ve üzerini isteğe bağlı olarak taze otlarla süsleyerek servis yapın.\n\n
+9. Soğuk olarak servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_misirtaco">1. Bir tavada orta ateşte yağı ısıtın. Doğranmış soğanları ekleyin ve yumuşayana kadar kavurun.\n\n
+2. Ardından sarımsakları ekleyin ve kokusu çıkana kadar kavurun.\n\n
+3. Kıymayı ekleyin ve kahverengileşene kadar kavurun. İhtiyaç halinde fazla yağı süzün.\n\n
+4. Kırmızı biber ve yeşil biberi ekleyin, birkaç dakika daha kavurun.\n\n
+5. Domatesleri ekleyin ve yumuşayana kadar pişirin.\n\n
+6. Domates ve biberler suyunu bırakıp çekene kadar kısık ateşte pişirin.\n\n
+7. Salçaları, kimyonu, kırmızı pul biberi, tuzu ve karabiberi ekleyin. Karıştırın ve birkaç dakika daha pişirin.\n\n
+8. Mısır taco kabuklarını fırında veya tavada ısıtın.\n\n
+9. Isınmış taco kabuklarını doldurmak için kullanın. İsteğe bağlı olarak garnitürlerle süsleyin.\n\n
+10. Sıcak olarak servis yapın ve yanında ekstra garnitürlerle servis yapın. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_lazanya">1. Fırını 180 dereceye ısıtın.\n\n
+2. Kabakları uzunlamasına ince dilimler halinde kesin (lasagna yaprakları gibi).\n\n
+3. Kabak dilimlerini bir fırın tepsisine yerleştirin. Üzerlerine biraz tuz serpin ve yaklaşık 15 dakika bekletin. Bu süre zarfında suyunu salacaklar.\n\n
+4. Bir tavada zeytinyağını ısıtın. Doğranmış soğanı ekleyin ve yumuşayana kadar kavurun.\n\n
+5. Sarımsak, kırmızı biber, yeşil biber ve mantarları ekleyin. Sebzeler yumuşayana ve suyunu çekene kadar pişirin.\n\n
+6. Konserve domates, domates salçası, kekik, tuz ve karabiberi ekleyin. Biraz kaynatın ve ocaktan alın.\n\n
+7. Bir sos tenceresinde vegan tereyağını veya zeytinyağını eritin. Unu ekleyin ve kısık ateşte kokusu çıkana kadar kavurun.\n\n
+8. Ardından vegan sütü yavaşça ekleyin, sürekli karıştırarak topaklanmamasını sağlayın.\n\n
+9. Sos kıvam alana kadar karıştırarak pişirin. Tuz, karabiber ve muskat rendesini ekleyin. Ocaktan alın.\n\n
+10. Fırın tepsisindeki kabak dilimlerinin üstüne sebzeli sosu yayın.\n\n
+11. Ardından beşamel sosu ekleyin ve düzgünce yayın.\n\n
+12. Üzerine isteğe bağlı olarak vegan rendelenmiş kaşar peyniri serpin.\n\n
+13. Önceden ısıtılmış fırında 30-35 dakika veya peynir eriyene ve üzeri kızarana kadar pişirin.\n\n
+14. Fırından çıkarın, üzerine taze fesleğen yaprakları serpin ve birkaç dakika dinlendirin.\n\n
+15. Dilimleyerek sıcak olarak servis yapın. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_truf">1. İlk olarak bitter çikolatayı benmari usulü eritin. Bunun için bir tencereye su koyun ve kaynatın. Üzerine ısıya dayanıklı bir kase yerleştirin ve içine çikolatayı koyun. Çikolata eriyene kadar karıştırın.\n\n
+2. Eriyen çikolataya hindistancevizi sütü veya badem sütünü ekleyin. Karıştırın ve homojen bir kıvam elde edene kadar çırpın.\n\n
+3. Vanilya özütünü ve hindistancevizi yağını ekleyin. Tekrar karıştırın.\n\n
+4. Son olarak iri çekilmiş fındıkları ekleyin ve çikolata karışımına iyice yedirin.\n\n
+5. Karışımı birkaç dakika oda sıcaklığında dinlendirin. Ardından buzdolabına koyun ve en az 1 saat boyunca sertleşmesi için bekletin.\n\n
+6. Sertleşen karışımdan parçalar alın ve elinizde yuvarlayarak küçük toplar şeklinde şekillendirin. İsteğe bağlı olarak hindistancevizi rendesi veya kakao tozuyla kaplayın.\n\n
+7. Hazırladığınız vegan çikolatalı fındıklı trüfleri buzdolabında saklayın ve servis etmeden önce birkaç dakika oda sıcaklığında yumuşamasını bekleyin.\n\n
+8. Afiyetle yiyin!</string>
+
+
+    <string name="yapilisi_karnababar">1. Fırını 200 dereceye ısıtın ve bir fırın tepsisine yağlı kağıt serin.\n\n
+2. Karnabaharı küçük çiçeklere ayırın ve iyice yıkayın. Büyük parçalar varsa keserek boyutlarını eşitleyin.\n\n
+3. Bir kasede un, sarımsak tozu, soğan tozu, toz kırmızı biber, tuz ve karabiberi karıştırın. Başka bir kasede vegan sütü hazırlayın.\n\n
+4. Karnabahar çiçeklerini önce un karışımına, sonra vegan süt karışımına ve ardından ekmek kırıntıları veya galeta ununa bulayın. Her tarafı iyice kaplanmalıdır.\n\n
+5. Hazırladığınız karnabahar kanatlarını yağlı kağıt serili fırın tepsisine düzenli bir şekilde yerleştirin.\n\n
+6. Üzerlerine zeytinyağı veya bitkisel yağ sürün.\n\n
+7. Önceden ısıtılmış fırında yaklaşık 25-30 dakika veya altın rengini alana kadar pişirin. Ara sıra çevirerek her iki tarafının da eşit şekilde pişmesini sağlayın.\n\n
+8. Karnabahar kanatları pişerken, sos için biber sosu, zeytinyağı veya bitkisel yağ, sirke, sarımsak tozu, tuz ve karabiberi bir kapta karıştırın.\n\n
+9. Pişen karnabahar kanatlarını fırından çıkarın ve sıcakken hazırladığınız sosla karıştırın, sosun her tarafını kaplamasını sağlayın.\n\n
+10. Servis yapmadan önce üzerlerine isteğe bağlı olarak rendelenmiş vegan parmesan peyniri serpin.\n\n
+11. Sıcak olarak servis yapın ve yanında bir dip sos ile birlikte servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_risotto">1. Bir tencerede sebze suyunu ısıtın ve sıcak tutun.\n\n
+2. Başka bir tencerede zeytinyağını veya bitkisel margarini orta ateşte ısıtın. Soğanları ekleyin ve şeffaflaşana kadar yaklaşık 5 dakika soteleyin.\n\n
+3. Sarımsakları ekleyin ve kokusu çıkana kadar sotelemeye devam edin.\n\n
+4. Dilimlenmiş mantarları ekleyin ve suyunu bırakıp çekene kadar yaklaşık 7-8 dakika soteleyin. Mantarlar yumuşamalı ve hafif kahverengileşmelidir.\n\n
+5. Pirinci ekleyin ve pirincin her tarafı yağla kaplanana kadar karıştırın. Yaklaşık 2 dakika kavurun.\n\n
+6. Eğer kullanacaksanız beyaz şarabı ekleyin ve pirincin tamamı emene kadar karıştırarak pişirin.\n\n
+7. Sıcak sebze suyundan kepçe kepçe ekleyerek risottoyu pişirmeye başlayın. Her seferinde suyunu tamamen çekene kadar karıştırarak pişirin.\n\n
+8. Tüm sebze suyunu ekledikten sonra risotto kıvam alana kadar (yumuşak ama hafif sulu) pişirin. Bu süre yaklaşık 18-20 dakika olabilir. Ara sıra karıştırarak risottoyu kontrol edin.\n\n
+9. Pişen risottoyu tuz ve karabiberle tatlandırın.\n\n
+10. Servis yapmadan önce üzerine doğranmış maydanoz veya taze fesleğen serpin. Sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_baliktaco">1. Fırını 200 dereceye (400°F) ayarlayın. Fırın tepsisine yağlı kağıt serin.\n\n
+2. Balık filetolarını bir tabağa yerleştirin. Üzerlerine zeytinyağı ve limon suyu gezdirin. Tuz ve karabiber serpin. Balıkları fırın tepsisine yerleştirin ve yaklaşık 10-15 dakika pişirin veya balık filetoları iyice pişene kadar.\n\n
+3. Balıklar pişerken, salsa için mısır, siyah fasulye, doğranmış soğan, domates, kişniş veya maydanoz ve lime suyunu bir kasede karıştırın. Tuz ve karabiberle tatlandırın. Bu karışımı bir kenarda bekletin.\n\n
+4. Mısır tortillalarını fırın tepsisine tek sıra halinde yerleştirin. Zeytinyağı veya bitkisel yağ ile fırçalayın. Fırında 5-7 dakika veya hafifçe kızarana kadar pişirin.\n\n
+5. Balık filetolarını fırından çıkarın ve çatalla parçalara ayırın.\n\n
+6. Pişmiş mısır tortillalarını alın ve üzerlerine balık parçaları, mısır ve siyah fasulye salsası, avokado dilimleri, marul veya lahana, acı sos veya salsa, yoğurt veya vegan mayonez gibi istediğiniz garnitürleri ekleyin.\n\n
+7. Hazırladığınız glutensiz balık tacosunu sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_karides">1. Temizlenmiş ve kabuğu çıkarılmış karidesleri bir kaseye alın. Üzerlerine glutensiz soya sosu veya tamari sosu dökün ve karidesleri sosla kaplayın. Yaklaşık 15 dakika marine etmek için buzdolabında bekletin.\n\n
+2. Bir tavada zeytinyağı veya bitkisel yağı ısıtın. Doğranmış sarımsak ve taze zencefili ekleyin, kokusu çıkana kadar kavurun.\n\n
+3. Marine edilmiş karidesleri tavaya ekleyin ve her iki tarafı da pembeleşene kadar yaklaşık 2-3 dakika pişirin. Pişen karidesleri bir tabağa alın ve kenara alın.\n\n
+4. Aynı tavaya biraz daha yağ ekleyin. Doğranmış kırmızı biber, yeşil biber ve havucu ekleyin. Sebzeler yumuşayana kadar yaklaşık 3-4 dakika soteleyin.\n\n
+5. Sotelediğiniz sebzelerin üzerine dondurulmuş bezelyeleri ekleyin ve birkaç dakika daha pişirin.\n\n
+6. Pişen karidesleri ve doğranmış yeşil soğanı tavaya geri ekleyin. Tuz ve karabiberle tatlandırın. Karides ve sebzeler iyice karışana kadar birkaç dakika daha pişirin.\n\n
+7. Servis yapmadan önce isteğe bağlı olarak sushi pirinci veya glutensiz pilav ile servis tabağına alın.\n\n
+8. Sıcak olarak servis yapın ve hemen tüketin. Afiyet olsun!</string>
+
+    <string name="yapilisi_mucver">1. Kabakları rendeleyin ve fazla suyunu sıkarak süzün. Bir kaba alın.\n\n
+2. Soğanı rendeleyin veya ince doğrayın. Kabakların üzerine ekleyin.\n\n
+3. Yumurtaları bir kasede çırpın. Kabak ve soğan karışımına ekleyin.\n\n
+4. Rendelenmiş peynir, ince doğranmış dereotu veya maydanoz, glutensiz un, toz kimyon, toz kırmızı biber, tuz ve karabiberi ekleyin. Tüm malzemeleri iyice karıştırın.\n\n
+5. Bir tavada zeytinyağını ısıtın.\n\n
+6. Hazırladığınız kabak mücver karışımından kaşık yardımıyla küçük parçalar alın ve tavaya yerleştirin. Mücverleri spatula yardımıyla hafifçe bastırarak şekillendirin.\n\n
+7. Alt tarafı altın rengi olana kadar yaklaşık 3-4 dakika pişirin, sonra spatula yardımıyla çevirin ve diğer tarafını da pişirin.\n\n
+8. Pişen kabak mücverleri kağıt havlu serili bir tabağa alarak fazla yağını emmelerini sağlayın.\n\n
+9. Sıcak veya ılık olarak servis yapın. İsteğe bağlı olarak yoğurt veya süzme yoğurt ile servis edebilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_crumble">1. Fırını 160 dereceye ısıtın. Elmaları ve kırmızı erikleri limon suyu, tarçın ve kahverengi şeker ile bir tencerede suyun içinde 3 dakika kadar haşlayın. Azıcık yumuşatın.\n\n
+
+2. Ayrı bir kapta un, yulaf, şeker ve zeytinyağını karıştırın. Meyvelerin suyunu döktükten sonra fırın tepsisine yerleştirin (suyunu dökmezseniz istenilen kıtırlıkta olmayacaktır).\n\n
+
+3. Üzerine un karışımını ilave edin. 20-25 dakika kadar fırınlayın.!</string>
+
+
+    <string name="yapilisi_brownie">1. Fırını 170 dereceye ısıtın ve bir kare veya dikdörtgen fırın kabını yağlayın veya yağlı kağıt serin.\n\n
+2. Bitter çikolatayı ve hindistancevizi yağını veya tereyağını bir kapta benmari usulü eritin. Erime işlemi tamamlandıktan sonra karışımı bir kenara alın ve soğumaya bırakın.\n\n
+3. Başka bir kapta yumurtaları ve şekeri iyice çırpın. Vanilya özütünü ekleyin ve çırpmaya devam edin.\n\n
+4. Eriyen çikolata karışımını yumurta karışımına yavaşça ekleyin, sürekli karıştırarak birleştirin.\n\n
+5. Ayrı bir kapta glutensiz un, kakao ve tuzu karıştırın. Bu karışımı çikolatalı karışıma ekleyin ve spatula ile nazikçe karıştırın. (Eğer kullanacaksanız, ceviz veya fındık parçalarını da ekleyin.)\n\n
+6. Hazırladığınız karışımı yağladığınız veya yağlı kağıtla kapladığınız fırın kabına dökün.\n\n
+7. Önceden ısıtılmış fırında yaklaşık 20-25 dakika pişirin. Brownie, kenarları kızarmış ama ortası hafifçe sallanıyorsa pişmiş demektir.\n\n
+8. Fırından çıkardıktan sonra brownieyi oda sıcaklığında soğumaya bırakın, daha sonra dilimleyip servis yapabilirsiniz.</string>
+
+    <string name="yapilisi_kabakpuresi">1. Kabakları iyice yıkayın ve kabuklarını soyun. Ardından rendeleyin veya küçük parçalara doğrayın.\n\n
+2. Tencereye rendelenmiş kabakları alın ve üzerine su veya et suyunu ekleyin. Su, kabakların yarı yüksekliğini geçmemeli.\n\n
+3. Tencereyi orta ateşte kaynatın. Kabaklar yumuşayıp suyunu çekene kadar yaklaşık 10-15 dakika pişirin.\n\n
+4. Pişen kabakları ocaktan alın ve bir blender veya çatalla ezerek püre haline getirin.\n\n
+5. Zeytinyağı veya tereyağını ekleyin ve iyice karıştırın.\n\n
+6. İsteğe bağlı olarak tuz ve karabiber ekleyerek lezzetlendirin.\n\n
+7. Hazırladığınız kabak püresini sıcak servis yapabilirsiniz.\n\n
+Bu kabak püresi, yanında et veya tavuk gibi ana yemeklerle veya garnitür olarak servis edilebilir. Ayrıca bebek maması olarak da kullanılabilir. Afiyet olsun!</string>
+
+    <string name="yapilisi_karabugday">1. Karabuğdayı iyice yıkayın. Bu işlem, karabuğdayın üzerindeki fazla nişastayı ve acı tadı uzaklaştırarak daha lezzetli bir pilav elde etmenizi sağlar.\n\n
+2. Bir tencereye yıkanmış karabuğdayı alın ve üzerine su veya et suyunu ekleyin. Su miktarı, karabuğdayın tamamen suya batması için yeterli olmalıdır.\n\n
+3. Tencereyi orta ateşe alın ve kaynamaya bırakın. Kaynadıktan sonra ateşi kısın ve karabuğday yumuşayıp suyunu çekene kadar yaklaşık 15-20 dakika pişirin.\n\n
+4. Pişen karabuğdayı ocaktan alın ve üzerine tereyağı veya zeytinyağı ekleyerek karıştırın.\n\n
+5. İsteğe bağlı olarak tuz ekleyerek lezzetlendirin.\n\n
+6. Pilavı servis tabağına alın ve üzerini istediğiniz şekilde süsleyebilirsiniz.\n\n
+Bu karabuğday pilavını et yemekleri, sebzeli yemekler veya salataların yanında servis edebilirsiniz. Ayrıca birçok kişiye hitap eden ve glutensiz bir alternatif olan bu pilavı, özellikle sağlıklı bir seçenek arayanlar tercih edebilir. Afiyet olsun!</string>
+
+    <string name="yapilisi_karniyarik">1. Patlıcanların sap kısımlarını kesin ve ortadan ikiye kesin. Tuzlu suya koyarak acısının çıkmasını sağlayın. Yaklaşık 15-20 dakika bekletin.\n\n
+2. Patlıcanları sudan çıkarın ve suyunu iyice süzün. Daha sonra kağıt havlu ile kurulayın.\n\n
+3. Patlıcanları kızgın yağda hafifçe kızartın. Kızarttıktan sonra fazla yağını alması için kağıt havlu üzerine alın.\n\n
+4. Derin bir tavada veya tencerede biraz yağ ile doğranmış soğanları pembeleşene kadar kavurun.\n\n
+5. Üzerine kıymayı ekleyin ve kavurmaya devam edin. Kıyma suyunu salıp çekene kadar kavurun.\n\n
+6. Ardından rendelenmiş veya doğranmış domatesleri ekleyin ve karıştırın.\n\n
+7. Sarımsakları ekleyin ve birkaç dakika daha kavurun.\n\n
+8. Salçaları, kimyonu, tuzu ve karabiberi ekleyin. İsteğe bağlı olarak toz kırmızı biberi ekleyin. Karışımı birkaç dakika daha pişirin.\n\n
+9. Kızarttığınız patlıcanları fırın tepsisine dizin. Her birinin üzerine bıçakla hafifçe çizikler atın.\n\n
+10. Patlıcanların içine kıymalı harçtan koyun.\n\n
+11. Önceden ısıtılmış 180 derece fırında üzeri kızarana kadar yaklaşık 20-25 dakika pişirin.\n\n
+12. Pişen karnıyarıkları sıcak servis yapın. İsteğe bağlı olarak yanında yoğurt veya salata ile servis edebilirsiniz.\n\n
+Afiyet olsun!</string>
+
+    <string name="yapilisi_incir">1.Kuru incirleri ılık suda 15-20 dakika kadar bekletin. Bu işlem, incirlerin yumuşamasını sağlayacaktır.\n\n
+2. Yumuşayan incirleri suyunu süzün ve bir bıçak yardımıyla incirlerin üzerine hafifçe kesikler atın.\n\n
+3. Bir tencereye sütü ekleyin ve ısıtın. Süt kaynama noktasına gelene kadar ısıtın.\n\n
+4. Kaynamış sütün içine bal veya akçaağaç şurubu ve vanilya özütünü ekleyin. Karıştırarak eritin.\n\n
+5. Hazırladığınız süt karışımını ocaktan alın ve ılımaya bırakın.\n\n
+6. Ilıyan süt karışımını incirlerin üzerine dökün.\n\n
+7. İncirleri sütün içinde 30 dakika kadar bekletin, bu süre içinde incirler sütü içine çekecek ve yumuşayacaktır.\n\n
+8. Tatlı servis edilmeden önce incirleri soğumaya bırakın. İsteğe bağlı olarak üzerine dövülmüş ceviz veya badem serpebilirsiniz.\n\n
+9. Soğuyan sütlü incir tatlısını servis tabağına alın ve üzerine isteğe bağlı olarak hindistancevizi rendesi veya tarçın serperek servis yapın.\n\n
+Bu nefis sütlü incir tatlısını çay saatlerinde veya özel günlerde misafirlerinize sunabilirsiniz. Afiyet olsun!</string>
+
+
+    <string name="yapilisi_cheesecake">1.Bisküvileri blenderden geçirip toz haline getirin.\n\n
+2. Tereyağını eriterek bisküvilerle karıştırın.\n\n
+3. Hazırladığınız karışımı pişirme kağıdı ile kapladığınız 20cm.lik kelepçeli kek kalıbının tabanına yayıp, üzerine bastırarak sıkıştırın.\n\n
+4. Peynirleri çırpıcı yardımıyla güzelce karıştırın.\n\n
+5. Üzerine şeker ve yumurtayı ekleyerek çırpmaya devam edin.\n\n
+6. Son olarak un ve vanilyayı ekleyip, bisküvi tabanının üzerine dökün.\n\n
+7. Önceden ısıtılmış 180 derece fırında 45 dakika pişirin.</string>
+
+
+    <string name="yapilisi_meksikasalatasi">1. Salatalığı, domatesi ve avokadoyu küp şeklinde doğrayın ve büyük bir salata kabına alın.\n\n
+2. Kırmızı soğanı ince dilimler halinde doğrayın ve salata kabına ekleyin.\n\n
+3. Jalapeno biberini ince halkalar halinde doğrayın ve salata kabına ekleyin (isteğe bağlı olarak).\n\n
+4. Taze kişnişi doğrayın ve salata kabına ekleyin (isteğe bağlı olarak).\n\n
+5. Limon suyu ve zeytinyağını salatanın üzerine ekleyin.\n\n
+6. Tuz ve karabiber ile tatlandırın.\n\n
+7. Tüm malzemeleri hafifçe karıştırın, böylece sos malzemeleri tüm sebzelerin üzerine eşit olarak dağılsın.\n\n
+8. Salatayı buzdolabında en az 30 dakika soğutun, bu süre içinde tüm lezzetler birbirine karışacak ve daha lezzetli bir hale gelecektir.\n\n
+9. Soğutulmuş olarak servis yapın ve isteğe bağlı olarak ekstra taze kişniş yaprakları ile süsleyin.\n\n
+Bu Meksika salatası, ana yemeklerin yanında veya tek başına bir öğün olarak servis edilebilir. Glutensiz ve sağlıklı bir seçenek olmasının yanı sıra, lezzetiyle de dikkat çekecek bir tarif. Afiyet olsun!</string>
+
+    <string-array name="GenderList">
+        <item>Kadın</item>
+        <item>Erkek</item>
+    </string-array>
+
+    <string-array name="BloodTypeList">
+        <item>0 RH-</item>
+        <item>0 RH+</item>
+        <item>A RH-</item>
+        <item>A RH+</item>
+        <item>B RH-</item>
+        <item>B RH+</item>
+        <item>AB RH-</item>
+        <item>AB RH+</item>
+    </string-array>
+
+
+
 </resources>

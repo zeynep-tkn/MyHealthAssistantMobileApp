@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RÖPORTAJ SAYFASI"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DÖNÜŞÜMÜN GÜCÜ: OLIVIA'NIN YOLCULUĞU"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giriş:"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bugün, sizlere dönüşümün ve kendini aşmanın gücünü gösteren bir hikayeyi aktaracağımız özel bir röportajımız var. Olivia isimli genç bir kadın, hayatının zorluklarına meydan okuyarak dönüşümünü başaran bir isim. Kendisiyle gerçekleştireceğimiz bu röportajda, yaşadığı deneyimleri, karşılaştığı engelleri ve başarıya giden yolu konuşacağız."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 1: Olivia, öncelikle kendinden biraz bahsedebilir misin? Adından, yaşından, yaşadığın yerden ve ailen hakkında kısaca bilgi verebilir misin?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: Tabii, ben Olivia. 30 yaşındayım ve New York'ta yaşıyorum. Burada ailemden ayrı bir apartmanda tek başıma yaşıyorum. Ailem, benim için her zaman büyük bir destek olmuştur, özellikle de zor zamanlarımda."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 2: İçsel dönüşüm yolculuğunuz nasıl başladı?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İçsel dönüşüm yolculuğum, birkaç yıl önce yaşadığım derin bir krizle başladı. Hayatımın o dönemlerinde, kendimi kaybolmuş ve tükenmiş hissediyordum. İçsel bir boşluk hissi beni sarmıştı ve bu beni bir şeylerin değişmesi gerektiği konusunda cesaretlendirdi."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 3: Karşılaştığınız zorluklar ve engeller nelerdi? Bu süreçte nasıl başa çıktınız?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İçsel dönüşüm yolculuğumda karşılaştığım en büyük zorluk, kendi korkularımla yüzleşmekti. Kendi değerimi sorgulamak, başkalarının beklentileriyle mücadele etmek ve geçmişteki acılarımla yüzleşmek benim için büyük bir meydan okumaydı. Ancak, terapi, meditasyon ve destek grupları gibi araçlarla bu zorlukların üstesinden gelmeyi öğrendim."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 4: Dönüşüm yolculuğunuzda size ilham veren veya destek olan şeyler nelerdi?"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olivia: İlhamımı, içimdeki derin bilgelik kaynağından aldım. Kendi iç sesimi dinlemek ve ona güvenmek, benim için dönüşümün anahtarı oldu. Ayrıca, sevdiklerimin ve dostlarımın sürekli destekleri de beni ileriye taşıyan güçlü bir etkendi."
+                android:textSize="18sp"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

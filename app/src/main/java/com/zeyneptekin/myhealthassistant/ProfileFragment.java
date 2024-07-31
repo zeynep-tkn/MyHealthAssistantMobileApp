@@ -1,5 +1,7 @@
+
 package com.zeyneptekin.myhealthassistant;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,58 +9,77 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProfileFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ProfileFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ProfileFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ProfileFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ProfileFragment newInstance(String param1, String param2) {
-        ProfileFragment fragment = new ProfileFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private Button SaglikProfilim;
+    private Button Randevularim;
+    private Button Ayarlar;
+    private Button SSSSayfasi;
+    private Button Hakkinda;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        // Fragment için layout dosyasını şişir
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        // Butonu bul ve tıklama olayını ayarla
+        SaglikProfilim = view.findViewById(R.id.saglikProfilim);
+        SaglikProfilim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sağlık Profilim sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), saglikProfilim.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Randevularim = view.findViewById(R.id.randevularim);
+        Randevularim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Randevularım sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), Randevularim.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Ayarlar = view.findViewById(R.id.ayarlar);
+        Ayarlar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Ayarlar sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), ayarlar.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        SSSSayfasi = view.findViewById(R.id.sss);
+        SSSSayfasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sıkça Sorulan Sorular sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), SSS.class);
+                startActivity(intent);
+            }
+        });
+
+        // Butonu bul ve tıklama olayını ayarla
+        Hakkinda = view.findViewById(R.id.hakkinda);
+        Hakkinda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Hakkında sayfasına geçiş yap
+                Intent intent = new Intent(getActivity(), hakkinda.class);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }

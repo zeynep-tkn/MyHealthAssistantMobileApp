@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".saglikliTarifler10"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:layout_height="wrap_content">
+
+        <!-- İlk ImageView -->
+        <ImageView
+            android:id="@+id/fotografImageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/parfe"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="0dp"/>
+
+        <!-- Beğenme/Favori Butonu -->
+        <ImageView
+            android:id="@+id/begenmeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-22dp"
+            android:layout_below="@id/fotografImageView"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/baslikTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOĞURT PARFE"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fotografImageView"
+            android:layout_marginTop="22dp"/>
+
+        <!-- Malzemeler Başlığı -->
+        <TextView
+            android:id="@+id/textViewAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALZEMELER"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/baslikTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="512dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- ilk cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SaglikliLayout"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleBlueberry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blueberry"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="80dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/blueberry"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <!-- ikinci cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/veganLayout"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleFindik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Çavdar"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="80dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bread"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Üçüncü cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/glutensizLayout"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleBal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoğurt"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="80dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/yogurt"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Dördüncü cardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vegatarianCard"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleBadem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bal"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="80dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/honey"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/limon"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp">
+
+                    <!-- İçerik -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Üst orta kısım -->
+                        <TextView
+                            android:id="@+id/TitleTarcin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Badem"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="80dp"/>
+
+                        <!-- Orta İmageView -->
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/almond"/>
+
+
+
+
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textYapilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YAPILIŞI:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/baslikTextView"
+            android:layout_marginTop="190dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/yapilisiTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/yapilisi_parfe"
+            android:layout_marginTop="695dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".saglikliTarifler10">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</ScrollView>

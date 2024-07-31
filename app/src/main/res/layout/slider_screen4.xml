@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:flow_horizontalAlign="center">
+    <ImageView
+        android:id="@+id/slider4Image"
+        android:layout_width="247dp"
+        android:layout_height="257dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tanitimspor"/>
+    <TextView
+        android:id="@+id/sliderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/screen4"
+        android:textAlignment="center"
+        android:textColor="@color/logo_dark"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sliderDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/screen4desc"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+</LinearLayout>

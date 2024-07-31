@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".motivation_ilhamveren">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="305dp"
+                android:layout_height="26dp"
+                android:text="                      GÜNÜN MAKALESİ"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hayatın Değerli Yolculuğu
+
+Her gün, önümüzdeki yeni bir günün doğuşuyla birlikte, hayatımızda yeni bir yolculuğa çıkarız. Bu yolculukta karşımıza çıkan her adım, bizi daha da ileriye taşır. Ancak, bazen bu yolculukta yoruluruz, zorlanırız ve umutsuzluğa kapılabiliriz. İşte tam da bu noktada, içimizdeki gücü hatırlamalı ve yeniden ileriye doğru adım atmaya cesaret etmeliyiz.
+
+Başarı, sadece kolay günlerde değil, aynı zamanda zorluklarla dolu günlerde de elde edilir. Zorluklarla karşılaştığımızda, kendimize olan inancımızı kaybetmemeliyiz. Her engel, aşılması gereken bir fırsattır. Unutmayın ki, ne kadar güçlü olduğunuzu, zorluklarla nasıl başa çıkabildiğiniz belirler.
+
+Hayatta başarılı olmanın anahtarı, pes etmemek ve sürekli olarak ilerlemektir. Yolunuzda karşınıza çıkan her engel, sizi hedefinize bir adım daha yaklaştırır. Kendinize güvenin, tutkularınızı takip edin ve hayallerinizi gerçekleştirmek için kararlılıkla ilerleyin.
+
+Unutmayın ki, her sabah yeni bir başlangıçtır ve sizin elinizde olan güçle, kendi hayatınızı dönüştürebilirsiniz. Bugün, geçmişteki başarısızlıklardan ders çıkarın ve geleceğe umutla bakın. İçinizdeki potansiyeli serbest bırakın ve kendinizi gerçekleştirmek için cesurca adımlar atın.
+
+Hayatın değerli yolculuğunda, tutkuyla ilerleyin, kararlılıkla mücadele edin ve her anınızı anlamlı kılacak adımlar atın. Unutmayın ki, gerçek başarı, iç huzur ve memnuniyetle birlikte gelir. Hayatınızı yönlendiren motivasyonunuz olun ve her gününüzü bir armağan olarak kabul edin.
+
+Yolculuğunuz boyunca karşılaştığınız her deneyim, size yeni bir şeyler öğretir ve sizi daha olgun biri yapar. Başarı, sadece dış dünyadaki başarılarla sınırlı değildir; aynı zamanda içsel bir tatmindir. İç huzur ve mutluluk, başarıya giden yolda önemli kilometre taşlarıdır.
+
+Başkalarının beklentilerine göre değil, kendi tutkularınıza ve değerlerinize göre yaşayın. Herkesin farklı bir hikayesi ve amacı vardır. Önemli olan, kendi yolunuzu bulmak ve onunla uyumlu bir şekilde ilerlemektir.
+
+Unutmayın ki, başarılı olmak için sürekli bir çaba ve fedakarlık gereklidir. Başlangıçta belki zor gelebilir, ancak devam ettiğinizde, kararlılığınızın meyvelerini toplarsınız. Önemli olan, pes etmeden ve umutsuzluğa kapılmadan ilerlemektir.
+
+Her gün, kendinizi biraz daha geliştirmek için bir fırsattır. Yapabileceğiniz en iyi şey, bugünü en iyi şekilde değerlendirmektir. Geçmişi unutun, gelecek hakkında endişelenmeyin ve şu anı yaşayın. Hayatın gerçek güzelliği, şu anda var olan anı yaşamaktır.
+
+Sonuç olarak, hayatın değerli yolculuğunda, kendinizi keşfedin, tutkularınızı takip edin ve cesurca adımlar atın. Her gününüzü bir fırsat olarak görün ve hayallerinizi gerçekleştirmek için gereken adımları atmaktan çekinmeyin. Unutmayın ki, hayat size sonsuz olanaklar sunar ve gerçek başarı, içsel huzur ve memnuniyetle birlikte gelir." />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="                     GÜNÜN HİKAYESİ"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Küçük Balık ve Büyük Okyanus
+Bir zamanlar, küçük bir balık büyük bir okyanusta yaşarmış. Diğer balıklarla birlikte yüzüyor, okyanusun sonsuz derinliklerinde keşfe çıkıyorlardı. Ancak, küçük balık diğerlerinden farklıydı. O, her zaman daha büyük hayallere sahipti.
+
+Bir gün, küçük balık diğer balıklara dönüp dedi ki: 'Bir gün, biz de okyanusun en derinlerine dalıp en yüksek dağların tepesine tırmanabileceğimize inanıyor musunuz?' diye sordu küçük balık diğerlerine. Diğer balıklar arasında şaşkınlık ve şüphe belirdi. 'Nasıl olabilir ki?' dediler. 'Biz sadece burada yüzebiliriz, bu kadarı bize yeter.'
+
+Ancak küçük balık vazgeçmedi. Her gün daha fazla hayal kuruyor, daha büyük hedeflere doğru ilerliyordu. Diğer balıklar ona gülüyor ve hayallerinin imkansız olduğunu söylüyorlardı. Ama o, içindeki inancı kaybetmedi.
+
+Bir gün, küçük balık kendini cesaretlendirmek için bir karar verdi. 'Eğer hayallerimin peşinden gitmezsem, hiçbir zaman gerçekleşmeyecekler.' diyerek içinden geçirdi ve cesaretle yola koyuldu.
+
+Zorluklarla dolu bir yolculuğun ardından, küçük balık sonunda hayallerine kavuştu. Okyanusun en derinlerine daldı, en yüksek dağların tepesine tırmandı ve kendi gücünün sınırlarını zorladı. Diğer balıklar şaşkınlıkla ona bakarken, küçük balık gururla gülümsedi.
+
+Bu hikaye bize gösteriyor ki, ne kadar küçük olursak olalım, içimizdeki büyük hayalleri gerçekleştirebiliriz. İnanmak ve cesaret etmek, her zaman başarının anahtarıdır. Küçük balık, büyük okyanusun içinde bile, kendi gerçek potansiyelini keşfetmeyi başardı. Biz de hayatımızın okyanusunda, büyük hayallerimize doğru cesaretle ilerleyebiliriz." />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                        GÜNÜN VİDEOSU"
+                android:textSize="20sp" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="335dp"
+                android:layout_height="127dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                          GÜNÜN FOTOĞRAFI"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:contentDescription="Education ImageButton"
+                android:src="@drawable/education" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

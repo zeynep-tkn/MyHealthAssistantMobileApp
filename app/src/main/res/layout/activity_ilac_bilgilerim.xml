@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/logo_light"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:ignore="ExtraText"
+    tools:context=".ilacBilgilerim">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/ilac_bilgilerim_baslik"
+            android:layout_width="411dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="İLAÇ BİLGİLERİM"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TableLayout
+            android:id="@+id/ilaçlarim_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ilac_bilgilerim_baslik"
+            android:layout_margin="30dp"
+            android:layout_marginStart="57dp"
+            android:background="@android:color/white">
+
+
+            <!-- Table Rows for Medication -->
+            <TableRow android:background="@color/logo_dark">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="İlaç İsmi"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Dozaj"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Alma Sıklığı"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ilacIsmiGirmeTxt"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="İlaç İsmi"
+                    android:padding="10sp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/dozajGirmeTxt"
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="Dozaj"
+                    android:padding="10sp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/almaSikligiGirmeTxt"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="Alma Sıklığı"
+                    android:padding="10sp"
+                    android:textSize="14sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <!-- alerjilerim_table -->
+
+
+        <TableLayout
+            android:id="@+id/alerjilerim_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ilaçlarim_table"
+            android:layout_margin="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/white">
+
+            <!-- Table Rows for Allergies -->
+            <TableRow android:background="@color/logo_dark">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Alerjik İlaç İsmi"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/alerjikIlacIsmiGirmeTxt"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="Alerjik İlaç İsmi"
+                    android:padding="10sp"
+                    android:textSize="14sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/ilacAlerjisiEkleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alerjilerim_table"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/logo_dark"
+            android:text="EKLE"  />
+
+        <Button
+            android:id="@+id/ilacAlerjisiSilBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ilacAlerjisiEkleBtn"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toStartOf="@+id/ilacAlerjisiEkleBtn"
+            android:backgroundTint="@color/logo_dark"
+            android:text="SİL" />
+
+        <Button
+            android:id="@+id/ilacEkleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ilaçlarim_table"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/logo_dark"
+            android:text="EKLE" />
+
+        <Button
+            android:id="@+id/ilacSilBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ilacEkleBtn"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toStartOf="@id/ilacEkleBtn"
+            android:backgroundTint="@color/logo_dark"
+            android:text="SİL"  />
+
+    </RelativeLayout>
+</ScrollView>

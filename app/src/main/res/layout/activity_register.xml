@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/loginback"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/kullanici_profil_sembol" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:hint="Email" />
+
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailEditText"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Şifre"
+        android:backgroundTint="@color/black"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="5dp"
+        android:onClick="kayitOl"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Kayıt Ol" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:clickable="true"
+        android:text="Hesabınız Var mı?"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="215dp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:text="Giriş Yap"
+        android:textColor="@color/logo_dark"/>
+</RelativeLayout>

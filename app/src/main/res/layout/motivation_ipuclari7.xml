@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".motivation_ipuclari"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="374dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Teknoloji ve Dijital Hayat Fikirleri"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dijital Güvenlik Bilinci: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView64" />
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" İnternet güvenliği ve kişisel veri koruması konularında bilinçlenin. Güçlü parolalar kullanın, güvenlik yazılımlarını güncelleyin ve bilgi güvenliği önlemlerini alın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewContent"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewCleanTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dijital Denge: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextView" />
+
+        <TextView
+            android:id="@+id/secondTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Teknolojiyi bilinçli bir şekilde kullanın ve dijital dengeyi koruyun. Aşırı teknoloji kullanımından kaçının, ekran süresini kontrol altında tutun ve zaman zaman dijital detokslar yapın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCleanTips"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textViewMaintenanceTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Verimlilik Araçları Kullanma: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondTextViewContent" />
+
+        <TextView
+            android:id="@+id/thirdTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=" İş ve günlük yaşamınızı kolaylaştırmak için çeşitli verimlilik araçları ve uygulamalarını kullanın. Ajanda uygulamaları, zaman yönetimi araçları, not alma uygulamaları gibi araçlarla işlerinizi düzenleyin ve takip edin. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMaintenanceTips" />
+
+        <TextView
+            android:id="@+id/gardenTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Yaratıcı Teknoloji Kullanımı: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdTextViewContent" />
+
+        <TextView
+            android:id="@+id/fourthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Teknolojiyi yaratıcı amaçlar için kullanın. Fotoğraf ve video düzenleme uygulamalarıyla kendi içeriklerinizi oluşturun, dijital sanat projeleri geliştirin veya programlama becerilerinizi kullanarak yeni projeler başlatın. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gardenTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/savingTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Teknoloji Tabanlı Öğrenme:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthTextViewContent" />
+
+        <TextView
+            android:id="@+id/fifthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="İnternet üzerinden çevrimiçi kurslar ve eğitim kaynaklarına erişerek yeni beceriler öğrenin. Online platformlarda bulunan derslerle dil öğrenme, kodlama, tasarım gibi alanlarda kendinizi geliştirin. "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/savingTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/cookingRecipesTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dijital Topluluklara Katılma:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthTextViewContent" />
+
+        <TextView
+            android:id="@+id/sixthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="İlgilendiğiniz konularla ilgili dijital topluluklara katılın. Forumlar, sosyal medya grupları veya çevrimiçi etkinlikler aracılığıyla diğer insanlarla bağlantı kurun, deneyimlerinizi paylaşın ve yeni insanlarla tanışın."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cookingRecipesTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/entertainmentTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dijital Çevre Dostu Alışkanlıklar:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixthTextViewContent" />
+
+        <TextView
+            android:id="@+id/seventhTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Çevre dostu dijital alışkanlıklar geliştirin. E-kitapları tercih edin, kağıt israfını azaltın, enerji tasarruflu cihazlar kullanın ve elektronik atıkları doğru şekilde geri dönüştürün.
+"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entertainmentTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/securityTipsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dijital Sağlık Takibi: "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seventhTextViewContent" />
+
+        <TextView
+            android:id="@+id/eighthTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Sağlık ve fitness uygulamaları aracılığıyla fiziksel aktivitelerinizi takip edin, uyku düzeninizi izleyin ve beslenme alışkanlıklarınızı yönetin. Dijital sağlık takibiyle daha sağlıklı bir yaşam tarzı benimseyebilirsiniz."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/securityTipsTextView"
+            app:layout_constraintVertical_bias="0.1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

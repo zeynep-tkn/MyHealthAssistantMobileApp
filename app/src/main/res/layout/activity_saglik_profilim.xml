@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logo_light"
+    tools:context=".saglikProfilim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/saglikProfilimBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAĞLIK PROFİLİM"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dogumTarihiTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Doğum Tarihi:" />
+
+            <EditText
+                android:id="@+id/dogumTarihiEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="end"
+                android:inputType="date"
+                android:focusable="false"
+                android:onClick="showDatePicker" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cinsiyetTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Cinsiyet:    " />
+
+            <Spinner
+                android:id="@+id/cinsiyetSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kanGrubuTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Kan Grubu:" />
+
+            <Spinner
+                android:id="@+id/kanGrubuSpinner"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/boyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Boy (cm):   " />
+
+            <Spinner
+                android:id="@+id/boySpinner"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kiloTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Kilo (kg):    " />
+
+            <Spinner
+                android:id="@+id/kiloSpinner"
+                android:textSize="40sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/hesaplaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="18sp"
+            android:text="Vücut Kitle İndeksini Hesapla"
+            android:layout_marginTop="18dp"
+            android:onClick="hesaplaVKI" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vucutKitleIndeksiTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Vücut Kitle İndeksi: " />
+
+            <TextView
+                android:id="@+id/vucutKitleİndeksiHesaplamaTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:text=" "
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/saglikGecmisimBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/logo_dark"
+            android:text="Sağlık Geçmişim"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ilacBilgilerimBtn"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/logo_dark"
+            android:text="İlaç Bilgilerim"
+            android:textColor="#FFFFFF" />
+
+        <DatePicker
+            android:id="@+id/dogumTarihiDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

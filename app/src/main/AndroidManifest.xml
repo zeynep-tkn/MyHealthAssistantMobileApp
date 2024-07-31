@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeyneptekin.myhealthassistant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,22 +15,290 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthAssistant"
         tools:targetApi="31">
-
+        <activity
+            android:name=".RobotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KaloriAksam"
+            android:exported="false" />
+        <activity
+            android:name=".KaloriAtistirmalik"
+            android:exported="false" />
+        <activity
+            android:name=".KaloriOgle"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.KaloriKahvalti"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif10"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif9"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".GlutensizTarif1"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif10"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif9"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".VeganTarif1"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler10"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler9"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif8"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif7"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif6"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif5"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif4"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif3"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarif2"
+            android:exported="false" />
+        <activity
+            android:name=".yesilBowlTarifi"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gazete1Activity"
+            android:exported="false" />
+        <!--
+        <activity
+            android:name=".ui.theme.MotivationGazete1Activity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".SporPlanlariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationIpuclari2Activity"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".ui.theme.MotivationIpuclariActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".AkilSagligiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EgitimBeslenmeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationEtkinlikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".P4Movement1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".P3Movement1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".P2Movement1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".motivation_ipuclari"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".randevuEkleme"
+            android:exported="false" />
+        <activity
+            android:name=".motivation_ilhamveren"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationEglenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationGazeteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationTakvimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gizlilikVeGuvenlik"
+            android:exported="false" />
+        <activity
+            android:name=".ilacBilgilerim"
+            android:exported="false" />
+        <activity
+            android:name=".saglikGecmisim"
+            android:exported="false" />
+        <activity
+            android:name=".hakkinda"
+            android:exported="false" />
+        <activity
+            android:name=".SSS"
+            android:exported="false" />
+        <activity
+            android:name=".ayarlar"
+            android:exported="false" />
+        <activity
+            android:name=".Randevularim"
+            android:exported="false" />
+        <activity
+            android:name=".P1Movement1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".saglikProfilim"
+            android:exported="false" />
+        <activity
+            android:name=".P4SportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".P3SportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".P2SportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".P1SportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".saglikliTarifler"
+            android:exported="false" />
+        <activity
+            android:name=".glutensizTarifler"
+            android:exported="false" />
+        <activity
+            android:name=".veganTarifler"
+            android:exported="false" />
+        <activity
+            android:name=".EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SportsExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-           <activity
+        <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
